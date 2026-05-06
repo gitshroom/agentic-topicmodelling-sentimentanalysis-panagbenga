@@ -16,7 +16,7 @@ import stopwordsiso
 # =========================
 # 2. LOAD DATASET
 # =========================
-df = pd.read_csv('data/panagbenga-dataset.csv')
+df = pd.read_csv('data/panagbenga2013-2026_cleaned=9013.csv')
 df = df[['id','text', 'source', 'timestamp', 'engagement']]
 df['text'] = df['text'].astype(str)
 
