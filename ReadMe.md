@@ -44,13 +44,6 @@ setx APIFY_TOKEN "your_actual_token_here"
 export APIFY_TOKEN="your_actual_token_here"
 ```
 
-Then update your code (`run_pipeline.py`) to:
-
-```python
-import os
-APIFY_TOKEN = os.getenv("APIFY_TOKEN")
-```
-
 ---
 
 ## ▶️ Usage
