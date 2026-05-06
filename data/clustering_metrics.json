@@ -1,0 +1,8 @@
+{
+  "silhouette_score": 0.554,
+  "dbcv": null,
+  "noise_ratio": 0.22,
+  "n_clusters": 21,
+  "n_noise_points": 130,
+  "n_total": 591
+}

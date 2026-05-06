@@ -1,0 +1,585 @@
+{
+  "pipeline_version": "2.0",
+  "generated_at": "2026-05-06T15:19:58",
+  "quality_passed": false,
+  "validation": {
+    "topic_issues": [
+      "Too few topics: 2 < 3",
+      "20 cluster(s) errored."
+    ],
+    "sentiment_issues": [
+      "Avg coverage: 0.00 < 0.85",
+      "Avg confidence: 0.000 < 0.55"
+    ]
+  },
+  "clustering_quality": {
+    "silhouette_score": 0.554,
+    "dbcv": null,
+    "noise_ratio": 0.22,
+    "n_clusters": 21
+  },
+  "summary": {
+    "total_clusters": 21,
+    "total_docs_clustered": 461,
+    "total_topics_discovered": 2
+  },
+  "models": {
+    "embedding_model": "paraphrase-multilingual-MiniLM-L12-v2",
+    "topic_model_type": "bertopic",
+    "topic_parameters": {
+      "min_topic_size": 8,
+      "nr_topics": "auto",
+      "n_lda_topics": 8,
+      "mmr_enabled": true,
+      "mmr_diversity": 0.3
+    },
+    "sentiment_model": "cardiffnlp/twitter-xlm-roberta-base-sentiment",
+    "mmr_enabled": true,
+    "mmr_diversity": 0.3
+  },
+  "clusters": [
+    {
+      "cluster_id": -1,
+      "n_docs": 130,
+      "topics": {
+        "n_topics": 0,
+        "noise_ratio": null,
+        "coherence_proxy": null,
+        "top_topics": [],
+        "error": null
+      },
+      "sentiment": {
+        "dominant": "ERROR",
+        "avg_confidence": 0.0,
+        "coverage": 0.0,
+        "label_distribution": {
+          "ERROR": 130
+        },
+        "label_ratios": {
+          "ERROR": 1.0
+        }
+      }
+    },
+    {
+      "cluster_id": 0,
+      "n_docs": 24,
+      "topics": {
+        "n_topics": 0,
+        "noise_ratio": null,
+        "coherence_proxy": null,
+        "top_topics": [],
+        "error": "Found array with 0 sample(s) (shape=(0, 384)) while a minimum of 1 is required."
+      },
+      "sentiment": {
+        "dominant": "ERROR",
+        "avg_confidence": 0.0,
+        "coverage": 0.0,
+        "label_distribution": {
+          "ERROR": 24
+        },
+        "label_ratios": {
+          "ERROR": 1.0
+        }
+      }
+    },
+    {
+      "cluster_id": 1,
+      "n_docs": 22,
+      "topics": {
+        "n_topics": 0,
+        "noise_ratio": null,
+        "coherence_proxy": null,
+        "top_topics": [],
+        "error": "Found array with 0 sample(s) (shape=(0, 384)) while a minimum of 1 is required."
+      },
+      "sentiment": {
+        "dominant": "ERROR",
+        "avg_confidence": 0.0,
+        "coverage": 0.0,
+        "label_distribution": {
+          "ERROR": 22
+        },
+        "label_ratios": {
+          "ERROR": 1.0
+        }
+      }
+    },
+    {
+      "cluster_id": 2,
+      "n_docs": 11,
+      "topics": {
+        "n_topics": 0,
+        "noise_ratio": null,
+        "coherence_proxy": null,
+        "top_topics": [],
+        "error": "Found array with 0 sample(s) (shape=(0, 384)) while a minimum of 1 is required."
+      },
+      "sentiment": {
+        "dominant": "ERROR",
+        "avg_confidence": 0.0,
+        "coverage": 0.0,
+        "label_distribution": {
+          "ERROR": 11
+        },
+        "label_ratios": {
+          "ERROR": 1.0
+        }
+      }
+    },
+    {
+      "cluster_id": 3,
+      "n_docs": 11,
+      "topics": {
+        "n_topics": 0,
+        "noise_ratio": null,
+        "coherence_proxy": null,
+        "top_topics": [],
+        "error": "Found array with 0 sample(s) (shape=(0, 384)) while a minimum of 1 is required."
+      },
+      "sentiment": {
+        "dominant": "ERROR",
+        "avg_confidence": 0.0,
+        "coverage": 0.0,
+        "label_distribution": {
+          "ERROR": 11
+        },
+        "label_ratios": {
+          "ERROR": 1.0
+        }
+      }
+    },
+    {
+      "cluster_id": 4,
+      "n_docs": 11,
+      "topics": {
+        "n_topics": 0,
+        "noise_ratio": null,
+        "coherence_proxy": null,
+        "top_topics": [],
+        "error": "Found array with 0 sample(s) (shape=(0, 384)) while a minimum of 1 is required."
+      },
+      "sentiment": {
+        "dominant": "ERROR",
+        "avg_confidence": 0.0,
+        "coverage": 0.0,
+        "label_distribution": {
+          "ERROR": 11
+        },
+        "label_ratios": {
+          "ERROR": 1.0
+        }
+      }
+    },
+    {
+      "cluster_id": 5,
+      "n_docs": 17,
+      "topics": {
+        "n_topics": 0,
+        "noise_ratio": null,
+        "coherence_proxy": null,
+        "top_topics": [],
+        "error": "Found array with 0 sample(s) (shape=(0, 384)) while a minimum of 1 is required."
+      },
+      "sentiment": {
+        "dominant": "ERROR",
+        "avg_confidence": 0.0,
+        "coverage": 0.0,
+        "label_distribution": {
+          "ERROR": 17
+        },
+        "label_ratios": {
+          "ERROR": 1.0
+        }
+      }
+    },
+    {
+      "cluster_id": 6,
+      "n_docs": 23,
+      "topics": {
+        "n_topics": 0,
+        "noise_ratio": null,
+        "coherence_proxy": null,
+        "top_topics": [],
+        "error": "Found array with 0 sample(s) (shape=(0, 384)) while a minimum of 1 is required."
+      },
+      "sentiment": {
+        "dominant": "ERROR",
+        "avg_confidence": 0.0,
+        "coverage": 0.0,
+        "label_distribution": {
+          "ERROR": 23
+        },
+        "label_ratios": {
+          "ERROR": 1.0
+        }
+      }
+    },
+    {
+      "cluster_id": 7,
+      "n_docs": 25,
+      "topics": {
+        "n_topics": 0,
+        "noise_ratio": null,
+        "coherence_proxy": null,
+        "top_topics": [],
+        "error": "Found array with 0 sample(s) (shape=(0, 384)) while a minimum of 1 is required."
+      },
+      "sentiment": {
+        "dominant": "ERROR",
+        "avg_confidence": 0.0,
+        "coverage": 0.0,
+        "label_distribution": {
+          "ERROR": 25
+        },
+        "label_ratios": {
+          "ERROR": 1.0
+        }
+      }
+    },
+    {
+      "cluster_id": 8,
+      "n_docs": 30,
+      "topics": {
+        "n_topics": 0,
+        "noise_ratio": null,
+        "coherence_proxy": null,
+        "top_topics": [],
+        "error": "Found array with 0 sample(s) (shape=(0, 384)) while a minimum of 1 is required."
+      },
+      "sentiment": {
+        "dominant": "ERROR",
+        "avg_confidence": 0.0,
+        "coverage": 0.0,
+        "label_distribution": {
+          "ERROR": 30
+        },
+        "label_ratios": {
+          "ERROR": 1.0
+        }
+      }
+    },
+    {
+      "cluster_id": 9,
+      "n_docs": 24,
+      "topics": {
+        "n_topics": 0,
+        "noise_ratio": null,
+        "coherence_proxy": null,
+        "top_topics": [],
+        "error": "Found array with 0 sample(s) (shape=(0, 384)) while a minimum of 1 is required."
+      },
+      "sentiment": {
+        "dominant": "ERROR",
+        "avg_confidence": 0.0,
+        "coverage": 0.0,
+        "label_distribution": {
+          "ERROR": 24
+        },
+        "label_ratios": {
+          "ERROR": 1.0
+        }
+      }
+    },
+    {
+      "cluster_id": 10,
+      "n_docs": 12,
+      "topics": {
+        "n_topics": 0,
+        "noise_ratio": null,
+        "coherence_proxy": null,
+        "top_topics": [],
+        "error": "Found array with 0 sample(s) (shape=(0, 384)) while a minimum of 1 is required."
+      },
+      "sentiment": {
+        "dominant": "ERROR",
+        "avg_confidence": 0.0,
+        "coverage": 0.0,
+        "label_distribution": {
+          "ERROR": 12
+        },
+        "label_ratios": {
+          "ERROR": 1.0
+        }
+      }
+    },
+    {
+      "cluster_id": 11,
+      "n_docs": 26,
+      "topics": {
+        "n_topics": 0,
+        "noise_ratio": null,
+        "coherence_proxy": null,
+        "top_topics": [],
+        "error": "Found array with 0 sample(s) (shape=(0, 384)) while a minimum of 1 is required."
+      },
+      "sentiment": {
+        "dominant": "ERROR",
+        "avg_confidence": 0.0,
+        "coverage": 0.0,
+        "label_distribution": {
+          "ERROR": 26
+        },
+        "label_ratios": {
+          "ERROR": 1.0
+        }
+      }
+    },
+    {
+      "cluster_id": 12,
+      "n_docs": 35,
+      "topics": {
+        "n_topics": 0,
+        "noise_ratio": null,
+        "coherence_proxy": null,
+        "top_topics": [],
+        "error": "Found array with 0 sample(s) (shape=(0, 384)) while a minimum of 1 is required."
+      },
+      "sentiment": {
+        "dominant": "ERROR",
+        "avg_confidence": 0.0,
+        "coverage": 0.0,
+        "label_distribution": {
+          "ERROR": 35
+        },
+        "label_ratios": {
+          "ERROR": 1.0
+        }
+      }
+    },
+    {
+      "cluster_id": 13,
+      "n_docs": 15,
+      "topics": {
+        "n_topics": 0,
+        "noise_ratio": null,
+        "coherence_proxy": null,
+        "top_topics": [],
+        "error": "Found array with 0 sample(s) (shape=(0, 384)) while a minimum of 1 is required."
+      },
+      "sentiment": {
+        "dominant": "ERROR",
+        "avg_confidence": 0.0,
+        "coverage": 0.0,
+        "label_distribution": {
+          "ERROR": 15
+        },
+        "label_ratios": {
+          "ERROR": 1.0
+        }
+      }
+    },
+    {
+      "cluster_id": 14,
+      "n_docs": 12,
+      "topics": {
+        "n_topics": 0,
+        "noise_ratio": null,
+        "coherence_proxy": null,
+        "top_topics": [],
+        "error": "Found array with 0 sample(s) (shape=(0, 384)) while a minimum of 1 is required."
+      },
+      "sentiment": {
+        "dominant": "ERROR",
+        "avg_confidence": 0.0,
+        "coverage": 0.0,
+        "label_distribution": {
+          "ERROR": 12
+        },
+        "label_ratios": {
+          "ERROR": 1.0
+        }
+      }
+    },
+    {
+      "cluster_id": 15,
+      "n_docs": 62,
+      "topics": {
+        "n_topics": 2,
+        "noise_ratio": 0.0806,
+        "coherence_proxy": 0.5851,
+        "top_topics": [
+          {
+            "topic_id": 0,
+            "count": 38,
+            "top_words": [
+              "festivalbaguio",
+              "festival",
+              "pageantmanila",
+              "festivalgrand",
+              "baguio",
+              "panagbengahunks",
+              "cityofbaguio",
+              "festivaldance",
+              "sabaguio",
+              "dinagyangfestival"
+            ],
+            "top_word_scores": [
+              0.7214,
+              0.6208,
+              0.4975,
+              0.5713,
+              0.5144,
+              0.4658,
+              0.5252,
+              0.4971,
+              0.5107,
+              0.4604
+            ],
+            "label": "0_festivalbaguio_festival_festivalgrand_cityofbaguio"
+          },
+          {
+            "topic_id": 1,
+            "count": 19,
+            "top_words": [
+              "festival",
+              "festivalfyp",
+              "festivalqueen",
+              "festivals",
+              "",
+              "place",
+              "bangusfestival",
+              "masskarafestival",
+              "upage",
+              "ibonibonfestival"
+            ],
+            "top_word_scores": [
+              0.9668,
+              0.8292,
+              0.7866,
+              0.8754,
+              0.3032,
+              0.3882,
+              0.4951,
+              0.4518,
+              0.3037,
+              0.3271
+            ],
+            "label": "1_festival_festivals_festivalfyp_festivalqueen"
+          }
+        ],
+        "error": null
+      },
+      "sentiment": {
+        "dominant": "ERROR",
+        "avg_confidence": 0.0,
+        "coverage": 0.0,
+        "label_distribution": {
+          "ERROR": 62
+        },
+        "label_ratios": {
+          "ERROR": 1.0
+        }
+      }
+    },
+    {
+      "cluster_id": 16,
+      "n_docs": 19,
+      "topics": {
+        "n_topics": 0,
+        "noise_ratio": null,
+        "coherence_proxy": null,
+        "top_topics": [],
+        "error": "Found array with 0 sample(s) (shape=(0, 384)) while a minimum of 1 is required."
+      },
+      "sentiment": {
+        "dominant": "ERROR",
+        "avg_confidence": 0.0,
+        "coverage": 0.0,
+        "label_distribution": {
+          "ERROR": 19
+        },
+        "label_ratios": {
+          "ERROR": 1.0
+        }
+      }
+    },
+    {
+      "cluster_id": 17,
+      "n_docs": 14,
+      "topics": {
+        "n_topics": 0,
+        "noise_ratio": null,
+        "coherence_proxy": null,
+        "top_topics": [],
+        "error": "Found array with 0 sample(s) (shape=(0, 384)) while a minimum of 1 is required."
+      },
+      "sentiment": {
+        "dominant": "ERROR",
+        "avg_confidence": 0.0,
+        "coverage": 0.0,
+        "label_distribution": {
+          "ERROR": 14
+        },
+        "label_ratios": {
+          "ERROR": 1.0
+        }
+      }
+    },
+    {
+      "cluster_id": 18,
+      "n_docs": 22,
+      "topics": {
+        "n_topics": 0,
+        "noise_ratio": null,
+        "coherence_proxy": null,
+        "top_topics": [],
+        "error": "Found array with 0 sample(s) (shape=(0, 384)) while a minimum of 1 is required."
+      },
+      "sentiment": {
+        "dominant": "ERROR",
+        "avg_confidence": 0.0,
+        "coverage": 0.0,
+        "label_distribution": {
+          "ERROR": 22
+        },
+        "label_ratios": {
+          "ERROR": 1.0
+        }
+      }
+    },
+    {
+      "cluster_id": 19,
+      "n_docs": 35,
+      "topics": {
+        "n_topics": 0,
+        "noise_ratio": null,
+        "coherence_proxy": null,
+        "top_topics": [],
+        "error": "Found array with 0 sample(s) (shape=(0, 384)) while a minimum of 1 is required."
+      },
+      "sentiment": {
+        "dominant": "ERROR",
+        "avg_confidence": 0.0,
+        "coverage": 0.0,
+        "label_distribution": {
+          "ERROR": 35
+        },
+        "label_ratios": {
+          "ERROR": 1.0
+        }
+      }
+    },
+    {
+      "cluster_id": 20,
+      "n_docs": 11,
+      "topics": {
+        "n_topics": 0,
+        "noise_ratio": null,
+        "coherence_proxy": null,
+        "top_topics": [],
+        "error": "Found array with 0 sample(s) (shape=(0, 384)) while a minimum of 1 is required."
+      },
+      "sentiment": {
+        "dominant": "ERROR",
+        "avg_confidence": 0.0,
+        "coverage": 0.0,
+        "label_distribution": {
+          "ERROR": 11
+        },
+        "label_ratios": {
+          "ERROR": 1.0
+        }
+      }
+    }
+  ]
+}

@@ -1,0 +1,3293 @@
+{
+  "generated_at": "2026-05-06T15:18:52",
+  "model": "cardiffnlp/twitter-xlm-roberta-base-sentiment",
+  "text_column": "processed",
+  "n_labels": 3,
+  "clusters": {
+    "-1": {
+      "cluster_id": -1,
+      "n_docs": 130,
+      "coverage": 0.0,
+      "avg_confidence": 0.0,
+      "dominant_sentiment": "ERROR",
+      "label_distribution": {
+        "ERROR": 130
+      },
+      "label_ratios": {
+        "ERROR": 1.0
+      },
+      "per_doc": [
+        {
+          "id": "TI-e54c3563f5",
+          "label": "ERROR",
+          "score": 0.0
+        },
+        {
+          "id": "TI-dd4cdbbbd8",
+          "label": "ERROR",
+          "score": 0.0
+        },
+        {
+          "id": "TI-e7ef2915ae",
+          "label": "ERROR",
+          "score": 0.0
+        },
+        {
+          "id": "TI-1023f8b028",
+          "label": "ERROR",
+          "score": 0.0
+        },
+        {
+          "id": "TI-c50b00839b",
+          "label": "ERROR",
+          "score": 0.0
+        },
+        {
+          "id": "TI-b96a7ced1b",
+          "label": "ERROR",
+          "score": 0.0
+        },
+        {
+          "id": "TI-ebddcf5f67",
+          "label": "ERROR",
+          "score": 0.0
+        },
+        {
+          "id": "TI-22b6041421",
+          "label": "ERROR",
+          "score": 0.0
+        },
+        {
+          "id": "TI-87838a7a92",
+          "label": "ERROR",
+          "score": 0.0
+        },
+        {
+          "id": "TI-0c9f9db7e8",
+          "label": "ERROR",
+          "score": 0.0
+        },
+        {
+          "id": "TI-da1b9d50e8",
+          "label": "ERROR",
+          "score": 0.0
+        },
+        {
+          "id": "TI-49cb788c8c",
+          "label": "ERROR",
+          "score": 0.0
+        },
+        {
+          "id": "TI-150253d49d",
+          "label": "ERROR",
+          "score": 0.0
+        },
+        {
+          "id": "TI-244be25f0f",
+          "label": "ERROR",
+          "score": 0.0
+        },
+        {
+          "id": "TI-cf0c668bfd",
+          "label": "ERROR",
+          "score": 0.0
+        },
+        {
+          "id": "TI-cd73ea048d",
+          "label": "ERROR",
+          "score": 0.0
+        },
+        {
+          "id": "TI-3bdd440f1d",
+          "label": "ERROR",
+          "score": 0.0
+        },
+        {
+          "id": "TI-e28cf39ef8",
+          "label": "ERROR",
+          "score": 0.0
+        },
+        {
+          "id": "TI-97c57789a4",
+          "label": "ERROR",
+          "score": 0.0
+        },
+        {
+          "id": "TI-c6f3bb3fa2",
+          "label": "ERROR",
+          "score": 0.0
+        },
+        {
+          "id": "TI-97decb4eb2",
+          "label": "ERROR",
+          "score": 0.0
+        },
+        {
+          "id": "TI-767731ddd4",
+          "label": "ERROR",
+          "score": 0.0
+        },
+        {
+          "id": "TI-4c9c4687bf",
+          "label": "ERROR",
+          "score": 0.0
+        },
+        {
+          "id": "TI-11621111a1",
+          "label": "ERROR",
+          "score": 0.0
+        },
+        {
+          "id": "TI-dc29cd230e",
+          "label": "ERROR",
+          "score": 0.0
+        },
+        {
+          "id": "TI-8df53a93ce",
+          "label": "ERROR",
+          "score": 0.0
+        },
+        {
+          "id": "TI-4ec4896ee8",
+          "label": "ERROR",
+          "score": 0.0
+        },
+        {
+          "id": "TI-a7c41a7686",
+          "label": "ERROR",
+          "score": 0.0
+        },
+        {
+          "id": "TI-22f647a24f",
+          "label": "ERROR",
+          "score": 0.0
+        },
+        {
+          "id": "TI-671fb33e19",
+          "label": "ERROR",
+          "score": 0.0
+        },
+        {
+          "id": "TI-a0286823af",
+          "label": "ERROR",
+          "score": 0.0
+        },
+        {
+          "id": "TI-a43018e688",
+          "label": "ERROR",
+          "score": 0.0
+        },
+        {
+          "id": "TI-0824c82b7a",
+          "label": "ERROR",
+          "score": 0.0
+        },
+        {
+          "id": "TI-5c1ada4d68",
+          "label": "ERROR",
+          "score": 0.0
+        },
+        {
+          "id": "TI-1d656238dc",
+          "label": "ERROR",
+          "score": 0.0
+        },
+        {
+          "id": "TI-b3307e2e15",
+          "label": "ERROR",
+          "score": 0.0
+        },
+        {
+          "id": "TI-80e4d87076",
+          "label": "ERROR",
+          "score": 0.0
+        },
+        {
+          "id": "TI-bc79429745",
+          "label": "ERROR",
+          "score": 0.0
+        },
+        {
+          "id": "TI-539e864276",
+          "label": "ERROR",
+          "score": 0.0
+        },
+        {
+          "id": "TI-e47a504d13",
+          "label": "ERROR",
+          "score": 0.0
+        },
+        {
+          "id": "TI-86996197b2",
+          "label": "ERROR",
+          "score": 0.0
+        },
+        {
+          "id": "TI-4c85804fe1",
+          "label": "ERROR",
+          "score": 0.0
+        },
+        {
+          "id": "TI-ca3ad9aa78",
+          "label": "ERROR",
+          "score": 0.0
+        },
+        {
+          "id": "TI-736f259958",
+          "label": "ERROR",
+          "score": 0.0
+        },
+        {
+          "id": "TI-95e6d3bd13",
+          "label": "ERROR",
+          "score": 0.0
+        },
+        {
+          "id": "TI-c8628552ff",
+          "label": "ERROR",
+          "score": 0.0
+        },
+        {
+          "id": "TI-29f7fc609c",
+          "label": "ERROR",
+          "score": 0.0
+        },
+        {
+          "id": "TI-6ee1b2f3cc",
+          "label": "ERROR",
+          "score": 0.0
+        },
+        {
+          "id": "TI-29a990ae11",
+          "label": "ERROR",
+          "score": 0.0
+        },
+        {
+          "id": "TI-1cc9d4f40b",
+          "label": "ERROR",
+          "score": 0.0
+        },
+        {
+          "id": "TI-f4bbd0734d",
+          "label": "ERROR",
+          "score": 0.0
+        },
+        {
+          "id": "TI-3ee72d3737",
+          "label": "ERROR",
+          "score": 0.0
+        },
+        {
+          "id": "TI-38cfad5e6c",
+          "label": "ERROR",
+          "score": 0.0
+        },
+        {
+          "id": "TI-663b4ae452",
+          "label": "ERROR",
+          "score": 0.0
+        },
+        {
+          "id": "TI-2e932cc5f1",
+          "label": "ERROR",
+          "score": 0.0
+        },
+        {
+          "id": "TI-4c28ee200a",
+          "label": "ERROR",
+          "score": 0.0
+        },
+        {
+          "id": "TI-c915f57376",
+          "label": "ERROR",
+          "score": 0.0
+        },
+        {
+          "id": "TI-c8c663ffd9",
+          "label": "ERROR",
+          "score": 0.0
+        },
+        {
+          "id": "TI-2e99e0c90a",
+          "label": "ERROR",
+          "score": 0.0
+        },
+        {
+          "id": "TI-bcd3c95472",
+          "label": "ERROR",
+          "score": 0.0
+        },
+        {
+          "id": "TI-ebeb7b383c",
+          "label": "ERROR",
+          "score": 0.0
+        },
+        {
+          "id": "TI-c8830ec64f",
+          "label": "ERROR",
+          "score": 0.0
+        },
+        {
+          "id": "TI-2796a01b1f",
+          "label": "ERROR",
+          "score": 0.0
+        },
+        {
+          "id": "TI-271604bc71",
+          "label": "ERROR",
+          "score": 0.0
+        },
+        {
+          "id": "TI-de72a03d69",
+          "label": "ERROR",
+          "score": 0.0
+        },
+        {
+          "id": "TI-8ea5c58330",
+          "label": "ERROR",
+          "score": 0.0
+        },
+        {
+          "id": "TI-a938ce703d",
+          "label": "ERROR",
+          "score": 0.0
+        },
+        {
+          "id": "TI-3c2f7faf9f",
+          "label": "ERROR",
+          "score": 0.0
+        },
+        {
+          "id": "TI-6f5aca5e1b",
+          "label": "ERROR",
+          "score": 0.0
+        },
+        {
+          "id": "TI-25f9a6b00d",
+          "label": "ERROR",
+          "score": 0.0
+        },
+        {
+          "id": "TI-f44365bc86",
+          "label": "ERROR",
+          "score": 0.0
+        },
+        {
+          "id": "TI-4f1d52cf54",
+          "label": "ERROR",
+          "score": 0.0
+        },
+        {
+          "id": "TI-e5cfe6eef0",
+          "label": "ERROR",
+          "score": 0.0
+        },
+        {
+          "id": "TI-cbf093f5a0",
+          "label": "ERROR",
+          "score": 0.0
+        },
+        {
+          "id": "TI-d38b3e5c9a",
+          "label": "ERROR",
+          "score": 0.0
+        },
+        {
+          "id": "TI-25d6501188",
+          "label": "ERROR",
+          "score": 0.0
+        },
+        {
+          "id": "TI-8620697529",
+          "label": "ERROR",
+          "score": 0.0
+        },
+        {
+          "id": "TI-05b45d212e",
+          "label": "ERROR",
+          "score": 0.0
+        },
+        {
+          "id": "TI-64b5da85ee",
+          "label": "ERROR",
+          "score": 0.0
+        },
+        {
+          "id": "TI-784f987fc9",
+          "label": "ERROR",
+          "score": 0.0
+        },
+        {
+          "id": "TI-bfa32a552d",
+          "label": "ERROR",
+          "score": 0.0
+        },
+        {
+          "id": "TI-19d423f5bc",
+          "label": "ERROR",
+          "score": 0.0
+        },
+        {
+          "id": "TI-28fc18011a",
+          "label": "ERROR",
+          "score": 0.0
+        },
+        {
+          "id": "TI-d7f1c670bd",
+          "label": "ERROR",
+          "score": 0.0
+        },
+        {
+          "id": "TI-b60d875465",
+          "label": "ERROR",
+          "score": 0.0
+        },
+        {
+          "id": "TI-dbf1ed63ec",
+          "label": "ERROR",
+          "score": 0.0
+        },
+        {
+          "id": "TI-dfdd104c11",
+          "label": "ERROR",
+          "score": 0.0
+        },
+        {
+          "id": "TI-55cd0cddea",
+          "label": "ERROR",
+          "score": 0.0
+        },
+        {
+          "id": "TI-18cdda215b",
+          "label": "ERROR",
+          "score": 0.0
+        },
+        {
+          "id": "TI-904598d0c9",
+          "label": "ERROR",
+          "score": 0.0
+        },
+        {
+          "id": "TI-8c8a705758",
+          "label": "ERROR",
+          "score": 0.0
+        },
+        {
+          "id": "TI-0475893869",
+          "label": "ERROR",
+          "score": 0.0
+        },
+        {
+          "id": "TI-409deb9dd3",
+          "label": "ERROR",
+          "score": 0.0
+        },
+        {
+          "id": "TI-779927914d",
+          "label": "ERROR",
+          "score": 0.0
+        },
+        {
+          "id": "TI-108e00cc9a",
+          "label": "ERROR",
+          "score": 0.0
+        },
+        {
+          "id": "TI-a1f8a8cf5a",
+          "label": "ERROR",
+          "score": 0.0
+        },
+        {
+          "id": "TI-ae79a08e24",
+          "label": "ERROR",
+          "score": 0.0
+        },
+        {
+          "id": "TI-f0b2513375",
+          "label": "ERROR",
+          "score": 0.0
+        },
+        {
+          "id": "TI-443f7513cb",
+          "label": "ERROR",
+          "score": 0.0
+        },
+        {
+          "id": "TI-3bbfabd57e",
+          "label": "ERROR",
+          "score": 0.0
+        },
+        {
+          "id": "TI-0a5b47e029",
+          "label": "ERROR",
+          "score": 0.0
+        },
+        {
+          "id": "TI-37ec3a75ea",
+          "label": "ERROR",
+          "score": 0.0
+        },
+        {
+          "id": "TI-71c619adbc",
+          "label": "ERROR",
+          "score": 0.0
+        },
+        {
+          "id": "TI-97540e40d5",
+          "label": "ERROR",
+          "score": 0.0
+        },
+        {
+          "id": "TI-b04d4a3016",
+          "label": "ERROR",
+          "score": 0.0
+        },
+        {
+          "id": "TI-05e6f9c517",
+          "label": "ERROR",
+          "score": 0.0
+        },
+        {
+          "id": "TI-2c385bee9b",
+          "label": "ERROR",
+          "score": 0.0
+        },
+        {
+          "id": "TI-88fcd7abf6",
+          "label": "ERROR",
+          "score": 0.0
+        },
+        {
+          "id": "TI-9c027bc8a2",
+          "label": "ERROR",
+          "score": 0.0
+        },
+        {
+          "id": "TI-4cfba6f45f",
+          "label": "ERROR",
+          "score": 0.0
+        },
+        {
+          "id": "TI-2e24c60791",
+          "label": "ERROR",
+          "score": 0.0
+        },
+        {
+          "id": "TI-134d87e6d9",
+          "label": "ERROR",
+          "score": 0.0
+        },
+        {
+          "id": "TI-94845965e0",
+          "label": "ERROR",
+          "score": 0.0
+        },
+        {
+          "id": "TI-706bef8798",
+          "label": "ERROR",
+          "score": 0.0
+        },
+        {
+          "id": "TI-1d23f9fde4",
+          "label": "ERROR",
+          "score": 0.0
+        },
+        {
+          "id": "TI-01039e42a4",
+          "label": "ERROR",
+          "score": 0.0
+        },
+        {
+          "id": "TI-db4c2884cc",
+          "label": "ERROR",
+          "score": 0.0
+        },
+        {
+          "id": "TI-c8bb41b922",
+          "label": "ERROR",
+          "score": 0.0
+        },
+        {
+          "id": "TI-2ca7b8647a",
+          "label": "ERROR",
+          "score": 0.0
+        },
+        {
+          "id": "TI-c2265e971d",
+          "label": "ERROR",
+          "score": 0.0
+        },
+        {
+          "id": "TI-a613aae8cb",
+          "label": "ERROR",
+          "score": 0.0
+        },
+        {
+          "id": "TI-ae93e32310",
+          "label": "ERROR",
+          "score": 0.0
+        },
+        {
+          "id": "TI-98373144f1",
+          "label": "ERROR",
+          "score": 0.0
+        },
+        {
+          "id": "TI-1cce11b655",
+          "label": "ERROR",
+          "score": 0.0
+        },
+        {
+          "id": "TI-44d08c501d",
+          "label": "ERROR",
+          "score": 0.0
+        },
+        {
+          "id": "TI-c3059f9146",
+          "label": "ERROR",
+          "score": 0.0
+        },
+        {
+          "id": "TI-f6adacbc58",
+          "label": "ERROR",
+          "score": 0.0
+        },
+        {
+          "id": "TI-86c6d2c7f9",
+          "label": "ERROR",
+          "score": 0.0
+        },
+        {
+          "id": "TI-b08cb4e79c",
+          "label": "ERROR",
+          "score": 0.0
+        },
+        {
+          "id": "TI-e1692b4d05",
+          "label": "ERROR",
+          "score": 0.0
+        }
+      ]
+    },
+    "0": {
+      "cluster_id": 0,
+      "n_docs": 24,
+      "coverage": 0.0,
+      "avg_confidence": 0.0,
+      "dominant_sentiment": "ERROR",
+      "label_distribution": {
+        "ERROR": 24
+      },
+      "label_ratios": {
+        "ERROR": 1.0
+      },
+      "per_doc": [
+        {
+          "id": "TI-8b0960a24a",
+          "label": "ERROR",
+          "score": 0.0
+        },
+        {
+          "id": "TI-6473924948",
+          "label": "ERROR",
+          "score": 0.0
+        },
+        {
+          "id": "TI-78993f1592",
+          "label": "ERROR",
+          "score": 0.0
+        },
+        {
+          "id": "TI-feb01c93cf",
+          "label": "ERROR",
+          "score": 0.0
+        },
+        {
+          "id": "TI-ff40fd1854",
+          "label": "ERROR",
+          "score": 0.0
+        },
+        {
+          "id": "TI-a3d4b4b415",
+          "label": "ERROR",
+          "score": 0.0
+        },
+        {
+          "id": "TI-044d81db91",
+          "label": "ERROR",
+          "score": 0.0
+        },
+        {
+          "id": "TI-4cd1292cd0",
+          "label": "ERROR",
+          "score": 0.0
+        },
+        {
+          "id": "TI-2e4229bbe6",
+          "label": "ERROR",
+          "score": 0.0
+        },
+        {
+          "id": "TI-acb54435e9",
+          "label": "ERROR",
+          "score": 0.0
+        },
+        {
+          "id": "TI-95c7a5300c",
+          "label": "ERROR",
+          "score": 0.0
+        },
+        {
+          "id": "TI-586e2bdd88",
+          "label": "ERROR",
+          "score": 0.0
+        },
+        {
+          "id": "TI-d41a8b7e82",
+          "label": "ERROR",
+          "score": 0.0
+        },
+        {
+          "id": "TI-92a8dd1d50",
+          "label": "ERROR",
+          "score": 0.0
+        },
+        {
+          "id": "TI-4d5ac5bfa4",
+          "label": "ERROR",
+          "score": 0.0
+        },
+        {
+          "id": "TI-ba03c8efe4",
+          "label": "ERROR",
+          "score": 0.0
+        },
+        {
+          "id": "TI-d8a4ec0220",
+          "label": "ERROR",
+          "score": 0.0
+        },
+        {
+          "id": "TI-3ecb3a610c",
+          "label": "ERROR",
+          "score": 0.0
+        },
+        {
+          "id": "TI-88b37214ce",
+          "label": "ERROR",
+          "score": 0.0
+        },
+        {
+          "id": "TI-150bfaa28a",
+          "label": "ERROR",
+          "score": 0.0
+        },
+        {
+          "id": "TI-829640e757",
+          "label": "ERROR",
+          "score": 0.0
+        },
+        {
+          "id": "TI-b7efd1e144",
+          "label": "ERROR",
+          "score": 0.0
+        },
+        {
+          "id": "TI-67cdb73a55",
+          "label": "ERROR",
+          "score": 0.0
+        },
+        {
+          "id": "TI-47d9767d09",
+          "label": "ERROR",
+          "score": 0.0
+        }
+      ]
+    },
+    "1": {
+      "cluster_id": 1,
+      "n_docs": 22,
+      "coverage": 0.0,
+      "avg_confidence": 0.0,
+      "dominant_sentiment": "ERROR",
+      "label_distribution": {
+        "ERROR": 22
+      },
+      "label_ratios": {
+        "ERROR": 1.0
+      },
+      "per_doc": [
+        {
+          "id": "TI-8635a8a4bc",
+          "label": "ERROR",
+          "score": 0.0
+        },
+        {
+          "id": "TI-e96f2686df",
+          "label": "ERROR",
+          "score": 0.0
+        },
+        {
+          "id": "TI-1d211f5b45",
+          "label": "ERROR",
+          "score": 0.0
+        },
+        {
+          "id": "TI-671f17d7bc",
+          "label": "ERROR",
+          "score": 0.0
+        },
+        {
+          "id": "TI-00445d97b3",
+          "label": "ERROR",
+          "score": 0.0
+        },
+        {
+          "id": "TI-b6a8840f8e",
+          "label": "ERROR",
+          "score": 0.0
+        },
+        {
+          "id": "TI-9700166b5b",
+          "label": "ERROR",
+          "score": 0.0
+        },
+        {
+          "id": "TI-db76cacf43",
+          "label": "ERROR",
+          "score": 0.0
+        },
+        {
+          "id": "TI-7ee6c1d2c3",
+          "label": "ERROR",
+          "score": 0.0
+        },
+        {
+          "id": "TI-bdcbb453be",
+          "label": "ERROR",
+          "score": 0.0
+        },
+        {
+          "id": "TI-b39c4bb9ff",
+          "label": "ERROR",
+          "score": 0.0
+        },
+        {
+          "id": "TI-1bcd97dd5f",
+          "label": "ERROR",
+          "score": 0.0
+        },
+        {
+          "id": "TI-beae791d8a",
+          "label": "ERROR",
+          "score": 0.0
+        },
+        {
+          "id": "TI-af47edb047",
+          "label": "ERROR",
+          "score": 0.0
+        },
+        {
+          "id": "TI-e2af2b984a",
+          "label": "ERROR",
+          "score": 0.0
+        },
+        {
+          "id": "TI-765717dc28",
+          "label": "ERROR",
+          "score": 0.0
+        },
+        {
+          "id": "TI-fba59dcf7a",
+          "label": "ERROR",
+          "score": 0.0
+        },
+        {
+          "id": "TI-45150d0115",
+          "label": "ERROR",
+          "score": 0.0
+        },
+        {
+          "id": "TI-ecbe5422d7",
+          "label": "ERROR",
+          "score": 0.0
+        },
+        {
+          "id": "TI-356b78e210",
+          "label": "ERROR",
+          "score": 0.0
+        },
+        {
+          "id": "TI-5f438e250f",
+          "label": "ERROR",
+          "score": 0.0
+        },
+        {
+          "id": "TI-1cf29cc074",
+          "label": "ERROR",
+          "score": 0.0
+        }
+      ]
+    },
+    "2": {
+      "cluster_id": 2,
+      "n_docs": 11,
+      "coverage": 0.0,
+      "avg_confidence": 0.0,
+      "dominant_sentiment": "ERROR",
+      "label_distribution": {
+        "ERROR": 11
+      },
+      "label_ratios": {
+        "ERROR": 1.0
+      },
+      "per_doc": [
+        {
+          "id": "TI-30978a57c7",
+          "label": "ERROR",
+          "score": 0.0
+        },
+        {
+          "id": "TI-b575280553",
+          "label": "ERROR",
+          "score": 0.0
+        },
+        {
+          "id": "TI-ac99c489ae",
+          "label": "ERROR",
+          "score": 0.0
+        },
+        {
+          "id": "TI-65ff635ac4",
+          "label": "ERROR",
+          "score": 0.0
+        },
+        {
+          "id": "TI-b69b596e58",
+          "label": "ERROR",
+          "score": 0.0
+        },
+        {
+          "id": "TI-8960aca0bb",
+          "label": "ERROR",
+          "score": 0.0
+        },
+        {
+          "id": "TI-b044c8b9ea",
+          "label": "ERROR",
+          "score": 0.0
+        },
+        {
+          "id": "TI-99e035b59a",
+          "label": "ERROR",
+          "score": 0.0
+        },
+        {
+          "id": "TI-f2927c4fa3",
+          "label": "ERROR",
+          "score": 0.0
+        },
+        {
+          "id": "TI-27024286f4",
+          "label": "ERROR",
+          "score": 0.0
+        },
+        {
+          "id": "TI-83941a5aa9",
+          "label": "ERROR",
+          "score": 0.0
+        }
+      ]
+    },
+    "3": {
+      "cluster_id": 3,
+      "n_docs": 11,
+      "coverage": 0.0,
+      "avg_confidence": 0.0,
+      "dominant_sentiment": "ERROR",
+      "label_distribution": {
+        "ERROR": 11
+      },
+      "label_ratios": {
+        "ERROR": 1.0
+      },
+      "per_doc": [
+        {
+          "id": "TI-53b65a9094",
+          "label": "ERROR",
+          "score": 0.0
+        },
+        {
+          "id": "TI-11076591a5",
+          "label": "ERROR",
+          "score": 0.0
+        },
+        {
+          "id": "TI-b0f808c202",
+          "label": "ERROR",
+          "score": 0.0
+        },
+        {
+          "id": "TI-448abd7e45",
+          "label": "ERROR",
+          "score": 0.0
+        },
+        {
+          "id": "TI-8086600dd3",
+          "label": "ERROR",
+          "score": 0.0
+        },
+        {
+          "id": "TI-b0510b378f",
+          "label": "ERROR",
+          "score": 0.0
+        },
+        {
+          "id": "TI-20180a93e5",
+          "label": "ERROR",
+          "score": 0.0
+        },
+        {
+          "id": "TI-17a11d6cdf",
+          "label": "ERROR",
+          "score": 0.0
+        },
+        {
+          "id": "TI-40d29d8ccc",
+          "label": "ERROR",
+          "score": 0.0
+        },
+        {
+          "id": "TI-6b967533f3",
+          "label": "ERROR",
+          "score": 0.0
+        },
+        {
+          "id": "TI-c1be1677c5",
+          "label": "ERROR",
+          "score": 0.0
+        }
+      ]
+    },
+    "4": {
+      "cluster_id": 4,
+      "n_docs": 11,
+      "coverage": 0.0,
+      "avg_confidence": 0.0,
+      "dominant_sentiment": "ERROR",
+      "label_distribution": {
+        "ERROR": 11
+      },
+      "label_ratios": {
+        "ERROR": 1.0
+      },
+      "per_doc": [
+        {
+          "id": "TI-964544d9e9",
+          "label": "ERROR",
+          "score": 0.0
+        },
+        {
+          "id": "TI-48306959a2",
+          "label": "ERROR",
+          "score": 0.0
+        },
+        {
+          "id": "TI-65b1293563",
+          "label": "ERROR",
+          "score": 0.0
+        },
+        {
+          "id": "TI-7b817ef7cd",
+          "label": "ERROR",
+          "score": 0.0
+        },
+        {
+          "id": "TI-34987d744f",
+          "label": "ERROR",
+          "score": 0.0
+        },
+        {
+          "id": "TI-0f1f95b00a",
+          "label": "ERROR",
+          "score": 0.0
+        },
+        {
+          "id": "TI-ded69e86b6",
+          "label": "ERROR",
+          "score": 0.0
+        },
+        {
+          "id": "TI-2b8440dbe9",
+          "label": "ERROR",
+          "score": 0.0
+        },
+        {
+          "id": "TI-61902486dd",
+          "label": "ERROR",
+          "score": 0.0
+        },
+        {
+          "id": "TI-7d7c261bd6",
+          "label": "ERROR",
+          "score": 0.0
+        },
+        {
+          "id": "TI-bb3f7f3600",
+          "label": "ERROR",
+          "score": 0.0
+        }
+      ]
+    },
+    "5": {
+      "cluster_id": 5,
+      "n_docs": 17,
+      "coverage": 0.0,
+      "avg_confidence": 0.0,
+      "dominant_sentiment": "ERROR",
+      "label_distribution": {
+        "ERROR": 17
+      },
+      "label_ratios": {
+        "ERROR": 1.0
+      },
+      "per_doc": [
+        {
+          "id": "TI-c7f7732661",
+          "label": "ERROR",
+          "score": 0.0
+        },
+        {
+          "id": "TI-bc1a2df57b",
+          "label": "ERROR",
+          "score": 0.0
+        },
+        {
+          "id": "TI-45edcb8422",
+          "label": "ERROR",
+          "score": 0.0
+        },
+        {
+          "id": "TI-8961c18e91",
+          "label": "ERROR",
+          "score": 0.0
+        },
+        {
+          "id": "TI-0d41bda48a",
+          "label": "ERROR",
+          "score": 0.0
+        },
+        {
+          "id": "TI-d2e3800a42",
+          "label": "ERROR",
+          "score": 0.0
+        },
+        {
+          "id": "TI-4d9a0aa8e2",
+          "label": "ERROR",
+          "score": 0.0
+        },
+        {
+          "id": "TI-6388114f11",
+          "label": "ERROR",
+          "score": 0.0
+        },
+        {
+          "id": "TI-39c77cb1aa",
+          "label": "ERROR",
+          "score": 0.0
+        },
+        {
+          "id": "TI-642d7a7ada",
+          "label": "ERROR",
+          "score": 0.0
+        },
+        {
+          "id": "TI-d01dea7a54",
+          "label": "ERROR",
+          "score": 0.0
+        },
+        {
+          "id": "TI-0b889d27cd",
+          "label": "ERROR",
+          "score": 0.0
+        },
+        {
+          "id": "TI-e083806762",
+          "label": "ERROR",
+          "score": 0.0
+        },
+        {
+          "id": "TI-cd0ebdeb60",
+          "label": "ERROR",
+          "score": 0.0
+        },
+        {
+          "id": "TI-20d0289f59",
+          "label": "ERROR",
+          "score": 0.0
+        },
+        {
+          "id": "TI-37e5104bd0",
+          "label": "ERROR",
+          "score": 0.0
+        },
+        {
+          "id": "TI-e09781427c",
+          "label": "ERROR",
+          "score": 0.0
+        }
+      ]
+    },
+    "6": {
+      "cluster_id": 6,
+      "n_docs": 23,
+      "coverage": 0.0,
+      "avg_confidence": 0.0,
+      "dominant_sentiment": "ERROR",
+      "label_distribution": {
+        "ERROR": 23
+      },
+      "label_ratios": {
+        "ERROR": 1.0
+      },
+      "per_doc": [
+        {
+          "id": "TI-a0a8713317",
+          "label": "ERROR",
+          "score": 0.0
+        },
+        {
+          "id": "TI-e05cb9e54f",
+          "label": "ERROR",
+          "score": 0.0
+        },
+        {
+          "id": "TI-ed5db8515c",
+          "label": "ERROR",
+          "score": 0.0
+        },
+        {
+          "id": "TI-719121cd14",
+          "label": "ERROR",
+          "score": 0.0
+        },
+        {
+          "id": "TI-217b60e4f4",
+          "label": "ERROR",
+          "score": 0.0
+        },
+        {
+          "id": "TI-20b40f5e19",
+          "label": "ERROR",
+          "score": 0.0
+        },
+        {
+          "id": "TI-deaa4eee3c",
+          "label": "ERROR",
+          "score": 0.0
+        },
+        {
+          "id": "TI-196b05f22a",
+          "label": "ERROR",
+          "score": 0.0
+        },
+        {
+          "id": "TI-74fc645823",
+          "label": "ERROR",
+          "score": 0.0
+        },
+        {
+          "id": "TI-90dba33c69",
+          "label": "ERROR",
+          "score": 0.0
+        },
+        {
+          "id": "TI-bc9ae26f1a",
+          "label": "ERROR",
+          "score": 0.0
+        },
+        {
+          "id": "TI-c3f88dd7e5",
+          "label": "ERROR",
+          "score": 0.0
+        },
+        {
+          "id": "TI-73ba389657",
+          "label": "ERROR",
+          "score": 0.0
+        },
+        {
+          "id": "TI-45b02c84aa",
+          "label": "ERROR",
+          "score": 0.0
+        },
+        {
+          "id": "TI-dbdf1acbf7",
+          "label": "ERROR",
+          "score": 0.0
+        },
+        {
+          "id": "TI-f5a0785d98",
+          "label": "ERROR",
+          "score": 0.0
+        },
+        {
+          "id": "TI-6e71ffc6c3",
+          "label": "ERROR",
+          "score": 0.0
+        },
+        {
+          "id": "TI-a14ea52fa6",
+          "label": "ERROR",
+          "score": 0.0
+        },
+        {
+          "id": "TI-840af00a94",
+          "label": "ERROR",
+          "score": 0.0
+        },
+        {
+          "id": "TI-8cb2230617",
+          "label": "ERROR",
+          "score": 0.0
+        },
+        {
+          "id": "TI-1df1217582",
+          "label": "ERROR",
+          "score": 0.0
+        },
+        {
+          "id": "TI-7935fb8c38",
+          "label": "ERROR",
+          "score": 0.0
+        },
+        {
+          "id": "TI-a51a278adc",
+          "label": "ERROR",
+          "score": 0.0
+        }
+      ]
+    },
+    "7": {
+      "cluster_id": 7,
+      "n_docs": 25,
+      "coverage": 0.0,
+      "avg_confidence": 0.0,
+      "dominant_sentiment": "ERROR",
+      "label_distribution": {
+        "ERROR": 25
+      },
+      "label_ratios": {
+        "ERROR": 1.0
+      },
+      "per_doc": [
+        {
+          "id": "TI-c67e4788b2",
+          "label": "ERROR",
+          "score": 0.0
+        },
+        {
+          "id": "TI-630cb5f299",
+          "label": "ERROR",
+          "score": 0.0
+        },
+        {
+          "id": "TI-13f87377bd",
+          "label": "ERROR",
+          "score": 0.0
+        },
+        {
+          "id": "TI-08bd323e09",
+          "label": "ERROR",
+          "score": 0.0
+        },
+        {
+          "id": "TI-d8ad8dfa24",
+          "label": "ERROR",
+          "score": 0.0
+        },
+        {
+          "id": "TI-705fc90223",
+          "label": "ERROR",
+          "score": 0.0
+        },
+        {
+          "id": "TI-dd44d09ef4",
+          "label": "ERROR",
+          "score": 0.0
+        },
+        {
+          "id": "TI-bd4d47034e",
+          "label": "ERROR",
+          "score": 0.0
+        },
+        {
+          "id": "TI-aea5901f07",
+          "label": "ERROR",
+          "score": 0.0
+        },
+        {
+          "id": "TI-6616526d17",
+          "label": "ERROR",
+          "score": 0.0
+        },
+        {
+          "id": "TI-0145b8836b",
+          "label": "ERROR",
+          "score": 0.0
+        },
+        {
+          "id": "TI-bda50cba5c",
+          "label": "ERROR",
+          "score": 0.0
+        },
+        {
+          "id": "TI-e30cfd06fc",
+          "label": "ERROR",
+          "score": 0.0
+        },
+        {
+          "id": "TI-efce5f0a6a",
+          "label": "ERROR",
+          "score": 0.0
+        },
+        {
+          "id": "TI-51f59b97e0",
+          "label": "ERROR",
+          "score": 0.0
+        },
+        {
+          "id": "TI-b3f95c155f",
+          "label": "ERROR",
+          "score": 0.0
+        },
+        {
+          "id": "TI-92c2168078",
+          "label": "ERROR",
+          "score": 0.0
+        },
+        {
+          "id": "TI-b0eaf35d13",
+          "label": "ERROR",
+          "score": 0.0
+        },
+        {
+          "id": "TI-2e8f192b9b",
+          "label": "ERROR",
+          "score": 0.0
+        },
+        {
+          "id": "TI-4347de107d",
+          "label": "ERROR",
+          "score": 0.0
+        },
+        {
+          "id": "TI-9f089456e6",
+          "label": "ERROR",
+          "score": 0.0
+        },
+        {
+          "id": "TI-d9f77e4973",
+          "label": "ERROR",
+          "score": 0.0
+        },
+        {
+          "id": "TI-dfbbfd02b7",
+          "label": "ERROR",
+          "score": 0.0
+        },
+        {
+          "id": "TI-3c8f76e5d0",
+          "label": "ERROR",
+          "score": 0.0
+        },
+        {
+          "id": "TI-7add4b66cc",
+          "label": "ERROR",
+          "score": 0.0
+        }
+      ]
+    },
+    "8": {
+      "cluster_id": 8,
+      "n_docs": 30,
+      "coverage": 0.0,
+      "avg_confidence": 0.0,
+      "dominant_sentiment": "ERROR",
+      "label_distribution": {
+        "ERROR": 30
+      },
+      "label_ratios": {
+        "ERROR": 1.0
+      },
+      "per_doc": [
+        {
+          "id": "TI-9cb808572a",
+          "label": "ERROR",
+          "score": 0.0
+        },
+        {
+          "id": "TI-357042a149",
+          "label": "ERROR",
+          "score": 0.0
+        },
+        {
+          "id": "TI-53082787ee",
+          "label": "ERROR",
+          "score": 0.0
+        },
+        {
+          "id": "TI-7b6c3ada1c",
+          "label": "ERROR",
+          "score": 0.0
+        },
+        {
+          "id": "TI-f2b70a2074",
+          "label": "ERROR",
+          "score": 0.0
+        },
+        {
+          "id": "TI-1ffd3787e0",
+          "label": "ERROR",
+          "score": 0.0
+        },
+        {
+          "id": "TI-99c45f8714",
+          "label": "ERROR",
+          "score": 0.0
+        },
+        {
+          "id": "TI-488fd49dab",
+          "label": "ERROR",
+          "score": 0.0
+        },
+        {
+          "id": "TI-910e5f1aae",
+          "label": "ERROR",
+          "score": 0.0
+        },
+        {
+          "id": "TI-be52eb39de",
+          "label": "ERROR",
+          "score": 0.0
+        },
+        {
+          "id": "TI-1486f454e2",
+          "label": "ERROR",
+          "score": 0.0
+        },
+        {
+          "id": "TI-f7910ebe1d",
+          "label": "ERROR",
+          "score": 0.0
+        },
+        {
+          "id": "TI-626122f361",
+          "label": "ERROR",
+          "score": 0.0
+        },
+        {
+          "id": "TI-21dc2695f1",
+          "label": "ERROR",
+          "score": 0.0
+        },
+        {
+          "id": "TI-b79b09147e",
+          "label": "ERROR",
+          "score": 0.0
+        },
+        {
+          "id": "TI-71464efcde",
+          "label": "ERROR",
+          "score": 0.0
+        },
+        {
+          "id": "TI-0d0f6314bd",
+          "label": "ERROR",
+          "score": 0.0
+        },
+        {
+          "id": "TI-29e49d7cb1",
+          "label": "ERROR",
+          "score": 0.0
+        },
+        {
+          "id": "TI-82f354b211",
+          "label": "ERROR",
+          "score": 0.0
+        },
+        {
+          "id": "TI-b50bcf87a6",
+          "label": "ERROR",
+          "score": 0.0
+        },
+        {
+          "id": "TI-c968a9780c",
+          "label": "ERROR",
+          "score": 0.0
+        },
+        {
+          "id": "TI-fb6fe60e8c",
+          "label": "ERROR",
+          "score": 0.0
+        },
+        {
+          "id": "TI-7f3140494a",
+          "label": "ERROR",
+          "score": 0.0
+        },
+        {
+          "id": "TI-c2fba9f172",
+          "label": "ERROR",
+          "score": 0.0
+        },
+        {
+          "id": "TI-e16d8edcd0",
+          "label": "ERROR",
+          "score": 0.0
+        },
+        {
+          "id": "TI-bf99029bc3",
+          "label": "ERROR",
+          "score": 0.0
+        },
+        {
+          "id": "TI-e4b3acd653",
+          "label": "ERROR",
+          "score": 0.0
+        },
+        {
+          "id": "TI-d52e1b4bcb",
+          "label": "ERROR",
+          "score": 0.0
+        },
+        {
+          "id": "TI-06b643e009",
+          "label": "ERROR",
+          "score": 0.0
+        },
+        {
+          "id": "TI-8e06e742e8",
+          "label": "ERROR",
+          "score": 0.0
+        }
+      ]
+    },
+    "9": {
+      "cluster_id": 9,
+      "n_docs": 24,
+      "coverage": 0.0,
+      "avg_confidence": 0.0,
+      "dominant_sentiment": "ERROR",
+      "label_distribution": {
+        "ERROR": 24
+      },
+      "label_ratios": {
+        "ERROR": 1.0
+      },
+      "per_doc": [
+        {
+          "id": "TI-8821d844da",
+          "label": "ERROR",
+          "score": 0.0
+        },
+        {
+          "id": "TI-b518b7df7e",
+          "label": "ERROR",
+          "score": 0.0
+        },
+        {
+          "id": "TI-0a5ee2a9cd",
+          "label": "ERROR",
+          "score": 0.0
+        },
+        {
+          "id": "TI-80d2de80af",
+          "label": "ERROR",
+          "score": 0.0
+        },
+        {
+          "id": "TI-0446bef6d1",
+          "label": "ERROR",
+          "score": 0.0
+        },
+        {
+          "id": "TI-004576e5df",
+          "label": "ERROR",
+          "score": 0.0
+        },
+        {
+          "id": "TI-4bb6539241",
+          "label": "ERROR",
+          "score": 0.0
+        },
+        {
+          "id": "TI-0d2936d97e",
+          "label": "ERROR",
+          "score": 0.0
+        },
+        {
+          "id": "TI-f07ec543c9",
+          "label": "ERROR",
+          "score": 0.0
+        },
+        {
+          "id": "TI-bee2b690da",
+          "label": "ERROR",
+          "score": 0.0
+        },
+        {
+          "id": "TI-c9cc350886",
+          "label": "ERROR",
+          "score": 0.0
+        },
+        {
+          "id": "TI-2f851d0c86",
+          "label": "ERROR",
+          "score": 0.0
+        },
+        {
+          "id": "TI-e6fcf7a7db",
+          "label": "ERROR",
+          "score": 0.0
+        },
+        {
+          "id": "TI-77c549ca6a",
+          "label": "ERROR",
+          "score": 0.0
+        },
+        {
+          "id": "TI-8e8fd25956",
+          "label": "ERROR",
+          "score": 0.0
+        },
+        {
+          "id": "TI-795b743f47",
+          "label": "ERROR",
+          "score": 0.0
+        },
+        {
+          "id": "TI-e3233599f9",
+          "label": "ERROR",
+          "score": 0.0
+        },
+        {
+          "id": "TI-74dbf3947d",
+          "label": "ERROR",
+          "score": 0.0
+        },
+        {
+          "id": "TI-a704c3ef12",
+          "label": "ERROR",
+          "score": 0.0
+        },
+        {
+          "id": "TI-806d0f5c27",
+          "label": "ERROR",
+          "score": 0.0
+        },
+        {
+          "id": "TI-dfba00a9cd",
+          "label": "ERROR",
+          "score": 0.0
+        },
+        {
+          "id": "TI-479d570b16",
+          "label": "ERROR",
+          "score": 0.0
+        },
+        {
+          "id": "TI-c7b93b6aaa",
+          "label": "ERROR",
+          "score": 0.0
+        },
+        {
+          "id": "TI-c1b5a384d4",
+          "label": "ERROR",
+          "score": 0.0
+        }
+      ]
+    },
+    "10": {
+      "cluster_id": 10,
+      "n_docs": 12,
+      "coverage": 0.0,
+      "avg_confidence": 0.0,
+      "dominant_sentiment": "ERROR",
+      "label_distribution": {
+        "ERROR": 12
+      },
+      "label_ratios": {
+        "ERROR": 1.0
+      },
+      "per_doc": [
+        {
+          "id": "TI-eec1e14b32",
+          "label": "ERROR",
+          "score": 0.0
+        },
+        {
+          "id": "TI-3679826ecb",
+          "label": "ERROR",
+          "score": 0.0
+        },
+        {
+          "id": "TI-70fb2a66a4",
+          "label": "ERROR",
+          "score": 0.0
+        },
+        {
+          "id": "TI-36192d5443",
+          "label": "ERROR",
+          "score": 0.0
+        },
+        {
+          "id": "TI-9c248c1ae7",
+          "label": "ERROR",
+          "score": 0.0
+        },
+        {
+          "id": "TI-ddcd0a191c",
+          "label": "ERROR",
+          "score": 0.0
+        },
+        {
+          "id": "TI-ac2ccca531",
+          "label": "ERROR",
+          "score": 0.0
+        },
+        {
+          "id": "TI-b3ae4a2683",
+          "label": "ERROR",
+          "score": 0.0
+        },
+        {
+          "id": "TI-8c6dcd764a",
+          "label": "ERROR",
+          "score": 0.0
+        },
+        {
+          "id": "TI-51e315ce29",
+          "label": "ERROR",
+          "score": 0.0
+        },
+        {
+          "id": "TI-351da631fb",
+          "label": "ERROR",
+          "score": 0.0
+        },
+        {
+          "id": "TI-b94e8d8856",
+          "label": "ERROR",
+          "score": 0.0
+        }
+      ]
+    },
+    "11": {
+      "cluster_id": 11,
+      "n_docs": 26,
+      "coverage": 0.0,
+      "avg_confidence": 0.0,
+      "dominant_sentiment": "ERROR",
+      "label_distribution": {
+        "ERROR": 26
+      },
+      "label_ratios": {
+        "ERROR": 1.0
+      },
+      "per_doc": [
+        {
+          "id": "TI-d5e189b73b",
+          "label": "ERROR",
+          "score": 0.0
+        },
+        {
+          "id": "TI-f3aa2747ec",
+          "label": "ERROR",
+          "score": 0.0
+        },
+        {
+          "id": "TI-bfc2198fa5",
+          "label": "ERROR",
+          "score": 0.0
+        },
+        {
+          "id": "TI-0171a64b42",
+          "label": "ERROR",
+          "score": 0.0
+        },
+        {
+          "id": "TI-8fa833f9f8",
+          "label": "ERROR",
+          "score": 0.0
+        },
+        {
+          "id": "TI-7aef71f1d5",
+          "label": "ERROR",
+          "score": 0.0
+        },
+        {
+          "id": "TI-7daf1d4710",
+          "label": "ERROR",
+          "score": 0.0
+        },
+        {
+          "id": "TI-9771e2e182",
+          "label": "ERROR",
+          "score": 0.0
+        },
+        {
+          "id": "TI-444c2bd31b",
+          "label": "ERROR",
+          "score": 0.0
+        },
+        {
+          "id": "TI-eacb2473a9",
+          "label": "ERROR",
+          "score": 0.0
+        },
+        {
+          "id": "TI-21712aa015",
+          "label": "ERROR",
+          "score": 0.0
+        },
+        {
+          "id": "TI-8974ef9292",
+          "label": "ERROR",
+          "score": 0.0
+        },
+        {
+          "id": "TI-4281d24143",
+          "label": "ERROR",
+          "score": 0.0
+        },
+        {
+          "id": "TI-851e318636",
+          "label": "ERROR",
+          "score": 0.0
+        },
+        {
+          "id": "TI-16a8744408",
+          "label": "ERROR",
+          "score": 0.0
+        },
+        {
+          "id": "TI-3b9a79a5b8",
+          "label": "ERROR",
+          "score": 0.0
+        },
+        {
+          "id": "TI-df92fda7df",
+          "label": "ERROR",
+          "score": 0.0
+        },
+        {
+          "id": "TI-c4ab1beb1c",
+          "label": "ERROR",
+          "score": 0.0
+        },
+        {
+          "id": "TI-8507e7689b",
+          "label": "ERROR",
+          "score": 0.0
+        },
+        {
+          "id": "TI-2d301ef0a8",
+          "label": "ERROR",
+          "score": 0.0
+        },
+        {
+          "id": "TI-d2aad58101",
+          "label": "ERROR",
+          "score": 0.0
+        },
+        {
+          "id": "TI-a276003d95",
+          "label": "ERROR",
+          "score": 0.0
+        },
+        {
+          "id": "TI-c6d6506748",
+          "label": "ERROR",
+          "score": 0.0
+        },
+        {
+          "id": "TI-9374325880",
+          "label": "ERROR",
+          "score": 0.0
+        },
+        {
+          "id": "TI-20b9703793",
+          "label": "ERROR",
+          "score": 0.0
+        },
+        {
+          "id": "TI-14e10da873",
+          "label": "ERROR",
+          "score": 0.0
+        }
+      ]
+    },
+    "12": {
+      "cluster_id": 12,
+      "n_docs": 35,
+      "coverage": 0.0,
+      "avg_confidence": 0.0,
+      "dominant_sentiment": "ERROR",
+      "label_distribution": {
+        "ERROR": 35
+      },
+      "label_ratios": {
+        "ERROR": 1.0
+      },
+      "per_doc": [
+        {
+          "id": "TI-7fdc02c288",
+          "label": "ERROR",
+          "score": 0.0
+        },
+        {
+          "id": "TI-e099fbf5a6",
+          "label": "ERROR",
+          "score": 0.0
+        },
+        {
+          "id": "TI-2254f01488",
+          "label": "ERROR",
+          "score": 0.0
+        },
+        {
+          "id": "TI-92822a5c7c",
+          "label": "ERROR",
+          "score": 0.0
+        },
+        {
+          "id": "TI-ab1b5cf5e3",
+          "label": "ERROR",
+          "score": 0.0
+        },
+        {
+          "id": "TI-ac6bb96e28",
+          "label": "ERROR",
+          "score": 0.0
+        },
+        {
+          "id": "TI-ef41ccb379",
+          "label": "ERROR",
+          "score": 0.0
+        },
+        {
+          "id": "TI-60d2001633",
+          "label": "ERROR",
+          "score": 0.0
+        },
+        {
+          "id": "TI-06ed0b64d0",
+          "label": "ERROR",
+          "score": 0.0
+        },
+        {
+          "id": "TI-7288f75597",
+          "label": "ERROR",
+          "score": 0.0
+        },
+        {
+          "id": "TI-f41c44f566",
+          "label": "ERROR",
+          "score": 0.0
+        },
+        {
+          "id": "TI-91727b12d5",
+          "label": "ERROR",
+          "score": 0.0
+        },
+        {
+          "id": "TI-b2240095d5",
+          "label": "ERROR",
+          "score": 0.0
+        },
+        {
+          "id": "TI-a7476b16f0",
+          "label": "ERROR",
+          "score": 0.0
+        },
+        {
+          "id": "TI-4b759d237b",
+          "label": "ERROR",
+          "score": 0.0
+        },
+        {
+          "id": "TI-6400f0a2f5",
+          "label": "ERROR",
+          "score": 0.0
+        },
+        {
+          "id": "TI-ab0f4f31b5",
+          "label": "ERROR",
+          "score": 0.0
+        },
+        {
+          "id": "TI-f312d01338",
+          "label": "ERROR",
+          "score": 0.0
+        },
+        {
+          "id": "TI-2004acf54e",
+          "label": "ERROR",
+          "score": 0.0
+        },
+        {
+          "id": "TI-28ec308fda",
+          "label": "ERROR",
+          "score": 0.0
+        },
+        {
+          "id": "TI-81e587e65a",
+          "label": "ERROR",
+          "score": 0.0
+        },
+        {
+          "id": "TI-6b5bfcdc64",
+          "label": "ERROR",
+          "score": 0.0
+        },
+        {
+          "id": "TI-8c1b5003ce",
+          "label": "ERROR",
+          "score": 0.0
+        },
+        {
+          "id": "TI-4485bfa32d",
+          "label": "ERROR",
+          "score": 0.0
+        },
+        {
+          "id": "TI-5ad63b4635",
+          "label": "ERROR",
+          "score": 0.0
+        },
+        {
+          "id": "TI-33fdc2d5da",
+          "label": "ERROR",
+          "score": 0.0
+        },
+        {
+          "id": "TI-7339c04287",
+          "label": "ERROR",
+          "score": 0.0
+        },
+        {
+          "id": "TI-bc85c7e916",
+          "label": "ERROR",
+          "score": 0.0
+        },
+        {
+          "id": "TI-251f37e83f",
+          "label": "ERROR",
+          "score": 0.0
+        },
+        {
+          "id": "TI-41d456fc5b",
+          "label": "ERROR",
+          "score": 0.0
+        },
+        {
+          "id": "TI-3857b0f733",
+          "label": "ERROR",
+          "score": 0.0
+        },
+        {
+          "id": "TI-a33b71b2f5",
+          "label": "ERROR",
+          "score": 0.0
+        },
+        {
+          "id": "TI-4d89c3ea5f",
+          "label": "ERROR",
+          "score": 0.0
+        },
+        {
+          "id": "TI-8148438d2e",
+          "label": "ERROR",
+          "score": 0.0
+        },
+        {
+          "id": "TI-c264ce3458",
+          "label": "ERROR",
+          "score": 0.0
+        }
+      ]
+    },
+    "13": {
+      "cluster_id": 13,
+      "n_docs": 15,
+      "coverage": 0.0,
+      "avg_confidence": 0.0,
+      "dominant_sentiment": "ERROR",
+      "label_distribution": {
+        "ERROR": 15
+      },
+      "label_ratios": {
+        "ERROR": 1.0
+      },
+      "per_doc": [
+        {
+          "id": "TI-94272b130a",
+          "label": "ERROR",
+          "score": 0.0
+        },
+        {
+          "id": "TI-6d3634be64",
+          "label": "ERROR",
+          "score": 0.0
+        },
+        {
+          "id": "TI-af8ec8f86d",
+          "label": "ERROR",
+          "score": 0.0
+        },
+        {
+          "id": "TI-b05ac8092c",
+          "label": "ERROR",
+          "score": 0.0
+        },
+        {
+          "id": "TI-0ffba82731",
+          "label": "ERROR",
+          "score": 0.0
+        },
+        {
+          "id": "TI-0bd90a73bb",
+          "label": "ERROR",
+          "score": 0.0
+        },
+        {
+          "id": "TI-68981b5760",
+          "label": "ERROR",
+          "score": 0.0
+        },
+        {
+          "id": "TI-0c7ac2c70b",
+          "label": "ERROR",
+          "score": 0.0
+        },
+        {
+          "id": "TI-0db280b120",
+          "label": "ERROR",
+          "score": 0.0
+        },
+        {
+          "id": "TI-288c0dba41",
+          "label": "ERROR",
+          "score": 0.0
+        },
+        {
+          "id": "TI-63a20d3ae1",
+          "label": "ERROR",
+          "score": 0.0
+        },
+        {
+          "id": "TI-11c674a1d8",
+          "label": "ERROR",
+          "score": 0.0
+        },
+        {
+          "id": "TI-0522cb1877",
+          "label": "ERROR",
+          "score": 0.0
+        },
+        {
+          "id": "TI-0836c76423",
+          "label": "ERROR",
+          "score": 0.0
+        },
+        {
+          "id": "TI-b0df7fb8b4",
+          "label": "ERROR",
+          "score": 0.0
+        }
+      ]
+    },
+    "14": {
+      "cluster_id": 14,
+      "n_docs": 12,
+      "coverage": 0.0,
+      "avg_confidence": 0.0,
+      "dominant_sentiment": "ERROR",
+      "label_distribution": {
+        "ERROR": 12
+      },
+      "label_ratios": {
+        "ERROR": 1.0
+      },
+      "per_doc": [
+        {
+          "id": "TI-cabb437f4c",
+          "label": "ERROR",
+          "score": 0.0
+        },
+        {
+          "id": "TI-6ab1ae7ad1",
+          "label": "ERROR",
+          "score": 0.0
+        },
+        {
+          "id": "TI-5d9a72297f",
+          "label": "ERROR",
+          "score": 0.0
+        },
+        {
+          "id": "TI-c3eb364842",
+          "label": "ERROR",
+          "score": 0.0
+        },
+        {
+          "id": "TI-518b3e7625",
+          "label": "ERROR",
+          "score": 0.0
+        },
+        {
+          "id": "TI-27e348316d",
+          "label": "ERROR",
+          "score": 0.0
+        },
+        {
+          "id": "TI-ac7caea379",
+          "label": "ERROR",
+          "score": 0.0
+        },
+        {
+          "id": "TI-adcc014da7",
+          "label": "ERROR",
+          "score": 0.0
+        },
+        {
+          "id": "TI-b590b9a4d2",
+          "label": "ERROR",
+          "score": 0.0
+        },
+        {
+          "id": "TI-19fc4683aa",
+          "label": "ERROR",
+          "score": 0.0
+        },
+        {
+          "id": "TI-38c702c860",
+          "label": "ERROR",
+          "score": 0.0
+        },
+        {
+          "id": "TI-5c5727506e",
+          "label": "ERROR",
+          "score": 0.0
+        }
+      ]
+    },
+    "15": {
+      "cluster_id": 15,
+      "n_docs": 62,
+      "coverage": 0.0,
+      "avg_confidence": 0.0,
+      "dominant_sentiment": "ERROR",
+      "label_distribution": {
+        "ERROR": 62
+      },
+      "label_ratios": {
+        "ERROR": 1.0
+      },
+      "per_doc": [
+        {
+          "id": "TI-afd555f3c7",
+          "label": "ERROR",
+          "score": 0.0
+        },
+        {
+          "id": "TI-a63250e369",
+          "label": "ERROR",
+          "score": 0.0
+        },
+        {
+          "id": "TI-d42c8b9566",
+          "label": "ERROR",
+          "score": 0.0
+        },
+        {
+          "id": "TI-db94d728c6",
+          "label": "ERROR",
+          "score": 0.0
+        },
+        {
+          "id": "TI-2b542c3c1a",
+          "label": "ERROR",
+          "score": 0.0
+        },
+        {
+          "id": "TI-217fe56216",
+          "label": "ERROR",
+          "score": 0.0
+        },
+        {
+          "id": "TI-7554fd0e23",
+          "label": "ERROR",
+          "score": 0.0
+        },
+        {
+          "id": "TI-508fbbb84a",
+          "label": "ERROR",
+          "score": 0.0
+        },
+        {
+          "id": "TI-75b1317b4b",
+          "label": "ERROR",
+          "score": 0.0
+        },
+        {
+          "id": "TI-138126eb9d",
+          "label": "ERROR",
+          "score": 0.0
+        },
+        {
+          "id": "TI-a2e4fee22b",
+          "label": "ERROR",
+          "score": 0.0
+        },
+        {
+          "id": "TI-7cd4f696f9",
+          "label": "ERROR",
+          "score": 0.0
+        },
+        {
+          "id": "TI-71d98e1023",
+          "label": "ERROR",
+          "score": 0.0
+        },
+        {
+          "id": "TI-ed9cd266fc",
+          "label": "ERROR",
+          "score": 0.0
+        },
+        {
+          "id": "TI-1b044d3423",
+          "label": "ERROR",
+          "score": 0.0
+        },
+        {
+          "id": "TI-bf492b5846",
+          "label": "ERROR",
+          "score": 0.0
+        },
+        {
+          "id": "TI-89348e43e0",
+          "label": "ERROR",
+          "score": 0.0
+        },
+        {
+          "id": "TI-a0fabcade1",
+          "label": "ERROR",
+          "score": 0.0
+        },
+        {
+          "id": "TI-8604ef8692",
+          "label": "ERROR",
+          "score": 0.0
+        },
+        {
+          "id": "TI-9e498bdd7a",
+          "label": "ERROR",
+          "score": 0.0
+        },
+        {
+          "id": "TI-16f1558ba2",
+          "label": "ERROR",
+          "score": 0.0
+        },
+        {
+          "id": "TI-b1bcfdf79e",
+          "label": "ERROR",
+          "score": 0.0
+        },
+        {
+          "id": "TI-36fcffe6a9",
+          "label": "ERROR",
+          "score": 0.0
+        },
+        {
+          "id": "TI-7c73a0f073",
+          "label": "ERROR",
+          "score": 0.0
+        },
+        {
+          "id": "TI-7bda7a78f7",
+          "label": "ERROR",
+          "score": 0.0
+        },
+        {
+          "id": "TI-8f405129fb",
+          "label": "ERROR",
+          "score": 0.0
+        },
+        {
+          "id": "TI-e444703f4d",
+          "label": "ERROR",
+          "score": 0.0
+        },
+        {
+          "id": "TI-c3bbefa777",
+          "label": "ERROR",
+          "score": 0.0
+        },
+        {
+          "id": "TI-e697bf16fc",
+          "label": "ERROR",
+          "score": 0.0
+        },
+        {
+          "id": "TI-5d19ab250a",
+          "label": "ERROR",
+          "score": 0.0
+        },
+        {
+          "id": "TI-26edeb6e88",
+          "label": "ERROR",
+          "score": 0.0
+        },
+        {
+          "id": "TI-57d8f51db4",
+          "label": "ERROR",
+          "score": 0.0
+        },
+        {
+          "id": "TI-d65fd5f1e4",
+          "label": "ERROR",
+          "score": 0.0
+        },
+        {
+          "id": "TI-3d74973fe9",
+          "label": "ERROR",
+          "score": 0.0
+        },
+        {
+          "id": "TI-3fe4c50925",
+          "label": "ERROR",
+          "score": 0.0
+        },
+        {
+          "id": "TI-ddb05a9d63",
+          "label": "ERROR",
+          "score": 0.0
+        },
+        {
+          "id": "TI-fd9fa55fa0",
+          "label": "ERROR",
+          "score": 0.0
+        },
+        {
+          "id": "TI-c3a85a7964",
+          "label": "ERROR",
+          "score": 0.0
+        },
+        {
+          "id": "TI-06869add71",
+          "label": "ERROR",
+          "score": 0.0
+        },
+        {
+          "id": "TI-73762e276c",
+          "label": "ERROR",
+          "score": 0.0
+        },
+        {
+          "id": "TI-6696e8ed70",
+          "label": "ERROR",
+          "score": 0.0
+        },
+        {
+          "id": "TI-1e93b830a4",
+          "label": "ERROR",
+          "score": 0.0
+        },
+        {
+          "id": "TI-f8c4c1b111",
+          "label": "ERROR",
+          "score": 0.0
+        },
+        {
+          "id": "TI-e96e43582d",
+          "label": "ERROR",
+          "score": 0.0
+        },
+        {
+          "id": "TI-8b8c77433a",
+          "label": "ERROR",
+          "score": 0.0
+        },
+        {
+          "id": "TI-3b6108cb9f",
+          "label": "ERROR",
+          "score": 0.0
+        },
+        {
+          "id": "TI-3a560c4e38",
+          "label": "ERROR",
+          "score": 0.0
+        },
+        {
+          "id": "TI-95a54db754",
+          "label": "ERROR",
+          "score": 0.0
+        },
+        {
+          "id": "TI-97a7a85b19",
+          "label": "ERROR",
+          "score": 0.0
+        },
+        {
+          "id": "TI-169bff3880",
+          "label": "ERROR",
+          "score": 0.0
+        },
+        {
+          "id": "TI-36cd3f0c47",
+          "label": "ERROR",
+          "score": 0.0
+        },
+        {
+          "id": "TI-13f42c60d8",
+          "label": "ERROR",
+          "score": 0.0
+        },
+        {
+          "id": "TI-d29ebb2cb8",
+          "label": "ERROR",
+          "score": 0.0
+        },
+        {
+          "id": "TI-00b5f1837d",
+          "label": "ERROR",
+          "score": 0.0
+        },
+        {
+          "id": "TI-72626355a8",
+          "label": "ERROR",
+          "score": 0.0
+        },
+        {
+          "id": "TI-7b26abbd65",
+          "label": "ERROR",
+          "score": 0.0
+        },
+        {
+          "id": "TI-4446d51e84",
+          "label": "ERROR",
+          "score": 0.0
+        },
+        {
+          "id": "TI-3689106735",
+          "label": "ERROR",
+          "score": 0.0
+        },
+        {
+          "id": "TI-e4e40a9c9d",
+          "label": "ERROR",
+          "score": 0.0
+        },
+        {
+          "id": "TI-b9d4612745",
+          "label": "ERROR",
+          "score": 0.0
+        },
+        {
+          "id": "TI-51e754946f",
+          "label": "ERROR",
+          "score": 0.0
+        },
+        {
+          "id": "TI-c93e47a0f9",
+          "label": "ERROR",
+          "score": 0.0
+        }
+      ]
+    },
+    "16": {
+      "cluster_id": 16,
+      "n_docs": 19,
+      "coverage": 0.0,
+      "avg_confidence": 0.0,
+      "dominant_sentiment": "ERROR",
+      "label_distribution": {
+        "ERROR": 19
+      },
+      "label_ratios": {
+        "ERROR": 1.0
+      },
+      "per_doc": [
+        {
+          "id": "TI-70dabc1000",
+          "label": "ERROR",
+          "score": 0.0
+        },
+        {
+          "id": "TI-e7186b11f2",
+          "label": "ERROR",
+          "score": 0.0
+        },
+        {
+          "id": "TI-240cbcdbe7",
+          "label": "ERROR",
+          "score": 0.0
+        },
+        {
+          "id": "TI-408abc3504",
+          "label": "ERROR",
+          "score": 0.0
+        },
+        {
+          "id": "TI-e28bdf128e",
+          "label": "ERROR",
+          "score": 0.0
+        },
+        {
+          "id": "TI-1feef9bf05",
+          "label": "ERROR",
+          "score": 0.0
+        },
+        {
+          "id": "TI-6fa513cf4a",
+          "label": "ERROR",
+          "score": 0.0
+        },
+        {
+          "id": "TI-6c1bf22284",
+          "label": "ERROR",
+          "score": 0.0
+        },
+        {
+          "id": "TI-97727f440d",
+          "label": "ERROR",
+          "score": 0.0
+        },
+        {
+          "id": "TI-691a7f30b7",
+          "label": "ERROR",
+          "score": 0.0
+        },
+        {
+          "id": "TI-a3e25cd6fb",
+          "label": "ERROR",
+          "score": 0.0
+        },
+        {
+          "id": "TI-f0585e4eef",
+          "label": "ERROR",
+          "score": 0.0
+        },
+        {
+          "id": "TI-8ef727ae36",
+          "label": "ERROR",
+          "score": 0.0
+        },
+        {
+          "id": "TI-7df5083327",
+          "label": "ERROR",
+          "score": 0.0
+        },
+        {
+          "id": "TI-b4faa2c661",
+          "label": "ERROR",
+          "score": 0.0
+        },
+        {
+          "id": "TI-c93c8a7574",
+          "label": "ERROR",
+          "score": 0.0
+        },
+        {
+          "id": "TI-30741b12d1",
+          "label": "ERROR",
+          "score": 0.0
+        },
+        {
+          "id": "TI-9b99ad5f82",
+          "label": "ERROR",
+          "score": 0.0
+        },
+        {
+          "id": "TI-988efa91dd",
+          "label": "ERROR",
+          "score": 0.0
+        }
+      ]
+    },
+    "17": {
+      "cluster_id": 17,
+      "n_docs": 14,
+      "coverage": 0.0,
+      "avg_confidence": 0.0,
+      "dominant_sentiment": "ERROR",
+      "label_distribution": {
+        "ERROR": 14
+      },
+      "label_ratios": {
+        "ERROR": 1.0
+      },
+      "per_doc": [
+        {
+          "id": "TI-8dedb6b420",
+          "label": "ERROR",
+          "score": 0.0
+        },
+        {
+          "id": "TI-33abc2b3bd",
+          "label": "ERROR",
+          "score": 0.0
+        },
+        {
+          "id": "TI-d75695c95e",
+          "label": "ERROR",
+          "score": 0.0
+        },
+        {
+          "id": "TI-0db16fcc2f",
+          "label": "ERROR",
+          "score": 0.0
+        },
+        {
+          "id": "TI-1e44269bad",
+          "label": "ERROR",
+          "score": 0.0
+        },
+        {
+          "id": "TI-eef952c799",
+          "label": "ERROR",
+          "score": 0.0
+        },
+        {
+          "id": "TI-eda6586198",
+          "label": "ERROR",
+          "score": 0.0
+        },
+        {
+          "id": "TI-efea3cd92e",
+          "label": "ERROR",
+          "score": 0.0
+        },
+        {
+          "id": "TI-d201919f62",
+          "label": "ERROR",
+          "score": 0.0
+        },
+        {
+          "id": "TI-2018c5c257",
+          "label": "ERROR",
+          "score": 0.0
+        },
+        {
+          "id": "TI-2f5c370b31",
+          "label": "ERROR",
+          "score": 0.0
+        },
+        {
+          "id": "TI-ec4754a0fe",
+          "label": "ERROR",
+          "score": 0.0
+        },
+        {
+          "id": "TI-740188a047",
+          "label": "ERROR",
+          "score": 0.0
+        },
+        {
+          "id": "TI-e793f9c21f",
+          "label": "ERROR",
+          "score": 0.0
+        }
+      ]
+    },
+    "18": {
+      "cluster_id": 18,
+      "n_docs": 22,
+      "coverage": 0.0,
+      "avg_confidence": 0.0,
+      "dominant_sentiment": "ERROR",
+      "label_distribution": {
+        "ERROR": 22
+      },
+      "label_ratios": {
+        "ERROR": 1.0
+      },
+      "per_doc": [
+        {
+          "id": "TI-83f70c6aef",
+          "label": "ERROR",
+          "score": 0.0
+        },
+        {
+          "id": "TI-e944fbd201",
+          "label": "ERROR",
+          "score": 0.0
+        },
+        {
+          "id": "TI-d4285b9e6c",
+          "label": "ERROR",
+          "score": 0.0
+        },
+        {
+          "id": "TI-434c073d99",
+          "label": "ERROR",
+          "score": 0.0
+        },
+        {
+          "id": "TI-5a5704730c",
+          "label": "ERROR",
+          "score": 0.0
+        },
+        {
+          "id": "TI-bc39540d8c",
+          "label": "ERROR",
+          "score": 0.0
+        },
+        {
+          "id": "TI-e3b9d6717c",
+          "label": "ERROR",
+          "score": 0.0
+        },
+        {
+          "id": "TI-a3dea79085",
+          "label": "ERROR",
+          "score": 0.0
+        },
+        {
+          "id": "TI-d857fa7e03",
+          "label": "ERROR",
+          "score": 0.0
+        },
+        {
+          "id": "TI-4342800ab5",
+          "label": "ERROR",
+          "score": 0.0
+        },
+        {
+          "id": "TI-17aeba4c43",
+          "label": "ERROR",
+          "score": 0.0
+        },
+        {
+          "id": "TI-a4e20ae409",
+          "label": "ERROR",
+          "score": 0.0
+        },
+        {
+          "id": "TI-c08ee9c550",
+          "label": "ERROR",
+          "score": 0.0
+        },
+        {
+          "id": "TI-a9555aa6de",
+          "label": "ERROR",
+          "score": 0.0
+        },
+        {
+          "id": "TI-3ba13f0ebb",
+          "label": "ERROR",
+          "score": 0.0
+        },
+        {
+          "id": "TI-76a72fbef4",
+          "label": "ERROR",
+          "score": 0.0
+        },
+        {
+          "id": "TI-abfc385cdb",
+          "label": "ERROR",
+          "score": 0.0
+        },
+        {
+          "id": "TI-29e2de19d2",
+          "label": "ERROR",
+          "score": 0.0
+        },
+        {
+          "id": "TI-2f9a844c44",
+          "label": "ERROR",
+          "score": 0.0
+        },
+        {
+          "id": "TI-4ee4842e00",
+          "label": "ERROR",
+          "score": 0.0
+        },
+        {
+          "id": "TI-cbc6a9d862",
+          "label": "ERROR",
+          "score": 0.0
+        },
+        {
+          "id": "TI-a98fcad2ef",
+          "label": "ERROR",
+          "score": 0.0
+        }
+      ]
+    },
+    "19": {
+      "cluster_id": 19,
+      "n_docs": 35,
+      "coverage": 0.0,
+      "avg_confidence": 0.0,
+      "dominant_sentiment": "ERROR",
+      "label_distribution": {
+        "ERROR": 35
+      },
+      "label_ratios": {
+        "ERROR": 1.0
+      },
+      "per_doc": [
+        {
+          "id": "TI-562962d67d",
+          "label": "ERROR",
+          "score": 0.0
+        },
+        {
+          "id": "TI-e3ecac1905",
+          "label": "ERROR",
+          "score": 0.0
+        },
+        {
+          "id": "TI-5d7c63cd16",
+          "label": "ERROR",
+          "score": 0.0
+        },
+        {
+          "id": "TI-5aa13ffd35",
+          "label": "ERROR",
+          "score": 0.0
+        },
+        {
+          "id": "TI-2ad4840c14",
+          "label": "ERROR",
+          "score": 0.0
+        },
+        {
+          "id": "TI-4bc0086847",
+          "label": "ERROR",
+          "score": 0.0
+        },
+        {
+          "id": "TI-519a6277a8",
+          "label": "ERROR",
+          "score": 0.0
+        },
+        {
+          "id": "TI-95ba53243a",
+          "label": "ERROR",
+          "score": 0.0
+        },
+        {
+          "id": "TI-2a384633f6",
+          "label": "ERROR",
+          "score": 0.0
+        },
+        {
+          "id": "TI-6941465598",
+          "label": "ERROR",
+          "score": 0.0
+        },
+        {
+          "id": "TI-92ba0199da",
+          "label": "ERROR",
+          "score": 0.0
+        },
+        {
+          "id": "TI-88c82227fd",
+          "label": "ERROR",
+          "score": 0.0
+        },
+        {
+          "id": "TI-7211e6497c",
+          "label": "ERROR",
+          "score": 0.0
+        },
+        {
+          "id": "TI-e7efbf29fe",
+          "label": "ERROR",
+          "score": 0.0
+        },
+        {
+          "id": "TI-06b2d523e5",
+          "label": "ERROR",
+          "score": 0.0
+        },
+        {
+          "id": "TI-704b2e8879",
+          "label": "ERROR",
+          "score": 0.0
+        },
+        {
+          "id": "TI-e441ec5a84",
+          "label": "ERROR",
+          "score": 0.0
+        },
+        {
+          "id": "TI-31d3a60f71",
+          "label": "ERROR",
+          "score": 0.0
+        },
+        {
+          "id": "TI-d83428dee6",
+          "label": "ERROR",
+          "score": 0.0
+        },
+        {
+          "id": "TI-40f40f6476",
+          "label": "ERROR",
+          "score": 0.0
+        },
+        {
+          "id": "TI-a4466387ee",
+          "label": "ERROR",
+          "score": 0.0
+        },
+        {
+          "id": "TI-be38857e4a",
+          "label": "ERROR",
+          "score": 0.0
+        },
+        {
+          "id": "TI-27530c9221",
+          "label": "ERROR",
+          "score": 0.0
+        },
+        {
+          "id": "TI-50fe095104",
+          "label": "ERROR",
+          "score": 0.0
+        },
+        {
+          "id": "TI-b8d1c6666f",
+          "label": "ERROR",
+          "score": 0.0
+        },
+        {
+          "id": "TI-1576b2b055",
+          "label": "ERROR",
+          "score": 0.0
+        },
+        {
+          "id": "TI-5a11cb012c",
+          "label": "ERROR",
+          "score": 0.0
+        },
+        {
+          "id": "TI-2ac91e5ce3",
+          "label": "ERROR",
+          "score": 0.0
+        },
+        {
+          "id": "TI-82c67c858b",
+          "label": "ERROR",
+          "score": 0.0
+        },
+        {
+          "id": "TI-4800d5bbf4",
+          "label": "ERROR",
+          "score": 0.0
+        },
+        {
+          "id": "TI-b15c2ed35c",
+          "label": "ERROR",
+          "score": 0.0
+        },
+        {
+          "id": "TI-a59b360814",
+          "label": "ERROR",
+          "score": 0.0
+        },
+        {
+          "id": "TI-7f57d1894a",
+          "label": "ERROR",
+          "score": 0.0
+        },
+        {
+          "id": "TI-e349108764",
+          "label": "ERROR",
+          "score": 0.0
+        },
+        {
+          "id": "TI-31427714b2",
+          "label": "ERROR",
+          "score": 0.0
+        }
+      ]
+    },
+    "20": {
+      "cluster_id": 20,
+      "n_docs": 11,
+      "coverage": 0.0,
+      "avg_confidence": 0.0,
+      "dominant_sentiment": "ERROR",
+      "label_distribution": {
+        "ERROR": 11
+      },
+      "label_ratios": {
+        "ERROR": 1.0
+      },
+      "per_doc": [
+        {
+          "id": "TI-4e44147543",
+          "label": "ERROR",
+          "score": 0.0
+        },
+        {
+          "id": "TI-5785359f6f",
+          "label": "ERROR",
+          "score": 0.0
+        },
+        {
+          "id": "TI-c11f92edbf",
+          "label": "ERROR",
+          "score": 0.0
+        },
+        {
+          "id": "TI-083843e032",
+          "label": "ERROR",
+          "score": 0.0
+        },
+        {
+          "id": "TI-0746cfd9bb",
+          "label": "ERROR",
+          "score": 0.0
+        },
+        {
+          "id": "TI-5e09aaec0e",
+          "label": "ERROR",
+          "score": 0.0
+        },
+        {
+          "id": "TI-4e1f4b1600",
+          "label": "ERROR",
+          "score": 0.0
+        },
+        {
+          "id": "TI-91946cb36f",
+          "label": "ERROR",
+          "score": 0.0
+        },
+        {
+          "id": "TI-8a6c4056bc",
+          "label": "ERROR",
+          "score": 0.0
+        },
+        {
+          "id": "TI-2449f1e45f",
+          "label": "ERROR",
+          "score": 0.0
+        },
+        {
+          "id": "TI-8400994416",
+          "label": "ERROR",
+          "score": 0.0
+        }
+      ]
+    }
+  }
+}

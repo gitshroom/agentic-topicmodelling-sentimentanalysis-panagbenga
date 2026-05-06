@@ -1,0 +1,160 @@
+{
+  "generated_at": "2026-05-06T15:05:59",
+  "model_type": "bertopic",
+  "parameters": {
+    "min_topic_size": 10,
+    "nr_topics": "auto",
+    "n_lda_topics": 8,
+    "mmr_enabled": true,
+    "mmr_diversity": 0.3
+  },
+  "clusters": {
+    "0": {
+      "cluster_id": 0,
+      "error": "Found array with 0 sample(s) (shape=(0, 384)) while a minimum of 1 is required."
+    },
+    "1": {
+      "cluster_id": 1,
+      "error": "Found array with 0 sample(s) (shape=(0, 384)) while a minimum of 1 is required."
+    },
+    "2": {
+      "cluster_id": 2,
+      "error": "Found array with 0 sample(s) (shape=(0, 384)) while a minimum of 1 is required."
+    },
+    "3": {
+      "cluster_id": 3,
+      "error": "Found array with 0 sample(s) (shape=(0, 384)) while a minimum of 1 is required."
+    },
+    "4": {
+      "cluster_id": 4,
+      "error": "Found array with 0 sample(s) (shape=(0, 384)) while a minimum of 1 is required."
+    },
+    "5": {
+      "cluster_id": 5,
+      "error": "Found array with 0 sample(s) (shape=(0, 384)) while a minimum of 1 is required."
+    },
+    "6": {
+      "cluster_id": 6,
+      "error": "Found array with 0 sample(s) (shape=(0, 384)) while a minimum of 1 is required."
+    },
+    "7": {
+      "cluster_id": 7,
+      "error": "Found array with 0 sample(s) (shape=(0, 384)) while a minimum of 1 is required."
+    },
+    "8": {
+      "cluster_id": 8,
+      "error": "Found array with 0 sample(s) (shape=(0, 384)) while a minimum of 1 is required."
+    },
+    "9": {
+      "cluster_id": 9,
+      "error": "Found array with 0 sample(s) (shape=(0, 384)) while a minimum of 1 is required."
+    },
+    "10": {
+      "cluster_id": 10,
+      "error": "Found array with 0 sample(s) (shape=(0, 384)) while a minimum of 1 is required."
+    },
+    "11": {
+      "cluster_id": 11,
+      "error": "Found array with 0 sample(s) (shape=(0, 384)) while a minimum of 1 is required."
+    },
+    "12": {
+      "cluster_id": 12,
+      "error": "Found array with 0 sample(s) (shape=(0, 384)) while a minimum of 1 is required."
+    },
+    "13": {
+      "cluster_id": 13,
+      "error": "Found array with 0 sample(s) (shape=(0, 384)) while a minimum of 1 is required."
+    },
+    "14": {
+      "cluster_id": 14,
+      "error": "Found array with 0 sample(s) (shape=(0, 384)) while a minimum of 1 is required."
+    },
+    "15": {
+      "cluster_id": 15,
+      "n_docs": 62,
+      "n_topics": 2,
+      "noise_ratio": 0.2903,
+      "coherence_proxy": 0.5671,
+      "topics": [
+        {
+          "topic_id": 0,
+          "count": 27,
+          "top_words": [
+            "festivalbaguio",
+            "festival",
+            "panagbengahunks",
+            "pageantmanila",
+            "festivalgrand",
+            "cityofbaguio",
+            "sabaguio",
+            "panagbenga2026",
+            "baguiocityvibes",
+            "baguio"
+          ],
+          "top_word_scores": [
+            0.6765,
+            0.5968,
+            0.509,
+            0.4971,
+            0.5563,
+            0.506,
+            0.4993,
+            0.4316,
+            0.45,
+            0.4614
+          ],
+          "label": "0_festivalbaguio_festival_festivalgrand_panagbengahunks"
+        },
+        {
+          "topic_id": 1,
+          "count": 17,
+          "top_words": [
+            "festival",
+            "festivalqueen",
+            "festivals",
+            "grade",
+            "luck",
+            "nala",
+            "bangusfestival",
+            "masskarafestival",
+            "mataleons",
+            "ibonibonfestival"
+          ],
+          "top_word_scores": [
+            0.9697,
+            0.7821,
+            0.887,
+            0.3051,
+            0.2912,
+            0.2839,
+            0.4836,
+            0.4653,
+            0.3255,
+            0.3182
+          ],
+          "label": "1_festival_festivals_festivalqueen_bangusfestival"
+        }
+      ]
+    },
+    "16": {
+      "cluster_id": 16,
+      "error": "Found array with 0 sample(s) (shape=(0, 384)) while a minimum of 1 is required."
+    },
+    "17": {
+      "cluster_id": 17,
+      "error": "Found array with 0 sample(s) (shape=(0, 384)) while a minimum of 1 is required."
+    },
+    "18": {
+      "cluster_id": 18,
+      "error": "Found array with 0 sample(s) (shape=(0, 384)) while a minimum of 1 is required."
+    },
+    "19": {
+      "cluster_id": 19,
+      "error": "Found array with 0 sample(s) (shape=(0, 384)) while a minimum of 1 is required."
+    },
+    "20": {
+      "cluster_id": 20,
+      "error": "Found array with 0 sample(s) (shape=(0, 384)) while a minimum of 1 is required."
+    }
+  }
+}
