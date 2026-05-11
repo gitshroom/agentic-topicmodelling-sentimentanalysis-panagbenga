@@ -43,12 +43,9 @@ def main():
     # ── Step C: Format results ────────────────────────────────────────────
     log_banner(logger, "Step C: Formatting Final Results")
     results_formatter.main(
-        topic_data=topic_data,
-        sentiment_data=sentiment_data,
-        topic_issues=[],
-        sentiment_issues=[],
-        passed=True,
-    )
+    topic_data=topic_data,
+    sentiment_data=sentiment_data,
+)
 
     # ── Step D: Explainer agent ───────────────────────────────────────────
     log_banner(logger, "Step D: Explainer Agent — plain-language topic descriptions")
