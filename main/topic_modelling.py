@@ -9,20 +9,21 @@
 #     "parameters":   { ... },
 #     "years": {
 #       "<year>": {
-#         "n_docs":      int,
-#         "n_topics":    int,
-#         "noise_ratio": float,
-#         "coherence":   float,   ← real c_v score from CoherenceModel
+#         "n_docs":          int,
+#         "n_topics":        int,
+#         "noise_ratio":     float,
+#         "avg_coherence":   float,   ← mean of per-topic c_v scores
 #         "topics": [
 #           {
 #             "topic_id":        int,
 #             "label":           str,
 #             "count":           int,
 #             "top_words":       [str, ...],
-#             "top_word_scores": [float, ...]
+#             "top_word_scores": [float, ...],
+#             "coherence":       float   ← per-topic c_v score
 #           }, ...
 #         ],
-#         "error": str            ← only present on failure
+#         "error": str                  ← only present on failure
 #       }
 #     }
 #   }
@@ -50,26 +51,34 @@ logger = get_logger("topic_modelling")
 # COHERENCE  (c_v via gensim CoherenceModel)
 # =========================================================
 
-def compute_coherence(docs: list, topic_words: list) -> float:
+def compute_coherence_per_topic(docs: list, topic_words: list) -> list:
     """
-    Compute corpus-level c_v coherence across all topics.
-    Returns 0.0 if there are no topics or on any failure.
+    Compute per-topic c_v coherence scores.
+    Returns a list of floats aligned with topic_words.
+    Returns 0.0 for any topic that fails.
     """
     if not topic_words:
-        return 0.0
+        return []
     try:
         tokenized  = [doc.split() for doc in docs]
         dictionary = Dictionary(tokenized)
-        model = CoherenceModel(
-            topics=topic_words,
-            texts=tokenized,
-            dictionary=dictionary,
-            coherence="c_v",
-        )
-        return model.get_coherence()
+        scores = []
+        for words in topic_words:
+            try:
+                model = CoherenceModel(
+                    topics=[words],
+                    texts=tokenized,
+                    dictionary=dictionary,
+                    coherence="c_v",
+                )
+                scores.append(round(model.get_coherence(), 4))
+            except Exception as e:
+                logger.warning(f"Per-topic coherence failed: {e}")
+                scores.append(0.0)
+        return scores
     except Exception as e:
         logger.warning(f"Coherence computation failed: {e}")
-        return 0.0
+        return [0.0] * len(topic_words)
 
 
 def generate_topic_label(top_words: list) -> str:
@@ -93,15 +102,15 @@ def main(min_topic_size: int = None, nr_topics: int = None) -> dict:
     nr  = nr_topics      if nr_topics      is not None else config.BERTOPIC_NR_TOPICS
 
     logger.info("Loading embeddings from preprocessed pickle...")
-    df = pd.read_pickle(config.CLUSTERED_FILE)   # written by embeddings.py
+    df = pd.read_pickle(config.CLUSTERED_FILE)
     df = df.dropna(subset=["processed"])
-    df["year"] = df["year"].astype(int) 
-    # Shared sub-models (re-instantiated per year so state doesn't bleed)
+    df["year"] = df["year"].astype(int)
+
     embedding_model = SentenceTransformer(config.EMBEDDING_MODEL)
 
     vectorizer_model = CountVectorizer(
         ngram_range=config.NGRAM_RANGE,
-        stop_words=list(),          # stopwords already removed in preprocessing
+        stop_words=list(),
         min_df=config.MIN_DF,
         max_df=config.MAX_DF,
     )
@@ -109,7 +118,6 @@ def main(min_topic_size: int = None, nr_topics: int = None) -> dict:
     representation_model = KeyBERTInspired()
 
     year_results: dict[str, dict] = {}
-    df["year"] = df["year"].astype(int)
 
     for year in sorted(df["year"].unique()):
         year_df = df[df["year"] == year]
@@ -122,7 +130,6 @@ def main(min_topic_size: int = None, nr_topics: int = None) -> dict:
         logger.info(f"\n── Year {year}: {len(docs)} docs ──")
         embeddings = np.array(year_df["embedding"].tolist())
 
-        # Fresh UMAP + HDBSCAN per year — BERTopic uses these internally
         umap_model = UMAP(
             n_neighbors=min(config.UMAP_NEIGHBORS, len(docs) - 1),
             n_components=min(config.UMAP_COMPONENTS, len(docs) - 2),
@@ -153,29 +160,40 @@ def main(min_topic_size: int = None, nr_topics: int = None) -> dict:
             topics_assigned, _ = topic_model.fit_transform(docs, embeddings)
             topic_info         = topic_model.get_topic_info()
 
-            topic_results   = []
-            coherence_words = []   # list of top-word lists, one per topic
-
+            # Collect top words per topic first (needed for coherence batch)
+            raw_topics = []
             for _, row in topic_info.iterrows():
                 tid = int(row["Topic"])
                 if tid == -1:
-                    continue  # noise cluster — excluded from topics
-
+                    continue
                 words      = topic_model.get_topic(tid)
                 top_words  = [w for w, _ in words[: config.TOP_N_WORDS]]
                 top_scores = [round(float(s), 6) for _, s in words[: config.TOP_N_WORDS]]
-                coherence_words.append(top_words)
-
-                topic_results.append({
+                raw_topics.append({
                     "topic_id":        tid,
-                    "label":           generate_topic_label(top_words),
                     "count":           int(row["Count"]),
                     "top_words":       top_words,
                     "top_word_scores": top_scores,
                 })
 
-            # Corpus-level c_v coherence across all topics for this year
-            coherence = compute_coherence(docs, coherence_words)
+            # Compute per-topic coherence in one pass
+            all_top_words    = [t["top_words"] for t in raw_topics]
+            per_topic_scores = compute_coherence_per_topic(docs, all_top_words)
+
+            topic_results = []
+            for t, coh in zip(raw_topics, per_topic_scores):
+                topic_results.append({
+                    "topic_id":        t["topic_id"],
+                    "label":           generate_topic_label(t["top_words"]),
+                    "count":           t["count"],
+                    "top_words":       t["top_words"],
+                    "top_word_scores": t["top_word_scores"],
+                    "coherence":       coh,
+                })
+
+            # Year-level average coherence across all topics
+            valid_scores  = [t["coherence"] for t in topic_results if t["coherence"] > 0]
+            avg_coherence = round(sum(valid_scores) / len(valid_scores), 4) if valid_scores else 0.0
 
             noise_ratio = round(
                 sum(1 for t in topics_assigned if t == -1) / len(topics_assigned), 4
@@ -183,27 +201,27 @@ def main(min_topic_size: int = None, nr_topics: int = None) -> dict:
 
             logger.info(
                 f"  topics={len(topic_results)}  "
-                f"coherence={coherence:.4f}  "
+                f"avg_coherence={avg_coherence:.4f}  "
                 f"noise={noise_ratio:.4f}"
             )
 
             year_results[str(year)] = {
-                "n_docs":      len(docs),
-                "n_topics":    len(topic_results),
-                "noise_ratio": noise_ratio,
-                "coherence":   round(coherence, 4),
-                "topics":      topic_results,
+                "n_docs":        len(docs),
+                "n_topics":      len(topic_results),
+                "noise_ratio":   noise_ratio,
+                "avg_coherence": avg_coherence,
+                "topics":        topic_results,
             }
 
         except Exception as e:
             logger.error(f"  BERTopic failed for year {year}: {e}")
             year_results[str(year)] = {
-                "n_docs":      len(docs),
-                "n_topics":    0,
-                "noise_ratio": 1.0,
-                "coherence":   0.0,
-                "topics":      [],
-                "error":       str(e),
+                "n_docs":        len(docs),
+                "n_topics":      0,
+                "noise_ratio":   1.0,
+                "avg_coherence": 0.0,
+                "topics":        [],
+                "error":         str(e),
             }
 
     output = {

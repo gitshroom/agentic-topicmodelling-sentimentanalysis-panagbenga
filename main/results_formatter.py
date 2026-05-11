@@ -74,6 +74,7 @@ def merge_year_results(topic_data: dict, sentiment_data: dict) -> list:
                 "count":           t.get("count", 0),
                 "top_words":       t.get("top_words", []),
                 "top_word_scores": t.get("top_word_scores", []),
+                "coherence":       t.get("coherence"),
                 "sentiment": {
                     "dominant":           s_rec.get("dominant_sentiment"),
                     "avg_confidence":     s_rec.get("avg_confidence"),
@@ -95,7 +96,7 @@ def merge_year_results(topic_data: dict, sentiment_data: dict) -> list:
             "total_docs":              tdata.get("n_docs") or sdata.get("n_docs") or 0,
             "total_topics":            tdata.get("n_topics", len(topics_out)),
             "noise_ratio":             tdata.get("noise_ratio"),
-            "coherence":               tdata.get("coherence"),
+            "avg_coherence":           tdata.get("avg_coherence"),
             "dominant_sentiment_dist": sent_summary,
             "topics":                  topics_out,
             "error":                   tdata.get("error"),

@@ -150,8 +150,10 @@ function getTop10(yearEntry){
 
 function selTop10(year){
   setActive('ynav-top10',year);
-  document.getElementById('top10-title').textContent=`Top 10 Topics — ${year}`;
   const ye=(D.years||[]).find(y=>y.year===year);
+  const avgCoh=ye?.avg_coherence!=null?ye.avg_coherence.toFixed(4):null;
+  document.getElementById('top10-title').textContent=
+    `Top 10 Topics — ${year}${avgCoh?'  ·  avg coherence '+avgCoh:''}`;
   const topics=getTop10(ye);
   const list=document.getElementById('top10-list');
 
@@ -169,6 +171,7 @@ function selTop10(year){
     const cnt=t.count||0;
     const label=t.label||`Topic ${t.topic_id}`;
     const conf=t.sentiment?.avg_confidence;
+    const coh=t.coherence;
 
     return `<div class="topic-row" id="tr-${year}-${idx}" onclick="toggle('${year}',${idx})" style="animation-delay:${idx*.04}s">
       <div class="rank-num ${rank<=3?'top3':''}">#${rank}</div>
@@ -178,7 +181,8 @@ function selTop10(year){
         <div class="topic-meta">
           <span class="sbadge ${dom}">${dom}</span>
           <span>${cnt.toLocaleString()} posts</span>
-          ${conf?`<span>conf ${conf.toFixed(2)}</span>`:''}
+          ${conf!=null?`<span style="color:var(--accent4)" title="Sentiment confidence">conf ${conf.toFixed(4)}</span>`:''}
+          ${coh!=null?`<span style="color:var(--accent3)" title="Topic coherence (c_v)">coh ${coh.toFixed(4)}</span>`:''}
         </div>
         ${hasExpl?`
         <div class="expl-box" id="eb-${year}-${idx}">💬 ${t.explanation}</div>
