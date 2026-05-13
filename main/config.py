@@ -31,7 +31,7 @@ EMBEDDING_MODEL = "sentence-transformers/paraphrase-multilingual-mpnet-base-v2"
 
 UMAP_NEIGHBORS  = 15
 UMAP_COMPONENTS = 5
-UMAP_MIN_DIST   = 0.0
+UMAP_MIN_DIST   = 0.1
 
 # =========================================================
 # TOPIC MODELLING
@@ -39,11 +39,10 @@ UMAP_MIN_DIST   = 0.0
 
 TOPIC_MODEL_TYPE        = "bertopic"
 
-# More stable for noisy multilingual social data
-BERTOPIC_MIN_TOPIC_SIZE = 15
+BERTOPIC_MIN_TOPIC_SIZE = 10
 
-# Avoid unstable auto-merging
-BERTOPIC_NR_TOPICS      = 20
+# Let BERTopic discover naturally first
+BERTOPIC_NR_TOPICS      = "auto"
 
 TOP_N_WORDS             = 10
 

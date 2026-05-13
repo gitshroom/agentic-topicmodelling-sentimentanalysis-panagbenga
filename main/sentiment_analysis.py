@@ -171,6 +171,7 @@ def main(model_name: str = None, batch_size: int = None,
         model=mdl,
         tokenizer=mdl,
         device=-1,   # CPU; set to 0 for first GPU
+        use_fast=False, # use_fast=False improves tokenizer compatibility for XLM-RoBERTa models.
     )
 
     year_results: dict[str, dict] = {}
