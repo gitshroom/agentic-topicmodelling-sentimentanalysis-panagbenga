@@ -22,7 +22,7 @@ import config
 
 logger = get_logger("explainer_agent")
 
-EXPLAINED_OUTPUT_FILE = "outputs/explained_results.json"
+EXPLAINED_OUTPUT_FILE = config.EXPLAINED_OUTPUT_FILE
 TOP_N_PER_YEAR        = 10
 LOCAL_LLM_MODEL       = "qwen2.5:3b"
 
@@ -31,8 +31,30 @@ LOCAL_LLM_MODEL       = "qwen2.5:3b"
 # LOCAL LLM CALL (OLLAMA)
 # ---------------------------------------------------------------------------
 
+_OLLAMA_AVAILABLE: bool | None = None
+
+
+def ollama_available() -> bool:
+    """Cached probe — avoids paying the timeout cost for every topic."""
+    global _OLLAMA_AVAILABLE
+    if _OLLAMA_AVAILABLE is not None:
+        return _OLLAMA_AVAILABLE
+    try:
+        requests.get("http://localhost:11434/api/tags", timeout=1.0)
+        _OLLAMA_AVAILABLE = True
+    except Exception:
+        _OLLAMA_AVAILABLE = False
+        logger.warning(
+            "Ollama not reachable at http://localhost:11434 — "
+            "falling back to template explanations for all topics."
+        )
+    return _OLLAMA_AVAILABLE
+
+
 def call_local_llm(prompt: str, model: str = LOCAL_LLM_MODEL) -> str:
     """Call a local Ollama model. Make sure `ollama serve` is running."""
+    if not ollama_available():
+        return ""
     try:
         response = requests.post(
             "http://localhost:11434/api/generate",

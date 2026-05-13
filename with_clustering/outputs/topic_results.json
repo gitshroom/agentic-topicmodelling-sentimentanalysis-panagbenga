@@ -1,0 +1,2529 @@
+{
+  "generated_at": "2026-05-13T14:06:25",
+  "model_type": "bertopic",
+  "parameters": {
+    "pre_cluster_min_size": 20,
+    "pre_cluster_min_samples": 5,
+    "min_topic_size": 10,
+    "nr_topics": 10,
+    "top_n_words": 10,
+    "ngram_range": [
+      1,
+      2
+    ],
+    "embedding_model": "sentence-transformers/paraphrase-multilingual-mpnet-base-v2",
+    "used_persisted_clusters": true
+  },
+  "years": {
+    "2022": {
+      "n_docs": 389,
+      "n_clusters": 3,
+      "noise_ratio": 0.0,
+      "avg_coherence": 0.7564,
+      "clusters": [
+        {
+          "cluster_id": 0,
+          "n_docs": 38,
+          "n_topics": 2,
+          "coherence": 1.0,
+          "topics": [
+            {
+              "topic_id": 0,
+              "label": "Bikesinbloom Topbikesgoestobaguio / Topbikesgoestobaguio Topbikesph / Topbikesph Tropangtopbikes",
+              "count": 19,
+              "top_words": [
+                "bikesinbloom topbikesgoestobaguio",
+                "topbikesgoestobaguio topbikesph",
+                "topbikesph tropangtopbikes",
+                "motoglamping bikesinbloom",
+                "baguiobikesinbloom motoglamping",
+                "topbikesgoestobaguio",
+                "yamahamotorphilippines bikesinbloom",
+                "topbikesph",
+                "motorcycles lethopevroom",
+                "papiapproved topbikesgoestobaguio"
+              ],
+              "top_word_scores": [
+                0.849492,
+                0.840408,
+                0.813465,
+                0.780955,
+                0.764589,
+                0.762841,
+                0.758921,
+                0.754082,
+                0.751104,
+                0.748699
+              ]
+            },
+            {
+              "topic_id": 1,
+              "label": "Closing Fireworks / Fireworks Display / Display Fireworks",
+              "count": 19,
+              "top_words": [
+                "closing fireworks",
+                "fireworks display",
+                "display fireworks",
+                "fireworks",
+                "panagbengafestival fireworksclosingceremony",
+                "watching fireworks",
+                "makeeverydaybloomatsm fireworks",
+                "melvinjones fireworkdisplay",
+                "pyrotechnics night",
+                "march firework"
+              ],
+              "top_word_scores": [
+                0.953347,
+                0.826917,
+                0.822214,
+                0.809615,
+                0.801832,
+                0.776335,
+                0.733879,
+                0.656837,
+                0.648765,
+                0.636672
+              ]
+            }
+          ]
+        },
+        {
+          "cluster_id": 1,
+          "n_docs": 50,
+          "n_topics": 2,
+          "coherence": 0.5872,
+          "topics": [
+            {
+              "topic_id": 0,
+              "label": "Thecookieseriescookiecake / Cookies Cakes / Cakes Cupcakes",
+              "count": 10,
+              "top_words": [
+                "thecookieseriescookiecake",
+                "cookies cakes",
+                "cakes cupcakes",
+                "cakes",
+                "chocolatechipalmondcookies",
+                "kkrumbl cookies",
+                "thecookieserieshundredgramcookie chocolatechipalmondcookies",
+                "cupcakes",
+                "dessert",
+                "pasalubongfrombaguio cookiesfrombaguio"
+              ],
+              "top_word_scores": [
+                0.719428,
+                0.69949,
+                0.697403,
+                0.67531,
+                0.662951,
+                0.65812,
+                0.655228,
+                0.654866,
+                0.647745,
+                0.636255
+              ]
+            },
+            {
+              "topic_id": 1,
+              "label": "Foodtrucksinbaguio Foodtrucksforhire / Foodtrucksinblossom Foodtruckph / Foodtrucksinbaguio",
+              "count": 35,
+              "top_words": [
+                "foodtrucksinbaguio foodtrucksforhire",
+                "foodtrucksinblossom foodtruckph",
+                "foodtrucksinbaguio",
+                "foodtruckph wheninbaguio",
+                "foodtruckcommunityph gypsywagonfoodtruck",
+                "foodtrucksinblossom",
+                "foodtrucknationph foodie",
+                "foodtrucksinbloom",
+                "foodtruckcommunity foodtruckcommunityph",
+                "foodtrucksinblossom thattinyredtruck"
+              ],
+              "top_word_scores": [
+                0.858864,
+                0.841729,
+                0.819568,
+                0.818133,
+                0.817358,
+                0.807896,
+                0.804169,
+                0.801926,
+                0.801859,
+                0.794488
+              ]
+            }
+          ]
+        },
+        {
+          "cluster_id": 2,
+          "n_docs": 301,
+          "n_topics": 6,
+          "coherence": 0.682,
+          "topics": [
+            {
+              "topic_id": 0,
+              "label": "Travel Travelphotography / Photography Travelgram / Travelblog",
+              "count": 56,
+              "top_words": [
+                "travel travelphotography",
+                "photography travelgram",
+                "travelblog",
+                "travelphotography",
+                "travelphotography photography",
+                "travelgram instatravel",
+                "travelblogger",
+                "photo traveler",
+                "itsmorefuninthephilippines sessionroadinbloom",
+                "travelph summercapitalofthephilippines"
+              ],
+              "top_word_scores": [
+                0.686174,
+                0.681999,
+                0.677932,
+                0.675429,
+                0.672209,
+                0.671666,
+                0.670723,
+                0.640536,
+                0.636924,
+                0.635201
+              ]
+            },
+            {
+              "topic_id": 1,
+              "label": "Philippinefestival Culture / Filipinoculture / Panagbengafestival Philippinefestival",
+              "count": 73,
+              "top_words": [
+                "philippinefestival culture",
+                "filipinoculture",
+                "panagbengafestival philippinefestival",
+                "filipinoculture asianculture",
+                "asian filipinoculture",
+                "asianculture pilipinas",
+                "philippinefestival",
+                "pinoy filipino",
+                "filipino pilipino",
+                "happy panagbengafestival"
+              ],
+              "top_word_scores": [
+                0.783062,
+                0.758389,
+                0.753639,
+                0.751377,
+                0.728517,
+                0.725742,
+                0.715012,
+                0.665507,
+                0.657554,
+                0.652919
+              ]
+            },
+            {
+              "topic_id": 2,
+              "label": "Panagbengafestival Baguioflowerfestival / February Panagbengafestival / Baguioflowerfestival Breathebaguio",
+              "count": 26,
+              "top_words": [
+                "panagbengafestival baguioflowerfestival",
+                "february panagbengafestival",
+                "baguioflowerfestival breathebaguio",
+                "baguioflowerfestival",
+                "panagbengafestival",
+                "pines panagbengafestival",
+                "panagbengafestival wonderful",
+                "panagbengapanagbengafestivalfestivalpanagbengafestivalpanagbengafestivalbaguiofeelssessionroadsessionroadbaguiocitybaguiostreetbaguiostreetphotobaguiocityflowerfestivalflowerfestivalfacemaskstaysafeandhealthystaysafeeveryonebaguiocitytouristspotstouristdestinationtouristattractionjastynwandererjastynabaguiofeelsbaguiofeels",
+                "panagbengafestival happy",
+                "panagbengapanagbengafestivalfestivalpanagbengafestivalpanagbengafestivalbaguiofeelssessionroadsessionroadbaguiocitybaguiostreetbaguiostreetphotobaguiocityflowerfestivalflowerfestivalfacemaskstaysafeandhealthystaysafeeveryonebaguiocitytouristspotstouristdestinationtouristattractionjastynwandererjastynabaguiofeelsbaguiofeels happypanagbengabaguiocityfeelfreefeelgoodbegoodbehappybeprotected"
+              ],
+              "top_word_scores": [
+                0.779126,
+                0.772504,
+                0.725856,
+                0.697352,
+                0.685804,
+                0.666947,
+                0.635811,
+                0.608802,
+                0.57027,
+                0.547381
+              ]
+            },
+            {
+              "topic_id": 3,
+              "label": "Parade / Panagbengafestival / Parade Open",
+              "count": 29,
+              "top_words": [
+                "parade",
+                "panagbengafestival",
+                "parade open",
+                "parade march",
+                "march grand",
+                "celebration",
+                "park staging",
+                "parading",
+                "grandstand",
+                "march"
+              ],
+              "top_word_scores": [
+                0.619117,
+                0.605801,
+                0.594076,
+                0.584562,
+                0.552512,
+                0.530726,
+                0.521729,
+                0.495682,
+                0.482211,
+                0.475314
+              ]
+            },
+            {
+              "topic_id": 4,
+              "label": "Bloom Sessionroad / Road Sessionroadinbloom / Session Bloom",
+              "count": 36,
+              "top_words": [
+                "bloom sessionroad",
+                "road sessionroadinbloom",
+                "session bloom",
+                "road sessioninbloom",
+                "bloom sessioninbloom",
+                "sessionroad sessionroadinbloom",
+                "sessionroadinbloom",
+                "session road",
+                "ulit sessionroadinbloom",
+                "road bloom"
+              ],
+              "top_word_scores": [
+                0.870402,
+                0.790218,
+                0.77828,
+                0.776378,
+                0.773566,
+                0.754791,
+                0.739526,
+                0.73859,
+                0.73143,
+                0.710041
+              ]
+            },
+            {
+              "topic_id": 5,
+              "label": "Panagbengafestival Maligayang / Paresretirobaguio Panagbengafestival / Pasyadin Ninyo",
+              "count": 15,
+              "top_words": [
+                "panagbengafestival maligayang",
+                "paresretirobaguio panagbengafestival",
+                "pasyadin ninyo",
+                "pares yayain",
+                "masayang selebrasyon",
+                "maraming salamat",
+                "panagbengafestival sessioninbloom",
+                "panagbengafestival",
+                "dami tao",
+                "yung makadaan"
+              ],
+              "top_word_scores": [
+                0.678716,
+                0.662854,
+                0.63793,
+                0.620595,
+                0.619233,
+                0.610731,
+                0.597949,
+                0.596863,
+                0.578882,
+                0.57444
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "2023": {
+      "n_docs": 487,
+      "n_clusters": 8,
+      "noise_ratio": 0.2074,
+      "avg_coherence": 0.4638,
+      "clusters": [
+        {
+          "cluster_id": 0,
+          "n_docs": 27,
+          "n_topics": 2,
+          "coherence": 0.8523,
+          "topics": [
+            {
+              "topic_id": 0,
+              "label": "Arenaissanceofwonderandbeauty Baguioflowerfestival / Panagbengafestival Openingfeb / Parada Panagbengafestival",
+              "count": 22,
+              "top_words": [
+                "arenaissanceofwonderandbeauty baguioflowerfestival",
+                "panagbengafestival openingfeb",
+                "parada panagbengafestival",
+                "panagbengafestival arenaissanceofwonderandbeauty",
+                "february panagbengafestival",
+                "baguioflowerfestival grand",
+                "opening parada",
+                "panagbengafestival perting",
+                "panagbengafestival glimpse",
+                "panagbengafestival"
+              ],
+              "top_word_scores": [
+                0.817928,
+                0.807589,
+                0.787232,
+                0.780097,
+                0.773551,
+                0.767118,
+                0.755838,
+                0.755446,
+                0.75188,
+                0.750221
+              ]
+            },
+            {
+              "topic_id": 1,
+              "label": "Day Parade / Parade Bcpo / Parade",
+              "count": 4,
+              "top_words": [
+                "day parade",
+                "parade bcpo",
+                "parade",
+                "opening parade",
+                "street parade",
+                "parade tomorrow",
+                "parade thank",
+                "panagbengafestival",
+                "grand street",
+                "costume today"
+              ],
+              "top_word_scores": [
+                0.781562,
+                0.778739,
+                0.77857,
+                0.768516,
+                0.763295,
+                0.753849,
+                0.714696,
+                0.593292,
+                0.584017,
+                0.575241
+              ]
+            }
+          ]
+        },
+        {
+          "cluster_id": 1,
+          "n_docs": 44,
+          "n_topics": 2,
+          "coherence": 0.7248,
+          "topics": [
+            {
+              "topic_id": 0,
+              "label": "Wingyardph Wingyardbaguio / Wingyardbaguio Wingyardwings / Wingyardph Wingyardunlimited",
+              "count": 4,
+              "top_words": [
+                "wingyardph wingyardbaguio",
+                "wingyardbaguio wingyardwings",
+                "wingyardph wingyardunlimited",
+                "wingyardunlimited saturday",
+                "wingyardwings wingyardunlimited",
+                "wingyard",
+                "wingyardph",
+                "wingyardbaguio",
+                "happy wingyardph",
+                "wingyard bldg"
+              ],
+              "top_word_scores": [
+                0.865995,
+                0.863799,
+                0.839374,
+                0.806577,
+                0.806352,
+                0.802798,
+                0.800071,
+                0.788985,
+                0.781185,
+                0.78002
+              ]
+            },
+            {
+              "topic_id": 1,
+              "label": "Session Bloom / Road Bloom / Buskinglife Baguioflowerfestival",
+              "count": 40,
+              "top_words": [
+                "session bloom",
+                "road bloom",
+                "buskinglife baguioflowerfestival",
+                "baguioflowerfestival",
+                "session road",
+                "sessionroad sessionroadbaguio",
+                "sessionroadbaguio busking",
+                "bloom",
+                "sessionroadbaguio",
+                "sessionroadinbloom"
+              ],
+              "top_word_scores": [
+                0.70841,
+                0.707838,
+                0.699815,
+                0.641961,
+                0.635938,
+                0.603439,
+                0.594587,
+                0.581292,
+                0.572756,
+                0.5655
+              ]
+            }
+          ]
+        },
+        {
+          "cluster_id": 2,
+          "n_docs": 75,
+          "n_topics": 2,
+          "coherence": 0.3891,
+          "topics": [
+            {
+              "topic_id": 0,
+              "label": "Panagbengafestival Travelgram / Travelingpinoy Poginggala / Travelingpinoy",
+              "count": 48,
+              "top_words": [
+                "panagbengafestival travelgram",
+                "travelingpinoy poginggala",
+                "travelingpinoy",
+                "bahaybakasyunan reelsinstagram",
+                "pilipinas wanderlust",
+                "travelphotography",
+                "travelphilippines",
+                "nathalie roadtrip",
+                "travelgram",
+                "travelblogger"
+              ],
+              "top_word_scores": [
+                0.739575,
+                0.730158,
+                0.672707,
+                0.666817,
+                0.65053,
+                0.647233,
+                0.637167,
+                0.615355,
+                0.615063,
+                0.609292
+              ]
+            },
+            {
+              "topic_id": 1,
+              "label": "Outdoorportraits / Paintingfromphotographs Sabsabong / Outdoorphotography Outdoorportraits",
+              "count": 26,
+              "top_words": [
+                "outdoorportraits",
+                "paintingfromphotographs sabsabong",
+                "outdoorphotography outdoorportraits",
+                "photography panagbengafestival",
+                "paintingfromphotographs",
+                "portraitphotography outdoorphotography",
+                "ashotofbaguio moeabelleraphotography",
+                "rittrato portrait",
+                "acrylicpainting paintingfromphotographs",
+                "outdoorphotography"
+              ],
+              "top_word_scores": [
+                0.762486,
+                0.734991,
+                0.72577,
+                0.724953,
+                0.686824,
+                0.686697,
+                0.675709,
+                0.672378,
+                0.648087,
+                0.637477
+              ]
+            }
+          ]
+        },
+        {
+          "cluster_id": 3,
+          "n_docs": 62,
+          "n_topics": 2,
+          "coherence": 0.0773,
+          "topics": [
+            {
+              "topic_id": 0,
+              "label": "Float Parade / Parade Floats / Parade Panagbengafestival",
+              "count": 30,
+              "top_words": [
+                "float parade",
+                "parade floats",
+                "parade panagbengafestival",
+                "grandfloatparade",
+                "parade",
+                "parade philippinefestivals",
+                "grand float",
+                "parade colorful",
+                "parade highlights",
+                "parade cityofflowers"
+              ],
+              "top_word_scores": [
+                0.887624,
+                0.881227,
+                0.836122,
+                0.824172,
+                0.781619,
+                0.777057,
+                0.766715,
+                0.764989,
+                0.762307,
+                0.761868
+              ]
+            },
+            {
+              "topic_id": 1,
+              "label": "Dance Parade / Street Parade / Parade Kulturang",
+              "count": 25,
+              "top_words": [
+                "dance parade",
+                "street parade",
+                "parade kulturang",
+                "parade tamang",
+                "street dance",
+                "street dancing",
+                "parade street",
+                "dance street",
+                "streetdance",
+                "parade grand"
+              ],
+              "top_word_scores": [
+                0.945801,
+                0.872286,
+                0.838379,
+                0.830658,
+                0.826386,
+                0.812497,
+                0.811573,
+                0.801909,
+                0.798788,
+                0.790738
+              ]
+            }
+          ]
+        },
+        {
+          "cluster_id": 4,
+          "n_docs": 34,
+          "n_topics": 6,
+          "coherence": 0.3727,
+          "topics": [
+            {
+              "topic_id": 0,
+              "label": "Baguiobotanicalgarden Flowers / Flowers Baguiocityhall / Baguioflowerfestival Victa",
+              "count": 7,
+              "top_words": [
+                "baguiobotanicalgarden flowers",
+                "flowers baguiocityhall",
+                "baguioflowerfestival victa",
+                "bloom",
+                "flowers bloom",
+                "bloom wildly",
+                "baguioflowerfestival",
+                "blossom",
+                "blossom beautiful",
+                "simply bloom"
+              ],
+              "top_word_scores": [
+                0.837097,
+                0.818556,
+                0.794539,
+                0.786107,
+                0.783503,
+                0.775172,
+                0.770012,
+                0.765932,
+                0.762084,
+                0.755788
+              ]
+            },
+            {
+              "topic_id": 1,
+              "label": "Panagbengafestival Baguioflowerfestival / Turista Annual / Weekend Trip",
+              "count": 3,
+              "top_words": [
+                "panagbengafestival baguioflowerfestival",
+                "turista annual",
+                "weekend trip",
+                "tourismphl breathebaguio",
+                "tpbgovph tourismphl",
+                "plans weekend",
+                "parades atty",
+                "turista",
+                "session bloom",
+                "year flower"
+              ],
+              "top_word_scores": [
+                0.697127,
+                0.611655,
+                0.583621,
+                0.569263,
+                0.552671,
+                0.528428,
+                0.497337,
+                0.497133,
+                0.495826,
+                0.495025
+              ]
+            },
+            {
+              "topic_id": 2,
+              "label": "Panagbengafestival Flowers / Landscaping Panagbengascapes / Panagbengascapes Gardening",
+              "count": 6,
+              "top_words": [
+                "panagbengafestival flowers",
+                "landscaping panagbengascapes",
+                "panagbengascapes gardening",
+                "lakwatseronglibongueno fleur",
+                "vacation gardeninthesky",
+                "panagbengafestival thelaaglands",
+                "thanks flower",
+                "igorotak flower",
+                "supply floral",
+                "nature blessed"
+              ],
+              "top_word_scores": [
+                0.743357,
+                0.701701,
+                0.697925,
+                0.694332,
+                0.671641,
+                0.645041,
+                0.626402,
+                0.622059,
+                0.60962,
+                0.592886
+              ]
+            },
+            {
+              "topic_id": 3,
+              "label": "Flowers / Sunflower Bouquet / Mahal Sunflowers",
+              "count": 5,
+              "top_words": [
+                "flowers",
+                "sunflower bouquet",
+                "mahal sunflowers",
+                "much flowers",
+                "sun flower",
+                "sunflowers celebrating",
+                "weekendgetaway fleur",
+                "sunflower bloom",
+                "sunflowers faithful",
+                "sunflowers"
+              ],
+              "top_word_scores": [
+                0.772696,
+                0.760386,
+                0.733115,
+                0.732896,
+                0.724753,
+                0.717487,
+                0.702874,
+                0.691271,
+                0.673444,
+                0.669049
+              ]
+            },
+            {
+              "topic_id": 4,
+              "label": "Witnessed Festive / Parade / Celebration",
+              "count": 4,
+              "top_words": [
+                "witnessed festive",
+                "parade",
+                "celebration",
+                "season blooming",
+                "occasion kankana",
+                "year enjoy",
+                "annual flower",
+                "parade exploreph",
+                "makeeverydaybloomwithsmcitybaguio",
+                "joyous northern"
+              ],
+              "top_word_scores": [
+                0.595912,
+                0.567312,
+                0.549312,
+                0.548119,
+                0.519803,
+                0.509158,
+                0.508026,
+                0.500037,
+                0.48533,
+                0.476227
+              ]
+            },
+            {
+              "topic_id": 5,
+              "label": "Vacationvibes Flower / Panagbengafestival Flowershops / Seasonofblooms Tourism",
+              "count": 5,
+              "top_words": [
+                "vacationvibes flower",
+                "panagbengafestival flowershops",
+                "seasonofblooms tourism",
+                "annual flower",
+                "season blossoming",
+                "flowers",
+                "seasonofblooms",
+                "flower",
+                "summercapitalofthephilippines",
+                "magnificent flora"
+              ],
+              "top_word_scores": [
+                0.783663,
+                0.755499,
+                0.702209,
+                0.69923,
+                0.678218,
+                0.642184,
+                0.622028,
+                0.613763,
+                0.605483,
+                0.589747
+              ]
+            }
+          ]
+        },
+        {
+          "cluster_id": 5,
+          "n_docs": 20,
+          "n_topics": 2,
+          "coherence": 0.2135,
+          "topics": [
+            {
+              "topic_id": 0,
+              "label": "Womenempoweringwomen Happywomensmonth / Woman Baguiogirl / Baguiogirl",
+              "count": 3,
+              "top_words": [
+                "womenempoweringwomen happywomensmonth",
+                "woman baguiogirl",
+                "baguiogirl",
+                "pride cordillera",
+                "teamlakay",
+                "team lakay",
+                "happywomensmonth",
+                "womenempoweringwomen",
+                "pride",
+                "women day"
+              ],
+              "top_word_scores": [
+                0.659846,
+                0.6453,
+                0.613874,
+                0.611081,
+                0.588848,
+                0.588543,
+                0.578449,
+                0.549319,
+                0.526631,
+                0.522641
+              ]
+            },
+            {
+              "topic_id": 1,
+              "label": "Mgalihimniurduja Panagbengafestival / Panagbengafestival Smiles / Nagpakilig Fans",
+              "count": 17,
+              "top_words": [
+                "mgalihimniurduja panagbengafestival",
+                "panagbengafestival smiles",
+                "nagpakilig fans",
+                "panagbengafestival",
+                "dee gaganap",
+                "fans ginanap",
+                "gmaregionaltv mgalihimniurduja",
+                "happy fiesta",
+                "gaganap sexy",
+                "fiesta gmaregionaltv"
+              ],
+              "top_word_scores": [
+                0.704141,
+                0.671745,
+                0.632442,
+                0.611981,
+                0.60043,
+                0.599001,
+                0.59568,
+                0.591998,
+                0.565544,
+                0.540918
+              ]
+            }
+          ]
+        },
+        {
+          "cluster_id": 6,
+          "n_docs": 28,
+          "n_topics": 2,
+          "coherence": 0.7717,
+          "topics": [
+            {
+              "topic_id": 0,
+              "label": "Marketencounter Foodtrip / Market Foodtrip / Foodtrip",
+              "count": 9,
+              "top_words": [
+                "marketencounter foodtrip",
+                "market foodtrip",
+                "foodtrip",
+                "streetfood food",
+                "streetfood",
+                "nightmarket streetfood",
+                "restaurants food",
+                "recommended restaurants",
+                "finds foodbuddy",
+                "foodie"
+              ],
+              "top_word_scores": [
+                0.882673,
+                0.86575,
+                0.832997,
+                0.78857,
+                0.783472,
+                0.773633,
+                0.773513,
+                0.718421,
+                0.70156,
+                0.69984
+              ]
+            },
+            {
+              "topic_id": 1,
+              "label": "Baguiofooddelivery Panagbengafestival / Baguiofoodtrip Musttry / Wimyummy Foodgasm",
+              "count": 18,
+              "top_words": [
+                "baguiofooddelivery panagbengafestival",
+                "baguiofoodtrip musttry",
+                "wimyummy foodgasm",
+                "baguiofooddelivery",
+                "foodgasm foodlover",
+                "musttry panagbengafestival",
+                "foodlover",
+                "baguiofoodtrip",
+                "foodies",
+                "panagbengafestival yummyph"
+              ],
+              "top_word_scores": [
+                0.729784,
+                0.702973,
+                0.693695,
+                0.672755,
+                0.668365,
+                0.666633,
+                0.658391,
+                0.658041,
+                0.650125,
+                0.649677
+              ]
+            }
+          ]
+        },
+        {
+          "cluster_id": 7,
+          "n_docs": 96,
+          "n_topics": 2,
+          "coherence": 0.2945,
+          "topics": [
+            {
+              "topic_id": 0,
+              "label": "Panagbengafestival Baguiofeels / Panagbengafestival Panagbengabaguiocity / City Panagbengafestival",
+              "count": 51,
+              "top_words": [
+                "panagbengafestival baguiofeels",
+                "panagbengafestival panagbengabaguiocity",
+                "city panagbengafestival",
+                "panagbengafestival",
+                "monday panagbengafestival",
+                "panagbengafestival night",
+                "natin panagbengafestival",
+                "panagbengafestival nakakapagod",
+                "panagbengafestival wheninbaguio",
+                "panagbengafestival panagbengaflowerfestival"
+              ],
+              "top_word_scores": [
+                0.84958,
+                0.848778,
+                0.835701,
+                0.805958,
+                0.804754,
+                0.803734,
+                0.797842,
+                0.795606,
+                0.790306,
+                0.781343
+              ]
+            },
+            {
+              "topic_id": 1,
+              "label": "Karavan Fpjbqsabaguio / Fpjsbatangquiapo Fpjbqsabaguio / Panagbengafestival Tampok",
+              "count": 29,
+              "top_words": [
+                "karavan fpjbqsabaguio",
+                "fpjsbatangquiapo fpjbqsabaguio",
+                "panagbengafestival tampok",
+                "pambansang pogi",
+                "fpjsbatangquiapo",
+                "pambansang",
+                "makisaya ngayong",
+                "panagbengafestival bmpm",
+                "panagbengafestival",
+                "fpjbqsabaguio"
+              ],
+              "top_word_scores": [
+                0.791851,
+                0.740838,
+                0.728369,
+                0.69128,
+                0.669956,
+                0.66586,
+                0.663817,
+                0.65586,
+                0.644606,
+                0.644406
+              ]
+            }
+          ]
+        },
+        {
+          "cluster_id": -1,
+          "n_docs": 101,
+          "n_topics": 2,
+          "coherence": 0.4784,
+          "topics": [
+            {
+              "topic_id": 0,
+              "label": "Accommodation / Bedrooms / Hotel",
+              "count": 21,
+              "top_words": [
+                "accommodation",
+                "bedrooms",
+                "hotel",
+                "gallon balcony",
+                "amenities",
+                "wright mansion",
+                "house",
+                "mansion",
+                "room",
+                "booking"
+              ],
+              "top_word_scores": [
+                0.573161,
+                0.519087,
+                0.506516,
+                0.501291,
+                0.490027,
+                0.437927,
+                0.436301,
+                0.424015,
+                0.409129,
+                0.392342
+              ]
+            },
+            {
+              "topic_id": 1,
+              "label": "Festivaldances Panagbengafestival / Panagbengafestival / Festivaldances",
+              "count": 73,
+              "top_words": [
+                "festivaldances panagbengafestival",
+                "panagbengafestival",
+                "festivaldances",
+                "panagbengafestival culminating",
+                "panagbengafestival sigmaart",
+                "congratulations festivaldances",
+                "dances",
+                "sabaguio",
+                "dances level",
+                "culminating performance"
+              ],
+              "top_word_scores": [
+                0.672383,
+                0.562769,
+                0.550083,
+                0.5304,
+                0.510411,
+                0.507264,
+                0.493444,
+                0.485545,
+                0.464333,
+                0.445977
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "2024": {
+      "n_docs": 769,
+      "n_clusters": 2,
+      "noise_ratio": 0.0182,
+      "avg_coherence": 0.3195,
+      "clusters": [
+        {
+          "cluster_id": 0,
+          "n_docs": 28,
+          "n_topics": 3,
+          "coherence": 0.0,
+          "topics": [
+            {
+              "topic_id": 0,
+              "label": "Closingpanagbenga Fireworks / Fireworks Panagbengafestival / Panabenga Fireworks",
+              "count": 12,
+              "top_words": [
+                "closingpanagbenga fireworks",
+                "fireworks panagbengafestival",
+                "panabenga fireworks",
+                "panagbengafestival closingpanagbenga",
+                "panagbengaclosingfireworks sabaguio",
+                "fireworks closingceremony",
+                "panagbengaclosingfireworks",
+                "closing fireworks",
+                "baguiocityfireworks panagbengaclosing",
+                "panagbengafestival closing"
+              ],
+              "top_word_scores": [
+                0.927559,
+                0.904138,
+                0.866836,
+                0.821243,
+                0.818414,
+                0.817431,
+                0.802478,
+                0.799094,
+                0.794336,
+                0.778948
+              ]
+            },
+            {
+              "topic_id": 1,
+              "label": "Fireworkshow Panagbengafestival / Panagbengafestival Fireworks / Fireworks Sessionroadbaguiocity",
+              "count": 4,
+              "top_words": [
+                "fireworkshow panagbengafestival",
+                "panagbengafestival fireworks",
+                "fireworks sessionroadbaguiocity",
+                "panagbengafestival closingfireworks",
+                "closingfireworks fluvialfestival",
+                "shinebright panagbengafestival",
+                "fireworks flowerfest",
+                "fluvialfestival fireworks",
+                "fireworksshow skyfullofstars",
+                "day fireworkshow"
+              ],
+              "top_word_scores": [
+                0.899895,
+                0.893077,
+                0.886989,
+                0.871232,
+                0.809942,
+                0.808932,
+                0.789708,
+                0.78918,
+                0.786607,
+                0.785993
+              ]
+            },
+            {
+              "topic_id": 2,
+              "label": "Fireworks Panagbengafestival / Panagbengafestival Fireworks / Fireworks Panagbengafireworks",
+              "count": 9,
+              "top_words": [
+                "fireworks panagbengafestival",
+                "panagbengafestival fireworks",
+                "fireworks panagbengafireworks",
+                "fireworks smbaguio",
+                "putukan fireworks",
+                "panagbengafireworks",
+                "happykiddos fireworksdisplay",
+                "pangbenga grandfireworks",
+                "fireworks blessedandgrateful",
+                "fireworksdisplay happy"
+              ],
+              "top_word_scores": [
+                0.930344,
+                0.924562,
+                0.917628,
+                0.885519,
+                0.877749,
+                0.862623,
+                0.851226,
+                0.844977,
+                0.843809,
+                0.841331
+              ]
+            }
+          ]
+        },
+        {
+          "cluster_id": 1,
+          "n_docs": 727,
+          "n_topics": 9,
+          "coherence": 0.6389,
+          "topics": [
+            {
+              "topic_id": 0,
+              "label": "Parade Panagbengafestival / Float Parade / Floatparade",
+              "count": 164,
+              "top_words": [
+                "parade panagbengafestival",
+                "float parade",
+                "floatparade",
+                "parade",
+                "grandfloatparade",
+                "flower city",
+                "panagbengafestival pageantgalk",
+                "panagbengafestival",
+                "parade city",
+                "grand float"
+              ],
+              "top_word_scores": [
+                0.781573,
+                0.745027,
+                0.705452,
+                0.703114,
+                0.702362,
+                0.688624,
+                0.678715,
+                0.677284,
+                0.670928,
+                0.643493
+              ]
+            },
+            {
+              "topic_id": 1,
+              "label": "Road Bloom / Panagbengafestival Sessionroadinbloom / Session Bloom",
+              "count": 115,
+              "top_words": [
+                "road bloom",
+                "panagbengafestival sessionroadinbloom",
+                "session bloom",
+                "session road",
+                "bloom panagbengafestival",
+                "panagbengafestival sessioninbloom",
+                "sessionroadbaguiocity",
+                "sessionroadbaguio",
+                "panagbengafestival baguioflowerfestival",
+                "sessionroadinbloom"
+              ],
+              "top_word_scores": [
+                0.799176,
+                0.772942,
+                0.767175,
+                0.728516,
+                0.724323,
+                0.686607,
+                0.671734,
+                0.671242,
+                0.663827,
+                0.638901
+              ]
+            },
+            {
+              "topic_id": 2,
+              "label": "Fpjsbatangquiapo Kapamilyakaravan / Panagbengafestival Kapamilyakaravan / Barangayan Fpjsbatangquiapo",
+              "count": 98,
+              "top_words": [
+                "fpjsbatangquiapo kapamilyakaravan",
+                "panagbengafestival kapamilyakaravan",
+                "barangayan fpjsbatangquiapo",
+                "fpjbqbarangayan panagbengafestival",
+                "kapamilyakaravan fpjbqbarangayan",
+                "susunod barangayan",
+                "latter panagbengafestival",
+                "fpjsbatangquiapo fpjbqbarangayan",
+                "quiapo maraming",
+                "panagbengabaguio"
+              ],
+              "top_word_scores": [
+                0.803168,
+                0.793953,
+                0.766813,
+                0.754964,
+                0.724658,
+                0.697101,
+                0.679811,
+                0.671469,
+                0.669834,
+                0.663815
+              ]
+            },
+            {
+              "topic_id": 3,
+              "label": "Panagbengafestival Summercapitalofthephilippines / Park Panagbengafestival / Travel Panagbengafestival",
+              "count": 63,
+              "top_words": [
+                "panagbengafestival summercapitalofthephilippines",
+                "park panagbengafestival",
+                "travel panagbengafestival",
+                "city panagbengafestival",
+                "panagbengafestival city",
+                "panagbengafestival addonreels",
+                "panagbengafeelsatsm burnhampark",
+                "summercapitalofthephilippines burnham",
+                "panagbengafestival panagbengafestival",
+                "panagbengafestival"
+              ],
+              "top_word_scores": [
+                0.77906,
+                0.76721,
+                0.737663,
+                0.722493,
+                0.709535,
+                0.709041,
+                0.708143,
+                0.705548,
+                0.705354,
+                0.702064
+              ]
+            },
+            {
+              "topic_id": 4,
+              "label": "Panagbengafestival Reelsvideo / Reelsvideo Panagbengafestival / Panagbengafestival Fbreelsvideo",
+              "count": 61,
+              "top_words": [
+                "panagbengafestival reelsvideo",
+                "reelsvideo panagbengafestival",
+                "panagbengafestival fbreelsvideo",
+                "fbreelsvideo fbreelsfypシ",
+                "fbreelsvideo panagbengafestival",
+                "fbreelsfypシ reelsvideo",
+                "panagbengafestival reelsfb",
+                "fbreels fbreelsvideo",
+                "jejemonvines panagbengafestival",
+                "reelsvideoシ"
+              ],
+              "top_word_scores": [
+                0.758475,
+                0.755889,
+                0.735204,
+                0.723254,
+                0.718998,
+                0.706354,
+                0.661851,
+                0.643602,
+                0.625294,
+                0.624173
+              ]
+            },
+            {
+              "topic_id": 5,
+              "label": "Baguioqueens Beautyqueens / Prettywoman Beautifulwoman / Beauty Gonzales",
+              "count": 50,
+              "top_words": [
+                "baguioqueens beautyqueens",
+                "prettywoman beautifulwoman",
+                "beauty gonzales",
+                "beautyqueens",
+                "prettywoman",
+                "prettylady",
+                "beautifulwoman",
+                "missuniversephbaguio",
+                "queens baguioqueens",
+                "missuniversephbaguio muphbaguio"
+              ],
+              "top_word_scores": [
+                0.691482,
+                0.684202,
+                0.683123,
+                0.681836,
+                0.667815,
+                0.658908,
+                0.654108,
+                0.642334,
+                0.620924,
+                0.608552
+              ]
+            },
+            {
+              "topic_id": 6,
+              "label": "ViralシFypシ Panagbengafestival / ViralシAlシ Panagbengafestival / Viralシ Panagbengafestival",
+              "count": 18,
+              "top_words": [
+                "viralシfypシ panagbengafestival",
+                "viralシalシ panagbengafestival",
+                "viralシ panagbengafestival",
+                "panagbengafestival viralreelsシ",
+                "viralreelsfbpage panagbengafestival",
+                "viralreelsシ viralreelsfbpage",
+                "viralシ viralシfypシ",
+                "viralsongsreel",
+                "panagbengafestival videoviral",
+                "viralsongsreel virals"
+              ],
+              "top_word_scores": [
+                0.946869,
+                0.9372,
+                0.925926,
+                0.890887,
+                0.870952,
+                0.838343,
+                0.815119,
+                0.809951,
+                0.806746,
+                0.804695
+              ]
+            },
+            {
+              "topic_id": 7,
+              "label": "Streetphotographer Photographyislife / Streetphotography Photograph / Travelphotography Parade",
+              "count": 15,
+              "top_words": [
+                "streetphotographer photographyislife",
+                "streetphotography photograph",
+                "travelphotography parade",
+                "photography streetphotography",
+                "streetphotography",
+                "photograph streetphotographer",
+                "streetphotography landscapephotography",
+                "street photography",
+                "streetphotographer",
+                "streetvideographer streetphotography"
+              ],
+              "top_word_scores": [
+                0.816072,
+                0.814909,
+                0.810407,
+                0.809524,
+                0.801939,
+                0.801018,
+                0.799825,
+                0.793553,
+                0.787189,
+                0.775676
+              ]
+            },
+            {
+              "topic_id": 8,
+              "label": "Reelfypシ Panagbengafestival / Reelsfb Panagbengafestival / ReelsviralシFb Panagbengafestival",
+              "count": 12,
+              "top_words": [
+                "reelfypシ panagbengafestival",
+                "reelsfb panagbengafestival",
+                "reelsviralシfb panagbengafestival",
+                "reelsig fbfypシ",
+                "fbreels reelsfbpage",
+                "panagbengafestival reels",
+                "panagbengafestival reel",
+                "reelstrending fbfypシ",
+                "reelsfbpage reelsviralシfb",
+                "reelsvideoシ panagbengafestival"
+              ],
+              "top_word_scores": [
+                0.874305,
+                0.873925,
+                0.865018,
+                0.812778,
+                0.793801,
+                0.78897,
+                0.78748,
+                0.784921,
+                0.775072,
+                0.755363
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "2025": {
+      "n_docs": 837,
+      "n_clusters": 2,
+      "noise_ratio": 0.0143,
+      "avg_coherence": 0.532,
+      "clusters": [
+        {
+          "cluster_id": 0,
+          "n_docs": 53,
+          "n_topics": 3,
+          "coherence": 0.4403,
+          "topics": [
+            {
+              "topic_id": 0,
+              "label": "Panagbengafestival Streetdance / Panagbengafestival Festivaldance / Culturedance Baguiofeels",
+              "count": 17,
+              "top_words": [
+                "panagbengafestival streetdance",
+                "panagbengafestival festivaldance",
+                "culturedance baguiofeels",
+                "streetdance wheninbaguio",
+                "culturedance",
+                "dancechallenge culture",
+                "culture culturedance",
+                "igrotdance",
+                "dance igorotdance",
+                "igorotdance dancechallenge"
+              ],
+              "top_word_scores": [
+                0.874319,
+                0.859611,
+                0.837809,
+                0.821632,
+                0.774725,
+                0.762768,
+                0.748146,
+                0.732115,
+                0.730766,
+                0.721675
+              ]
+            },
+            {
+              "topic_id": 1,
+              "label": "Parade Panagbengafestival / Dance Parade / Parade Japsadventures",
+              "count": 14,
+              "top_words": [
+                "parade panagbengafestival",
+                "dance parade",
+                "parade japsadventures",
+                "panagbengafestival ilovecheers",
+                "panagbengafestival",
+                "street dance",
+                "parade much",
+                "parade",
+                "parade bang",
+                "bang panagbengafestival"
+              ],
+              "top_word_scores": [
+                0.813403,
+                0.790263,
+                0.698735,
+                0.695044,
+                0.687822,
+                0.687505,
+                0.679389,
+                0.67438,
+                0.661953,
+                0.649908
+              ]
+            },
+            {
+              "topic_id": 2,
+              "label": "Panagbengafestival Streetdancingparade / Panagbengafestival Parade / Parade Streetdance",
+              "count": 21,
+              "top_words": [
+                "panagbengafestival streetdancingparade",
+                "panagbengafestival parade",
+                "parade streetdance",
+                "dancing parade",
+                "parade panagbengafestival",
+                "streetdancingparade fbreelsvideo",
+                "streetdancingparade",
+                "streetdancecompetition fbreelsvideo",
+                "street dancing",
+                "parade slumarchingband"
+              ],
+              "top_word_scores": [
+                0.93506,
+                0.89002,
+                0.876822,
+                0.865607,
+                0.85923,
+                0.834593,
+                0.817179,
+                0.791234,
+                0.77108,
+                0.753475
+              ]
+            }
+          ]
+        },
+        {
+          "cluster_id": 1,
+          "n_docs": 772,
+          "n_topics": 2,
+          "coherence": 0.6237,
+          "topics": [
+            {
+              "topic_id": 0,
+              "label": "Panagbengafestival Fireworksdisplay / Amazing Fireworks / Grand Fireworks",
+              "count": 16,
+              "top_words": [
+                "panagbengafestival fireworksdisplay",
+                "amazing fireworks",
+                "grand fireworks",
+                "fireworksdisplay",
+                "fireworks display",
+                "fireworks",
+                "shimmering fireworks",
+                "aerial fireworks",
+                "panagbengafestival panagbengafirework",
+                "closing fireworks"
+              ],
+              "top_word_scores": [
+                0.913719,
+                0.83504,
+                0.834352,
+                0.832929,
+                0.828708,
+                0.811512,
+                0.807779,
+                0.805093,
+                0.795795,
+                0.782716
+              ]
+            },
+            {
+              "topic_id": 1,
+              "label": "Panagbengafestival / Road Bloom / Session Bloom",
+              "count": 756,
+              "top_words": [
+                "panagbengafestival",
+                "road bloom",
+                "session bloom",
+                "baguioflowerfestival",
+                "session road",
+                "bloom",
+                "floral float",
+                "blooms",
+                "blossomsbeyondboundaries",
+                "sessionroadinbloom"
+              ],
+              "top_word_scores": [
+                0.805371,
+                0.68047,
+                0.674039,
+                0.671583,
+                0.583043,
+                0.563663,
+                0.550236,
+                0.549593,
+                0.548493,
+                0.547596
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "2026": {
+      "n_docs": 877,
+      "n_clusters": 9,
+      "noise_ratio": 0.2737,
+      "avg_coherence": 0.5212,
+      "clusters": [
+        {
+          "cluster_id": 0,
+          "n_docs": 81,
+          "n_topics": 3,
+          "coherence": 0.4164,
+          "topics": [
+            {
+              "topic_id": 0,
+              "label": "Parade Panagbengafestival / Dance Parade / Dancing Parade",
+              "count": 31,
+              "top_words": [
+                "parade panagbengafestival",
+                "dance parade",
+                "dancing parade",
+                "street dance",
+                "parade",
+                "street dancing",
+                "street dancers",
+                "parade city",
+                "panagbengafestival",
+                "float parade"
+              ],
+              "top_word_scores": [
+                0.862639,
+                0.844098,
+                0.82884,
+                0.760751,
+                0.750733,
+                0.750284,
+                0.742674,
+                0.731864,
+                0.709474,
+                0.707369
+              ]
+            },
+            {
+              "topic_id": 1,
+              "label": "Dance Luwishngbayan / Frontcammultimediaartists Panagbengafestival / Luwishngbayan Frontcammultimediaartists",
+              "count": 8,
+              "top_words": [
+                "dance luwishngbayan",
+                "frontcammultimediaartists panagbengafestival",
+                "luwishngbayan frontcammultimediaartists",
+                "panagbengafestival beat",
+                "panagbengafestival atm",
+                "pageantry luwishngbayan",
+                "panagbengafestival alas",
+                "panagbengafestival",
+                "streetphotography panagbengafestival",
+                "panagbengafestival mayaman"
+              ],
+              "top_word_scores": [
+                0.797524,
+                0.771119,
+                0.74914,
+                0.726812,
+                0.720981,
+                0.716011,
+                0.709532,
+                0.701766,
+                0.686204,
+                0.659215
+              ]
+            },
+            {
+              "topic_id": 2,
+              "label": "Panagbengafestival Grandstreetdanceparade / Streetdance Panagbengafestival / Panagbengagrandstreetdance Panagbengafestival",
+              "count": 9,
+              "top_words": [
+                "panagbengafestival grandstreetdanceparade",
+                "streetdance panagbengafestival",
+                "panagbengagrandstreetdance panagbengafestival",
+                "streetdancing panagbengafestival",
+                "panagbengagrandstreetdance",
+                "panagbengastreetdance",
+                "sabaguio streetdanceparade",
+                "panagbengastreetdance sabaguio",
+                "dance grandstreetdance",
+                "streetdanceparade tinkling"
+              ],
+              "top_word_scores": [
+                0.930524,
+                0.915593,
+                0.913706,
+                0.894927,
+                0.883155,
+                0.862841,
+                0.845265,
+                0.835588,
+                0.760011,
+                0.746504
+              ]
+            }
+          ]
+        },
+        {
+          "cluster_id": 1,
+          "n_docs": 25,
+          "n_topics": 3,
+          "coherence": 0.5477,
+          "topics": [
+            {
+              "topic_id": 0,
+              "label": "Panagbengafestival Trendingnow / Trendingreel Enjoy / Facebookreelsviral Trendingnowreels",
+              "count": 6,
+              "top_words": [
+                "panagbengafestival trendingnow",
+                "trendingreel enjoy",
+                "facebookreelsviral trendingnowreels",
+                "trendingnowreels trendingreels",
+                "trendingnow hilightseveryonefollowers",
+                "trendingreelsvideo trendingreel",
+                "trendingreels trendingreelsvideo",
+                "trendingreel",
+                "trendingnowreels",
+                "enjoy baguiocityphilippines"
+              ],
+              "top_word_scores": [
+                0.776184,
+                0.763921,
+                0.728286,
+                0.711358,
+                0.708859,
+                0.708578,
+                0.70795,
+                0.688809,
+                0.672038,
+                0.666568
+              ]
+            },
+            {
+              "topic_id": 1,
+              "label": "Followersreelsfypシ ViralシFypシ / ViralシAlシFollowers Followersreelsfypシ / ViralシAlシ Panagbengafestival",
+              "count": 9,
+              "top_words": [
+                "followersreelsfypシ viralシfypシ",
+                "viralシalシfollowers followersreelsfypシ",
+                "viralシalシ panagbengafestival",
+                "viralシ panagbengafestival",
+                "viralシll panagbengafestival",
+                "viralシal panagbengafestival",
+                "panagbengafestival followersreelsfypシ",
+                "viralシalシfollowers floatparade",
+                "viralシalシfollowers summercapitalofthephilippines",
+                "viralシalシfollowers"
+              ],
+              "top_word_scores": [
+                0.932201,
+                0.928459,
+                0.829707,
+                0.82333,
+                0.805182,
+                0.798771,
+                0.791744,
+                0.770036,
+                0.769347,
+                0.759588
+              ]
+            },
+            {
+              "topic_id": 2,
+              "label": "Facebookreelsviral Reelsfacebook / Reelsfacebook Panagbengafestival / Funnyreelsvideo ReelsviralシFb",
+              "count": 10,
+              "top_words": [
+                "facebookreelsviral reelsfacebook",
+                "reelsfacebook panagbengafestival",
+                "funnyreelsvideo reelsviralシfb",
+                "panagbengafestival reelsviralシfb",
+                "funnyreels reelsviralシfb",
+                "panagbengafestival funnyreelsvideo",
+                "reelsfacebook",
+                "reelsviralシfb myfollowersandviewers",
+                "fbgoodvibesreels",
+                "reelschallengereelschallenge facebookreelsviral"
+              ],
+              "top_word_scores": [
+                0.82926,
+                0.818615,
+                0.799284,
+                0.759662,
+                0.747184,
+                0.740406,
+                0.732934,
+                0.732681,
+                0.725339,
+                0.72433
+              ]
+            }
+          ]
+        },
+        {
+          "cluster_id": 2,
+          "n_docs": 166,
+          "n_topics": 4,
+          "coherence": 0.5065,
+          "topics": [
+            {
+              "topic_id": 0,
+              "label": "Panagbengafestival Floralfloatparade / Panagbengafestival Floatparade / Panagbengafestival Grandfloatparade",
+              "count": 38,
+              "top_words": [
+                "panagbengafestival floralfloatparade",
+                "panagbengafestival floatparade",
+                "panagbengafestival grandfloatparade",
+                "floralfloatparade",
+                "panagbengafestival floral",
+                "parade flower",
+                "parade panagbengafestival",
+                "float parade",
+                "parade wheninbaguio",
+                "floral float"
+              ],
+              "top_word_scores": [
+                0.969773,
+                0.866689,
+                0.854727,
+                0.84173,
+                0.840344,
+                0.832412,
+                0.83213,
+                0.784235,
+                0.769802,
+                0.753994
+              ]
+            },
+            {
+              "topic_id": 1,
+              "label": "Panagbengafestival Beautifullandscape / Flower Panagbengafestival / Artistry Plant",
+              "count": 41,
+              "top_words": [
+                "panagbengafestival beautifullandscape",
+                "flower panagbengafestival",
+                "artistry plant",
+                "nanaytetchie plantita",
+                "plantita baguioevents",
+                "plantart",
+                "beautifullandscape",
+                "garden",
+                "panagbengafestival",
+                "flowerstagram"
+              ],
+              "top_word_scores": [
+                0.776906,
+                0.774969,
+                0.652257,
+                0.65159,
+                0.63455,
+                0.634333,
+                0.630688,
+                0.619308,
+                0.618266,
+                0.618237
+              ]
+            },
+            {
+              "topic_id": 2,
+              "label": "Panagbengafestival / Panagbengafestival Full / Pino Panagbengafestival",
+              "count": 12,
+              "top_words": [
+                "panagbengafestival",
+                "panagbengafestival full",
+                "pino panagbengafestival",
+                "grand parade",
+                "fam panagbengafestival",
+                "celebration goers",
+                "panagbengafestival benguet",
+                "parade breathtaking",
+                "fun celebration",
+                "parade"
+              ],
+              "top_word_scores": [
+                0.687661,
+                0.681602,
+                0.667437,
+                0.660399,
+                0.655584,
+                0.640123,
+                0.636133,
+                0.627075,
+                0.623745,
+                0.596915
+              ]
+            },
+            {
+              "topic_id": 3,
+              "label": "Panagbengafestival / Celebration / Theme Blooming",
+              "count": 26,
+              "top_words": [
+                "panagbengafestival",
+                "celebration",
+                "theme blooming",
+                "celebrate",
+                "celebrated",
+                "season blooming",
+                "year theme",
+                "vibrant colors",
+                "vibrant",
+                "bloomingwithoutend"
+              ],
+              "top_word_scores": [
+                0.60682,
+                0.583158,
+                0.567384,
+                0.546069,
+                0.541024,
+                0.518642,
+                0.507062,
+                0.49789,
+                0.489114,
+                0.484954
+              ]
+            }
+          ]
+        },
+        {
+          "cluster_id": 3,
+          "n_docs": 94,
+          "n_topics": 2,
+          "coherence": 0.6202,
+          "topics": [
+            {
+              "topic_id": 0,
+              "label": "Panagbengafestival Grandfloatparade / Grandfloatparade Panagbengafestival / Panagbengafestival Grandparade",
+              "count": 43,
+              "top_words": [
+                "panagbengafestival grandfloatparade",
+                "grandfloatparade panagbengafestival",
+                "panagbengafestival grandparade",
+                "parade panagbengafestival",
+                "grandfloatparade",
+                "panagbengafestival grandstreetdanceparade",
+                "panagbengafestival grandfloat",
+                "float parade",
+                "floatparade",
+                "grand parade"
+              ],
+              "top_word_scores": [
+                0.961817,
+                0.941025,
+                0.911195,
+                0.872556,
+                0.862473,
+                0.86122,
+                0.859779,
+                0.851922,
+                0.827969,
+                0.819396
+              ]
+            },
+            {
+              "topic_id": 1,
+              "label": "Panagbengafestival Parade / Parade Panagbengafestival / Parade Luwishngbayan",
+              "count": 40,
+              "top_words": [
+                "panagbengafestival parade",
+                "parade panagbengafestival",
+                "parade luwishngbayan",
+                "panagbengafestival floatparade",
+                "panagbengafestival",
+                "panagbengafestival baguiopanagbenga",
+                "baguiopanagbenga floatparade",
+                "overpass panagbengafestival",
+                "tao panagbengafestival",
+                "parade"
+              ],
+              "top_word_scores": [
+                0.820929,
+                0.800265,
+                0.779129,
+                0.735151,
+                0.714022,
+                0.710568,
+                0.710171,
+                0.709362,
+                0.693631,
+                0.673167
+              ]
+            }
+          ]
+        },
+        {
+          "cluster_id": 4,
+          "n_docs": 55,
+          "n_topics": 2,
+          "coherence": 0.4711,
+          "topics": [
+            {
+              "topic_id": 0,
+              "label": "Azalea Hotels / Hotels / Hotels Residences",
+              "count": 16,
+              "top_words": [
+                "azalea hotels",
+                "hotels",
+                "hotels residences",
+                "hotel",
+                "accommodations",
+                "vacation",
+                "planning trip",
+                "getaway",
+                "tourist",
+                "residences"
+              ],
+              "top_word_scores": [
+                0.632193,
+                0.596118,
+                0.595324,
+                0.565304,
+                0.546634,
+                0.449181,
+                0.446681,
+                0.420841,
+                0.413065,
+                0.401057
+              ]
+            },
+            {
+              "topic_id": 1,
+              "label": "Panagbengafestival Byahengnorth / Byahengnorth Panagbengafestival / Travel Byahengnorth",
+              "count": 30,
+              "top_words": [
+                "panagbengafestival byahengnorth",
+                "byahengnorth panagbengafestival",
+                "travel byahengnorth",
+                "sight panagbengafestival",
+                "yyc panagbengafestival",
+                "panagbengafestival carouselride",
+                "panagbengafestival",
+                "panagbengafestival grand",
+                "panagbengafestival familytrip",
+                "touristattraction fypviral"
+              ],
+              "top_word_scores": [
+                0.819282,
+                0.815096,
+                0.803287,
+                0.788395,
+                0.761288,
+                0.754343,
+                0.753772,
+                0.745063,
+                0.74414,
+                0.739226
+              ]
+            }
+          ]
+        },
+        {
+          "cluster_id": 5,
+          "n_docs": 28,
+          "n_topics": 3,
+          "coherence": 0.4956,
+          "topics": [
+            {
+              "topic_id": 0,
+              "label": "Calendarofactivities Panagbengafestival / Panagbengafestival Schedule / Activities Panagbengaschedule",
+              "count": 3,
+              "top_words": [
+                "calendarofactivities panagbengafestival",
+                "panagbengafestival schedule",
+                "activities panagbengaschedule",
+                "panagbengacalendarofactivities calendarofactivities",
+                "calendar activities",
+                "panagbengaschedule",
+                "panagbengafestival",
+                "schedule activities",
+                "schedule calendar",
+                "calendarofactivities"
+              ],
+              "top_word_scores": [
+                0.901372,
+                0.900524,
+                0.823282,
+                0.801691,
+                0.742903,
+                0.705158,
+                0.703006,
+                0.69484,
+                0.694815,
+                0.684307
+              ]
+            },
+            {
+              "topic_id": 1,
+              "label": "Day Panagbengafestival / Hours Panagbengafestival / Grind Panagbengafestival",
+              "count": 4,
+              "top_words": [
+                "day panagbengafestival",
+                "hours panagbengafestival",
+                "grind panagbengafestival",
+                "panagbengafestival fypbaguio",
+                "panagbengafestival see",
+                "panagbengafestival",
+                "closing panagbengafestival",
+                "panagbengafestival energyfm",
+                "fypbaguio last",
+                "fypbaguio"
+              ],
+              "top_word_scores": [
+                0.903138,
+                0.895496,
+                0.880676,
+                0.869455,
+                0.86637,
+                0.856732,
+                0.824878,
+                0.76969,
+                0.632439,
+                0.607745
+              ]
+            },
+            {
+              "topic_id": 2,
+              "label": "Panagbengafestival Happymoments / Panagbengafestival Happy / Panagbengafestival Joyful",
+              "count": 18,
+              "top_words": [
+                "panagbengafestival happymoments",
+                "panagbengafestival happy",
+                "panagbengafestival joyful",
+                "happymoments",
+                "panagbengafestival fbreelsツ",
+                "panagbengafestival congratulations",
+                "panagbengafestival celebrating",
+                "panagbengafestival great",
+                "wlw panagbengafestival",
+                "panagbengafestival panagbengafestival"
+              ],
+              "top_word_scores": [
+                0.866659,
+                0.809293,
+                0.797017,
+                0.724051,
+                0.693866,
+                0.692015,
+                0.688468,
+                0.683442,
+                0.683037,
+                0.681799
+              ]
+            }
+          ]
+        },
+        {
+          "cluster_id": 6,
+          "n_docs": 112,
+          "n_topics": 3,
+          "coherence": 0.2547,
+          "topics": [
+            {
+              "topic_id": 0,
+              "label": "Panagbengafestival / Sugodfiestatv Panagbengafestival / Maraming Salamat",
+              "count": 40,
+              "top_words": [
+                "panagbengafestival",
+                "sugodfiestatv panagbengafestival",
+                "maraming salamat",
+                "fiesta sugodfiestatv",
+                "kayo",
+                "namumukadkad",
+                "panagbengafestival gmaregionaltv",
+                "fiesta",
+                "manginasalcelebratespanagbenga",
+                "kuya"
+              ],
+              "top_word_scores": [
+                0.659332,
+                0.644558,
+                0.610525,
+                0.604579,
+                0.599387,
+                0.568333,
+                0.562562,
+                0.557459,
+                0.550034,
+                0.524416
+              ]
+            },
+            {
+              "topic_id": 1,
+              "label": "Santiknows Panagbengafestival / See Panagbengafestival / Panagbengafestival",
+              "count": 18,
+              "top_words": [
+                "santiknows panagbengafestival",
+                "see panagbengafestival",
+                "panagbengafestival",
+                "init panagbenga",
+                "johnmedina batangquiapo",
+                "sabaguio",
+                "sabaguio wheninbaguio",
+                "heyheyheyitsmeneyney azaleahotelandresidencesbaguiocity",
+                "mamshiesannie sabaguio",
+                "medina johnmedina"
+              ],
+              "top_word_scores": [
+                0.803376,
+                0.788555,
+                0.774397,
+                0.769054,
+                0.753622,
+                0.727796,
+                0.720161,
+                0.705313,
+                0.692717,
+                0.686636
+              ]
+            },
+            {
+              "topic_id": 2,
+              "label": "Panagbengafestival Kapamilya / Rekta Panagbengafestival / Panagbengafestival Pabagbenga",
+              "count": 25,
+              "top_words": [
+                "panagbengafestival kapamilya",
+                "rekta panagbengafestival",
+                "panagbengafestival pabagbenga",
+                "panagbengafestival yassi",
+                "bulaklak panagbengafestival",
+                "panagbengafestival masaya",
+                "nikon panagbengafestival",
+                "panagbengafestival rojafam",
+                "panagbengafestival lou",
+                "panagbengafestival pala"
+              ],
+              "top_word_scores": [
+                0.852289,
+                0.847162,
+                0.83546,
+                0.833362,
+                0.832247,
+                0.828963,
+                0.822121,
+                0.82139,
+                0.817704,
+                0.813783
+              ]
+            }
+          ]
+        },
+        {
+          "cluster_id": 7,
+          "n_docs": 35,
+          "n_topics": 3,
+          "coherence": 0.8434,
+          "topics": [
+            {
+              "topic_id": 0,
+              "label": "Napapasarappagkaingmanginasal Foodie / Panagbengafestival Donyadesserts / Cheesebread Panagbengafestival",
+              "count": 12,
+              "top_words": [
+                "napapasarappagkaingmanginasal foodie",
+                "panagbengafestival donyadesserts",
+                "cheesebread panagbengafestival",
+                "panagbengafestival omali",
+                "chocolates panagbengafestival",
+                "panagbengafestival aurabellabite",
+                "panagbengafestival overfriessabaguio",
+                "panagbengafestival panagbengahotties",
+                "pistachio dubaichewycookie",
+                "looks panagbengafestival"
+              ],
+              "top_word_scores": [
+                0.824772,
+                0.7685,
+                0.7597,
+                0.745239,
+                0.729712,
+                0.705152,
+                0.697816,
+                0.696666,
+                0.67568,
+                0.66455
+              ]
+            },
+            {
+              "topic_id": 1,
+              "label": "Pizzahutph Celebrate / Pizzahutph Panagbengafestival / Pizzas Tropical",
+              "count": 4,
+              "top_words": [
+                "pizzahutph celebrate",
+                "pizzahutph panagbengafestival",
+                "pizzas tropical",
+                "pizza tropical",
+                "pizzas",
+                "takeout pizzahutph",
+                "pizzahutph",
+                "pizzahutph mega",
+                "large pizzas",
+                "pizza pair"
+              ],
+              "top_word_scores": [
+                0.748203,
+                0.736067,
+                0.723312,
+                0.699033,
+                0.671016,
+                0.665611,
+                0.649776,
+                0.649261,
+                0.645852,
+                0.641755
+              ]
+            },
+            {
+              "topic_id": 2,
+              "label": "Maraming Food / Food / Cafe",
+              "count": 7,
+              "top_words": [
+                "maraming food",
+                "food",
+                "cafe",
+                "cebu lechon",
+                "cebu",
+                "nating cebu",
+                "nakakapunta session",
+                "brewha",
+                "longganisa shawarma",
+                "pot seafood"
+              ],
+              "top_word_scores": [
+                0.587332,
+                0.56171,
+                0.550967,
+                0.534064,
+                0.506711,
+                0.500991,
+                0.500921,
+                0.500075,
+                0.489201,
+                0.485203
+              ]
+            }
+          ]
+        },
+        {
+          "cluster_id": 8,
+          "n_docs": 41,
+          "n_topics": 2,
+          "coherence": 0.2862,
+          "topics": [
+            {
+              "topic_id": 0,
+              "label": "Session Bloom / Upper Sessionrdinbloom / Sessionrdinbloom",
+              "count": 6,
+              "top_words": [
+                "session bloom",
+                "upper sessionrdinbloom",
+                "sessionrdinbloom",
+                "sessioninbloom",
+                "sessioninbloom session",
+                "kuya sessioninbloom",
+                "sessionroad",
+                "sessionrdinbloom keep",
+                "pakain sessionroad",
+                "session"
+              ],
+              "top_word_scores": [
+                0.919955,
+                0.804866,
+                0.781643,
+                0.718547,
+                0.711404,
+                0.706449,
+                0.693177,
+                0.688672,
+                0.685785,
+                0.682512
+              ]
+            },
+            {
+              "topic_id": 1,
+              "label": "Panagbengafestival Sessionroadinbloom / Sessionroadinbloom Panagbengafestival / Bloom Sessionroad",
+              "count": 34,
+              "top_words": [
+                "panagbengafestival sessionroadinbloom",
+                "sessionroadinbloom panagbengafestival",
+                "bloom sessionroad",
+                "panagbengafestival sessionroadbaguiocity",
+                "panagbengafestival sessionroadbaguio",
+                "panagbengafestival sessioninbloom",
+                "road panagbengafestival",
+                "portavaga sessionroadinbloom",
+                "session road",
+                "sessionroadbaguiocity"
+              ],
+              "top_word_scores": [
+                0.879469,
+                0.875173,
+                0.864708,
+                0.839762,
+                0.803079,
+                0.792634,
+                0.788607,
+                0.785643,
+                0.761097,
+                0.754663
+              ]
+            }
+          ]
+        },
+        {
+          "cluster_id": -1,
+          "n_docs": 240,
+          "n_topics": 4,
+          "coherence": 0.7706,
+          "topics": [
+            {
+              "topic_id": 0,
+              "label": "Recital Solstice / Bloominmotion Axisdancestudio / Solstice Bloom",
+              "count": 21,
+              "top_words": [
+                "recital solstice",
+                "bloominmotion axisdancestudio",
+                "solstice bloom",
+                "bloom motion",
+                "recital",
+                "studio recital",
+                "bloominmotion",
+                "axis dance",
+                "dancers",
+                "solstice"
+              ],
+              "top_word_scores": [
+                0.684149,
+                0.651381,
+                0.630217,
+                0.609652,
+                0.558912,
+                0.535631,
+                0.524504,
+                0.523338,
+                0.522364,
+                0.517144
+              ]
+            },
+            {
+              "topic_id": 1,
+              "label": "Surfph Surfiestaxpanagbenga / Surfiestaxpanagbenga / Surfiestaxpanagbenga Ukayukay",
+              "count": 10,
+              "top_words": [
+                "surfph surfiestaxpanagbenga",
+                "surfiestaxpanagbenga",
+                "surfiestaxpanagbenga ukayukay",
+                "niyo surfiesta",
+                "surfiestasapanagbenga",
+                "surf blossom",
+                "surfiesta",
+                "surf freshness",
+                "surf",
+                "pamilya surf"
+              ],
+              "top_word_scores": [
+                0.724135,
+                0.71746,
+                0.696631,
+                0.679511,
+                0.671342,
+                0.670411,
+                0.634459,
+                0.633569,
+                0.600053,
+                0.5997
+              ]
+            },
+            {
+              "topic_id": 2,
+              "label": "Grandstreetdanceparade Bloomingwithoutend / Float Parade / Grandstreetdanceparade",
+              "count": 26,
+              "top_words": [
+                "grandstreetdanceparade bloomingwithoutend",
+                "float parade",
+                "grandstreetdanceparade",
+                "parade",
+                "parade march",
+                "season grandstreetdanceparade",
+                "floral float",
+                "march breathtaking",
+                "floats adorned",
+                "stunning floats"
+              ],
+              "top_word_scores": [
+                0.755237,
+                0.72594,
+                0.679624,
+                0.675427,
+                0.67293,
+                0.650392,
+                0.639221,
+                0.600096,
+                0.577701,
+                0.575409
+              ]
+            },
+            {
+              "topic_id": 3,
+              "label": "Panagbengafestival Baguiocityphilippines / Facebookpostシ Panagbengafestival / Panagbengafestival",
+              "count": 183,
+              "top_words": [
+                "panagbengafestival baguiocityphilippines",
+                "facebookpostシ panagbengafestival",
+                "panagbengafestival",
+                "baguiocityphilippines panahbenga",
+                "kuhang",
+                "sabaguio",
+                "city wheninbaguio",
+                "alcantara",
+                "kuhang city",
+                "wheninbaguio"
+              ],
+              "top_word_scores": [
+                0.817778,
+                0.806733,
+                0.803617,
+                0.701065,
+                0.581778,
+                0.576232,
+                0.56496,
+                0.551054,
+                0.529605,
+                0.514311
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  }
+}

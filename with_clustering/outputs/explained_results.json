@@ -1,0 +1,5737 @@
+{
+  "pipeline_version": "4.1-with-clustering",
+  "generated_at": "2026-05-13T14:10:55",
+  "summary": {
+    "year_range": "2022–2026",
+    "total_years": 5,
+    "total_docs": 3359,
+    "total_topics": 78,
+    "total_clusters": 24,
+    "avg_coherence": 0.5186,
+    "avg_confidence": 0.5209
+  },
+  "models": {
+    "topic_model_type": "bertopic",
+    "topic_parameters": {
+      "pre_cluster_min_size": 20,
+      "pre_cluster_min_samples": 5,
+      "min_topic_size": 10,
+      "nr_topics": 10,
+      "top_n_words": 10,
+      "ngram_range": [
+        1,
+        2
+      ],
+      "embedding_model": "sentence-transformers/paraphrase-multilingual-mpnet-base-v2",
+      "used_persisted_clusters": true
+    },
+    "sentiment_model": "cardiffnlp/twitter-xlm-roberta-base-sentiment",
+    "sentiment_confidence_threshold": 0.75
+  },
+  "visualizations": {
+    "cluster_summary": "outputs\\cluster_summary.json",
+    "cluster_viz_2022.png": "outputs\\visualizations\\cluster_viz_2022.png",
+    "cluster_viz_2023.png": "outputs\\visualizations\\cluster_viz_2023.png",
+    "cluster_viz_2024.png": "outputs\\visualizations\\cluster_viz_2024.png",
+    "cluster_viz_2025.png": "outputs\\visualizations\\cluster_viz_2025.png",
+    "cluster_viz_2026.png": "outputs\\visualizations\\cluster_viz_2026.png",
+    "coherence_overview.png": "outputs\\visualizations\\coherence_overview.png",
+    "sentiment_overview.png": "outputs\\visualizations\\sentiment_overview.png"
+  },
+  "years": [
+    {
+      "year": 2022,
+      "total_docs": 389,
+      "n_clusters": 3,
+      "total_topics": 10,
+      "noise_ratio": 0.0,
+      "avg_coherence": 0.7564,
+      "sentiment_summary": {
+        "n_docs": 261,
+        "avg_confidence": 0.5269,
+        "avg_coverage": 1.0,
+        "high_confidence_ratio": 0.0153,
+        "dominant_sentiment": "NEUTRAL",
+        "label_distribution": {
+          "POSITIVE": 47,
+          "NEUTRAL": 209,
+          "NEGATIVE": 5
+        }
+      },
+      "dominant_sentiment_dist": {
+        "POSITIVE": 1,
+        "NEUTRAL": 9
+      },
+      "visualization": "outputs\\visualizations\\cluster_viz_2022.png",
+      "clusters": [
+        {
+          "cluster_id": 0,
+          "n_docs": 38,
+          "n_topics": 2,
+          "coherence": 1.0,
+          "sentiment_summary": {
+            "n_docs": 22,
+            "avg_confidence": 0.5187,
+            "avg_coverage": 1.0,
+            "high_confidence_ratio": 0.0455,
+            "dominant_sentiment": "NEUTRAL",
+            "label_distribution": {
+              "POSITIVE": 10,
+              "NEUTRAL": 11,
+              "NEGATIVE": 1
+            }
+          },
+          "dominant_sentiment_dist": {
+            "POSITIVE": 1,
+            "NEUTRAL": 1
+          },
+          "topics": [
+            {
+              "topic_id": 0,
+              "label": "Bikesinbloom Topbikesgoestobaguio / Topbikesgoestobaguio Topbikesph / Topbikesph Tropangtopbikes",
+              "count": 19,
+              "top_words": [
+                "bikesinbloom topbikesgoestobaguio",
+                "topbikesgoestobaguio topbikesph",
+                "topbikesph tropangtopbikes",
+                "motoglamping bikesinbloom",
+                "baguiobikesinbloom motoglamping",
+                "topbikesgoestobaguio",
+                "yamahamotorphilippines bikesinbloom",
+                "topbikesph",
+                "motorcycles lethopevroom",
+                "papiapproved topbikesgoestobaguio"
+              ],
+              "top_word_scores": [
+                0.849492,
+                0.840408,
+                0.813465,
+                0.780955,
+                0.764589,
+                0.762841,
+                0.758921,
+                0.754082,
+                0.751104,
+                0.748699
+              ],
+              "sentiment": {
+                "dominant": "POSITIVE",
+                "avg_confidence": 0.4566,
+                "std_confidence": 0.0294,
+                "high_confidence_ratio": 0.0,
+                "coverage": 1.0,
+                "label_distribution": {
+                  "POSITIVE": 4,
+                  "NEUTRAL": 2
+                },
+                "label_ratios": {
+                  "POSITIVE": 0.6667,
+                  "NEUTRAL": 0.3333
+                }
+              },
+              "explanation": "In 2022, people were talking about bikesinbloom topbikesgoestobaguio, topbikesgoestobaguio topbikesph, topbikesph tropangtopbikes, motoglamping bikesinbloom.",
+              "top_10_rank": 7
+            },
+            {
+              "topic_id": 1,
+              "label": "Closing Fireworks / Fireworks Display / Display Fireworks",
+              "count": 19,
+              "top_words": [
+                "closing fireworks",
+                "fireworks display",
+                "display fireworks",
+                "fireworks",
+                "panagbengafestival fireworksclosingceremony",
+                "watching fireworks",
+                "makeeverydaybloomatsm fireworks",
+                "melvinjones fireworkdisplay",
+                "pyrotechnics night",
+                "march firework"
+              ],
+              "top_word_scores": [
+                0.953347,
+                0.826917,
+                0.822214,
+                0.809615,
+                0.801832,
+                0.776335,
+                0.733879,
+                0.656837,
+                0.648765,
+                0.636672
+              ],
+              "sentiment": {
+                "dominant": "NEUTRAL",
+                "avg_confidence": 0.542,
+                "std_confidence": 0.105,
+                "high_confidence_ratio": 0.0625,
+                "coverage": 1.0,
+                "label_distribution": {
+                  "NEUTRAL": 9,
+                  "POSITIVE": 6,
+                  "NEGATIVE": 1
+                },
+                "label_ratios": {
+                  "NEUTRAL": 0.5625,
+                  "POSITIVE": 0.375,
+                  "NEGATIVE": 0.0625
+                }
+              },
+              "explanation": "In 2022, people were talking about closing fireworks, fireworks display, display fireworks, fireworks.",
+              "top_10_rank": 8
+            }
+          ]
+        },
+        {
+          "cluster_id": 1,
+          "n_docs": 50,
+          "n_topics": 2,
+          "coherence": 0.5872,
+          "sentiment_summary": {
+            "n_docs": 17,
+            "avg_confidence": 0.5012,
+            "avg_coverage": 1.0,
+            "high_confidence_ratio": 0.0,
+            "dominant_sentiment": "NEUTRAL",
+            "label_distribution": {
+              "NEUTRAL": 16,
+              "POSITIVE": 1
+            }
+          },
+          "dominant_sentiment_dist": {
+            "NEUTRAL": 2
+          },
+          "topics": [
+            {
+              "topic_id": 0,
+              "label": "Thecookieseriescookiecake / Cookies Cakes / Cakes Cupcakes",
+              "count": 10,
+              "top_words": [
+                "thecookieseriescookiecake",
+                "cookies cakes",
+                "cakes cupcakes",
+                "cakes",
+                "chocolatechipalmondcookies",
+                "kkrumbl cookies",
+                "thecookieserieshundredgramcookie chocolatechipalmondcookies",
+                "cupcakes",
+                "dessert",
+                "pasalubongfrombaguio cookiesfrombaguio"
+              ],
+              "top_word_scores": [
+                0.719428,
+                0.69949,
+                0.697403,
+                0.67531,
+                0.662951,
+                0.65812,
+                0.655228,
+                0.654866,
+                0.647745,
+                0.636255
+              ],
+              "sentiment": {
+                "dominant": "NEUTRAL",
+                "avg_confidence": 0.5048,
+                "std_confidence": 0.0958,
+                "high_confidence_ratio": 0.0,
+                "coverage": 1.0,
+                "label_distribution": {
+                  "NEUTRAL": 8,
+                  "POSITIVE": 1
+                },
+                "label_ratios": {
+                  "NEUTRAL": 0.8889,
+                  "POSITIVE": 0.1111
+                }
+              },
+              "explanation": "In 2022, people were talking about thecookieseriescookiecake, cookies cakes, cakes cupcakes, cakes.",
+              "top_10_rank": 10
+            },
+            {
+              "topic_id": 1,
+              "label": "Foodtrucksinbaguio Foodtrucksforhire / Foodtrucksinblossom Foodtruckph / Foodtrucksinbaguio",
+              "count": 35,
+              "top_words": [
+                "foodtrucksinbaguio foodtrucksforhire",
+                "foodtrucksinblossom foodtruckph",
+                "foodtrucksinbaguio",
+                "foodtruckph wheninbaguio",
+                "foodtruckcommunityph gypsywagonfoodtruck",
+                "foodtrucksinblossom",
+                "foodtrucknationph foodie",
+                "foodtrucksinbloom",
+                "foodtruckcommunity foodtruckcommunityph",
+                "foodtrucksinblossom thattinyredtruck"
+              ],
+              "top_word_scores": [
+                0.858864,
+                0.841729,
+                0.819568,
+                0.818133,
+                0.817358,
+                0.807896,
+                0.804169,
+                0.801926,
+                0.801859,
+                0.794488
+              ],
+              "sentiment": {
+                "dominant": "NEUTRAL",
+                "avg_confidence": 0.4972,
+                "std_confidence": 0.0353,
+                "high_confidence_ratio": 0.0,
+                "coverage": 1.0,
+                "label_distribution": {
+                  "NEUTRAL": 8
+                },
+                "label_ratios": {
+                  "NEUTRAL": 1.0
+                }
+              },
+              "explanation": "In 2022, people were talking about foodtrucksinbaguio foodtrucksforhire, foodtrucksinblossom foodtruckph, foodtrucksinbaguio, foodtruckph wheninbaguio.",
+              "top_10_rank": 4
+            }
+          ]
+        },
+        {
+          "cluster_id": 2,
+          "n_docs": 301,
+          "n_topics": 6,
+          "coherence": 0.682,
+          "sentiment_summary": {
+            "n_docs": 222,
+            "avg_confidence": 0.5297,
+            "avg_coverage": 1.0,
+            "high_confidence_ratio": 0.0135,
+            "dominant_sentiment": "NEUTRAL",
+            "label_distribution": {
+              "NEUTRAL": 182,
+              "POSITIVE": 36,
+              "NEGATIVE": 4
+            }
+          },
+          "dominant_sentiment_dist": {
+            "NEUTRAL": 6
+          },
+          "topics": [
+            {
+              "topic_id": 0,
+              "label": "Travel Travelphotography / Photography Travelgram / Travelblog",
+              "count": 56,
+              "top_words": [
+                "travel travelphotography",
+                "photography travelgram",
+                "travelblog",
+                "travelphotography",
+                "travelphotography photography",
+                "travelgram instatravel",
+                "travelblogger",
+                "photo traveler",
+                "itsmorefuninthephilippines sessionroadinbloom",
+                "travelph summercapitalofthephilippines"
+              ],
+              "top_word_scores": [
+                0.686174,
+                0.681999,
+                0.677932,
+                0.675429,
+                0.672209,
+                0.671666,
+                0.670723,
+                0.640536,
+                0.636924,
+                0.635201
+              ],
+              "sentiment": {
+                "dominant": "NEUTRAL",
+                "avg_confidence": 0.5194,
+                "std_confidence": 0.0966,
+                "high_confidence_ratio": 0.0,
+                "coverage": 1.0,
+                "label_distribution": {
+                  "NEUTRAL": 20
+                },
+                "label_ratios": {
+                  "NEUTRAL": 1.0
+                }
+              },
+              "explanation": "In 2022, people were talking about travel travelphotography, photography travelgram, travelblog, travelphotography.",
+              "top_10_rank": 2
+            },
+            {
+              "topic_id": 1,
+              "label": "Philippinefestival Culture / Filipinoculture / Panagbengafestival Philippinefestival",
+              "count": 73,
+              "top_words": [
+                "philippinefestival culture",
+                "filipinoculture",
+                "panagbengafestival philippinefestival",
+                "filipinoculture asianculture",
+                "asian filipinoculture",
+                "asianculture pilipinas",
+                "philippinefestival",
+                "pinoy filipino",
+                "filipino pilipino",
+                "happy panagbengafestival"
+              ],
+              "top_word_scores": [
+                0.783062,
+                0.758389,
+                0.753639,
+                0.751377,
+                0.728517,
+                0.725742,
+                0.715012,
+                0.665507,
+                0.657554,
+                0.652919
+              ],
+              "sentiment": {
+                "dominant": "NEUTRAL",
+                "avg_confidence": 0.471,
+                "std_confidence": 0.0365,
+                "high_confidence_ratio": 0.0,
+                "coverage": 1.0,
+                "label_distribution": {
+                  "NEUTRAL": 3
+                },
+                "label_ratios": {
+                  "NEUTRAL": 1.0
+                }
+              },
+              "explanation": "In 2022, people were talking about philippinefestival culture, filipinoculture, panagbengafestival philippinefestival, filipinoculture asianculture.",
+              "top_10_rank": 1
+            },
+            {
+              "topic_id": 2,
+              "label": "Panagbengafestival Baguioflowerfestival / February Panagbengafestival / Baguioflowerfestival Breathebaguio",
+              "count": 26,
+              "top_words": [
+                "panagbengafestival baguioflowerfestival",
+                "february panagbengafestival",
+                "baguioflowerfestival breathebaguio",
+                "baguioflowerfestival",
+                "panagbengafestival",
+                "pines panagbengafestival",
+                "panagbengafestival wonderful",
+                "panagbengapanagbengafestivalfestivalpanagbengafestivalpanagbengafestivalbaguiofeelssessionroadsessionroadbaguiocitybaguiostreetbaguiostreetphotobaguiocityflowerfestivalflowerfestivalfacemaskstaysafeandhealthystaysafeeveryonebaguiocitytouristspotstouristdestinationtouristattractionjastynwandererjastynabaguiofeelsbaguiofeels",
+                "panagbengafestival happy",
+                "panagbengapanagbengafestivalfestivalpanagbengafestivalpanagbengafestivalbaguiofeelssessionroadsessionroadbaguiocitybaguiostreetbaguiostreetphotobaguiocityflowerfestivalflowerfestivalfacemaskstaysafeandhealthystaysafeeveryonebaguiocitytouristspotstouristdestinationtouristattractionjastynwandererjastynabaguiofeelsbaguiofeels happypanagbengabaguiocityfeelfreefeelgoodbegoodbehappybeprotected"
+              ],
+              "top_word_scores": [
+                0.779126,
+                0.772504,
+                0.725856,
+                0.697352,
+                0.685804,
+                0.666947,
+                0.635811,
+                0.608802,
+                0.57027,
+                0.547381
+              ],
+              "sentiment": {
+                "dominant": "NEUTRAL",
+                "avg_confidence": 0.5353,
+                "std_confidence": 0.0898,
+                "high_confidence_ratio": 0.0,
+                "coverage": 1.0,
+                "label_distribution": {
+                  "POSITIVE": 9,
+                  "NEUTRAL": 43,
+                  "NEGATIVE": 1
+                },
+                "label_ratios": {
+                  "POSITIVE": 0.1698,
+                  "NEUTRAL": 0.8113,
+                  "NEGATIVE": 0.0189
+                }
+              },
+              "explanation": "In 2022, people were talking about panagbengafestival baguioflowerfestival, february panagbengafestival, baguioflowerfestival breathebaguio, baguioflowerfestival.",
+              "top_10_rank": 6
+            },
+            {
+              "topic_id": 3,
+              "label": "Parade / Panagbengafestival / Parade Open",
+              "count": 29,
+              "top_words": [
+                "parade",
+                "panagbengafestival",
+                "parade open",
+                "parade march",
+                "march grand",
+                "celebration",
+                "park staging",
+                "parading",
+                "grandstand",
+                "march"
+              ],
+              "top_word_scores": [
+                0.619117,
+                0.605801,
+                0.594076,
+                0.584562,
+                0.552512,
+                0.530726,
+                0.521729,
+                0.495682,
+                0.482211,
+                0.475314
+              ],
+              "sentiment": {
+                "dominant": "NEUTRAL",
+                "avg_confidence": 0.5381,
+                "std_confidence": 0.1008,
+                "high_confidence_ratio": 0.0395,
+                "coverage": 1.0,
+                "label_distribution": {
+                  "POSITIVE": 14,
+                  "NEUTRAL": 61,
+                  "NEGATIVE": 1
+                },
+                "label_ratios": {
+                  "POSITIVE": 0.1842,
+                  "NEUTRAL": 0.8026,
+                  "NEGATIVE": 0.0132
+                }
+              },
+              "explanation": "In 2022, people were talking about parade, panagbengafestival, parade open, parade march.",
+              "top_10_rank": 5
+            },
+            {
+              "topic_id": 4,
+              "label": "Bloom Sessionroad / Road Sessionroadinbloom / Session Bloom",
+              "count": 36,
+              "top_words": [
+                "bloom sessionroad",
+                "road sessionroadinbloom",
+                "session bloom",
+                "road sessioninbloom",
+                "bloom sessioninbloom",
+                "sessionroad sessionroadinbloom",
+                "sessionroadinbloom",
+                "session road",
+                "ulit sessionroadinbloom",
+                "road bloom"
+              ],
+              "top_word_scores": [
+                0.870402,
+                0.790218,
+                0.77828,
+                0.776378,
+                0.773566,
+                0.754791,
+                0.739526,
+                0.73859,
+                0.73143,
+                0.710041
+              ],
+              "sentiment": {
+                "dominant": "NEUTRAL",
+                "avg_confidence": 0.485,
+                "std_confidence": 0.0709,
+                "high_confidence_ratio": 0.0,
+                "coverage": 1.0,
+                "label_distribution": {
+                  "POSITIVE": 5,
+                  "NEUTRAL": 13,
+                  "NEGATIVE": 1
+                },
+                "label_ratios": {
+                  "POSITIVE": 0.2632,
+                  "NEUTRAL": 0.6842,
+                  "NEGATIVE": 0.0526
+                }
+              },
+              "explanation": "In 2022, people were talking about bloom sessionroad, road sessionroadinbloom, session bloom, road sessioninbloom.",
+              "top_10_rank": 3
+            },
+            {
+              "topic_id": 5,
+              "label": "Panagbengafestival Maligayang / Paresretirobaguio Panagbengafestival / Pasyadin Ninyo",
+              "count": 15,
+              "top_words": [
+                "panagbengafestival maligayang",
+                "paresretirobaguio panagbengafestival",
+                "pasyadin ninyo",
+                "pares yayain",
+                "masayang selebrasyon",
+                "maraming salamat",
+                "panagbengafestival sessioninbloom",
+                "panagbengafestival",
+                "dami tao",
+                "yung makadaan"
+              ],
+              "top_word_scores": [
+                0.678716,
+                0.662854,
+                0.63793,
+                0.620595,
+                0.619233,
+                0.610731,
+                0.597949,
+                0.596863,
+                0.578882,
+                0.57444
+              ],
+              "sentiment": {
+                "dominant": "NEUTRAL",
+                "avg_confidence": 0.5356,
+                "std_confidence": 0.0914,
+                "high_confidence_ratio": 0.0,
+                "coverage": 1.0,
+                "label_distribution": {
+                  "POSITIVE": 8,
+                  "NEUTRAL": 42,
+                  "NEGATIVE": 1
+                },
+                "label_ratios": {
+                  "POSITIVE": 0.1569,
+                  "NEUTRAL": 0.8235,
+                  "NEGATIVE": 0.0196
+                }
+              },
+              "explanation": "In 2022, people were talking about panagbengafestival maligayang, paresretirobaguio panagbengafestival, pasyadin ninyo, pares yayain.",
+              "top_10_rank": 9
+            }
+          ]
+        }
+      ],
+      "top_10_topics": [
+        {
+          "rank": 1,
+          "cluster_id": 2,
+          "topic_id": 1,
+          "label": "Philippinefestival Culture / Filipinoculture / Panagbengafestival Philippinefestival",
+          "count": 73,
+          "top_words": [
+            "philippinefestival culture",
+            "filipinoculture",
+            "panagbengafestival philippinefestival",
+            "filipinoculture asianculture",
+            "asian filipinoculture",
+            "asianculture pilipinas"
+          ],
+          "sentiment": {
+            "dominant": "NEUTRAL",
+            "avg_confidence": 0.471,
+            "std_confidence": 0.0365,
+            "high_confidence_ratio": 0.0,
+            "coverage": 1.0,
+            "label_distribution": {
+              "NEUTRAL": 3
+            },
+            "label_ratios": {
+              "NEUTRAL": 1.0
+            }
+          },
+          "explanation": "In 2022, people were talking about philippinefestival culture, filipinoculture, panagbengafestival philippinefestival, filipinoculture asianculture."
+        },
+        {
+          "rank": 2,
+          "cluster_id": 2,
+          "topic_id": 0,
+          "label": "Travel Travelphotography / Photography Travelgram / Travelblog",
+          "count": 56,
+          "top_words": [
+            "travel travelphotography",
+            "photography travelgram",
+            "travelblog",
+            "travelphotography",
+            "travelphotography photography",
+            "travelgram instatravel"
+          ],
+          "sentiment": {
+            "dominant": "NEUTRAL",
+            "avg_confidence": 0.5194,
+            "std_confidence": 0.0966,
+            "high_confidence_ratio": 0.0,
+            "coverage": 1.0,
+            "label_distribution": {
+              "NEUTRAL": 20
+            },
+            "label_ratios": {
+              "NEUTRAL": 1.0
+            }
+          },
+          "explanation": "In 2022, people were talking about travel travelphotography, photography travelgram, travelblog, travelphotography."
+        },
+        {
+          "rank": 3,
+          "cluster_id": 2,
+          "topic_id": 4,
+          "label": "Bloom Sessionroad / Road Sessionroadinbloom / Session Bloom",
+          "count": 36,
+          "top_words": [
+            "bloom sessionroad",
+            "road sessionroadinbloom",
+            "session bloom",
+            "road sessioninbloom",
+            "bloom sessioninbloom",
+            "sessionroad sessionroadinbloom"
+          ],
+          "sentiment": {
+            "dominant": "NEUTRAL",
+            "avg_confidence": 0.485,
+            "std_confidence": 0.0709,
+            "high_confidence_ratio": 0.0,
+            "coverage": 1.0,
+            "label_distribution": {
+              "POSITIVE": 5,
+              "NEUTRAL": 13,
+              "NEGATIVE": 1
+            },
+            "label_ratios": {
+              "POSITIVE": 0.2632,
+              "NEUTRAL": 0.6842,
+              "NEGATIVE": 0.0526
+            }
+          },
+          "explanation": "In 2022, people were talking about bloom sessionroad, road sessionroadinbloom, session bloom, road sessioninbloom."
+        },
+        {
+          "rank": 4,
+          "cluster_id": 1,
+          "topic_id": 1,
+          "label": "Foodtrucksinbaguio Foodtrucksforhire / Foodtrucksinblossom Foodtruckph / Foodtrucksinbaguio",
+          "count": 35,
+          "top_words": [
+            "foodtrucksinbaguio foodtrucksforhire",
+            "foodtrucksinblossom foodtruckph",
+            "foodtrucksinbaguio",
+            "foodtruckph wheninbaguio",
+            "foodtruckcommunityph gypsywagonfoodtruck",
+            "foodtrucksinblossom"
+          ],
+          "sentiment": {
+            "dominant": "NEUTRAL",
+            "avg_confidence": 0.4972,
+            "std_confidence": 0.0353,
+            "high_confidence_ratio": 0.0,
+            "coverage": 1.0,
+            "label_distribution": {
+              "NEUTRAL": 8
+            },
+            "label_ratios": {
+              "NEUTRAL": 1.0
+            }
+          },
+          "explanation": "In 2022, people were talking about foodtrucksinbaguio foodtrucksforhire, foodtrucksinblossom foodtruckph, foodtrucksinbaguio, foodtruckph wheninbaguio."
+        },
+        {
+          "rank": 5,
+          "cluster_id": 2,
+          "topic_id": 3,
+          "label": "Parade / Panagbengafestival / Parade Open",
+          "count": 29,
+          "top_words": [
+            "parade",
+            "panagbengafestival",
+            "parade open",
+            "parade march",
+            "march grand",
+            "celebration"
+          ],
+          "sentiment": {
+            "dominant": "NEUTRAL",
+            "avg_confidence": 0.5381,
+            "std_confidence": 0.1008,
+            "high_confidence_ratio": 0.0395,
+            "coverage": 1.0,
+            "label_distribution": {
+              "POSITIVE": 14,
+              "NEUTRAL": 61,
+              "NEGATIVE": 1
+            },
+            "label_ratios": {
+              "POSITIVE": 0.1842,
+              "NEUTRAL": 0.8026,
+              "NEGATIVE": 0.0132
+            }
+          },
+          "explanation": "In 2022, people were talking about parade, panagbengafestival, parade open, parade march."
+        },
+        {
+          "rank": 6,
+          "cluster_id": 2,
+          "topic_id": 2,
+          "label": "Panagbengafestival Baguioflowerfestival / February Panagbengafestival / Baguioflowerfestival Breathebaguio",
+          "count": 26,
+          "top_words": [
+            "panagbengafestival baguioflowerfestival",
+            "february panagbengafestival",
+            "baguioflowerfestival breathebaguio",
+            "baguioflowerfestival",
+            "panagbengafestival",
+            "pines panagbengafestival"
+          ],
+          "sentiment": {
+            "dominant": "NEUTRAL",
+            "avg_confidence": 0.5353,
+            "std_confidence": 0.0898,
+            "high_confidence_ratio": 0.0,
+            "coverage": 1.0,
+            "label_distribution": {
+              "POSITIVE": 9,
+              "NEUTRAL": 43,
+              "NEGATIVE": 1
+            },
+            "label_ratios": {
+              "POSITIVE": 0.1698,
+              "NEUTRAL": 0.8113,
+              "NEGATIVE": 0.0189
+            }
+          },
+          "explanation": "In 2022, people were talking about panagbengafestival baguioflowerfestival, february panagbengafestival, baguioflowerfestival breathebaguio, baguioflowerfestival."
+        },
+        {
+          "rank": 7,
+          "cluster_id": 0,
+          "topic_id": 0,
+          "label": "Bikesinbloom Topbikesgoestobaguio / Topbikesgoestobaguio Topbikesph / Topbikesph Tropangtopbikes",
+          "count": 19,
+          "top_words": [
+            "bikesinbloom topbikesgoestobaguio",
+            "topbikesgoestobaguio topbikesph",
+            "topbikesph tropangtopbikes",
+            "motoglamping bikesinbloom",
+            "baguiobikesinbloom motoglamping",
+            "topbikesgoestobaguio"
+          ],
+          "sentiment": {
+            "dominant": "POSITIVE",
+            "avg_confidence": 0.4566,
+            "std_confidence": 0.0294,
+            "high_confidence_ratio": 0.0,
+            "coverage": 1.0,
+            "label_distribution": {
+              "POSITIVE": 4,
+              "NEUTRAL": 2
+            },
+            "label_ratios": {
+              "POSITIVE": 0.6667,
+              "NEUTRAL": 0.3333
+            }
+          },
+          "explanation": "In 2022, people were talking about bikesinbloom topbikesgoestobaguio, topbikesgoestobaguio topbikesph, topbikesph tropangtopbikes, motoglamping bikesinbloom."
+        },
+        {
+          "rank": 8,
+          "cluster_id": 0,
+          "topic_id": 1,
+          "label": "Closing Fireworks / Fireworks Display / Display Fireworks",
+          "count": 19,
+          "top_words": [
+            "closing fireworks",
+            "fireworks display",
+            "display fireworks",
+            "fireworks",
+            "panagbengafestival fireworksclosingceremony",
+            "watching fireworks"
+          ],
+          "sentiment": {
+            "dominant": "NEUTRAL",
+            "avg_confidence": 0.542,
+            "std_confidence": 0.105,
+            "high_confidence_ratio": 0.0625,
+            "coverage": 1.0,
+            "label_distribution": {
+              "NEUTRAL": 9,
+              "POSITIVE": 6,
+              "NEGATIVE": 1
+            },
+            "label_ratios": {
+              "NEUTRAL": 0.5625,
+              "POSITIVE": 0.375,
+              "NEGATIVE": 0.0625
+            }
+          },
+          "explanation": "In 2022, people were talking about closing fireworks, fireworks display, display fireworks, fireworks."
+        },
+        {
+          "rank": 9,
+          "cluster_id": 2,
+          "topic_id": 5,
+          "label": "Panagbengafestival Maligayang / Paresretirobaguio Panagbengafestival / Pasyadin Ninyo",
+          "count": 15,
+          "top_words": [
+            "panagbengafestival maligayang",
+            "paresretirobaguio panagbengafestival",
+            "pasyadin ninyo",
+            "pares yayain",
+            "masayang selebrasyon",
+            "maraming salamat"
+          ],
+          "sentiment": {
+            "dominant": "NEUTRAL",
+            "avg_confidence": 0.5356,
+            "std_confidence": 0.0914,
+            "high_confidence_ratio": 0.0,
+            "coverage": 1.0,
+            "label_distribution": {
+              "POSITIVE": 8,
+              "NEUTRAL": 42,
+              "NEGATIVE": 1
+            },
+            "label_ratios": {
+              "POSITIVE": 0.1569,
+              "NEUTRAL": 0.8235,
+              "NEGATIVE": 0.0196
+            }
+          },
+          "explanation": "In 2022, people were talking about panagbengafestival maligayang, paresretirobaguio panagbengafestival, pasyadin ninyo, pares yayain."
+        },
+        {
+          "rank": 10,
+          "cluster_id": 1,
+          "topic_id": 0,
+          "label": "Thecookieseriescookiecake / Cookies Cakes / Cakes Cupcakes",
+          "count": 10,
+          "top_words": [
+            "thecookieseriescookiecake",
+            "cookies cakes",
+            "cakes cupcakes",
+            "cakes",
+            "chocolatechipalmondcookies",
+            "kkrumbl cookies"
+          ],
+          "sentiment": {
+            "dominant": "NEUTRAL",
+            "avg_confidence": 0.5048,
+            "std_confidence": 0.0958,
+            "high_confidence_ratio": 0.0,
+            "coverage": 1.0,
+            "label_distribution": {
+              "NEUTRAL": 8,
+              "POSITIVE": 1
+            },
+            "label_ratios": {
+              "NEUTRAL": 0.8889,
+              "POSITIVE": 0.1111
+            }
+          },
+          "explanation": "In 2022, people were talking about thecookieseriescookiecake, cookies cakes, cakes cupcakes, cakes."
+        }
+      ]
+    },
+    {
+      "year": 2023,
+      "total_docs": 487,
+      "n_clusters": 8,
+      "total_topics": 22,
+      "noise_ratio": 0.2074,
+      "avg_coherence": 0.4638,
+      "sentiment_summary": {
+        "n_docs": 381,
+        "avg_confidence": 0.5233,
+        "avg_coverage": 1.0,
+        "high_confidence_ratio": 0.0289,
+        "dominant_sentiment": "NEUTRAL",
+        "label_distribution": {
+          "NEUTRAL": 263,
+          "POSITIVE": 107,
+          "NEGATIVE": 11
+        }
+      },
+      "dominant_sentiment_dist": {
+        "NEUTRAL": 16,
+        "POSITIVE": 6
+      },
+      "visualization": "outputs\\visualizations\\cluster_viz_2023.png",
+      "clusters": [
+        {
+          "cluster_id": 0,
+          "n_docs": 27,
+          "n_topics": 2,
+          "coherence": 0.8523,
+          "sentiment_summary": {
+            "n_docs": 39,
+            "avg_confidence": 0.5327,
+            "avg_coverage": 1.0,
+            "high_confidence_ratio": 0.0,
+            "dominant_sentiment": "NEUTRAL",
+            "label_distribution": {
+              "NEUTRAL": 37,
+              "POSITIVE": 2
+            }
+          },
+          "dominant_sentiment_dist": {
+            "NEUTRAL": 2
+          },
+          "topics": [
+            {
+              "topic_id": 0,
+              "label": "Arenaissanceofwonderandbeauty Baguioflowerfestival / Panagbengafestival Openingfeb / Parada Panagbengafestival",
+              "count": 22,
+              "top_words": [
+                "arenaissanceofwonderandbeauty baguioflowerfestival",
+                "panagbengafestival openingfeb",
+                "parada panagbengafestival",
+                "panagbengafestival arenaissanceofwonderandbeauty",
+                "february panagbengafestival",
+                "baguioflowerfestival grand",
+                "opening parada",
+                "panagbengafestival perting",
+                "panagbengafestival glimpse",
+                "panagbengafestival"
+              ],
+              "top_word_scores": [
+                0.817928,
+                0.807589,
+                0.787232,
+                0.780097,
+                0.773551,
+                0.767118,
+                0.755838,
+                0.755446,
+                0.75188,
+                0.750221
+              ],
+              "sentiment": {
+                "dominant": "NEUTRAL",
+                "avg_confidence": 0.5403,
+                "std_confidence": 0.0423,
+                "high_confidence_ratio": 0.0,
+                "coverage": 1.0,
+                "label_distribution": {
+                  "NEUTRAL": 16,
+                  "POSITIVE": 1
+                },
+                "label_ratios": {
+                  "NEUTRAL": 0.9412,
+                  "POSITIVE": 0.0588
+                }
+              },
+              "explanation": "In 2023, people were talking about arenaissanceofwonderandbeauty baguioflowerfestival, panagbengafestival openingfeb, parada panagbengafestival, panagbengafestival arenaissanceofwonderandbeauty.",
+              "top_10_rank": 8
+            },
+            {
+              "topic_id": 1,
+              "label": "Day Parade / Parade Bcpo / Parade",
+              "count": 4,
+              "top_words": [
+                "day parade",
+                "parade bcpo",
+                "parade",
+                "opening parade",
+                "street parade",
+                "parade tomorrow",
+                "parade thank",
+                "panagbengafestival",
+                "grand street",
+                "costume today"
+              ],
+              "top_word_scores": [
+                0.781562,
+                0.778739,
+                0.77857,
+                0.768516,
+                0.763295,
+                0.753849,
+                0.714696,
+                0.593292,
+                0.584017,
+                0.575241
+              ],
+              "sentiment": {
+                "dominant": "NEUTRAL",
+                "avg_confidence": 0.5268,
+                "std_confidence": 0.0547,
+                "high_confidence_ratio": 0.0,
+                "coverage": 1.0,
+                "label_distribution": {
+                  "NEUTRAL": 21,
+                  "POSITIVE": 1
+                },
+                "label_ratios": {
+                  "NEUTRAL": 0.9545,
+                  "POSITIVE": 0.0455
+                }
+              }
+            }
+          ]
+        },
+        {
+          "cluster_id": 1,
+          "n_docs": 44,
+          "n_topics": 2,
+          "coherence": 0.7248,
+          "sentiment_summary": {
+            "n_docs": 32,
+            "avg_confidence": 0.536,
+            "avg_coverage": 1.0,
+            "high_confidence_ratio": 0.0,
+            "dominant_sentiment": "NEUTRAL",
+            "label_distribution": {
+              "NEUTRAL": 25,
+              "POSITIVE": 7
+            }
+          },
+          "dominant_sentiment_dist": {
+            "NEUTRAL": 2
+          },
+          "topics": [
+            {
+              "topic_id": 0,
+              "label": "Wingyardph Wingyardbaguio / Wingyardbaguio Wingyardwings / Wingyardph Wingyardunlimited",
+              "count": 4,
+              "top_words": [
+                "wingyardph wingyardbaguio",
+                "wingyardbaguio wingyardwings",
+                "wingyardph wingyardunlimited",
+                "wingyardunlimited saturday",
+                "wingyardwings wingyardunlimited",
+                "wingyard",
+                "wingyardph",
+                "wingyardbaguio",
+                "happy wingyardph",
+                "wingyard bldg"
+              ],
+              "top_word_scores": [
+                0.865995,
+                0.863799,
+                0.839374,
+                0.806577,
+                0.806352,
+                0.802798,
+                0.800071,
+                0.788985,
+                0.781185,
+                0.78002
+              ],
+              "sentiment": {
+                "dominant": "NEUTRAL",
+                "avg_confidence": 0.5385,
+                "std_confidence": 0.0488,
+                "high_confidence_ratio": 0.0,
+                "coverage": 1.0,
+                "label_distribution": {
+                  "NEUTRAL": 3,
+                  "POSITIVE": 1
+                },
+                "label_ratios": {
+                  "NEUTRAL": 0.75,
+                  "POSITIVE": 0.25
+                }
+              }
+            },
+            {
+              "topic_id": 1,
+              "label": "Session Bloom / Road Bloom / Buskinglife Baguioflowerfestival",
+              "count": 40,
+              "top_words": [
+                "session bloom",
+                "road bloom",
+                "buskinglife baguioflowerfestival",
+                "baguioflowerfestival",
+                "session road",
+                "sessionroad sessionroadbaguio",
+                "sessionroadbaguio busking",
+                "bloom",
+                "sessionroadbaguio",
+                "sessionroadinbloom"
+              ],
+              "top_word_scores": [
+                0.70841,
+                0.707838,
+                0.699815,
+                0.641961,
+                0.635938,
+                0.603439,
+                0.594587,
+                0.581292,
+                0.572756,
+                0.5655
+              ],
+              "sentiment": {
+                "dominant": "NEUTRAL",
+                "avg_confidence": 0.5357,
+                "std_confidence": 0.0912,
+                "high_confidence_ratio": 0.0,
+                "coverage": 1.0,
+                "label_distribution": {
+                  "NEUTRAL": 22,
+                  "POSITIVE": 6
+                },
+                "label_ratios": {
+                  "NEUTRAL": 0.7857,
+                  "POSITIVE": 0.2143
+                }
+              },
+              "explanation": "In 2023, people were talking about session bloom, road bloom, buskinglife baguioflowerfestival, baguioflowerfestival.",
+              "top_10_rank": 3
+            }
+          ]
+        },
+        {
+          "cluster_id": 2,
+          "n_docs": 75,
+          "n_topics": 2,
+          "coherence": 0.3891,
+          "sentiment_summary": {
+            "n_docs": 21,
+            "avg_confidence": 0.5503,
+            "avg_coverage": 1.0,
+            "high_confidence_ratio": 0.0476,
+            "dominant_sentiment": "NEUTRAL",
+            "label_distribution": {
+              "NEUTRAL": 18,
+              "POSITIVE": 3
+            }
+          },
+          "dominant_sentiment_dist": {
+            "NEUTRAL": 2
+          },
+          "topics": [
+            {
+              "topic_id": 0,
+              "label": "Panagbengafestival Travelgram / Travelingpinoy Poginggala / Travelingpinoy",
+              "count": 48,
+              "top_words": [
+                "panagbengafestival travelgram",
+                "travelingpinoy poginggala",
+                "travelingpinoy",
+                "bahaybakasyunan reelsinstagram",
+                "pilipinas wanderlust",
+                "travelphotography",
+                "travelphilippines",
+                "nathalie roadtrip",
+                "travelgram",
+                "travelblogger"
+              ],
+              "top_word_scores": [
+                0.739575,
+                0.730158,
+                0.672707,
+                0.666817,
+                0.65053,
+                0.647233,
+                0.637167,
+                0.615355,
+                0.615063,
+                0.609292
+              ],
+              "sentiment": {
+                "dominant": "NEUTRAL",
+                "avg_confidence": 0.5332,
+                "std_confidence": 0.123,
+                "high_confidence_ratio": 0.0625,
+                "coverage": 1.0,
+                "label_distribution": {
+                  "NEUTRAL": 13,
+                  "POSITIVE": 3
+                },
+                "label_ratios": {
+                  "NEUTRAL": 0.8125,
+                  "POSITIVE": 0.1875
+                }
+              },
+              "explanation": "In 2023, people were talking about panagbengafestival travelgram, travelingpinoy poginggala, travelingpinoy, bahaybakasyunan reelsinstagram.",
+              "top_10_rank": 2
+            },
+            {
+              "topic_id": 1,
+              "label": "Outdoorportraits / Paintingfromphotographs Sabsabong / Outdoorphotography Outdoorportraits",
+              "count": 26,
+              "top_words": [
+                "outdoorportraits",
+                "paintingfromphotographs sabsabong",
+                "outdoorphotography outdoorportraits",
+                "photography panagbengafestival",
+                "paintingfromphotographs",
+                "portraitphotography outdoorphotography",
+                "ashotofbaguio moeabelleraphotography",
+                "rittrato portrait",
+                "acrylicpainting paintingfromphotographs",
+                "outdoorphotography"
+              ],
+              "top_word_scores": [
+                0.762486,
+                0.734991,
+                0.72577,
+                0.724953,
+                0.686824,
+                0.686697,
+                0.675709,
+                0.672378,
+                0.648087,
+                0.637477
+              ],
+              "sentiment": {
+                "dominant": "NEUTRAL",
+                "avg_confidence": 0.6049,
+                "std_confidence": 0.0444,
+                "high_confidence_ratio": 0.0,
+                "coverage": 1.0,
+                "label_distribution": {
+                  "NEUTRAL": 5
+                },
+                "label_ratios": {
+                  "NEUTRAL": 1.0
+                }
+              },
+              "explanation": "In 2023, people were talking about outdoorportraits, paintingfromphotographs sabsabong, outdoorphotography outdoorportraits, photography panagbengafestival.",
+              "top_10_rank": 6
+            }
+          ]
+        },
+        {
+          "cluster_id": 3,
+          "n_docs": 62,
+          "n_topics": 2,
+          "coherence": 0.0773,
+          "sentiment_summary": {
+            "n_docs": 44,
+            "avg_confidence": 0.5513,
+            "avg_coverage": 1.0,
+            "high_confidence_ratio": 0.0454,
+            "dominant_sentiment": "NEUTRAL",
+            "label_distribution": {
+              "NEUTRAL": 36,
+              "POSITIVE": 7,
+              "NEGATIVE": 1
+            }
+          },
+          "dominant_sentiment_dist": {
+            "NEUTRAL": 2
+          },
+          "topics": [
+            {
+              "topic_id": 0,
+              "label": "Float Parade / Parade Floats / Parade Panagbengafestival",
+              "count": 30,
+              "top_words": [
+                "float parade",
+                "parade floats",
+                "parade panagbengafestival",
+                "grandfloatparade",
+                "parade",
+                "parade philippinefestivals",
+                "grand float",
+                "parade colorful",
+                "parade highlights",
+                "parade cityofflowers"
+              ],
+              "top_word_scores": [
+                0.887624,
+                0.881227,
+                0.836122,
+                0.824172,
+                0.781619,
+                0.777057,
+                0.766715,
+                0.764989,
+                0.762307,
+                0.761868
+              ],
+              "sentiment": {
+                "dominant": "NEUTRAL",
+                "avg_confidence": 0.549,
+                "std_confidence": 0.0894,
+                "high_confidence_ratio": 0.0263,
+                "coverage": 1.0,
+                "label_distribution": {
+                  "NEUTRAL": 32,
+                  "POSITIVE": 6
+                },
+                "label_ratios": {
+                  "NEUTRAL": 0.8421,
+                  "POSITIVE": 0.1579
+                }
+              },
+              "explanation": "In 2023, people were talking about float parade, parade floats, parade panagbengafestival, grandfloatparade.",
+              "top_10_rank": 4
+            },
+            {
+              "topic_id": 1,
+              "label": "Dance Parade / Street Parade / Parade Kulturang",
+              "count": 25,
+              "top_words": [
+                "dance parade",
+                "street parade",
+                "parade kulturang",
+                "parade tamang",
+                "street dance",
+                "street dancing",
+                "parade street",
+                "dance street",
+                "streetdance",
+                "parade grand"
+              ],
+              "top_word_scores": [
+                0.945801,
+                0.872286,
+                0.838379,
+                0.830658,
+                0.826386,
+                0.812497,
+                0.811573,
+                0.801909,
+                0.798788,
+                0.790738
+              ],
+              "sentiment": {
+                "dominant": "NEUTRAL",
+                "avg_confidence": 0.566,
+                "std_confidence": 0.1081,
+                "high_confidence_ratio": 0.1667,
+                "coverage": 1.0,
+                "label_distribution": {
+                  "NEUTRAL": 4,
+                  "NEGATIVE": 1,
+                  "POSITIVE": 1
+                },
+                "label_ratios": {
+                  "NEUTRAL": 0.6667,
+                  "NEGATIVE": 0.1667,
+                  "POSITIVE": 0.1667
+                }
+              },
+              "explanation": "In 2023, people were talking about dance parade, street parade, parade kulturang, parade tamang.",
+              "top_10_rank": 7
+            }
+          ]
+        },
+        {
+          "cluster_id": 4,
+          "n_docs": 34,
+          "n_topics": 6,
+          "coherence": 0.3727,
+          "sentiment_summary": {
+            "n_docs": 93,
+            "avg_confidence": 0.5129,
+            "avg_coverage": 1.0,
+            "high_confidence_ratio": 0.0323,
+            "dominant_sentiment": "POSITIVE",
+            "label_distribution": {
+              "NEUTRAL": 45,
+              "POSITIVE": 46,
+              "NEGATIVE": 2
+            }
+          },
+          "dominant_sentiment_dist": {
+            "NEUTRAL": 2,
+            "POSITIVE": 4
+          },
+          "topics": [
+            {
+              "topic_id": 0,
+              "label": "Baguiobotanicalgarden Flowers / Flowers Baguiocityhall / Baguioflowerfestival Victa",
+              "count": 7,
+              "top_words": [
+                "baguiobotanicalgarden flowers",
+                "flowers baguiocityhall",
+                "baguioflowerfestival victa",
+                "bloom",
+                "flowers bloom",
+                "bloom wildly",
+                "baguioflowerfestival",
+                "blossom",
+                "blossom beautiful",
+                "simply bloom"
+              ],
+              "top_word_scores": [
+                0.837097,
+                0.818556,
+                0.794539,
+                0.786107,
+                0.783503,
+                0.775172,
+                0.770012,
+                0.765932,
+                0.762084,
+                0.755788
+              ],
+              "sentiment": {
+                "dominant": "NEUTRAL",
+                "avg_confidence": 0.5011,
+                "std_confidence": 0.0915,
+                "high_confidence_ratio": 0.0,
+                "coverage": 1.0,
+                "label_distribution": {
+                  "NEUTRAL": 8,
+                  "POSITIVE": 5
+                },
+                "label_ratios": {
+                  "NEUTRAL": 0.6154,
+                  "POSITIVE": 0.3846
+                }
+              }
+            },
+            {
+              "topic_id": 1,
+              "label": "Panagbengafestival Baguioflowerfestival / Turista Annual / Weekend Trip",
+              "count": 3,
+              "top_words": [
+                "panagbengafestival baguioflowerfestival",
+                "turista annual",
+                "weekend trip",
+                "tourismphl breathebaguio",
+                "tpbgovph tourismphl",
+                "plans weekend",
+                "parades atty",
+                "turista",
+                "session bloom",
+                "year flower"
+              ],
+              "top_word_scores": [
+                0.697127,
+                0.611655,
+                0.583621,
+                0.569263,
+                0.552671,
+                0.528428,
+                0.497337,
+                0.497133,
+                0.495826,
+                0.495025
+              ],
+              "sentiment": {
+                "dominant": "NEUTRAL",
+                "avg_confidence": 0.4808,
+                "std_confidence": 0.0,
+                "high_confidence_ratio": 0.0,
+                "coverage": 1.0,
+                "label_distribution": {
+                  "NEUTRAL": 1
+                },
+                "label_ratios": {
+                  "NEUTRAL": 1.0
+                }
+              }
+            },
+            {
+              "topic_id": 2,
+              "label": "Panagbengafestival Flowers / Landscaping Panagbengascapes / Panagbengascapes Gardening",
+              "count": 6,
+              "top_words": [
+                "panagbengafestival flowers",
+                "landscaping panagbengascapes",
+                "panagbengascapes gardening",
+                "lakwatseronglibongueno fleur",
+                "vacation gardeninthesky",
+                "panagbengafestival thelaaglands",
+                "thanks flower",
+                "igorotak flower",
+                "supply floral",
+                "nature blessed"
+              ],
+              "top_word_scores": [
+                0.743357,
+                0.701701,
+                0.697925,
+                0.694332,
+                0.671641,
+                0.645041,
+                0.626402,
+                0.622059,
+                0.60962,
+                0.592886
+              ],
+              "sentiment": {
+                "dominant": "POSITIVE",
+                "avg_confidence": 0.5178,
+                "std_confidence": 0.1062,
+                "high_confidence_ratio": 0.0588,
+                "coverage": 1.0,
+                "label_distribution": {
+                  "POSITIVE": 18,
+                  "NEUTRAL": 15,
+                  "NEGATIVE": 1
+                },
+                "label_ratios": {
+                  "POSITIVE": 0.5294,
+                  "NEUTRAL": 0.4412,
+                  "NEGATIVE": 0.0294
+                }
+              }
+            },
+            {
+              "topic_id": 3,
+              "label": "Flowers / Sunflower Bouquet / Mahal Sunflowers",
+              "count": 5,
+              "top_words": [
+                "flowers",
+                "sunflower bouquet",
+                "mahal sunflowers",
+                "much flowers",
+                "sun flower",
+                "sunflowers celebrating",
+                "weekendgetaway fleur",
+                "sunflower bloom",
+                "sunflowers faithful",
+                "sunflowers"
+              ],
+              "top_word_scores": [
+                0.772696,
+                0.760386,
+                0.733115,
+                0.732896,
+                0.724753,
+                0.717487,
+                0.702874,
+                0.691271,
+                0.673444,
+                0.669049
+              ],
+              "sentiment": {
+                "dominant": "POSITIVE",
+                "avg_confidence": 0.4955,
+                "std_confidence": 0.0721,
+                "high_confidence_ratio": 0.0,
+                "coverage": 1.0,
+                "label_distribution": {
+                  "POSITIVE": 7,
+                  "NEUTRAL": 7
+                },
+                "label_ratios": {
+                  "POSITIVE": 0.5,
+                  "NEUTRAL": 0.5
+                }
+              }
+            },
+            {
+              "topic_id": 4,
+              "label": "Witnessed Festive / Parade / Celebration",
+              "count": 4,
+              "top_words": [
+                "witnessed festive",
+                "parade",
+                "celebration",
+                "season blooming",
+                "occasion kankana",
+                "year enjoy",
+                "annual flower",
+                "parade exploreph",
+                "makeeverydaybloomwithsmcitybaguio",
+                "joyous northern"
+              ],
+              "top_word_scores": [
+                0.595912,
+                0.567312,
+                0.549312,
+                0.548119,
+                0.519803,
+                0.509158,
+                0.508026,
+                0.500037,
+                0.48533,
+                0.476227
+              ],
+              "sentiment": {
+                "dominant": "POSITIVE",
+                "avg_confidence": 0.5385,
+                "std_confidence": 0.1113,
+                "high_confidence_ratio": 0.0,
+                "coverage": 1.0,
+                "label_distribution": {
+                  "POSITIVE": 4,
+                  "NEUTRAL": 3
+                },
+                "label_ratios": {
+                  "POSITIVE": 0.5714,
+                  "NEUTRAL": 0.4286
+                }
+              }
+            },
+            {
+              "topic_id": 5,
+              "label": "Vacationvibes Flower / Panagbengafestival Flowershops / Seasonofblooms Tourism",
+              "count": 5,
+              "top_words": [
+                "vacationvibes flower",
+                "panagbengafestival flowershops",
+                "seasonofblooms tourism",
+                "annual flower",
+                "season blossoming",
+                "flowers",
+                "seasonofblooms",
+                "flower",
+                "summercapitalofthephilippines",
+                "magnificent flora"
+              ],
+              "top_word_scores": [
+                0.783663,
+                0.755499,
+                0.702209,
+                0.69923,
+                0.678218,
+                0.642184,
+                0.622028,
+                0.613763,
+                0.605483,
+                0.589747
+              ],
+              "sentiment": {
+                "dominant": "POSITIVE",
+                "avg_confidence": 0.5163,
+                "std_confidence": 0.0992,
+                "high_confidence_ratio": 0.0417,
+                "coverage": 1.0,
+                "label_distribution": {
+                  "POSITIVE": 12,
+                  "NEUTRAL": 11,
+                  "NEGATIVE": 1
+                },
+                "label_ratios": {
+                  "POSITIVE": 0.5,
+                  "NEUTRAL": 0.4583,
+                  "NEGATIVE": 0.0417
+                }
+              }
+            }
+          ]
+        },
+        {
+          "cluster_id": 5,
+          "n_docs": 20,
+          "n_topics": 2,
+          "coherence": 0.2135,
+          "sentiment_summary": {
+            "n_docs": 18,
+            "avg_confidence": 0.5033,
+            "avg_coverage": 1.0,
+            "high_confidence_ratio": 0.0,
+            "dominant_sentiment": "POSITIVE",
+            "label_distribution": {
+              "POSITIVE": 12,
+              "NEUTRAL": 6
+            }
+          },
+          "dominant_sentiment_dist": {
+            "POSITIVE": 2
+          },
+          "topics": [
+            {
+              "topic_id": 0,
+              "label": "Womenempoweringwomen Happywomensmonth / Woman Baguiogirl / Baguiogirl",
+              "count": 3,
+              "top_words": [
+                "womenempoweringwomen happywomensmonth",
+                "woman baguiogirl",
+                "baguiogirl",
+                "pride cordillera",
+                "teamlakay",
+                "team lakay",
+                "happywomensmonth",
+                "womenempoweringwomen",
+                "pride",
+                "women day"
+              ],
+              "top_word_scores": [
+                0.659846,
+                0.6453,
+                0.613874,
+                0.611081,
+                0.588848,
+                0.588543,
+                0.578449,
+                0.549319,
+                0.526631,
+                0.522641
+              ],
+              "sentiment": {
+                "dominant": "POSITIVE",
+                "avg_confidence": 0.5067,
+                "std_confidence": 0.0684,
+                "high_confidence_ratio": 0.0,
+                "coverage": 1.0,
+                "label_distribution": {
+                  "POSITIVE": 2,
+                  "NEUTRAL": 1
+                },
+                "label_ratios": {
+                  "POSITIVE": 0.6667,
+                  "NEUTRAL": 0.3333
+                }
+              }
+            },
+            {
+              "topic_id": 1,
+              "label": "Mgalihimniurduja Panagbengafestival / Panagbengafestival Smiles / Nagpakilig Fans",
+              "count": 17,
+              "top_words": [
+                "mgalihimniurduja panagbengafestival",
+                "panagbengafestival smiles",
+                "nagpakilig fans",
+                "panagbengafestival",
+                "dee gaganap",
+                "fans ginanap",
+                "gmaregionaltv mgalihimniurduja",
+                "happy fiesta",
+                "gaganap sexy",
+                "fiesta gmaregionaltv"
+              ],
+              "top_word_scores": [
+                0.704141,
+                0.671745,
+                0.632442,
+                0.611981,
+                0.60043,
+                0.599001,
+                0.59568,
+                0.591998,
+                0.565544,
+                0.540918
+              ],
+              "sentiment": {
+                "dominant": "POSITIVE",
+                "avg_confidence": 0.5026,
+                "std_confidence": 0.0836,
+                "high_confidence_ratio": 0.0,
+                "coverage": 1.0,
+                "label_distribution": {
+                  "POSITIVE": 10,
+                  "NEUTRAL": 5
+                },
+                "label_ratios": {
+                  "POSITIVE": 0.6667,
+                  "NEUTRAL": 0.3333
+                }
+              },
+              "explanation": "In 2023, people were talking about mgalihimniurduja panagbengafestival, panagbengafestival smiles, nagpakilig fans, panagbengafestival.",
+              "top_10_rank": 10
+            }
+          ]
+        },
+        {
+          "cluster_id": 6,
+          "n_docs": 28,
+          "n_topics": 2,
+          "coherence": 0.7717,
+          "sentiment_summary": {
+            "n_docs": 10,
+            "avg_confidence": 0.5192,
+            "avg_coverage": 1.0,
+            "high_confidence_ratio": 0.0,
+            "dominant_sentiment": "NEUTRAL",
+            "label_distribution": {
+              "NEUTRAL": 10
+            }
+          },
+          "dominant_sentiment_dist": {
+            "NEUTRAL": 2
+          },
+          "topics": [
+            {
+              "topic_id": 0,
+              "label": "Marketencounter Foodtrip / Market Foodtrip / Foodtrip",
+              "count": 9,
+              "top_words": [
+                "marketencounter foodtrip",
+                "market foodtrip",
+                "foodtrip",
+                "streetfood food",
+                "streetfood",
+                "nightmarket streetfood",
+                "restaurants food",
+                "recommended restaurants",
+                "finds foodbuddy",
+                "foodie"
+              ],
+              "top_word_scores": [
+                0.882673,
+                0.86575,
+                0.832997,
+                0.78857,
+                0.783472,
+                0.773633,
+                0.773513,
+                0.718421,
+                0.70156,
+                0.69984
+              ],
+              "sentiment": {
+                "dominant": "NEUTRAL",
+                "avg_confidence": 0.5531,
+                "std_confidence": 0.0932,
+                "high_confidence_ratio": 0.0,
+                "coverage": 1.0,
+                "label_distribution": {
+                  "NEUTRAL": 6
+                },
+                "label_ratios": {
+                  "NEUTRAL": 1.0
+                }
+              }
+            },
+            {
+              "topic_id": 1,
+              "label": "Baguiofooddelivery Panagbengafestival / Baguiofoodtrip Musttry / Wimyummy Foodgasm",
+              "count": 18,
+              "top_words": [
+                "baguiofooddelivery panagbengafestival",
+                "baguiofoodtrip musttry",
+                "wimyummy foodgasm",
+                "baguiofooddelivery",
+                "foodgasm foodlover",
+                "musttry panagbengafestival",
+                "foodlover",
+                "baguiofoodtrip",
+                "foodies",
+                "panagbengafestival yummyph"
+              ],
+              "top_word_scores": [
+                0.729784,
+                0.702973,
+                0.693695,
+                0.672755,
+                0.668365,
+                0.666633,
+                0.658391,
+                0.658041,
+                0.650125,
+                0.649677
+              ],
+              "sentiment": {
+                "dominant": "NEUTRAL",
+                "avg_confidence": 0.4683,
+                "std_confidence": 0.1037,
+                "high_confidence_ratio": 0.0,
+                "coverage": 1.0,
+                "label_distribution": {
+                  "NEUTRAL": 4
+                },
+                "label_ratios": {
+                  "NEUTRAL": 1.0
+                }
+              },
+              "explanation": "In 2023, people were talking about baguiofooddelivery panagbengafestival, baguiofoodtrip musttry, wimyummy foodgasm, baguiofooddelivery.",
+              "top_10_rank": 9
+            }
+          ]
+        },
+        {
+          "cluster_id": 7,
+          "n_docs": 96,
+          "n_topics": 2,
+          "coherence": 0.2945,
+          "sentiment_summary": {
+            "n_docs": 77,
+            "avg_confidence": 0.5125,
+            "avg_coverage": 1.0,
+            "high_confidence_ratio": 0.0389,
+            "dominant_sentiment": "NEUTRAL",
+            "label_distribution": {
+              "NEUTRAL": 44,
+              "NEGATIVE": 8,
+              "POSITIVE": 25
+            }
+          },
+          "dominant_sentiment_dist": {
+            "NEUTRAL": 2
+          },
+          "topics": [
+            {
+              "topic_id": 0,
+              "label": "Panagbengafestival Baguiofeels / Panagbengafestival Panagbengabaguiocity / City Panagbengafestival",
+              "count": 51,
+              "top_words": [
+                "panagbengafestival baguiofeels",
+                "panagbengafestival panagbengabaguiocity",
+                "city panagbengafestival",
+                "panagbengafestival",
+                "monday panagbengafestival",
+                "panagbengafestival night",
+                "natin panagbengafestival",
+                "panagbengafestival nakakapagod",
+                "panagbengafestival wheninbaguio",
+                "panagbengafestival panagbengaflowerfestival"
+              ],
+              "top_word_scores": [
+                0.84958,
+                0.848778,
+                0.835701,
+                0.805958,
+                0.804754,
+                0.803734,
+                0.797842,
+                0.795606,
+                0.790306,
+                0.781343
+              ],
+              "sentiment": {
+                "dominant": "NEUTRAL",
+                "avg_confidence": 0.5111,
+                "std_confidence": 0.1042,
+                "high_confidence_ratio": 0.0294,
+                "coverage": 1.0,
+                "label_distribution": {
+                  "NEUTRAL": 19,
+                  "NEGATIVE": 4,
+                  "POSITIVE": 11
+                },
+                "label_ratios": {
+                  "NEUTRAL": 0.5588,
+                  "NEGATIVE": 0.1176,
+                  "POSITIVE": 0.3235
+                }
+              },
+              "explanation": "In 2023, people were talking about panagbengafestival baguiofeels, panagbengafestival panagbengabaguiocity, city panagbengafestival, panagbengafestival.",
+              "top_10_rank": 1
+            },
+            {
+              "topic_id": 1,
+              "label": "Karavan Fpjbqsabaguio / Fpjsbatangquiapo Fpjbqsabaguio / Panagbengafestival Tampok",
+              "count": 29,
+              "top_words": [
+                "karavan fpjbqsabaguio",
+                "fpjsbatangquiapo fpjbqsabaguio",
+                "panagbengafestival tampok",
+                "pambansang pogi",
+                "fpjsbatangquiapo",
+                "pambansang",
+                "makisaya ngayong",
+                "panagbengafestival bmpm",
+                "panagbengafestival",
+                "fpjbqsabaguio"
+              ],
+              "top_word_scores": [
+                0.791851,
+                0.740838,
+                0.728369,
+                0.69128,
+                0.669956,
+                0.66586,
+                0.663817,
+                0.65586,
+                0.644606,
+                0.644406
+              ],
+              "sentiment": {
+                "dominant": "NEUTRAL",
+                "avg_confidence": 0.5136,
+                "std_confidence": 0.1113,
+                "high_confidence_ratio": 0.0465,
+                "coverage": 1.0,
+                "label_distribution": {
+                  "NEUTRAL": 25,
+                  "NEGATIVE": 4,
+                  "POSITIVE": 14
+                },
+                "label_ratios": {
+                  "NEUTRAL": 0.5814,
+                  "NEGATIVE": 0.093,
+                  "POSITIVE": 0.3256
+                }
+              },
+              "explanation": "In 2023, people were talking about karavan fpjbqsabaguio, fpjsbatangquiapo fpjbqsabaguio, panagbengafestival tampok, pambansang pogi.",
+              "top_10_rank": 5
+            }
+          ]
+        },
+        {
+          "cluster_id": -1,
+          "n_docs": 101,
+          "n_topics": 2,
+          "coherence": 0.4784,
+          "sentiment_summary": {
+            "n_docs": 47,
+            "avg_confidence": 0.515,
+            "avg_coverage": 1.0,
+            "high_confidence_ratio": 0.0425,
+            "dominant_sentiment": "NEUTRAL",
+            "label_distribution": {
+              "NEUTRAL": 42,
+              "POSITIVE": 5
+            }
+          },
+          "dominant_sentiment_dist": {
+            "NEUTRAL": 2
+          },
+          "topics": [
+            {
+              "topic_id": 0,
+              "label": "Accommodation / Bedrooms / Hotel",
+              "count": 21,
+              "top_words": [
+                "accommodation",
+                "bedrooms",
+                "hotel",
+                "gallon balcony",
+                "amenities",
+                "wright mansion",
+                "house",
+                "mansion",
+                "room",
+                "booking"
+              ],
+              "top_word_scores": [
+                0.573161,
+                0.519087,
+                0.506516,
+                0.501291,
+                0.490027,
+                0.437927,
+                0.436301,
+                0.424015,
+                0.409129,
+                0.392342
+              ],
+              "sentiment": {
+                "dominant": "NEUTRAL",
+                "avg_confidence": 0.5134,
+                "std_confidence": 0.0989,
+                "high_confidence_ratio": 0.0714,
+                "coverage": 1.0,
+                "label_distribution": {
+                  "NEUTRAL": 11,
+                  "POSITIVE": 3
+                },
+                "label_ratios": {
+                  "NEUTRAL": 0.7857,
+                  "POSITIVE": 0.2143
+                }
+              }
+            },
+            {
+              "topic_id": 1,
+              "label": "Festivaldances Panagbengafestival / Panagbengafestival / Festivaldances",
+              "count": 73,
+              "top_words": [
+                "festivaldances panagbengafestival",
+                "panagbengafestival",
+                "festivaldances",
+                "panagbengafestival culminating",
+                "panagbengafestival sigmaart",
+                "congratulations festivaldances",
+                "dances",
+                "sabaguio",
+                "dances level",
+                "culminating performance"
+              ],
+              "top_word_scores": [
+                0.672383,
+                0.562769,
+                0.550083,
+                0.5304,
+                0.510411,
+                0.507264,
+                0.493444,
+                0.485545,
+                0.464333,
+                0.445977
+              ],
+              "sentiment": {
+                "dominant": "NEUTRAL",
+                "avg_confidence": 0.5157,
+                "std_confidence": 0.0937,
+                "high_confidence_ratio": 0.0303,
+                "coverage": 1.0,
+                "label_distribution": {
+                  "NEUTRAL": 31,
+                  "POSITIVE": 2
+                },
+                "label_ratios": {
+                  "NEUTRAL": 0.9394,
+                  "POSITIVE": 0.0606
+                }
+              }
+            }
+          ]
+        }
+      ],
+      "top_10_topics": [
+        {
+          "rank": 1,
+          "cluster_id": 7,
+          "topic_id": 0,
+          "label": "Panagbengafestival Baguiofeels / Panagbengafestival Panagbengabaguiocity / City Panagbengafestival",
+          "count": 51,
+          "top_words": [
+            "panagbengafestival baguiofeels",
+            "panagbengafestival panagbengabaguiocity",
+            "city panagbengafestival",
+            "panagbengafestival",
+            "monday panagbengafestival",
+            "panagbengafestival night"
+          ],
+          "sentiment": {
+            "dominant": "NEUTRAL",
+            "avg_confidence": 0.5111,
+            "std_confidence": 0.1042,
+            "high_confidence_ratio": 0.0294,
+            "coverage": 1.0,
+            "label_distribution": {
+              "NEUTRAL": 19,
+              "NEGATIVE": 4,
+              "POSITIVE": 11
+            },
+            "label_ratios": {
+              "NEUTRAL": 0.5588,
+              "NEGATIVE": 0.1176,
+              "POSITIVE": 0.3235
+            }
+          },
+          "explanation": "In 2023, people were talking about panagbengafestival baguiofeels, panagbengafestival panagbengabaguiocity, city panagbengafestival, panagbengafestival."
+        },
+        {
+          "rank": 2,
+          "cluster_id": 2,
+          "topic_id": 0,
+          "label": "Panagbengafestival Travelgram / Travelingpinoy Poginggala / Travelingpinoy",
+          "count": 48,
+          "top_words": [
+            "panagbengafestival travelgram",
+            "travelingpinoy poginggala",
+            "travelingpinoy",
+            "bahaybakasyunan reelsinstagram",
+            "pilipinas wanderlust",
+            "travelphotography"
+          ],
+          "sentiment": {
+            "dominant": "NEUTRAL",
+            "avg_confidence": 0.5332,
+            "std_confidence": 0.123,
+            "high_confidence_ratio": 0.0625,
+            "coverage": 1.0,
+            "label_distribution": {
+              "NEUTRAL": 13,
+              "POSITIVE": 3
+            },
+            "label_ratios": {
+              "NEUTRAL": 0.8125,
+              "POSITIVE": 0.1875
+            }
+          },
+          "explanation": "In 2023, people were talking about panagbengafestival travelgram, travelingpinoy poginggala, travelingpinoy, bahaybakasyunan reelsinstagram."
+        },
+        {
+          "rank": 3,
+          "cluster_id": 1,
+          "topic_id": 1,
+          "label": "Session Bloom / Road Bloom / Buskinglife Baguioflowerfestival",
+          "count": 40,
+          "top_words": [
+            "session bloom",
+            "road bloom",
+            "buskinglife baguioflowerfestival",
+            "baguioflowerfestival",
+            "session road",
+            "sessionroad sessionroadbaguio"
+          ],
+          "sentiment": {
+            "dominant": "NEUTRAL",
+            "avg_confidence": 0.5357,
+            "std_confidence": 0.0912,
+            "high_confidence_ratio": 0.0,
+            "coverage": 1.0,
+            "label_distribution": {
+              "NEUTRAL": 22,
+              "POSITIVE": 6
+            },
+            "label_ratios": {
+              "NEUTRAL": 0.7857,
+              "POSITIVE": 0.2143
+            }
+          },
+          "explanation": "In 2023, people were talking about session bloom, road bloom, buskinglife baguioflowerfestival, baguioflowerfestival."
+        },
+        {
+          "rank": 4,
+          "cluster_id": 3,
+          "topic_id": 0,
+          "label": "Float Parade / Parade Floats / Parade Panagbengafestival",
+          "count": 30,
+          "top_words": [
+            "float parade",
+            "parade floats",
+            "parade panagbengafestival",
+            "grandfloatparade",
+            "parade",
+            "parade philippinefestivals"
+          ],
+          "sentiment": {
+            "dominant": "NEUTRAL",
+            "avg_confidence": 0.549,
+            "std_confidence": 0.0894,
+            "high_confidence_ratio": 0.0263,
+            "coverage": 1.0,
+            "label_distribution": {
+              "NEUTRAL": 32,
+              "POSITIVE": 6
+            },
+            "label_ratios": {
+              "NEUTRAL": 0.8421,
+              "POSITIVE": 0.1579
+            }
+          },
+          "explanation": "In 2023, people were talking about float parade, parade floats, parade panagbengafestival, grandfloatparade."
+        },
+        {
+          "rank": 5,
+          "cluster_id": 7,
+          "topic_id": 1,
+          "label": "Karavan Fpjbqsabaguio / Fpjsbatangquiapo Fpjbqsabaguio / Panagbengafestival Tampok",
+          "count": 29,
+          "top_words": [
+            "karavan fpjbqsabaguio",
+            "fpjsbatangquiapo fpjbqsabaguio",
+            "panagbengafestival tampok",
+            "pambansang pogi",
+            "fpjsbatangquiapo",
+            "pambansang"
+          ],
+          "sentiment": {
+            "dominant": "NEUTRAL",
+            "avg_confidence": 0.5136,
+            "std_confidence": 0.1113,
+            "high_confidence_ratio": 0.0465,
+            "coverage": 1.0,
+            "label_distribution": {
+              "NEUTRAL": 25,
+              "NEGATIVE": 4,
+              "POSITIVE": 14
+            },
+            "label_ratios": {
+              "NEUTRAL": 0.5814,
+              "NEGATIVE": 0.093,
+              "POSITIVE": 0.3256
+            }
+          },
+          "explanation": "In 2023, people were talking about karavan fpjbqsabaguio, fpjsbatangquiapo fpjbqsabaguio, panagbengafestival tampok, pambansang pogi."
+        },
+        {
+          "rank": 6,
+          "cluster_id": 2,
+          "topic_id": 1,
+          "label": "Outdoorportraits / Paintingfromphotographs Sabsabong / Outdoorphotography Outdoorportraits",
+          "count": 26,
+          "top_words": [
+            "outdoorportraits",
+            "paintingfromphotographs sabsabong",
+            "outdoorphotography outdoorportraits",
+            "photography panagbengafestival",
+            "paintingfromphotographs",
+            "portraitphotography outdoorphotography"
+          ],
+          "sentiment": {
+            "dominant": "NEUTRAL",
+            "avg_confidence": 0.6049,
+            "std_confidence": 0.0444,
+            "high_confidence_ratio": 0.0,
+            "coverage": 1.0,
+            "label_distribution": {
+              "NEUTRAL": 5
+            },
+            "label_ratios": {
+              "NEUTRAL": 1.0
+            }
+          },
+          "explanation": "In 2023, people were talking about outdoorportraits, paintingfromphotographs sabsabong, outdoorphotography outdoorportraits, photography panagbengafestival."
+        },
+        {
+          "rank": 7,
+          "cluster_id": 3,
+          "topic_id": 1,
+          "label": "Dance Parade / Street Parade / Parade Kulturang",
+          "count": 25,
+          "top_words": [
+            "dance parade",
+            "street parade",
+            "parade kulturang",
+            "parade tamang",
+            "street dance",
+            "street dancing"
+          ],
+          "sentiment": {
+            "dominant": "NEUTRAL",
+            "avg_confidence": 0.566,
+            "std_confidence": 0.1081,
+            "high_confidence_ratio": 0.1667,
+            "coverage": 1.0,
+            "label_distribution": {
+              "NEUTRAL": 4,
+              "NEGATIVE": 1,
+              "POSITIVE": 1
+            },
+            "label_ratios": {
+              "NEUTRAL": 0.6667,
+              "NEGATIVE": 0.1667,
+              "POSITIVE": 0.1667
+            }
+          },
+          "explanation": "In 2023, people were talking about dance parade, street parade, parade kulturang, parade tamang."
+        },
+        {
+          "rank": 8,
+          "cluster_id": 0,
+          "topic_id": 0,
+          "label": "Arenaissanceofwonderandbeauty Baguioflowerfestival / Panagbengafestival Openingfeb / Parada Panagbengafestival",
+          "count": 22,
+          "top_words": [
+            "arenaissanceofwonderandbeauty baguioflowerfestival",
+            "panagbengafestival openingfeb",
+            "parada panagbengafestival",
+            "panagbengafestival arenaissanceofwonderandbeauty",
+            "february panagbengafestival",
+            "baguioflowerfestival grand"
+          ],
+          "sentiment": {
+            "dominant": "NEUTRAL",
+            "avg_confidence": 0.5403,
+            "std_confidence": 0.0423,
+            "high_confidence_ratio": 0.0,
+            "coverage": 1.0,
+            "label_distribution": {
+              "NEUTRAL": 16,
+              "POSITIVE": 1
+            },
+            "label_ratios": {
+              "NEUTRAL": 0.9412,
+              "POSITIVE": 0.0588
+            }
+          },
+          "explanation": "In 2023, people were talking about arenaissanceofwonderandbeauty baguioflowerfestival, panagbengafestival openingfeb, parada panagbengafestival, panagbengafestival arenaissanceofwonderandbeauty."
+        },
+        {
+          "rank": 9,
+          "cluster_id": 6,
+          "topic_id": 1,
+          "label": "Baguiofooddelivery Panagbengafestival / Baguiofoodtrip Musttry / Wimyummy Foodgasm",
+          "count": 18,
+          "top_words": [
+            "baguiofooddelivery panagbengafestival",
+            "baguiofoodtrip musttry",
+            "wimyummy foodgasm",
+            "baguiofooddelivery",
+            "foodgasm foodlover",
+            "musttry panagbengafestival"
+          ],
+          "sentiment": {
+            "dominant": "NEUTRAL",
+            "avg_confidence": 0.4683,
+            "std_confidence": 0.1037,
+            "high_confidence_ratio": 0.0,
+            "coverage": 1.0,
+            "label_distribution": {
+              "NEUTRAL": 4
+            },
+            "label_ratios": {
+              "NEUTRAL": 1.0
+            }
+          },
+          "explanation": "In 2023, people were talking about baguiofooddelivery panagbengafestival, baguiofoodtrip musttry, wimyummy foodgasm, baguiofooddelivery."
+        },
+        {
+          "rank": 10,
+          "cluster_id": 5,
+          "topic_id": 1,
+          "label": "Mgalihimniurduja Panagbengafestival / Panagbengafestival Smiles / Nagpakilig Fans",
+          "count": 17,
+          "top_words": [
+            "mgalihimniurduja panagbengafestival",
+            "panagbengafestival smiles",
+            "nagpakilig fans",
+            "panagbengafestival",
+            "dee gaganap",
+            "fans ginanap"
+          ],
+          "sentiment": {
+            "dominant": "POSITIVE",
+            "avg_confidence": 0.5026,
+            "std_confidence": 0.0836,
+            "high_confidence_ratio": 0.0,
+            "coverage": 1.0,
+            "label_distribution": {
+              "POSITIVE": 10,
+              "NEUTRAL": 5
+            },
+            "label_ratios": {
+              "POSITIVE": 0.6667,
+              "NEUTRAL": 0.3333
+            }
+          },
+          "explanation": "In 2023, people were talking about mgalihimniurduja panagbengafestival, panagbengafestival smiles, nagpakilig fans, panagbengafestival."
+        }
+      ]
+    },
+    {
+      "year": 2024,
+      "total_docs": 769,
+      "n_clusters": 2,
+      "total_topics": 12,
+      "noise_ratio": 0.0182,
+      "avg_coherence": 0.3195,
+      "sentiment_summary": {
+        "n_docs": 1678,
+        "avg_confidence": 0.5148,
+        "avg_coverage": 1.0,
+        "high_confidence_ratio": 0.0179,
+        "dominant_sentiment": "NEUTRAL",
+        "label_distribution": {
+          "NEUTRAL": 1190,
+          "POSITIVE": 407,
+          "NEGATIVE": 81
+        }
+      },
+      "dominant_sentiment_dist": {
+        "NEUTRAL": 11,
+        "POSITIVE": 1
+      },
+      "visualization": "outputs\\visualizations\\cluster_viz_2024.png",
+      "clusters": [
+        {
+          "cluster_id": 0,
+          "n_docs": 28,
+          "n_topics": 3,
+          "coherence": 0.0,
+          "sentiment_summary": {
+            "n_docs": 30,
+            "avg_confidence": 0.5157,
+            "avg_coverage": 1.0,
+            "high_confidence_ratio": 0.0333,
+            "dominant_sentiment": "NEUTRAL",
+            "label_distribution": {
+              "NEUTRAL": 17,
+              "POSITIVE": 11,
+              "NEGATIVE": 2
+            }
+          },
+          "dominant_sentiment_dist": {
+            "NEUTRAL": 2,
+            "POSITIVE": 1
+          },
+          "topics": [
+            {
+              "topic_id": 0,
+              "label": "Closingpanagbenga Fireworks / Fireworks Panagbengafestival / Panabenga Fireworks",
+              "count": 12,
+              "top_words": [
+                "closingpanagbenga fireworks",
+                "fireworks panagbengafestival",
+                "panabenga fireworks",
+                "panagbengafestival closingpanagbenga",
+                "panagbengaclosingfireworks sabaguio",
+                "fireworks closingceremony",
+                "panagbengaclosingfireworks",
+                "closing fireworks",
+                "baguiocityfireworks panagbengaclosing",
+                "panagbengafestival closing"
+              ],
+              "top_word_scores": [
+                0.927559,
+                0.904138,
+                0.866836,
+                0.821243,
+                0.818414,
+                0.817431,
+                0.802478,
+                0.799094,
+                0.794336,
+                0.778948
+              ],
+              "sentiment": {
+                "dominant": "NEUTRAL",
+                "avg_confidence": 0.4468,
+                "std_confidence": 0.0,
+                "high_confidence_ratio": 0.0,
+                "coverage": 1.0,
+                "label_distribution": {
+                  "NEUTRAL": 1
+                },
+                "label_ratios": {
+                  "NEUTRAL": 1.0
+                }
+              },
+              "explanation": "In 2024, people were talking about closingpanagbenga fireworks, fireworks panagbengafestival, panabenga fireworks, panagbengafestival closingpanagbenga.",
+              "top_10_rank": 9
+            },
+            {
+              "topic_id": 1,
+              "label": "Fireworkshow Panagbengafestival / Panagbengafestival Fireworks / Fireworks Sessionroadbaguiocity",
+              "count": 4,
+              "top_words": [
+                "fireworkshow panagbengafestival",
+                "panagbengafestival fireworks",
+                "fireworks sessionroadbaguiocity",
+                "panagbengafestival closingfireworks",
+                "closingfireworks fluvialfestival",
+                "shinebright panagbengafestival",
+                "fireworks flowerfest",
+                "fluvialfestival fireworks",
+                "fireworksshow skyfullofstars",
+                "day fireworkshow"
+              ],
+              "top_word_scores": [
+                0.899895,
+                0.893077,
+                0.886989,
+                0.871232,
+                0.809942,
+                0.808932,
+                0.789708,
+                0.78918,
+                0.786607,
+                0.785993
+              ],
+              "sentiment": {
+                "dominant": "NEUTRAL",
+                "avg_confidence": 0.5159,
+                "std_confidence": 0.0925,
+                "high_confidence_ratio": 0.0357,
+                "coverage": 1.0,
+                "label_distribution": {
+                  "NEUTRAL": 16,
+                  "POSITIVE": 10,
+                  "NEGATIVE": 2
+                },
+                "label_ratios": {
+                  "NEUTRAL": 0.5714,
+                  "POSITIVE": 0.3571,
+                  "NEGATIVE": 0.0714
+                }
+              }
+            },
+            {
+              "topic_id": 2,
+              "label": "Fireworks Panagbengafestival / Panagbengafestival Fireworks / Fireworks Panagbengafireworks",
+              "count": 9,
+              "top_words": [
+                "fireworks panagbengafestival",
+                "panagbengafestival fireworks",
+                "fireworks panagbengafireworks",
+                "fireworks smbaguio",
+                "putukan fireworks",
+                "panagbengafireworks",
+                "happykiddos fireworksdisplay",
+                "pangbenga grandfireworks",
+                "fireworks blessedandgrateful",
+                "fireworksdisplay happy"
+              ],
+              "top_word_scores": [
+                0.930344,
+                0.924562,
+                0.917628,
+                0.885519,
+                0.877749,
+                0.862623,
+                0.851226,
+                0.844977,
+                0.843809,
+                0.841331
+              ],
+              "sentiment": {
+                "dominant": "POSITIVE",
+                "avg_confidence": 0.5784,
+                "std_confidence": 0.0,
+                "high_confidence_ratio": 0.0,
+                "coverage": 1.0,
+                "label_distribution": {
+                  "POSITIVE": 1
+                },
+                "label_ratios": {
+                  "POSITIVE": 1.0
+                }
+              }
+            }
+          ]
+        },
+        {
+          "cluster_id": 1,
+          "n_docs": 727,
+          "n_topics": 9,
+          "coherence": 0.6389,
+          "sentiment_summary": {
+            "n_docs": 1648,
+            "avg_confidence": 0.5148,
+            "avg_coverage": 1.0,
+            "high_confidence_ratio": 0.0176,
+            "dominant_sentiment": "NEUTRAL",
+            "label_distribution": {
+              "NEUTRAL": 1173,
+              "POSITIVE": 396,
+              "NEGATIVE": 79
+            }
+          },
+          "dominant_sentiment_dist": {
+            "NEUTRAL": 9
+          },
+          "topics": [
+            {
+              "topic_id": 0,
+              "label": "Parade Panagbengafestival / Float Parade / Floatparade",
+              "count": 164,
+              "top_words": [
+                "parade panagbengafestival",
+                "float parade",
+                "floatparade",
+                "parade",
+                "grandfloatparade",
+                "flower city",
+                "panagbengafestival pageantgalk",
+                "panagbengafestival",
+                "parade city",
+                "grand float"
+              ],
+              "top_word_scores": [
+                0.781573,
+                0.745027,
+                0.705452,
+                0.703114,
+                0.702362,
+                0.688624,
+                0.678715,
+                0.677284,
+                0.670928,
+                0.643493
+              ],
+              "sentiment": {
+                "dominant": "NEUTRAL",
+                "avg_confidence": 0.5095,
+                "std_confidence": 0.092,
+                "high_confidence_ratio": 0.0132,
+                "coverage": 1.0,
+                "label_distribution": {
+                  "NEUTRAL": 323,
+                  "POSITIVE": 110,
+                  "NEGATIVE": 20
+                },
+                "label_ratios": {
+                  "NEUTRAL": 0.713,
+                  "POSITIVE": 0.2428,
+                  "NEGATIVE": 0.0442
+                }
+              },
+              "explanation": "In 2024, people were talking about parade panagbengafestival, float parade, floatparade, parade.",
+              "top_10_rank": 1
+            },
+            {
+              "topic_id": 1,
+              "label": "Road Bloom / Panagbengafestival Sessionroadinbloom / Session Bloom",
+              "count": 115,
+              "top_words": [
+                "road bloom",
+                "panagbengafestival sessionroadinbloom",
+                "session bloom",
+                "session road",
+                "bloom panagbengafestival",
+                "panagbengafestival sessioninbloom",
+                "sessionroadbaguiocity",
+                "sessionroadbaguio",
+                "panagbengafestival baguioflowerfestival",
+                "sessionroadinbloom"
+              ],
+              "top_word_scores": [
+                0.799176,
+                0.772942,
+                0.767175,
+                0.728516,
+                0.724323,
+                0.686607,
+                0.671734,
+                0.671242,
+                0.663827,
+                0.638901
+              ],
+              "sentiment": {
+                "dominant": "NEUTRAL",
+                "avg_confidence": 0.5409,
+                "std_confidence": 0.0969,
+                "high_confidence_ratio": 0.037,
+                "coverage": 1.0,
+                "label_distribution": {
+                  "NEUTRAL": 23,
+                  "POSITIVE": 3,
+                  "NEGATIVE": 1
+                },
+                "label_ratios": {
+                  "NEUTRAL": 0.8519,
+                  "POSITIVE": 0.1111,
+                  "NEGATIVE": 0.037
+                }
+              },
+              "explanation": "In 2024, people were talking about road bloom, panagbengafestival sessionroadinbloom, session bloom, session road.",
+              "top_10_rank": 2
+            },
+            {
+              "topic_id": 2,
+              "label": "Fpjsbatangquiapo Kapamilyakaravan / Panagbengafestival Kapamilyakaravan / Barangayan Fpjsbatangquiapo",
+              "count": 98,
+              "top_words": [
+                "fpjsbatangquiapo kapamilyakaravan",
+                "panagbengafestival kapamilyakaravan",
+                "barangayan fpjsbatangquiapo",
+                "fpjbqbarangayan panagbengafestival",
+                "kapamilyakaravan fpjbqbarangayan",
+                "susunod barangayan",
+                "latter panagbengafestival",
+                "fpjsbatangquiapo fpjbqbarangayan",
+                "quiapo maraming",
+                "panagbengabaguio"
+              ],
+              "top_word_scores": [
+                0.803168,
+                0.793953,
+                0.766813,
+                0.754964,
+                0.724658,
+                0.697101,
+                0.679811,
+                0.671469,
+                0.669834,
+                0.663815
+              ],
+              "sentiment": {
+                "dominant": "NEUTRAL",
+                "avg_confidence": 0.5179,
+                "std_confidence": 0.0375,
+                "high_confidence_ratio": 0.0,
+                "coverage": 1.0,
+                "label_distribution": {
+                  "NEUTRAL": 5,
+                  "NEGATIVE": 1
+                },
+                "label_ratios": {
+                  "NEUTRAL": 0.8333,
+                  "NEGATIVE": 0.1667
+                }
+              },
+              "explanation": "In 2024, people were talking about fpjsbatangquiapo kapamilyakaravan, panagbengafestival kapamilyakaravan, barangayan fpjsbatangquiapo, fpjbqbarangayan panagbengafestival.",
+              "top_10_rank": 3
+            },
+            {
+              "topic_id": 3,
+              "label": "Panagbengafestival Summercapitalofthephilippines / Park Panagbengafestival / Travel Panagbengafestival",
+              "count": 63,
+              "top_words": [
+                "panagbengafestival summercapitalofthephilippines",
+                "park panagbengafestival",
+                "travel panagbengafestival",
+                "city panagbengafestival",
+                "panagbengafestival city",
+                "panagbengafestival addonreels",
+                "panagbengafeelsatsm burnhampark",
+                "summercapitalofthephilippines burnham",
+                "panagbengafestival panagbengafestival",
+                "panagbengafestival"
+              ],
+              "top_word_scores": [
+                0.77906,
+                0.76721,
+                0.737663,
+                0.722493,
+                0.709535,
+                0.709041,
+                0.708143,
+                0.705548,
+                0.705354,
+                0.702064
+              ],
+              "sentiment": {
+                "dominant": "NEUTRAL",
+                "avg_confidence": 0.506,
+                "std_confidence": 0.0889,
+                "high_confidence_ratio": 0.0096,
+                "coverage": 1.0,
+                "label_distribution": {
+                  "NEUTRAL": 300,
+                  "POSITIVE": 97,
+                  "NEGATIVE": 20
+                },
+                "label_ratios": {
+                  "NEUTRAL": 0.7194,
+                  "POSITIVE": 0.2326,
+                  "NEGATIVE": 0.048
+                }
+              },
+              "explanation": "In 2024, people were talking about panagbengafestival summercapitalofthephilippines, park panagbengafestival, travel panagbengafestival, city panagbengafestival.",
+              "top_10_rank": 4
+            },
+            {
+              "topic_id": 4,
+              "label": "Panagbengafestival Reelsvideo / Reelsvideo Panagbengafestival / Panagbengafestival Fbreelsvideo",
+              "count": 61,
+              "top_words": [
+                "panagbengafestival reelsvideo",
+                "reelsvideo panagbengafestival",
+                "panagbengafestival fbreelsvideo",
+                "fbreelsvideo fbreelsfypシ",
+                "fbreelsvideo panagbengafestival",
+                "fbreelsfypシ reelsvideo",
+                "panagbengafestival reelsfb",
+                "fbreels fbreelsvideo",
+                "jejemonvines panagbengafestival",
+                "reelsvideoシ"
+              ],
+              "top_word_scores": [
+                0.758475,
+                0.755889,
+                0.735204,
+                0.723254,
+                0.718998,
+                0.706354,
+                0.661851,
+                0.643602,
+                0.625294,
+                0.624173
+              ],
+              "sentiment": {
+                "dominant": "NEUTRAL",
+                "avg_confidence": 0.5566,
+                "std_confidence": 0.074,
+                "high_confidence_ratio": 0.0,
+                "coverage": 1.0,
+                "label_distribution": {
+                  "NEUTRAL": 3,
+                  "NEGATIVE": 1
+                },
+                "label_ratios": {
+                  "NEUTRAL": 0.75,
+                  "NEGATIVE": 0.25
+                }
+              },
+              "explanation": "In 2024, people were talking about panagbengafestival reelsvideo, reelsvideo panagbengafestival, panagbengafestival fbreelsvideo, fbreelsvideo fbreelsfypシ.",
+              "top_10_rank": 5
+            },
+            {
+              "topic_id": 5,
+              "label": "Baguioqueens Beautyqueens / Prettywoman Beautifulwoman / Beauty Gonzales",
+              "count": 50,
+              "top_words": [
+                "baguioqueens beautyqueens",
+                "prettywoman beautifulwoman",
+                "beauty gonzales",
+                "beautyqueens",
+                "prettywoman",
+                "prettylady",
+                "beautifulwoman",
+                "missuniversephbaguio",
+                "queens baguioqueens",
+                "missuniversephbaguio muphbaguio"
+              ],
+              "top_word_scores": [
+                0.691482,
+                0.684202,
+                0.683123,
+                0.681836,
+                0.667815,
+                0.658908,
+                0.654108,
+                0.642334,
+                0.620924,
+                0.608552
+              ],
+              "sentiment": {
+                "dominant": "NEUTRAL",
+                "avg_confidence": 0.4567,
+                "std_confidence": 0.0484,
+                "high_confidence_ratio": 0.0,
+                "coverage": 1.0,
+                "label_distribution": {
+                  "NEUTRAL": 4,
+                  "POSITIVE": 3
+                },
+                "label_ratios": {
+                  "NEUTRAL": 0.5714,
+                  "POSITIVE": 0.4286
+                }
+              },
+              "explanation": "In 2024, people were talking about baguioqueens beautyqueens, prettywoman beautifulwoman, beauty gonzales, beautyqueens.",
+              "top_10_rank": 6
+            },
+            {
+              "topic_id": 6,
+              "label": "ViralシFypシ Panagbengafestival / ViralシAlシ Panagbengafestival / Viralシ Panagbengafestival",
+              "count": 18,
+              "top_words": [
+                "viralシfypシ panagbengafestival",
+                "viralシalシ panagbengafestival",
+                "viralシ panagbengafestival",
+                "panagbengafestival viralreelsシ",
+                "viralreelsfbpage panagbengafestival",
+                "viralreelsシ viralreelsfbpage",
+                "viralシ viralシfypシ",
+                "viralsongsreel",
+                "panagbengafestival videoviral",
+                "viralsongsreel virals"
+              ],
+              "top_word_scores": [
+                0.946869,
+                0.9372,
+                0.925926,
+                0.890887,
+                0.870952,
+                0.838343,
+                0.815119,
+                0.809951,
+                0.806746,
+                0.804695
+              ],
+              "sentiment": {
+                "dominant": "NEUTRAL",
+                "avg_confidence": 0.4959,
+                "std_confidence": 0.0,
+                "high_confidence_ratio": 0.0,
+                "coverage": 1.0,
+                "label_distribution": {
+                  "NEUTRAL": 2
+                },
+                "label_ratios": {
+                  "NEUTRAL": 1.0
+                }
+              },
+              "explanation": "In 2024, people were talking about viralシfypシ panagbengafestival, viralシalシ panagbengafestival, viralシ panagbengafestival, panagbengafestival viralreelsシ.",
+              "top_10_rank": 7
+            },
+            {
+              "topic_id": 7,
+              "label": "Streetphotographer Photographyislife / Streetphotography Photograph / Travelphotography Parade",
+              "count": 15,
+              "top_words": [
+                "streetphotographer photographyislife",
+                "streetphotography photograph",
+                "travelphotography parade",
+                "photography streetphotography",
+                "streetphotography",
+                "photograph streetphotographer",
+                "streetphotography landscapephotography",
+                "street photography",
+                "streetphotographer",
+                "streetvideographer streetphotography"
+              ],
+              "top_word_scores": [
+                0.816072,
+                0.814909,
+                0.810407,
+                0.809524,
+                0.801939,
+                0.801018,
+                0.799825,
+                0.793553,
+                0.787189,
+                0.775676
+              ],
+              "sentiment": {
+                "dominant": "NEUTRAL",
+                "avg_confidence": 0.546,
+                "std_confidence": 0.0714,
+                "high_confidence_ratio": 0.0,
+                "coverage": 1.0,
+                "label_distribution": {
+                  "NEUTRAL": 5
+                },
+                "label_ratios": {
+                  "NEUTRAL": 1.0
+                }
+              },
+              "explanation": "In 2024, people were talking about streetphotographer photographyislife, streetphotography photograph, travelphotography parade, photography streetphotography.",
+              "top_10_rank": 8
+            },
+            {
+              "topic_id": 8,
+              "label": "Reelfypシ Panagbengafestival / Reelsfb Panagbengafestival / ReelsviralシFb Panagbengafestival",
+              "count": 12,
+              "top_words": [
+                "reelfypシ panagbengafestival",
+                "reelsfb panagbengafestival",
+                "reelsviralシfb panagbengafestival",
+                "reelsig fbfypシ",
+                "fbreels reelsfbpage",
+                "panagbengafestival reels",
+                "panagbengafestival reel",
+                "reelstrending fbfypシ",
+                "reelsfbpage reelsviralシfb",
+                "reelsvideoシ panagbengafestival"
+              ],
+              "top_word_scores": [
+                0.874305,
+                0.873925,
+                0.865018,
+                0.812778,
+                0.793801,
+                0.78897,
+                0.78748,
+                0.784921,
+                0.775072,
+                0.755363
+              ],
+              "sentiment": {
+                "dominant": "NEUTRAL",
+                "avg_confidence": 0.5223,
+                "std_confidence": 0.1006,
+                "high_confidence_ratio": 0.0248,
+                "coverage": 1.0,
+                "label_distribution": {
+                  "NEUTRAL": 508,
+                  "NEGATIVE": 36,
+                  "POSITIVE": 183
+                },
+                "label_ratios": {
+                  "NEUTRAL": 0.6988,
+                  "NEGATIVE": 0.0495,
+                  "POSITIVE": 0.2517
+                }
+              },
+              "explanation": "In 2024, people were talking about reelfypシ panagbengafestival, reelsfb panagbengafestival, reelsviralシfb panagbengafestival, reelsig fbfypシ.",
+              "top_10_rank": 10
+            }
+          ]
+        }
+      ],
+      "top_10_topics": [
+        {
+          "rank": 1,
+          "cluster_id": 1,
+          "topic_id": 0,
+          "label": "Parade Panagbengafestival / Float Parade / Floatparade",
+          "count": 164,
+          "top_words": [
+            "parade panagbengafestival",
+            "float parade",
+            "floatparade",
+            "parade",
+            "grandfloatparade",
+            "flower city"
+          ],
+          "sentiment": {
+            "dominant": "NEUTRAL",
+            "avg_confidence": 0.5095,
+            "std_confidence": 0.092,
+            "high_confidence_ratio": 0.0132,
+            "coverage": 1.0,
+            "label_distribution": {
+              "NEUTRAL": 323,
+              "POSITIVE": 110,
+              "NEGATIVE": 20
+            },
+            "label_ratios": {
+              "NEUTRAL": 0.713,
+              "POSITIVE": 0.2428,
+              "NEGATIVE": 0.0442
+            }
+          },
+          "explanation": "In 2024, people were talking about parade panagbengafestival, float parade, floatparade, parade."
+        },
+        {
+          "rank": 2,
+          "cluster_id": 1,
+          "topic_id": 1,
+          "label": "Road Bloom / Panagbengafestival Sessionroadinbloom / Session Bloom",
+          "count": 115,
+          "top_words": [
+            "road bloom",
+            "panagbengafestival sessionroadinbloom",
+            "session bloom",
+            "session road",
+            "bloom panagbengafestival",
+            "panagbengafestival sessioninbloom"
+          ],
+          "sentiment": {
+            "dominant": "NEUTRAL",
+            "avg_confidence": 0.5409,
+            "std_confidence": 0.0969,
+            "high_confidence_ratio": 0.037,
+            "coverage": 1.0,
+            "label_distribution": {
+              "NEUTRAL": 23,
+              "POSITIVE": 3,
+              "NEGATIVE": 1
+            },
+            "label_ratios": {
+              "NEUTRAL": 0.8519,
+              "POSITIVE": 0.1111,
+              "NEGATIVE": 0.037
+            }
+          },
+          "explanation": "In 2024, people were talking about road bloom, panagbengafestival sessionroadinbloom, session bloom, session road."
+        },
+        {
+          "rank": 3,
+          "cluster_id": 1,
+          "topic_id": 2,
+          "label": "Fpjsbatangquiapo Kapamilyakaravan / Panagbengafestival Kapamilyakaravan / Barangayan Fpjsbatangquiapo",
+          "count": 98,
+          "top_words": [
+            "fpjsbatangquiapo kapamilyakaravan",
+            "panagbengafestival kapamilyakaravan",
+            "barangayan fpjsbatangquiapo",
+            "fpjbqbarangayan panagbengafestival",
+            "kapamilyakaravan fpjbqbarangayan",
+            "susunod barangayan"
+          ],
+          "sentiment": {
+            "dominant": "NEUTRAL",
+            "avg_confidence": 0.5179,
+            "std_confidence": 0.0375,
+            "high_confidence_ratio": 0.0,
+            "coverage": 1.0,
+            "label_distribution": {
+              "NEUTRAL": 5,
+              "NEGATIVE": 1
+            },
+            "label_ratios": {
+              "NEUTRAL": 0.8333,
+              "NEGATIVE": 0.1667
+            }
+          },
+          "explanation": "In 2024, people were talking about fpjsbatangquiapo kapamilyakaravan, panagbengafestival kapamilyakaravan, barangayan fpjsbatangquiapo, fpjbqbarangayan panagbengafestival."
+        },
+        {
+          "rank": 4,
+          "cluster_id": 1,
+          "topic_id": 3,
+          "label": "Panagbengafestival Summercapitalofthephilippines / Park Panagbengafestival / Travel Panagbengafestival",
+          "count": 63,
+          "top_words": [
+            "panagbengafestival summercapitalofthephilippines",
+            "park panagbengafestival",
+            "travel panagbengafestival",
+            "city panagbengafestival",
+            "panagbengafestival city",
+            "panagbengafestival addonreels"
+          ],
+          "sentiment": {
+            "dominant": "NEUTRAL",
+            "avg_confidence": 0.506,
+            "std_confidence": 0.0889,
+            "high_confidence_ratio": 0.0096,
+            "coverage": 1.0,
+            "label_distribution": {
+              "NEUTRAL": 300,
+              "POSITIVE": 97,
+              "NEGATIVE": 20
+            },
+            "label_ratios": {
+              "NEUTRAL": 0.7194,
+              "POSITIVE": 0.2326,
+              "NEGATIVE": 0.048
+            }
+          },
+          "explanation": "In 2024, people were talking about panagbengafestival summercapitalofthephilippines, park panagbengafestival, travel panagbengafestival, city panagbengafestival."
+        },
+        {
+          "rank": 5,
+          "cluster_id": 1,
+          "topic_id": 4,
+          "label": "Panagbengafestival Reelsvideo / Reelsvideo Panagbengafestival / Panagbengafestival Fbreelsvideo",
+          "count": 61,
+          "top_words": [
+            "panagbengafestival reelsvideo",
+            "reelsvideo panagbengafestival",
+            "panagbengafestival fbreelsvideo",
+            "fbreelsvideo fbreelsfypシ",
+            "fbreelsvideo panagbengafestival",
+            "fbreelsfypシ reelsvideo"
+          ],
+          "sentiment": {
+            "dominant": "NEUTRAL",
+            "avg_confidence": 0.5566,
+            "std_confidence": 0.074,
+            "high_confidence_ratio": 0.0,
+            "coverage": 1.0,
+            "label_distribution": {
+              "NEUTRAL": 3,
+              "NEGATIVE": 1
+            },
+            "label_ratios": {
+              "NEUTRAL": 0.75,
+              "NEGATIVE": 0.25
+            }
+          },
+          "explanation": "In 2024, people were talking about panagbengafestival reelsvideo, reelsvideo panagbengafestival, panagbengafestival fbreelsvideo, fbreelsvideo fbreelsfypシ."
+        },
+        {
+          "rank": 6,
+          "cluster_id": 1,
+          "topic_id": 5,
+          "label": "Baguioqueens Beautyqueens / Prettywoman Beautifulwoman / Beauty Gonzales",
+          "count": 50,
+          "top_words": [
+            "baguioqueens beautyqueens",
+            "prettywoman beautifulwoman",
+            "beauty gonzales",
+            "beautyqueens",
+            "prettywoman",
+            "prettylady"
+          ],
+          "sentiment": {
+            "dominant": "NEUTRAL",
+            "avg_confidence": 0.4567,
+            "std_confidence": 0.0484,
+            "high_confidence_ratio": 0.0,
+            "coverage": 1.0,
+            "label_distribution": {
+              "NEUTRAL": 4,
+              "POSITIVE": 3
+            },
+            "label_ratios": {
+              "NEUTRAL": 0.5714,
+              "POSITIVE": 0.4286
+            }
+          },
+          "explanation": "In 2024, people were talking about baguioqueens beautyqueens, prettywoman beautifulwoman, beauty gonzales, beautyqueens."
+        },
+        {
+          "rank": 7,
+          "cluster_id": 1,
+          "topic_id": 6,
+          "label": "ViralシFypシ Panagbengafestival / ViralシAlシ Panagbengafestival / Viralシ Panagbengafestival",
+          "count": 18,
+          "top_words": [
+            "viralシfypシ panagbengafestival",
+            "viralシalシ panagbengafestival",
+            "viralシ panagbengafestival",
+            "panagbengafestival viralreelsシ",
+            "viralreelsfbpage panagbengafestival",
+            "viralreelsシ viralreelsfbpage"
+          ],
+          "sentiment": {
+            "dominant": "NEUTRAL",
+            "avg_confidence": 0.4959,
+            "std_confidence": 0.0,
+            "high_confidence_ratio": 0.0,
+            "coverage": 1.0,
+            "label_distribution": {
+              "NEUTRAL": 2
+            },
+            "label_ratios": {
+              "NEUTRAL": 1.0
+            }
+          },
+          "explanation": "In 2024, people were talking about viralシfypシ panagbengafestival, viralシalシ panagbengafestival, viralシ panagbengafestival, panagbengafestival viralreelsシ."
+        },
+        {
+          "rank": 8,
+          "cluster_id": 1,
+          "topic_id": 7,
+          "label": "Streetphotographer Photographyislife / Streetphotography Photograph / Travelphotography Parade",
+          "count": 15,
+          "top_words": [
+            "streetphotographer photographyislife",
+            "streetphotography photograph",
+            "travelphotography parade",
+            "photography streetphotography",
+            "streetphotography",
+            "photograph streetphotographer"
+          ],
+          "sentiment": {
+            "dominant": "NEUTRAL",
+            "avg_confidence": 0.546,
+            "std_confidence": 0.0714,
+            "high_confidence_ratio": 0.0,
+            "coverage": 1.0,
+            "label_distribution": {
+              "NEUTRAL": 5
+            },
+            "label_ratios": {
+              "NEUTRAL": 1.0
+            }
+          },
+          "explanation": "In 2024, people were talking about streetphotographer photographyislife, streetphotography photograph, travelphotography parade, photography streetphotography."
+        },
+        {
+          "rank": 9,
+          "cluster_id": 0,
+          "topic_id": 0,
+          "label": "Closingpanagbenga Fireworks / Fireworks Panagbengafestival / Panabenga Fireworks",
+          "count": 12,
+          "top_words": [
+            "closingpanagbenga fireworks",
+            "fireworks panagbengafestival",
+            "panabenga fireworks",
+            "panagbengafestival closingpanagbenga",
+            "panagbengaclosingfireworks sabaguio",
+            "fireworks closingceremony"
+          ],
+          "sentiment": {
+            "dominant": "NEUTRAL",
+            "avg_confidence": 0.4468,
+            "std_confidence": 0.0,
+            "high_confidence_ratio": 0.0,
+            "coverage": 1.0,
+            "label_distribution": {
+              "NEUTRAL": 1
+            },
+            "label_ratios": {
+              "NEUTRAL": 1.0
+            }
+          },
+          "explanation": "In 2024, people were talking about closingpanagbenga fireworks, fireworks panagbengafestival, panabenga fireworks, panagbengafestival closingpanagbenga."
+        },
+        {
+          "rank": 10,
+          "cluster_id": 1,
+          "topic_id": 8,
+          "label": "Reelfypシ Panagbengafestival / Reelsfb Panagbengafestival / ReelsviralシFb Panagbengafestival",
+          "count": 12,
+          "top_words": [
+            "reelfypシ panagbengafestival",
+            "reelsfb panagbengafestival",
+            "reelsviralシfb panagbengafestival",
+            "reelsig fbfypシ",
+            "fbreels reelsfbpage",
+            "panagbengafestival reels"
+          ],
+          "sentiment": {
+            "dominant": "NEUTRAL",
+            "avg_confidence": 0.5223,
+            "std_confidence": 0.1006,
+            "high_confidence_ratio": 0.0248,
+            "coverage": 1.0,
+            "label_distribution": {
+              "NEUTRAL": 508,
+              "NEGATIVE": 36,
+              "POSITIVE": 183
+            },
+            "label_ratios": {
+              "NEUTRAL": 0.6988,
+              "NEGATIVE": 0.0495,
+              "POSITIVE": 0.2517
+            }
+          },
+          "explanation": "In 2024, people were talking about reelfypシ panagbengafestival, reelsfb panagbengafestival, reelsviralシfb panagbengafestival, reelsig fbfypシ."
+        }
+      ]
+    },
+    {
+      "year": 2025,
+      "total_docs": 837,
+      "n_clusters": 2,
+      "total_topics": 5,
+      "noise_ratio": 0.0143,
+      "avg_coherence": 0.532,
+      "sentiment_summary": {
+        "n_docs": 586,
+        "avg_confidence": 0.5182,
+        "avg_coverage": 1.0,
+        "high_confidence_ratio": 0.0205,
+        "dominant_sentiment": "NEUTRAL",
+        "label_distribution": {
+          "NEUTRAL": 427,
+          "POSITIVE": 134,
+          "NEGATIVE": 25
+        }
+      },
+      "dominant_sentiment_dist": {
+        "NEUTRAL": 5
+      },
+      "visualization": "outputs\\visualizations\\cluster_viz_2025.png",
+      "clusters": [
+        {
+          "cluster_id": 0,
+          "n_docs": 53,
+          "n_topics": 3,
+          "coherence": 0.4403,
+          "sentiment_summary": {
+            "n_docs": 50,
+            "avg_confidence": 0.5415,
+            "avg_coverage": 1.0,
+            "high_confidence_ratio": 0.04,
+            "dominant_sentiment": "NEUTRAL",
+            "label_distribution": {
+              "NEUTRAL": 43,
+              "POSITIVE": 7
+            }
+          },
+          "dominant_sentiment_dist": {
+            "NEUTRAL": 3
+          },
+          "topics": [
+            {
+              "topic_id": 0,
+              "label": "Panagbengafestival Streetdance / Panagbengafestival Festivaldance / Culturedance Baguiofeels",
+              "count": 17,
+              "top_words": [
+                "panagbengafestival streetdance",
+                "panagbengafestival festivaldance",
+                "culturedance baguiofeels",
+                "streetdance wheninbaguio",
+                "culturedance",
+                "dancechallenge culture",
+                "culture culturedance",
+                "igrotdance",
+                "dance igorotdance",
+                "igorotdance dancechallenge"
+              ],
+              "top_word_scores": [
+                0.874319,
+                0.859611,
+                0.837809,
+                0.821632,
+                0.774725,
+                0.762768,
+                0.748146,
+                0.732115,
+                0.730766,
+                0.721675
+              ],
+              "sentiment": {
+                "dominant": "NEUTRAL",
+                "avg_confidence": 0.4636,
+                "std_confidence": 0.0298,
+                "high_confidence_ratio": 0.0,
+                "coverage": 1.0,
+                "label_distribution": {
+                  "NEUTRAL": 3
+                },
+                "label_ratios": {
+                  "NEUTRAL": 1.0
+                }
+              },
+              "explanation": "In 2025, people were talking about panagbengafestival streetdance, panagbengafestival festivaldance, culturedance baguiofeels, streetdance wheninbaguio.",
+              "top_10_rank": 3
+            },
+            {
+              "topic_id": 1,
+              "label": "Parade Panagbengafestival / Dance Parade / Parade Japsadventures",
+              "count": 14,
+              "top_words": [
+                "parade panagbengafestival",
+                "dance parade",
+                "parade japsadventures",
+                "panagbengafestival ilovecheers",
+                "panagbengafestival",
+                "street dance",
+                "parade much",
+                "parade",
+                "parade bang",
+                "bang panagbengafestival"
+              ],
+              "top_word_scores": [
+                0.813403,
+                0.790263,
+                0.698735,
+                0.695044,
+                0.687822,
+                0.687505,
+                0.679389,
+                0.67438,
+                0.661953,
+                0.649908
+              ],
+              "sentiment": {
+                "dominant": "NEUTRAL",
+                "avg_confidence": 0.5468,
+                "std_confidence": 0.0792,
+                "high_confidence_ratio": 0.0435,
+                "coverage": 1.0,
+                "label_distribution": {
+                  "NEUTRAL": 39,
+                  "POSITIVE": 7
+                },
+                "label_ratios": {
+                  "NEUTRAL": 0.8478,
+                  "POSITIVE": 0.1522
+                }
+              },
+              "explanation": "In 2025, people were talking about parade panagbengafestival, dance parade, parade japsadventures, panagbengafestival ilovecheers.",
+              "top_10_rank": 5
+            },
+            {
+              "topic_id": 2,
+              "label": "Panagbengafestival Streetdancingparade / Panagbengafestival Parade / Parade Streetdance",
+              "count": 21,
+              "top_words": [
+                "panagbengafestival streetdancingparade",
+                "panagbengafestival parade",
+                "parade streetdance",
+                "dancing parade",
+                "parade panagbengafestival",
+                "streetdancingparade fbreelsvideo",
+                "streetdancingparade",
+                "streetdancecompetition fbreelsvideo",
+                "street dancing",
+                "parade slumarchingband"
+              ],
+              "top_word_scores": [
+                0.93506,
+                0.89002,
+                0.876822,
+                0.865607,
+                0.85923,
+                0.834593,
+                0.817179,
+                0.791234,
+                0.77108,
+                0.753475
+              ],
+              "sentiment": {
+                "dominant": "NEUTRAL",
+                "avg_confidence": 0.531,
+                "std_confidence": 0.0,
+                "high_confidence_ratio": 0.0,
+                "coverage": 1.0,
+                "label_distribution": {
+                  "NEUTRAL": 1
+                },
+                "label_ratios": {
+                  "NEUTRAL": 1.0
+                }
+              },
+              "explanation": "In 2025, people were talking about panagbengafestival streetdancingparade, panagbengafestival parade, parade streetdance, dancing parade.",
+              "top_10_rank": 2
+            }
+          ]
+        },
+        {
+          "cluster_id": 1,
+          "n_docs": 772,
+          "n_topics": 2,
+          "coherence": 0.6237,
+          "sentiment_summary": {
+            "n_docs": 536,
+            "avg_confidence": 0.516,
+            "avg_coverage": 1.0,
+            "high_confidence_ratio": 0.0187,
+            "dominant_sentiment": "NEUTRAL",
+            "label_distribution": {
+              "POSITIVE": 127,
+              "NEUTRAL": 384,
+              "NEGATIVE": 25
+            }
+          },
+          "dominant_sentiment_dist": {
+            "NEUTRAL": 2
+          },
+          "topics": [
+            {
+              "topic_id": 0,
+              "label": "Panagbengafestival Fireworksdisplay / Amazing Fireworks / Grand Fireworks",
+              "count": 16,
+              "top_words": [
+                "panagbengafestival fireworksdisplay",
+                "amazing fireworks",
+                "grand fireworks",
+                "fireworksdisplay",
+                "fireworks display",
+                "fireworks",
+                "shimmering fireworks",
+                "aerial fireworks",
+                "panagbengafestival panagbengafirework",
+                "closing fireworks"
+              ],
+              "top_word_scores": [
+                0.913719,
+                0.83504,
+                0.834352,
+                0.832929,
+                0.828708,
+                0.811512,
+                0.807779,
+                0.805093,
+                0.795795,
+                0.782716
+              ],
+              "sentiment": {
+                "dominant": "NEUTRAL",
+                "avg_confidence": 0.5078,
+                "std_confidence": 0.0993,
+                "high_confidence_ratio": 0.0,
+                "coverage": 1.0,
+                "label_distribution": {
+                  "POSITIVE": 6,
+                  "NEUTRAL": 17
+                },
+                "label_ratios": {
+                  "POSITIVE": 0.2609,
+                  "NEUTRAL": 0.7391
+                }
+              },
+              "explanation": "In 2025, people were talking about panagbengafestival fireworksdisplay, amazing fireworks, grand fireworks, fireworksdisplay.",
+              "top_10_rank": 4
+            },
+            {
+              "topic_id": 1,
+              "label": "Panagbengafestival / Road Bloom / Session Bloom",
+              "count": 756,
+              "top_words": [
+                "panagbengafestival",
+                "road bloom",
+                "session bloom",
+                "baguioflowerfestival",
+                "session road",
+                "bloom",
+                "floral float",
+                "blooms",
+                "blossomsbeyondboundaries",
+                "sessionroadinbloom"
+              ],
+              "top_word_scores": [
+                0.805371,
+                0.68047,
+                0.674039,
+                0.671583,
+                0.583043,
+                0.563663,
+                0.550236,
+                0.549593,
+                0.548493,
+                0.547596
+              ],
+              "sentiment": {
+                "dominant": "NEUTRAL",
+                "avg_confidence": 0.5164,
+                "std_confidence": 0.0986,
+                "high_confidence_ratio": 0.0195,
+                "coverage": 1.0,
+                "label_distribution": {
+                  "POSITIVE": 121,
+                  "NEUTRAL": 367,
+                  "NEGATIVE": 25
+                },
+                "label_ratios": {
+                  "POSITIVE": 0.2359,
+                  "NEUTRAL": 0.7154,
+                  "NEGATIVE": 0.0487
+                }
+              },
+              "explanation": "In 2025, people were talking about panagbengafestival, road bloom, session bloom, baguioflowerfestival.",
+              "top_10_rank": 1
+            }
+          ]
+        }
+      ],
+      "top_10_topics": [
+        {
+          "rank": 1,
+          "cluster_id": 1,
+          "topic_id": 1,
+          "label": "Panagbengafestival / Road Bloom / Session Bloom",
+          "count": 756,
+          "top_words": [
+            "panagbengafestival",
+            "road bloom",
+            "session bloom",
+            "baguioflowerfestival",
+            "session road",
+            "bloom"
+          ],
+          "sentiment": {
+            "dominant": "NEUTRAL",
+            "avg_confidence": 0.5164,
+            "std_confidence": 0.0986,
+            "high_confidence_ratio": 0.0195,
+            "coverage": 1.0,
+            "label_distribution": {
+              "POSITIVE": 121,
+              "NEUTRAL": 367,
+              "NEGATIVE": 25
+            },
+            "label_ratios": {
+              "POSITIVE": 0.2359,
+              "NEUTRAL": 0.7154,
+              "NEGATIVE": 0.0487
+            }
+          },
+          "explanation": "In 2025, people were talking about panagbengafestival, road bloom, session bloom, baguioflowerfestival."
+        },
+        {
+          "rank": 2,
+          "cluster_id": 0,
+          "topic_id": 2,
+          "label": "Panagbengafestival Streetdancingparade / Panagbengafestival Parade / Parade Streetdance",
+          "count": 21,
+          "top_words": [
+            "panagbengafestival streetdancingparade",
+            "panagbengafestival parade",
+            "parade streetdance",
+            "dancing parade",
+            "parade panagbengafestival",
+            "streetdancingparade fbreelsvideo"
+          ],
+          "sentiment": {
+            "dominant": "NEUTRAL",
+            "avg_confidence": 0.531,
+            "std_confidence": 0.0,
+            "high_confidence_ratio": 0.0,
+            "coverage": 1.0,
+            "label_distribution": {
+              "NEUTRAL": 1
+            },
+            "label_ratios": {
+              "NEUTRAL": 1.0
+            }
+          },
+          "explanation": "In 2025, people were talking about panagbengafestival streetdancingparade, panagbengafestival parade, parade streetdance, dancing parade."
+        },
+        {
+          "rank": 3,
+          "cluster_id": 0,
+          "topic_id": 0,
+          "label": "Panagbengafestival Streetdance / Panagbengafestival Festivaldance / Culturedance Baguiofeels",
+          "count": 17,
+          "top_words": [
+            "panagbengafestival streetdance",
+            "panagbengafestival festivaldance",
+            "culturedance baguiofeels",
+            "streetdance wheninbaguio",
+            "culturedance",
+            "dancechallenge culture"
+          ],
+          "sentiment": {
+            "dominant": "NEUTRAL",
+            "avg_confidence": 0.4636,
+            "std_confidence": 0.0298,
+            "high_confidence_ratio": 0.0,
+            "coverage": 1.0,
+            "label_distribution": {
+              "NEUTRAL": 3
+            },
+            "label_ratios": {
+              "NEUTRAL": 1.0
+            }
+          },
+          "explanation": "In 2025, people were talking about panagbengafestival streetdance, panagbengafestival festivaldance, culturedance baguiofeels, streetdance wheninbaguio."
+        },
+        {
+          "rank": 4,
+          "cluster_id": 1,
+          "topic_id": 0,
+          "label": "Panagbengafestival Fireworksdisplay / Amazing Fireworks / Grand Fireworks",
+          "count": 16,
+          "top_words": [
+            "panagbengafestival fireworksdisplay",
+            "amazing fireworks",
+            "grand fireworks",
+            "fireworksdisplay",
+            "fireworks display",
+            "fireworks"
+          ],
+          "sentiment": {
+            "dominant": "NEUTRAL",
+            "avg_confidence": 0.5078,
+            "std_confidence": 0.0993,
+            "high_confidence_ratio": 0.0,
+            "coverage": 1.0,
+            "label_distribution": {
+              "POSITIVE": 6,
+              "NEUTRAL": 17
+            },
+            "label_ratios": {
+              "POSITIVE": 0.2609,
+              "NEUTRAL": 0.7391
+            }
+          },
+          "explanation": "In 2025, people were talking about panagbengafestival fireworksdisplay, amazing fireworks, grand fireworks, fireworksdisplay."
+        },
+        {
+          "rank": 5,
+          "cluster_id": 0,
+          "topic_id": 1,
+          "label": "Parade Panagbengafestival / Dance Parade / Parade Japsadventures",
+          "count": 14,
+          "top_words": [
+            "parade panagbengafestival",
+            "dance parade",
+            "parade japsadventures",
+            "panagbengafestival ilovecheers",
+            "panagbengafestival",
+            "street dance"
+          ],
+          "sentiment": {
+            "dominant": "NEUTRAL",
+            "avg_confidence": 0.5468,
+            "std_confidence": 0.0792,
+            "high_confidence_ratio": 0.0435,
+            "coverage": 1.0,
+            "label_distribution": {
+              "NEUTRAL": 39,
+              "POSITIVE": 7
+            },
+            "label_ratios": {
+              "NEUTRAL": 0.8478,
+              "POSITIVE": 0.1522
+            }
+          },
+          "explanation": "In 2025, people were talking about parade panagbengafestival, dance parade, parade japsadventures, panagbengafestival ilovecheers."
+        }
+      ]
+    },
+    {
+      "year": 2026,
+      "total_docs": 877,
+      "n_clusters": 9,
+      "total_topics": 29,
+      "noise_ratio": 0.2737,
+      "avg_coherence": 0.5212,
+      "sentiment_summary": {
+        "n_docs": 1188,
+        "avg_confidence": 0.5214,
+        "avg_coverage": 1.0,
+        "high_confidence_ratio": 0.0312,
+        "dominant_sentiment": "NEUTRAL",
+        "label_distribution": {
+          "POSITIVE": 391,
+          "NEUTRAL": 731,
+          "NEGATIVE": 66
+        }
+      },
+      "dominant_sentiment_dist": {
+        "NEUTRAL": 23,
+        "POSITIVE": 6
+      },
+      "visualization": "outputs\\visualizations\\cluster_viz_2026.png",
+      "clusters": [
+        {
+          "cluster_id": 0,
+          "n_docs": 81,
+          "n_topics": 3,
+          "coherence": 0.4164,
+          "sentiment_summary": {
+            "n_docs": 119,
+            "avg_confidence": 0.5654,
+            "avg_coverage": 1.0,
+            "high_confidence_ratio": 0.0252,
+            "dominant_sentiment": "NEUTRAL",
+            "label_distribution": {
+              "POSITIVE": 15,
+              "NEUTRAL": 104
+            }
+          },
+          "dominant_sentiment_dist": {
+            "NEUTRAL": 3
+          },
+          "topics": [
+            {
+              "topic_id": 0,
+              "label": "Parade Panagbengafestival / Dance Parade / Dancing Parade",
+              "count": 31,
+              "top_words": [
+                "parade panagbengafestival",
+                "dance parade",
+                "dancing parade",
+                "street dance",
+                "parade",
+                "street dancing",
+                "street dancers",
+                "parade city",
+                "panagbengafestival",
+                "float parade"
+              ],
+              "top_word_scores": [
+                0.862639,
+                0.844098,
+                0.82884,
+                0.760751,
+                0.750733,
+                0.750284,
+                0.742674,
+                0.731864,
+                0.709474,
+                0.707369
+              ],
+              "sentiment": {
+                "dominant": "NEUTRAL",
+                "avg_confidence": 0.5668,
+                "std_confidence": 0.0865,
+                "high_confidence_ratio": 0.0299,
+                "coverage": 1.0,
+                "label_distribution": {
+                  "POSITIVE": 9,
+                  "NEUTRAL": 58
+                },
+                "label_ratios": {
+                  "POSITIVE": 0.1343,
+                  "NEUTRAL": 0.8657
+                }
+              },
+              "explanation": "In 2026, people were talking about parade panagbengafestival, dance parade, dancing parade, street dance.",
+              "top_10_rank": 7
+            },
+            {
+              "topic_id": 1,
+              "label": "Dance Luwishngbayan / Frontcammultimediaartists Panagbengafestival / Luwishngbayan Frontcammultimediaartists",
+              "count": 8,
+              "top_words": [
+                "dance luwishngbayan",
+                "frontcammultimediaartists panagbengafestival",
+                "luwishngbayan frontcammultimediaartists",
+                "panagbengafestival beat",
+                "panagbengafestival atm",
+                "pageantry luwishngbayan",
+                "panagbengafestival alas",
+                "panagbengafestival",
+                "streetphotography panagbengafestival",
+                "panagbengafestival mayaman"
+              ],
+              "top_word_scores": [
+                0.797524,
+                0.771119,
+                0.74914,
+                0.726812,
+                0.720981,
+                0.716011,
+                0.709532,
+                0.701766,
+                0.686204,
+                0.659215
+              ],
+              "sentiment": {
+                "dominant": "NEUTRAL",
+                "avg_confidence": 0.5659,
+                "std_confidence": 0.0823,
+                "high_confidence_ratio": 0.02,
+                "coverage": 1.0,
+                "label_distribution": {
+                  "POSITIVE": 6,
+                  "NEUTRAL": 44
+                },
+                "label_ratios": {
+                  "POSITIVE": 0.12,
+                  "NEUTRAL": 0.88
+                }
+              }
+            },
+            {
+              "topic_id": 2,
+              "label": "Panagbengafestival Grandstreetdanceparade / Streetdance Panagbengafestival / Panagbengagrandstreetdance Panagbengafestival",
+              "count": 9,
+              "top_words": [
+                "panagbengafestival grandstreetdanceparade",
+                "streetdance panagbengafestival",
+                "panagbengagrandstreetdance panagbengafestival",
+                "streetdancing panagbengafestival",
+                "panagbengagrandstreetdance",
+                "panagbengastreetdance",
+                "sabaguio streetdanceparade",
+                "panagbengastreetdance sabaguio",
+                "dance grandstreetdance",
+                "streetdanceparade tinkling"
+              ],
+              "top_word_scores": [
+                0.930524,
+                0.915593,
+                0.913706,
+                0.894927,
+                0.883155,
+                0.862841,
+                0.845265,
+                0.835588,
+                0.760011,
+                0.746504
+              ],
+              "sentiment": {
+                "dominant": "NEUTRAL",
+                "avg_confidence": 0.5078,
+                "std_confidence": 0.0175,
+                "high_confidence_ratio": 0.0,
+                "coverage": 1.0,
+                "label_distribution": {
+                  "NEUTRAL": 2
+                },
+                "label_ratios": {
+                  "NEUTRAL": 1.0
+                }
+              }
+            }
+          ]
+        },
+        {
+          "cluster_id": 1,
+          "n_docs": 25,
+          "n_topics": 3,
+          "coherence": 0.5477,
+          "sentiment_summary": {
+            "n_docs": 13,
+            "avg_confidence": 0.5239,
+            "avg_coverage": 1.0,
+            "high_confidence_ratio": 0.0,
+            "dominant_sentiment": "NEUTRAL",
+            "label_distribution": {
+              "NEUTRAL": 13
+            }
+          },
+          "dominant_sentiment_dist": {
+            "NEUTRAL": 3
+          },
+          "topics": [
+            {
+              "topic_id": 0,
+              "label": "Panagbengafestival Trendingnow / Trendingreel Enjoy / Facebookreelsviral Trendingnowreels",
+              "count": 6,
+              "top_words": [
+                "panagbengafestival trendingnow",
+                "trendingreel enjoy",
+                "facebookreelsviral trendingnowreels",
+                "trendingnowreels trendingreels",
+                "trendingnow hilightseveryonefollowers",
+                "trendingreelsvideo trendingreel",
+                "trendingreels trendingreelsvideo",
+                "trendingreel",
+                "trendingnowreels",
+                "enjoy baguiocityphilippines"
+              ],
+              "top_word_scores": [
+                0.776184,
+                0.763921,
+                0.728286,
+                0.711358,
+                0.708859,
+                0.708578,
+                0.70795,
+                0.688809,
+                0.672038,
+                0.666568
+              ],
+              "sentiment": {
+                "dominant": "NEUTRAL",
+                "avg_confidence": 0.4563,
+                "std_confidence": 0.0049,
+                "high_confidence_ratio": 0.0,
+                "coverage": 1.0,
+                "label_distribution": {
+                  "NEUTRAL": 4
+                },
+                "label_ratios": {
+                  "NEUTRAL": 1.0
+                }
+              }
+            },
+            {
+              "topic_id": 1,
+              "label": "Followersreelsfypシ ViralシFypシ / ViralシAlシFollowers Followersreelsfypシ / ViralシAlシ Panagbengafestival",
+              "count": 9,
+              "top_words": [
+                "followersreelsfypシ viralシfypシ",
+                "viralシalシfollowers followersreelsfypシ",
+                "viralシalシ panagbengafestival",
+                "viralシ panagbengafestival",
+                "viralシll panagbengafestival",
+                "viralシal panagbengafestival",
+                "panagbengafestival followersreelsfypシ",
+                "viralシalシfollowers floatparade",
+                "viralシalシfollowers summercapitalofthephilippines",
+                "viralシalシfollowers"
+              ],
+              "top_word_scores": [
+                0.932201,
+                0.928459,
+                0.829707,
+                0.82333,
+                0.805182,
+                0.798771,
+                0.791744,
+                0.770036,
+                0.769347,
+                0.759588
+              ],
+              "sentiment": {
+                "dominant": "NEUTRAL",
+                "avg_confidence": 0.5681,
+                "std_confidence": 0.032,
+                "high_confidence_ratio": 0.0,
+                "coverage": 1.0,
+                "label_distribution": {
+                  "NEUTRAL": 3
+                },
+                "label_ratios": {
+                  "NEUTRAL": 1.0
+                }
+              }
+            },
+            {
+              "topic_id": 2,
+              "label": "Facebookreelsviral Reelsfacebook / Reelsfacebook Panagbengafestival / Funnyreelsvideo ReelsviralシFb",
+              "count": 10,
+              "top_words": [
+                "facebookreelsviral reelsfacebook",
+                "reelsfacebook panagbengafestival",
+                "funnyreelsvideo reelsviralシfb",
+                "panagbengafestival reelsviralシfb",
+                "funnyreels reelsviralシfb",
+                "panagbengafestival funnyreelsvideo",
+                "reelsfacebook",
+                "reelsviralシfb myfollowersandviewers",
+                "fbgoodvibesreels",
+                "reelschallengereelschallenge facebookreelsviral"
+              ],
+              "top_word_scores": [
+                0.82926,
+                0.818615,
+                0.799284,
+                0.759662,
+                0.747184,
+                0.740406,
+                0.732934,
+                0.732681,
+                0.725339,
+                0.72433
+              ],
+              "sentiment": {
+                "dominant": "NEUTRAL",
+                "avg_confidence": 0.5468,
+                "std_confidence": 0.0619,
+                "high_confidence_ratio": 0.0,
+                "coverage": 1.0,
+                "label_distribution": {
+                  "NEUTRAL": 6
+                },
+                "label_ratios": {
+                  "NEUTRAL": 1.0
+                }
+              }
+            }
+          ]
+        },
+        {
+          "cluster_id": 2,
+          "n_docs": 166,
+          "n_topics": 4,
+          "coherence": 0.5065,
+          "sentiment_summary": {
+            "n_docs": 318,
+            "avg_confidence": 0.5236,
+            "avg_coverage": 1.0,
+            "high_confidence_ratio": 0.022,
+            "dominant_sentiment": "NEUTRAL",
+            "label_distribution": {
+              "NEUTRAL": 179,
+              "NEGATIVE": 7,
+              "POSITIVE": 132
+            }
+          },
+          "dominant_sentiment_dist": {
+            "NEUTRAL": 4
+          },
+          "topics": [
+            {
+              "topic_id": 0,
+              "label": "Panagbengafestival Floralfloatparade / Panagbengafestival Floatparade / Panagbengafestival Grandfloatparade",
+              "count": 38,
+              "top_words": [
+                "panagbengafestival floralfloatparade",
+                "panagbengafestival floatparade",
+                "panagbengafestival grandfloatparade",
+                "floralfloatparade",
+                "panagbengafestival floral",
+                "parade flower",
+                "parade panagbengafestival",
+                "float parade",
+                "parade wheninbaguio",
+                "floral float"
+              ],
+              "top_word_scores": [
+                0.969773,
+                0.866689,
+                0.854727,
+                0.84173,
+                0.840344,
+                0.832412,
+                0.83213,
+                0.784235,
+                0.769802,
+                0.753994
+              ],
+              "sentiment": {
+                "dominant": "NEUTRAL",
+                "avg_confidence": 0.5147,
+                "std_confidence": 0.0756,
+                "high_confidence_ratio": 0.0,
+                "coverage": 1.0,
+                "label_distribution": {
+                  "NEUTRAL": 5,
+                  "NEGATIVE": 1
+                },
+                "label_ratios": {
+                  "NEUTRAL": 0.8333,
+                  "NEGATIVE": 0.1667
+                }
+              },
+              "explanation": "In 2026, people were talking about panagbengafestival floralfloatparade, panagbengafestival floatparade, panagbengafestival grandfloatparade, floralfloatparade.",
+              "top_10_rank": 5
+            },
+            {
+              "topic_id": 1,
+              "label": "Panagbengafestival Beautifullandscape / Flower Panagbengafestival / Artistry Plant",
+              "count": 41,
+              "top_words": [
+                "panagbengafestival beautifullandscape",
+                "flower panagbengafestival",
+                "artistry plant",
+                "nanaytetchie plantita",
+                "plantita baguioevents",
+                "plantart",
+                "beautifullandscape",
+                "garden",
+                "panagbengafestival",
+                "flowerstagram"
+              ],
+              "top_word_scores": [
+                0.776906,
+                0.774969,
+                0.652257,
+                0.65159,
+                0.63455,
+                0.634333,
+                0.630688,
+                0.619308,
+                0.618266,
+                0.618237
+              ],
+              "sentiment": {
+                "dominant": "NEUTRAL",
+                "avg_confidence": 0.5181,
+                "std_confidence": 0.0822,
+                "high_confidence_ratio": 0.01,
+                "coverage": 1.0,
+                "label_distribution": {
+                  "NEUTRAL": 58,
+                  "POSITIVE": 40,
+                  "NEGATIVE": 2
+                },
+                "label_ratios": {
+                  "NEUTRAL": 0.58,
+                  "POSITIVE": 0.4,
+                  "NEGATIVE": 0.02
+                }
+              },
+              "explanation": "In 2026, people were talking about panagbengafestival beautifullandscape, flower panagbengafestival, artistry plant, nanaytetchie plantita.",
+              "top_10_rank": 2
+            },
+            {
+              "topic_id": 2,
+              "label": "Panagbengafestival / Panagbengafestival Full / Pino Panagbengafestival",
+              "count": 12,
+              "top_words": [
+                "panagbengafestival",
+                "panagbengafestival full",
+                "pino panagbengafestival",
+                "grand parade",
+                "fam panagbengafestival",
+                "celebration goers",
+                "panagbengafestival benguet",
+                "parade breathtaking",
+                "fun celebration",
+                "parade"
+              ],
+              "top_word_scores": [
+                0.687661,
+                0.681602,
+                0.667437,
+                0.660399,
+                0.655584,
+                0.640123,
+                0.636133,
+                0.627075,
+                0.623745,
+                0.596915
+              ],
+              "sentiment": {
+                "dominant": "NEUTRAL",
+                "avg_confidence": 0.5207,
+                "std_confidence": 0.0806,
+                "high_confidence_ratio": 0.0098,
+                "coverage": 1.0,
+                "label_distribution": {
+                  "NEUTRAL": 60,
+                  "POSITIVE": 40,
+                  "NEGATIVE": 2
+                },
+                "label_ratios": {
+                  "NEUTRAL": 0.5882,
+                  "POSITIVE": 0.3922,
+                  "NEGATIVE": 0.0196
+                }
+              }
+            },
+            {
+              "topic_id": 3,
+              "label": "Panagbengafestival / Celebration / Theme Blooming",
+              "count": 26,
+              "top_words": [
+                "panagbengafestival",
+                "celebration",
+                "theme blooming",
+                "celebrate",
+                "celebrated",
+                "season blooming",
+                "year theme",
+                "vibrant colors",
+                "vibrant",
+                "bloomingwithoutend"
+              ],
+              "top_word_scores": [
+                0.60682,
+                0.583158,
+                0.567384,
+                0.546069,
+                0.541024,
+                0.518642,
+                0.507062,
+                0.49789,
+                0.489114,
+                0.484954
+              ],
+              "sentiment": {
+                "dominant": "NEUTRAL",
+                "avg_confidence": 0.5319,
+                "std_confidence": 0.0989,
+                "high_confidence_ratio": 0.0455,
+                "coverage": 1.0,
+                "label_distribution": {
+                  "NEUTRAL": 56,
+                  "POSITIVE": 52,
+                  "NEGATIVE": 2
+                },
+                "label_ratios": {
+                  "NEUTRAL": 0.5091,
+                  "POSITIVE": 0.4727,
+                  "NEGATIVE": 0.0182
+                }
+              },
+              "explanation": "In 2026, people were talking about panagbengafestival, celebration, theme blooming, celebrate.",
+              "top_10_rank": 9
+            }
+          ]
+        },
+        {
+          "cluster_id": 3,
+          "n_docs": 94,
+          "n_topics": 2,
+          "coherence": 0.6202,
+          "sentiment_summary": {
+            "n_docs": 114,
+            "avg_confidence": 0.495,
+            "avg_coverage": 1.0,
+            "high_confidence_ratio": 0.0088,
+            "dominant_sentiment": "NEUTRAL",
+            "label_distribution": {
+              "NEUTRAL": 86,
+              "NEGATIVE": 7,
+              "POSITIVE": 21
+            }
+          },
+          "dominant_sentiment_dist": {
+            "NEUTRAL": 2
+          },
+          "topics": [
+            {
+              "topic_id": 0,
+              "label": "Panagbengafestival Grandfloatparade / Grandfloatparade Panagbengafestival / Panagbengafestival Grandparade",
+              "count": 43,
+              "top_words": [
+                "panagbengafestival grandfloatparade",
+                "grandfloatparade panagbengafestival",
+                "panagbengafestival grandparade",
+                "parade panagbengafestival",
+                "grandfloatparade",
+                "panagbengafestival grandstreetdanceparade",
+                "panagbengafestival grandfloat",
+                "float parade",
+                "floatparade",
+                "grand parade"
+              ],
+              "top_word_scores": [
+                0.961817,
+                0.941025,
+                0.911195,
+                0.872556,
+                0.862473,
+                0.86122,
+                0.859779,
+                0.851922,
+                0.827969,
+                0.819396
+              ],
+              "sentiment": {
+                "dominant": "NEUTRAL",
+                "avg_confidence": 0.4951,
+                "std_confidence": 0.0677,
+                "high_confidence_ratio": 0.0,
+                "coverage": 1.0,
+                "label_distribution": {
+                  "NEUTRAL": 22,
+                  "NEGATIVE": 1,
+                  "POSITIVE": 3
+                },
+                "label_ratios": {
+                  "NEUTRAL": 0.8462,
+                  "NEGATIVE": 0.0385,
+                  "POSITIVE": 0.1154
+                }
+              },
+              "explanation": "In 2026, people were talking about panagbengafestival grandfloatparade, grandfloatparade panagbengafestival, panagbengafestival grandparade, parade panagbengafestival.",
+              "top_10_rank": 1
+            },
+            {
+              "topic_id": 1,
+              "label": "Panagbengafestival Parade / Parade Panagbengafestival / Parade Luwishngbayan",
+              "count": 40,
+              "top_words": [
+                "panagbengafestival parade",
+                "parade panagbengafestival",
+                "parade luwishngbayan",
+                "panagbengafestival floatparade",
+                "panagbengafestival",
+                "panagbengafestival baguiopanagbenga",
+                "baguiopanagbenga floatparade",
+                "overpass panagbengafestival",
+                "tao panagbengafestival",
+                "parade"
+              ],
+              "top_word_scores": [
+                0.820929,
+                0.800265,
+                0.779129,
+                0.735151,
+                0.714022,
+                0.710568,
+                0.710171,
+                0.709362,
+                0.693631,
+                0.673167
+              ],
+              "sentiment": {
+                "dominant": "NEUTRAL",
+                "avg_confidence": 0.495,
+                "std_confidence": 0.0836,
+                "high_confidence_ratio": 0.0114,
+                "coverage": 1.0,
+                "label_distribution": {
+                  "NEUTRAL": 64,
+                  "POSITIVE": 18,
+                  "NEGATIVE": 6
+                },
+                "label_ratios": {
+                  "NEUTRAL": 0.7273,
+                  "POSITIVE": 0.2045,
+                  "NEGATIVE": 0.0682
+                }
+              },
+              "explanation": "In 2026, people were talking about panagbengafestival parade, parade panagbengafestival, parade luwishngbayan, panagbengafestival floatparade.",
+              "top_10_rank": 3
+            }
+          ]
+        },
+        {
+          "cluster_id": 4,
+          "n_docs": 55,
+          "n_topics": 2,
+          "coherence": 0.4711,
+          "sentiment_summary": {
+            "n_docs": 42,
+            "avg_confidence": 0.5242,
+            "avg_coverage": 1.0,
+            "high_confidence_ratio": 0.0476,
+            "dominant_sentiment": "NEUTRAL",
+            "label_distribution": {
+              "NEUTRAL": 29,
+              "POSITIVE": 12,
+              "NEGATIVE": 1
+            }
+          },
+          "dominant_sentiment_dist": {
+            "NEUTRAL": 2
+          },
+          "topics": [
+            {
+              "topic_id": 0,
+              "label": "Azalea Hotels / Hotels / Hotels Residences",
+              "count": 16,
+              "top_words": [
+                "azalea hotels",
+                "hotels",
+                "hotels residences",
+                "hotel",
+                "accommodations",
+                "vacation",
+                "planning trip",
+                "getaway",
+                "tourist",
+                "residences"
+              ],
+              "top_word_scores": [
+                0.632193,
+                0.596118,
+                0.595324,
+                0.565304,
+                0.546634,
+                0.449181,
+                0.446681,
+                0.420841,
+                0.413065,
+                0.401057
+              ],
+              "sentiment": {
+                "dominant": "NEUTRAL",
+                "avg_confidence": 0.5253,
+                "std_confidence": 0.1157,
+                "high_confidence_ratio": 0.0667,
+                "coverage": 1.0,
+                "label_distribution": {
+                  "NEUTRAL": 10,
+                  "POSITIVE": 4,
+                  "NEGATIVE": 1
+                },
+                "label_ratios": {
+                  "NEUTRAL": 0.6667,
+                  "POSITIVE": 0.2667,
+                  "NEGATIVE": 0.0667
+                }
+              }
+            },
+            {
+              "topic_id": 1,
+              "label": "Panagbengafestival Byahengnorth / Byahengnorth Panagbengafestival / Travel Byahengnorth",
+              "count": 30,
+              "top_words": [
+                "panagbengafestival byahengnorth",
+                "byahengnorth panagbengafestival",
+                "travel byahengnorth",
+                "sight panagbengafestival",
+                "yyc panagbengafestival",
+                "panagbengafestival carouselride",
+                "panagbengafestival",
+                "panagbengafestival grand",
+                "panagbengafestival familytrip",
+                "touristattraction fypviral"
+              ],
+              "top_word_scores": [
+                0.819282,
+                0.815096,
+                0.803287,
+                0.788395,
+                0.761288,
+                0.754343,
+                0.753772,
+                0.745063,
+                0.74414,
+                0.739226
+              ],
+              "sentiment": {
+                "dominant": "NEUTRAL",
+                "avg_confidence": 0.5236,
+                "std_confidence": 0.0966,
+                "high_confidence_ratio": 0.037,
+                "coverage": 1.0,
+                "label_distribution": {
+                  "NEUTRAL": 19,
+                  "POSITIVE": 8
+                },
+                "label_ratios": {
+                  "NEUTRAL": 0.7037,
+                  "POSITIVE": 0.2963
+                }
+              },
+              "explanation": "In 2026, people were talking about panagbengafestival byahengnorth, byahengnorth panagbengafestival, travel byahengnorth, sight panagbengafestival.",
+              "top_10_rank": 8
+            }
+          ]
+        },
+        {
+          "cluster_id": 5,
+          "n_docs": 28,
+          "n_topics": 3,
+          "coherence": 0.4956,
+          "sentiment_summary": {
+            "n_docs": 49,
+            "avg_confidence": 0.5303,
+            "avg_coverage": 1.0,
+            "high_confidence_ratio": 0.0408,
+            "dominant_sentiment": "POSITIVE",
+            "label_distribution": {
+              "POSITIVE": 27,
+              "NEUTRAL": 20,
+              "NEGATIVE": 2
+            }
+          },
+          "dominant_sentiment_dist": {
+            "POSITIVE": 3
+          },
+          "topics": [
+            {
+              "topic_id": 0,
+              "label": "Calendarofactivities Panagbengafestival / Panagbengafestival Schedule / Activities Panagbengaschedule",
+              "count": 3,
+              "top_words": [
+                "calendarofactivities panagbengafestival",
+                "panagbengafestival schedule",
+                "activities panagbengaschedule",
+                "panagbengacalendarofactivities calendarofactivities",
+                "calendar activities",
+                "panagbengaschedule",
+                "panagbengafestival",
+                "schedule activities",
+                "schedule calendar",
+                "calendarofactivities"
+              ],
+              "top_word_scores": [
+                0.901372,
+                0.900524,
+                0.823282,
+                0.801691,
+                0.742903,
+                0.705158,
+                0.703006,
+                0.69484,
+                0.694815,
+                0.684307
+              ],
+              "sentiment": {
+                "dominant": "POSITIVE",
+                "avg_confidence": 0.5344,
+                "std_confidence": 0.1159,
+                "high_confidence_ratio": 0.0417,
+                "coverage": 1.0,
+                "label_distribution": {
+                  "POSITIVE": 13,
+                  "NEUTRAL": 10,
+                  "NEGATIVE": 1
+                },
+                "label_ratios": {
+                  "POSITIVE": 0.5417,
+                  "NEUTRAL": 0.4167,
+                  "NEGATIVE": 0.0417
+                }
+              }
+            },
+            {
+              "topic_id": 1,
+              "label": "Day Panagbengafestival / Hours Panagbengafestival / Grind Panagbengafestival",
+              "count": 4,
+              "top_words": [
+                "day panagbengafestival",
+                "hours panagbengafestival",
+                "grind panagbengafestival",
+                "panagbengafestival fypbaguio",
+                "panagbengafestival see",
+                "panagbengafestival",
+                "closing panagbengafestival",
+                "panagbengafestival energyfm",
+                "fypbaguio last",
+                "fypbaguio"
+              ],
+              "top_word_scores": [
+                0.903138,
+                0.895496,
+                0.880676,
+                0.869455,
+                0.86637,
+                0.856732,
+                0.824878,
+                0.76969,
+                0.632439,
+                0.607745
+              ],
+              "sentiment": {
+                "dominant": "POSITIVE",
+                "avg_confidence": 0.5337,
+                "std_confidence": 0.1183,
+                "high_confidence_ratio": 0.0435,
+                "coverage": 1.0,
+                "label_distribution": {
+                  "POSITIVE": 13,
+                  "NEUTRAL": 9,
+                  "NEGATIVE": 1
+                },
+                "label_ratios": {
+                  "POSITIVE": 0.5652,
+                  "NEUTRAL": 0.3913,
+                  "NEGATIVE": 0.0435
+                }
+              }
+            },
+            {
+              "topic_id": 2,
+              "label": "Panagbengafestival Happymoments / Panagbengafestival Happy / Panagbengafestival Joyful",
+              "count": 18,
+              "top_words": [
+                "panagbengafestival happymoments",
+                "panagbengafestival happy",
+                "panagbengafestival joyful",
+                "happymoments",
+                "panagbengafestival fbreelsツ",
+                "panagbengafestival congratulations",
+                "panagbengafestival celebrating",
+                "panagbengafestival great",
+                "wlw panagbengafestival",
+                "panagbengafestival panagbengafestival"
+              ],
+              "top_word_scores": [
+                0.866659,
+                0.809293,
+                0.797017,
+                0.724051,
+                0.693866,
+                0.692015,
+                0.688468,
+                0.683442,
+                0.683037,
+                0.681799
+              ],
+              "sentiment": {
+                "dominant": "POSITIVE",
+                "avg_confidence": 0.4429,
+                "std_confidence": 0.0132,
+                "high_confidence_ratio": 0.0,
+                "coverage": 1.0,
+                "label_distribution": {
+                  "POSITIVE": 1,
+                  "NEUTRAL": 1
+                },
+                "label_ratios": {
+                  "POSITIVE": 0.5,
+                  "NEUTRAL": 0.5
+                }
+              }
+            }
+          ]
+        },
+        {
+          "cluster_id": 6,
+          "n_docs": 112,
+          "n_topics": 3,
+          "coherence": 0.2547,
+          "sentiment_summary": {
+            "n_docs": 266,
+            "avg_confidence": 0.5091,
+            "avg_coverage": 1.0,
+            "high_confidence_ratio": 0.0677,
+            "dominant_sentiment": "NEUTRAL",
+            "label_distribution": {
+              "NEUTRAL": 117,
+              "POSITIVE": 109,
+              "NEGATIVE": 40
+            }
+          },
+          "dominant_sentiment_dist": {
+            "NEUTRAL": 3
+          },
+          "topics": [
+            {
+              "topic_id": 0,
+              "label": "Panagbengafestival / Sugodfiestatv Panagbengafestival / Maraming Salamat",
+              "count": 40,
+              "top_words": [
+                "panagbengafestival",
+                "sugodfiestatv panagbengafestival",
+                "maraming salamat",
+                "fiesta sugodfiestatv",
+                "kayo",
+                "namumukadkad",
+                "panagbengafestival gmaregionaltv",
+                "fiesta",
+                "manginasalcelebratespanagbenga",
+                "kuya"
+              ],
+              "top_word_scores": [
+                0.659332,
+                0.644558,
+                0.610525,
+                0.604579,
+                0.599387,
+                0.568333,
+                0.562562,
+                0.557459,
+                0.550034,
+                0.524416
+              ],
+              "sentiment": {
+                "dominant": "NEUTRAL",
+                "avg_confidence": 0.5069,
+                "std_confidence": 0.1152,
+                "high_confidence_ratio": 0.0633,
+                "coverage": 1.0,
+                "label_distribution": {
+                  "NEUTRAL": 34,
+                  "POSITIVE": 33,
+                  "NEGATIVE": 12
+                },
+                "label_ratios": {
+                  "NEUTRAL": 0.4304,
+                  "POSITIVE": 0.4177,
+                  "NEGATIVE": 0.1519
+                }
+              },
+              "explanation": "In 2026, people were talking about panagbengafestival, sugodfiestatv panagbengafestival, maraming salamat, fiesta sugodfiestatv.",
+              "top_10_rank": 4
+            },
+            {
+              "topic_id": 1,
+              "label": "Santiknows Panagbengafestival / See Panagbengafestival / Panagbengafestival",
+              "count": 18,
+              "top_words": [
+                "santiknows panagbengafestival",
+                "see panagbengafestival",
+                "panagbengafestival",
+                "init panagbenga",
+                "johnmedina batangquiapo",
+                "sabaguio",
+                "sabaguio wheninbaguio",
+                "heyheyheyitsmeneyney azaleahotelandresidencesbaguiocity",
+                "mamshiesannie sabaguio",
+                "medina johnmedina"
+              ],
+              "top_word_scores": [
+                0.803376,
+                0.788555,
+                0.774397,
+                0.769054,
+                0.753622,
+                0.727796,
+                0.720161,
+                0.705313,
+                0.692717,
+                0.686636
+              ],
+              "sentiment": {
+                "dominant": "NEUTRAL",
+                "avg_confidence": 0.5073,
+                "std_confidence": 0.1133,
+                "high_confidence_ratio": 0.0667,
+                "coverage": 1.0,
+                "label_distribution": {
+                  "NEGATIVE": 12,
+                  "NEUTRAL": 34,
+                  "POSITIVE": 29
+                },
+                "label_ratios": {
+                  "NEGATIVE": 0.16,
+                  "NEUTRAL": 0.4533,
+                  "POSITIVE": 0.3867
+                }
+              }
+            },
+            {
+              "topic_id": 2,
+              "label": "Panagbengafestival Kapamilya / Rekta Panagbengafestival / Panagbengafestival Pabagbenga",
+              "count": 25,
+              "top_words": [
+                "panagbengafestival kapamilya",
+                "rekta panagbengafestival",
+                "panagbengafestival pabagbenga",
+                "panagbengafestival yassi",
+                "bulaklak panagbengafestival",
+                "panagbengafestival masaya",
+                "nikon panagbengafestival",
+                "panagbengafestival rojafam",
+                "panagbengafestival lou",
+                "panagbengafestival pala"
+              ],
+              "top_word_scores": [
+                0.852289,
+                0.847162,
+                0.83546,
+                0.833362,
+                0.832247,
+                0.828963,
+                0.822121,
+                0.82139,
+                0.817704,
+                0.813783
+              ],
+              "sentiment": {
+                "dominant": "NEUTRAL",
+                "avg_confidence": 0.5119,
+                "std_confidence": 0.1205,
+                "high_confidence_ratio": 0.0714,
+                "coverage": 1.0,
+                "label_distribution": {
+                  "NEGATIVE": 16,
+                  "NEUTRAL": 49,
+                  "POSITIVE": 47
+                },
+                "label_ratios": {
+                  "NEGATIVE": 0.1429,
+                  "NEUTRAL": 0.4375,
+                  "POSITIVE": 0.4196
+                }
+              },
+              "explanation": "In 2026, people were talking about panagbengafestival kapamilya, rekta panagbengafestival, panagbengafestival pabagbenga, panagbengafestival yassi.",
+              "top_10_rank": 10
+            }
+          ]
+        },
+        {
+          "cluster_id": 7,
+          "n_docs": 35,
+          "n_topics": 3,
+          "coherence": 0.8434,
+          "sentiment_summary": {
+            "n_docs": 45,
+            "avg_confidence": 0.4849,
+            "avg_coverage": 1.0,
+            "high_confidence_ratio": 0.0,
+            "dominant_sentiment": "NEUTRAL",
+            "label_distribution": {
+              "NEUTRAL": 32,
+              "POSITIVE": 12,
+              "NEGATIVE": 1
+            }
+          },
+          "dominant_sentiment_dist": {
+            "NEUTRAL": 3
+          },
+          "topics": [
+            {
+              "topic_id": 0,
+              "label": "Napapasarappagkaingmanginasal Foodie / Panagbengafestival Donyadesserts / Cheesebread Panagbengafestival",
+              "count": 12,
+              "top_words": [
+                "napapasarappagkaingmanginasal foodie",
+                "panagbengafestival donyadesserts",
+                "cheesebread panagbengafestival",
+                "panagbengafestival omali",
+                "chocolates panagbengafestival",
+                "panagbengafestival aurabellabite",
+                "panagbengafestival overfriessabaguio",
+                "panagbengafestival panagbengahotties",
+                "pistachio dubaichewycookie",
+                "looks panagbengafestival"
+              ],
+              "top_word_scores": [
+                0.824772,
+                0.7685,
+                0.7597,
+                0.745239,
+                0.729712,
+                0.705152,
+                0.697816,
+                0.696666,
+                0.67568,
+                0.66455
+              ],
+              "sentiment": {
+                "dominant": "NEUTRAL",
+                "avg_confidence": 0.4835,
+                "std_confidence": 0.074,
+                "high_confidence_ratio": 0.0,
+                "coverage": 1.0,
+                "label_distribution": {
+                  "NEUTRAL": 23,
+                  "POSITIVE": 11,
+                  "NEGATIVE": 1
+                },
+                "label_ratios": {
+                  "NEUTRAL": 0.6571,
+                  "POSITIVE": 0.3143,
+                  "NEGATIVE": 0.0286
+                }
+              }
+            },
+            {
+              "topic_id": 1,
+              "label": "Pizzahutph Celebrate / Pizzahutph Panagbengafestival / Pizzas Tropical",
+              "count": 4,
+              "top_words": [
+                "pizzahutph celebrate",
+                "pizzahutph panagbengafestival",
+                "pizzas tropical",
+                "pizza tropical",
+                "pizzas",
+                "takeout pizzahutph",
+                "pizzahutph",
+                "pizzahutph mega",
+                "large pizzas",
+                "pizza pair"
+              ],
+              "top_word_scores": [
+                0.748203,
+                0.736067,
+                0.723312,
+                0.699033,
+                0.671016,
+                0.665611,
+                0.649776,
+                0.649261,
+                0.645852,
+                0.641755
+              ],
+              "sentiment": {
+                "dominant": "NEUTRAL",
+                "avg_confidence": 0.507,
+                "std_confidence": 0.0688,
+                "high_confidence_ratio": 0.0,
+                "coverage": 1.0,
+                "label_distribution": {
+                  "NEUTRAL": 3
+                },
+                "label_ratios": {
+                  "NEUTRAL": 1.0
+                }
+              }
+            },
+            {
+              "topic_id": 2,
+              "label": "Maraming Food / Food / Cafe",
+              "count": 7,
+              "top_words": [
+                "maraming food",
+                "food",
+                "cafe",
+                "cebu lechon",
+                "cebu",
+                "nating cebu",
+                "nakakapunta session",
+                "brewha",
+                "longganisa shawarma",
+                "pot seafood"
+              ],
+              "top_word_scores": [
+                0.587332,
+                0.56171,
+                0.550967,
+                0.534064,
+                0.506711,
+                0.500991,
+                0.500921,
+                0.500075,
+                0.489201,
+                0.485203
+              ],
+              "sentiment": {
+                "dominant": "NEUTRAL",
+                "avg_confidence": 0.4827,
+                "std_confidence": 0.0796,
+                "high_confidence_ratio": 0.0,
+                "coverage": 1.0,
+                "label_distribution": {
+                  "POSITIVE": 1,
+                  "NEUTRAL": 6
+                },
+                "label_ratios": {
+                  "POSITIVE": 0.1429,
+                  "NEUTRAL": 0.8571
+                }
+              }
+            }
+          ]
+        },
+        {
+          "cluster_id": 8,
+          "n_docs": 41,
+          "n_topics": 2,
+          "coherence": 0.2862,
+          "sentiment_summary": {
+            "n_docs": 40,
+            "avg_confidence": 0.544,
+            "avg_coverage": 1.0,
+            "high_confidence_ratio": 0.0,
+            "dominant_sentiment": "NEUTRAL",
+            "label_distribution": {
+              "NEUTRAL": 34,
+              "POSITIVE": 4,
+              "NEGATIVE": 2
+            }
+          },
+          "dominant_sentiment_dist": {
+            "NEUTRAL": 2
+          },
+          "topics": [
+            {
+              "topic_id": 0,
+              "label": "Session Bloom / Upper Sessionrdinbloom / Sessionrdinbloom",
+              "count": 6,
+              "top_words": [
+                "session bloom",
+                "upper sessionrdinbloom",
+                "sessionrdinbloom",
+                "sessioninbloom",
+                "sessioninbloom session",
+                "kuya sessioninbloom",
+                "sessionroad",
+                "sessionrdinbloom keep",
+                "pakain sessionroad",
+                "session"
+              ],
+              "top_word_scores": [
+                0.919955,
+                0.804866,
+                0.781643,
+                0.718547,
+                0.711404,
+                0.706449,
+                0.693177,
+                0.688672,
+                0.685785,
+                0.682512
+              ],
+              "sentiment": {
+                "dominant": "NEUTRAL",
+                "avg_confidence": 0.5397,
+                "std_confidence": 0.0744,
+                "high_confidence_ratio": 0.0,
+                "coverage": 1.0,
+                "label_distribution": {
+                  "NEUTRAL": 32,
+                  "POSITIVE": 3,
+                  "NEGATIVE": 2
+                },
+                "label_ratios": {
+                  "NEUTRAL": 0.8649,
+                  "POSITIVE": 0.0811,
+                  "NEGATIVE": 0.0541
+                }
+              }
+            },
+            {
+              "topic_id": 1,
+              "label": "Panagbengafestival Sessionroadinbloom / Sessionroadinbloom Panagbengafestival / Bloom Sessionroad",
+              "count": 34,
+              "top_words": [
+                "panagbengafestival sessionroadinbloom",
+                "sessionroadinbloom panagbengafestival",
+                "bloom sessionroad",
+                "panagbengafestival sessionroadbaguiocity",
+                "panagbengafestival sessionroadbaguio",
+                "panagbengafestival sessioninbloom",
+                "road panagbengafestival",
+                "portavaga sessionroadinbloom",
+                "session road",
+                "sessionroadbaguiocity"
+              ],
+              "top_word_scores": [
+                0.879469,
+                0.875173,
+                0.864708,
+                0.839762,
+                0.803079,
+                0.792634,
+                0.788607,
+                0.785643,
+                0.761097,
+                0.754663
+              ],
+              "sentiment": {
+                "dominant": "NEUTRAL",
+                "avg_confidence": 0.5977,
+                "std_confidence": 0.0775,
+                "high_confidence_ratio": 0.0,
+                "coverage": 1.0,
+                "label_distribution": {
+                  "POSITIVE": 1,
+                  "NEUTRAL": 2
+                },
+                "label_ratios": {
+                  "POSITIVE": 0.3333,
+                  "NEUTRAL": 0.6667
+                }
+              },
+              "explanation": "In 2026, people were talking about panagbengafestival sessionroadinbloom, sessionroadinbloom panagbengafestival, bloom sessionroad, panagbengafestival sessionroadbaguiocity.",
+              "top_10_rank": 6
+            }
+          ]
+        },
+        {
+          "cluster_id": -1,
+          "n_docs": 240,
+          "n_topics": 4,
+          "coherence": 0.7706,
+          "sentiment_summary": {
+            "n_docs": 182,
+            "avg_confidence": 0.5242,
+            "avg_coverage": 1.0,
+            "high_confidence_ratio": 0.022,
+            "dominant_sentiment": "NEUTRAL",
+            "label_distribution": {
+              "NEUTRAL": 117,
+              "POSITIVE": 59,
+              "NEGATIVE": 6
+            }
+          },
+          "dominant_sentiment_dist": {
+            "POSITIVE": 3,
+            "NEUTRAL": 1
+          },
+          "topics": [
+            {
+              "topic_id": 0,
+              "label": "Recital Solstice / Bloominmotion Axisdancestudio / Solstice Bloom",
+              "count": 21,
+              "top_words": [
+                "recital solstice",
+                "bloominmotion axisdancestudio",
+                "solstice bloom",
+                "bloom motion",
+                "recital",
+                "studio recital",
+                "bloominmotion",
+                "axis dance",
+                "dancers",
+                "solstice"
+              ],
+              "top_word_scores": [
+                0.684149,
+                0.651381,
+                0.630217,
+                0.609652,
+                0.558912,
+                0.535631,
+                0.524504,
+                0.523338,
+                0.522364,
+                0.517144
+              ],
+              "sentiment": {
+                "dominant": "POSITIVE",
+                "avg_confidence": 0.4833,
+                "std_confidence": 0.0789,
+                "high_confidence_ratio": 0.0,
+                "coverage": 1.0,
+                "label_distribution": {
+                  "NEUTRAL": 8,
+                  "POSITIVE": 10
+                },
+                "label_ratios": {
+                  "NEUTRAL": 0.4444,
+                  "POSITIVE": 0.5556
+                }
+              }
+            },
+            {
+              "topic_id": 1,
+              "label": "Surfph Surfiestaxpanagbenga / Surfiestaxpanagbenga / Surfiestaxpanagbenga Ukayukay",
+              "count": 10,
+              "top_words": [
+                "surfph surfiestaxpanagbenga",
+                "surfiestaxpanagbenga",
+                "surfiestaxpanagbenga ukayukay",
+                "niyo surfiesta",
+                "surfiestasapanagbenga",
+                "surf blossom",
+                "surfiesta",
+                "surf freshness",
+                "surf",
+                "pamilya surf"
+              ],
+              "top_word_scores": [
+                0.724135,
+                0.71746,
+                0.696631,
+                0.679511,
+                0.671342,
+                0.670411,
+                0.634459,
+                0.633569,
+                0.600053,
+                0.5997
+              ],
+              "sentiment": {
+                "dominant": "POSITIVE",
+                "avg_confidence": 0.4852,
+                "std_confidence": 0.0894,
+                "high_confidence_ratio": 0.0,
+                "coverage": 1.0,
+                "label_distribution": {
+                  "POSITIVE": 5,
+                  "NEUTRAL": 5
+                },
+                "label_ratios": {
+                  "POSITIVE": 0.5,
+                  "NEUTRAL": 0.5
+                }
+              }
+            },
+            {
+              "topic_id": 2,
+              "label": "Grandstreetdanceparade Bloomingwithoutend / Float Parade / Grandstreetdanceparade",
+              "count": 26,
+              "top_words": [
+                "grandstreetdanceparade bloomingwithoutend",
+                "float parade",
+                "grandstreetdanceparade",
+                "parade",
+                "parade march",
+                "season grandstreetdanceparade",
+                "floral float",
+                "march breathtaking",
+                "floats adorned",
+                "stunning floats"
+              ],
+              "top_word_scores": [
+                0.755237,
+                0.72594,
+                0.679624,
+                0.675427,
+                0.67293,
+                0.650392,
+                0.639221,
+                0.600096,
+                0.577701,
+                0.575409
+              ],
+              "sentiment": {
+                "dominant": "POSITIVE",
+                "avg_confidence": 0.5265,
+                "std_confidence": 0.089,
+                "high_confidence_ratio": 0.04,
+                "coverage": 1.0,
+                "label_distribution": {
+                  "NEUTRAL": 12,
+                  "POSITIVE": 13
+                },
+                "label_ratios": {
+                  "NEUTRAL": 0.48,
+                  "POSITIVE": 0.52
+                }
+              }
+            },
+            {
+              "topic_id": 3,
+              "label": "Panagbengafestival Baguiocityphilippines / Facebookpostシ Panagbengafestival / Panagbengafestival",
+              "count": 183,
+              "top_words": [
+                "panagbengafestival baguiocityphilippines",
+                "facebookpostシ panagbengafestival",
+                "panagbengafestival",
+                "baguiocityphilippines panahbenga",
+                "kuhang",
+                "sabaguio",
+                "city wheninbaguio",
+                "alcantara",
+                "kuhang city",
+                "wheninbaguio"
+              ],
+              "top_word_scores": [
+                0.817778,
+                0.806733,
+                0.803617,
+                0.701065,
+                0.581778,
+                0.576232,
+                0.56496,
+                0.551054,
+                0.529605,
+                0.514311
+              ],
+              "sentiment": {
+                "dominant": "NEUTRAL",
+                "avg_confidence": 0.5325,
+                "std_confidence": 0.0923,
+                "high_confidence_ratio": 0.0233,
+                "coverage": 1.0,
+                "label_distribution": {
+                  "NEUTRAL": 92,
+                  "POSITIVE": 31,
+                  "NEGATIVE": 6
+                },
+                "label_ratios": {
+                  "NEUTRAL": 0.7132,
+                  "POSITIVE": 0.2403,
+                  "NEGATIVE": 0.0465
+                }
+              }
+            }
+          ]
+        }
+      ],
+      "top_10_topics": [
+        {
+          "rank": 1,
+          "cluster_id": 3,
+          "topic_id": 0,
+          "label": "Panagbengafestival Grandfloatparade / Grandfloatparade Panagbengafestival / Panagbengafestival Grandparade",
+          "count": 43,
+          "top_words": [
+            "panagbengafestival grandfloatparade",
+            "grandfloatparade panagbengafestival",
+            "panagbengafestival grandparade",
+            "parade panagbengafestival",
+            "grandfloatparade",
+            "panagbengafestival grandstreetdanceparade"
+          ],
+          "sentiment": {
+            "dominant": "NEUTRAL",
+            "avg_confidence": 0.4951,
+            "std_confidence": 0.0677,
+            "high_confidence_ratio": 0.0,
+            "coverage": 1.0,
+            "label_distribution": {
+              "NEUTRAL": 22,
+              "NEGATIVE": 1,
+              "POSITIVE": 3
+            },
+            "label_ratios": {
+              "NEUTRAL": 0.8462,
+              "NEGATIVE": 0.0385,
+              "POSITIVE": 0.1154
+            }
+          },
+          "explanation": "In 2026, people were talking about panagbengafestival grandfloatparade, grandfloatparade panagbengafestival, panagbengafestival grandparade, parade panagbengafestival."
+        },
+        {
+          "rank": 2,
+          "cluster_id": 2,
+          "topic_id": 1,
+          "label": "Panagbengafestival Beautifullandscape / Flower Panagbengafestival / Artistry Plant",
+          "count": 41,
+          "top_words": [
+            "panagbengafestival beautifullandscape",
+            "flower panagbengafestival",
+            "artistry plant",
+            "nanaytetchie plantita",
+            "plantita baguioevents",
+            "plantart"
+          ],
+          "sentiment": {
+            "dominant": "NEUTRAL",
+            "avg_confidence": 0.5181,
+            "std_confidence": 0.0822,
+            "high_confidence_ratio": 0.01,
+            "coverage": 1.0,
+            "label_distribution": {
+              "NEUTRAL": 58,
+              "POSITIVE": 40,
+              "NEGATIVE": 2
+            },
+            "label_ratios": {
+              "NEUTRAL": 0.58,
+              "POSITIVE": 0.4,
+              "NEGATIVE": 0.02
+            }
+          },
+          "explanation": "In 2026, people were talking about panagbengafestival beautifullandscape, flower panagbengafestival, artistry plant, nanaytetchie plantita."
+        },
+        {
+          "rank": 3,
+          "cluster_id": 3,
+          "topic_id": 1,
+          "label": "Panagbengafestival Parade / Parade Panagbengafestival / Parade Luwishngbayan",
+          "count": 40,
+          "top_words": [
+            "panagbengafestival parade",
+            "parade panagbengafestival",
+            "parade luwishngbayan",
+            "panagbengafestival floatparade",
+            "panagbengafestival",
+            "panagbengafestival baguiopanagbenga"
+          ],
+          "sentiment": {
+            "dominant": "NEUTRAL",
+            "avg_confidence": 0.495,
+            "std_confidence": 0.0836,
+            "high_confidence_ratio": 0.0114,
+            "coverage": 1.0,
+            "label_distribution": {
+              "NEUTRAL": 64,
+              "POSITIVE": 18,
+              "NEGATIVE": 6
+            },
+            "label_ratios": {
+              "NEUTRAL": 0.7273,
+              "POSITIVE": 0.2045,
+              "NEGATIVE": 0.0682
+            }
+          },
+          "explanation": "In 2026, people were talking about panagbengafestival parade, parade panagbengafestival, parade luwishngbayan, panagbengafestival floatparade."
+        },
+        {
+          "rank": 4,
+          "cluster_id": 6,
+          "topic_id": 0,
+          "label": "Panagbengafestival / Sugodfiestatv Panagbengafestival / Maraming Salamat",
+          "count": 40,
+          "top_words": [
+            "panagbengafestival",
+            "sugodfiestatv panagbengafestival",
+            "maraming salamat",
+            "fiesta sugodfiestatv",
+            "kayo",
+            "namumukadkad"
+          ],
+          "sentiment": {
+            "dominant": "NEUTRAL",
+            "avg_confidence": 0.5069,
+            "std_confidence": 0.1152,
+            "high_confidence_ratio": 0.0633,
+            "coverage": 1.0,
+            "label_distribution": {
+              "NEUTRAL": 34,
+              "POSITIVE": 33,
+              "NEGATIVE": 12
+            },
+            "label_ratios": {
+              "NEUTRAL": 0.4304,
+              "POSITIVE": 0.4177,
+              "NEGATIVE": 0.1519
+            }
+          },
+          "explanation": "In 2026, people were talking about panagbengafestival, sugodfiestatv panagbengafestival, maraming salamat, fiesta sugodfiestatv."
+        },
+        {
+          "rank": 5,
+          "cluster_id": 2,
+          "topic_id": 0,
+          "label": "Panagbengafestival Floralfloatparade / Panagbengafestival Floatparade / Panagbengafestival Grandfloatparade",
+          "count": 38,
+          "top_words": [
+            "panagbengafestival floralfloatparade",
+            "panagbengafestival floatparade",
+            "panagbengafestival grandfloatparade",
+            "floralfloatparade",
+            "panagbengafestival floral",
+            "parade flower"
+          ],
+          "sentiment": {
+            "dominant": "NEUTRAL",
+            "avg_confidence": 0.5147,
+            "std_confidence": 0.0756,
+            "high_confidence_ratio": 0.0,
+            "coverage": 1.0,
+            "label_distribution": {
+              "NEUTRAL": 5,
+              "NEGATIVE": 1
+            },
+            "label_ratios": {
+              "NEUTRAL": 0.8333,
+              "NEGATIVE": 0.1667
+            }
+          },
+          "explanation": "In 2026, people were talking about panagbengafestival floralfloatparade, panagbengafestival floatparade, panagbengafestival grandfloatparade, floralfloatparade."
+        },
+        {
+          "rank": 6,
+          "cluster_id": 8,
+          "topic_id": 1,
+          "label": "Panagbengafestival Sessionroadinbloom / Sessionroadinbloom Panagbengafestival / Bloom Sessionroad",
+          "count": 34,
+          "top_words": [
+            "panagbengafestival sessionroadinbloom",
+            "sessionroadinbloom panagbengafestival",
+            "bloom sessionroad",
+            "panagbengafestival sessionroadbaguiocity",
+            "panagbengafestival sessionroadbaguio",
+            "panagbengafestival sessioninbloom"
+          ],
+          "sentiment": {
+            "dominant": "NEUTRAL",
+            "avg_confidence": 0.5977,
+            "std_confidence": 0.0775,
+            "high_confidence_ratio": 0.0,
+            "coverage": 1.0,
+            "label_distribution": {
+              "POSITIVE": 1,
+              "NEUTRAL": 2
+            },
+            "label_ratios": {
+              "POSITIVE": 0.3333,
+              "NEUTRAL": 0.6667
+            }
+          },
+          "explanation": "In 2026, people were talking about panagbengafestival sessionroadinbloom, sessionroadinbloom panagbengafestival, bloom sessionroad, panagbengafestival sessionroadbaguiocity."
+        },
+        {
+          "rank": 7,
+          "cluster_id": 0,
+          "topic_id": 0,
+          "label": "Parade Panagbengafestival / Dance Parade / Dancing Parade",
+          "count": 31,
+          "top_words": [
+            "parade panagbengafestival",
+            "dance parade",
+            "dancing parade",
+            "street dance",
+            "parade",
+            "street dancing"
+          ],
+          "sentiment": {
+            "dominant": "NEUTRAL",
+            "avg_confidence": 0.5668,
+            "std_confidence": 0.0865,
+            "high_confidence_ratio": 0.0299,
+            "coverage": 1.0,
+            "label_distribution": {
+              "POSITIVE": 9,
+              "NEUTRAL": 58
+            },
+            "label_ratios": {
+              "POSITIVE": 0.1343,
+              "NEUTRAL": 0.8657
+            }
+          },
+          "explanation": "In 2026, people were talking about parade panagbengafestival, dance parade, dancing parade, street dance."
+        },
+        {
+          "rank": 8,
+          "cluster_id": 4,
+          "topic_id": 1,
+          "label": "Panagbengafestival Byahengnorth / Byahengnorth Panagbengafestival / Travel Byahengnorth",
+          "count": 30,
+          "top_words": [
+            "panagbengafestival byahengnorth",
+            "byahengnorth panagbengafestival",
+            "travel byahengnorth",
+            "sight panagbengafestival",
+            "yyc panagbengafestival",
+            "panagbengafestival carouselride"
+          ],
+          "sentiment": {
+            "dominant": "NEUTRAL",
+            "avg_confidence": 0.5236,
+            "std_confidence": 0.0966,
+            "high_confidence_ratio": 0.037,
+            "coverage": 1.0,
+            "label_distribution": {
+              "NEUTRAL": 19,
+              "POSITIVE": 8
+            },
+            "label_ratios": {
+              "NEUTRAL": 0.7037,
+              "POSITIVE": 0.2963
+            }
+          },
+          "explanation": "In 2026, people were talking about panagbengafestival byahengnorth, byahengnorth panagbengafestival, travel byahengnorth, sight panagbengafestival."
+        },
+        {
+          "rank": 9,
+          "cluster_id": 2,
+          "topic_id": 3,
+          "label": "Panagbengafestival / Celebration / Theme Blooming",
+          "count": 26,
+          "top_words": [
+            "panagbengafestival",
+            "celebration",
+            "theme blooming",
+            "celebrate",
+            "celebrated",
+            "season blooming"
+          ],
+          "sentiment": {
+            "dominant": "NEUTRAL",
+            "avg_confidence": 0.5319,
+            "std_confidence": 0.0989,
+            "high_confidence_ratio": 0.0455,
+            "coverage": 1.0,
+            "label_distribution": {
+              "NEUTRAL": 56,
+              "POSITIVE": 52,
+              "NEGATIVE": 2
+            },
+            "label_ratios": {
+              "NEUTRAL": 0.5091,
+              "POSITIVE": 0.4727,
+              "NEGATIVE": 0.0182
+            }
+          },
+          "explanation": "In 2026, people were talking about panagbengafestival, celebration, theme blooming, celebrate."
+        },
+        {
+          "rank": 10,
+          "cluster_id": 6,
+          "topic_id": 2,
+          "label": "Panagbengafestival Kapamilya / Rekta Panagbengafestival / Panagbengafestival Pabagbenga",
+          "count": 25,
+          "top_words": [
+            "panagbengafestival kapamilya",
+            "rekta panagbengafestival",
+            "panagbengafestival pabagbenga",
+            "panagbengafestival yassi",
+            "bulaklak panagbengafestival",
+            "panagbengafestival masaya"
+          ],
+          "sentiment": {
+            "dominant": "NEUTRAL",
+            "avg_confidence": 0.5119,
+            "std_confidence": 0.1205,
+            "high_confidence_ratio": 0.0714,
+            "coverage": 1.0,
+            "label_distribution": {
+              "NEGATIVE": 16,
+              "NEUTRAL": 49,
+              "POSITIVE": 47
+            },
+            "label_ratios": {
+              "NEGATIVE": 0.1429,
+              "NEUTRAL": 0.4375,
+              "POSITIVE": 0.4196
+            }
+          },
+          "explanation": "In 2026, people were talking about panagbengafestival kapamilya, rekta panagbengafestival, panagbengafestival pabagbenga, panagbengafestival yassi."
+        }
+      ]
+    }
+  ],
+  "explainer_model": "qwen2.5:3b (local via Ollama)"
+}

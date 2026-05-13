@@ -136,6 +136,22 @@ You can modify parameters inside `run_pipeline.py`:
 
 ## 🧠 Pipeline Overview
 
+This repository implements **two parallel pipelines** sharing the same
+input data:
+
+| | Pipeline 1 — `main/`                  | Pipeline 2 — `with_clustering/`             |
+|-|----------------------------------------|----------------------------------------------|
+|Flow | year → topic → sentiment           | year → **cluster** → topic → sentiment       |
+|Topic backbone | BERTopic per year           | BERTopic per (year, cluster)                  |
+|Cluster step | implicit (inside BERTopic)    | explicit UMAP + HDBSCAN pre-pass             |
+|Sentiment | `cardiffnlp/twitter-xlm-roberta-base-sentiment` | same |
+|Confidence reporting | avg per topic        | avg + std + high-confidence ratio at every level |
+|Coherence | per year                       | per cluster + per year aggregate             |
+|Visualizations | cluster scatter per year  | cluster scatter + coherence + sentiment      |
+|Dashboard port | 5000                       | 5050                                          |
+
+Pipeline steps (both):
+
 1. **Data Collection** – Fetches social media data via Apify  
 2. **Preprocessing** – Cleans and normalizes text  
 3. **Embeddings & Clustering** – Groups similar content  
@@ -144,6 +160,9 @@ You can modify parameters inside `run_pipeline.py`:
 6. **LLM Explainer Agent** – Generates human-readable topic descriptions using Ollama + Qwen  
 7. **Orchestrator Agent** – Validates and refines outputs  
 8. **Dashboard** – Visualizes results interactively  
+
+See [with_clustering/README.md](with_clustering/README.md) for the full
+methodology, output schema, and how to run Pipeline 2.
 
 ---
 
