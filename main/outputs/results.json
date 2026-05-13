@@ -1,21 +1,35 @@
 {
-  "generated_at": "2026-05-13T22:33:07",
-  "model_type": "bertopic",
-  "parameters": {
-    "min_topic_size": 10,
-    "nr_topics": "auto",
-    "top_n_words": 10,
-    "ngram_range": [
-      1,
-      2
-    ]
+  "pipeline_version": "3.0",
+  "generated_at": "2026-05-13T22:54:12",
+  "summary": {
+    "year_range": "2022–2026",
+    "total_years": 5,
+    "total_docs": 3359,
+    "total_topics": 29
   },
-  "years": {
-    "2022": {
-      "n_docs": 389,
-      "n_topics": 4,
+  "models": {
+    "topic_model_type": "bertopic",
+    "topic_parameters": {
+      "min_topic_size": 10,
+      "nr_topics": "auto",
+      "top_n_words": 10,
+      "ngram_range": [
+        1,
+        2
+      ]
+    },
+    "sentiment_model": "cardiffnlp/twitter-xlm-roberta-base-sentiment"
+  },
+  "years": [
+    {
+      "year": 2022,
+      "total_docs": 389,
+      "total_topics": 4,
       "noise_ratio": 0.0,
       "avg_coherence": 0.3188,
+      "dominant_sentiment_dist": {
+        "neutral": 4
+      },
       "topics": [
         {
           "topic_id": 0,
@@ -45,7 +59,22 @@
             0.381101,
             0.376883
           ],
-          "coherence": 0.2986
+          "coherence": 0.2986,
+          "sentiment": {
+            "dominant": "neutral",
+            "avg_confidence": 0.5243,
+            "coverage": 1.0,
+            "label_distribution": {
+              "neutral": 120,
+              "positive": 32,
+              "negative": 4
+            },
+            "label_ratios": {
+              "neutral": 0.7692,
+              "positive": 0.2051,
+              "negative": 0.0256
+            }
+          }
         },
         {
           "topic_id": 1,
@@ -75,7 +104,22 @@
             0.28321,
             0.281481
           ],
-          "coherence": 0.3299
+          "coherence": 0.3299,
+          "sentiment": {
+            "dominant": "neutral",
+            "avg_confidence": 0.5291,
+            "coverage": 1.0,
+            "label_distribution": {
+              "neutral": 117,
+              "positive": 31,
+              "negative": 3
+            },
+            "label_ratios": {
+              "neutral": 0.7748,
+              "positive": 0.2053,
+              "negative": 0.0199
+            }
+          }
         },
         {
           "topic_id": 2,
@@ -105,7 +149,22 @@
             0.201331,
             0.186876
           ],
-          "coherence": 0.2882
+          "coherence": 0.2882,
+          "sentiment": {
+            "dominant": "neutral",
+            "avg_confidence": 0.5302,
+            "coverage": 1.0,
+            "label_distribution": {
+              "neutral": 108,
+              "positive": 41,
+              "negative": 4
+            },
+            "label_ratios": {
+              "neutral": 0.7059,
+              "positive": 0.268,
+              "negative": 0.0261
+            }
+          }
         },
         {
           "topic_id": 3,
@@ -135,15 +194,36 @@
             0.235751,
             0.213888
           ],
-          "coherence": 0.3584
+          "coherence": 0.3584,
+          "sentiment": {
+            "dominant": "neutral",
+            "avg_confidence": 0.5175,
+            "coverage": 1.0,
+            "label_distribution": {
+              "neutral": 55,
+              "positive": 25,
+              "negative": 2
+            },
+            "label_ratios": {
+              "neutral": 0.6707,
+              "positive": 0.3049,
+              "negative": 0.0244
+            }
+          }
         }
-      ]
+      ],
+      "error": null
     },
-    "2023": {
-      "n_docs": 487,
-      "n_topics": 9,
+    {
+      "year": 2023,
+      "total_docs": 487,
+      "total_topics": 9,
       "noise_ratio": 0.2074,
       "avg_coherence": 0.4145,
+      "dominant_sentiment_dist": {
+        "neutral": 8,
+        "positive": 1
+      },
       "topics": [
         {
           "topic_id": 0,
@@ -173,7 +253,22 @@
             0.404206,
             0.398026
           ],
-          "coherence": 0.397
+          "coherence": 0.397,
+          "sentiment": {
+            "dominant": "neutral",
+            "avg_confidence": 0.5316,
+            "coverage": 1.0,
+            "label_distribution": {
+              "neutral": 51,
+              "positive": 36,
+              "negative": 1
+            },
+            "label_ratios": {
+              "neutral": 0.5795,
+              "positive": 0.4091,
+              "negative": 0.0114
+            }
+          }
         },
         {
           "topic_id": 1,
@@ -203,7 +298,20 @@
             0.425046,
             0.410087
           ],
-          "coherence": 0.7814
+          "coherence": 0.7814,
+          "sentiment": {
+            "dominant": "neutral",
+            "avg_confidence": 0.5424,
+            "coverage": 1.0,
+            "label_distribution": {
+              "neutral": 69,
+              "positive": 13
+            },
+            "label_ratios": {
+              "neutral": 0.8415,
+              "positive": 0.1585
+            }
+          }
         },
         {
           "topic_id": 2,
@@ -233,7 +341,22 @@
             0.640657,
             0.522516
           ],
-          "coherence": 0.3893
+          "coherence": 0.3893,
+          "sentiment": {
+            "dominant": "neutral",
+            "avg_confidence": 0.5427,
+            "coverage": 1.0,
+            "label_distribution": {
+              "neutral": 51,
+              "positive": 11,
+              "negative": 1
+            },
+            "label_ratios": {
+              "neutral": 0.8095,
+              "positive": 0.1746,
+              "negative": 0.0159
+            }
+          }
         },
         {
           "topic_id": 3,
@@ -263,7 +386,20 @@
             0.416729,
             0.415104
           ],
-          "coherence": 0.4399
+          "coherence": 0.4399,
+          "sentiment": {
+            "dominant": "neutral",
+            "avg_confidence": 0.5252,
+            "coverage": 1.0,
+            "label_distribution": {
+              "neutral": 71,
+              "positive": 18
+            },
+            "label_ratios": {
+              "neutral": 0.7978,
+              "positive": 0.2022
+            }
+          }
         },
         {
           "topic_id": 4,
@@ -293,7 +429,22 @@
             0.479868,
             0.478401
           ],
-          "coherence": 0.3325
+          "coherence": 0.3325,
+          "sentiment": {
+            "dominant": "neutral",
+            "avg_confidence": 0.5192,
+            "coverage": 1.0,
+            "label_distribution": {
+              "neutral": 98,
+              "positive": 27,
+              "negative": 1
+            },
+            "label_ratios": {
+              "neutral": 0.7778,
+              "positive": 0.2143,
+              "negative": 0.0079
+            }
+          }
         },
         {
           "topic_id": 5,
@@ -323,7 +474,22 @@
             0.382443,
             0.381843
           ],
-          "coherence": 0.471
+          "coherence": 0.471,
+          "sentiment": {
+            "dominant": "neutral",
+            "avg_confidence": 0.5005,
+            "coverage": 1.0,
+            "label_distribution": {
+              "positive": 9,
+              "negative": 2,
+              "neutral": 66
+            },
+            "label_ratios": {
+              "positive": 0.1169,
+              "negative": 0.026,
+              "neutral": 0.8571
+            }
+          }
         },
         {
           "topic_id": 6,
@@ -353,7 +519,22 @@
             0.40675,
             0.406163
           ],
-          "coherence": 0.349
+          "coherence": 0.349,
+          "sentiment": {
+            "dominant": "neutral",
+            "avg_confidence": 0.5259,
+            "coverage": 1.0,
+            "label_distribution": {
+              "positive": 11,
+              "negative": 1,
+              "neutral": 39
+            },
+            "label_ratios": {
+              "positive": 0.2157,
+              "negative": 0.0196,
+              "neutral": 0.7647
+            }
+          }
         },
         {
           "topic_id": 7,
@@ -383,7 +564,22 @@
             0.315847,
             0.269478
           ],
-          "coherence": 0.3338
+          "coherence": 0.3338,
+          "sentiment": {
+            "dominant": "neutral",
+            "avg_confidence": 0.5361,
+            "coverage": 1.0,
+            "label_distribution": {
+              "neutral": 99,
+              "positive": 16,
+              "negative": 2
+            },
+            "label_ratios": {
+              "neutral": 0.8462,
+              "positive": 0.1368,
+              "negative": 0.0171
+            }
+          }
         },
         {
           "topic_id": 8,
@@ -413,23 +609,43 @@
             0.444941,
             0.444851
           ],
-          "coherence": 0.2368
+          "coherence": 0.2368,
+          "sentiment": {
+            "dominant": "positive",
+            "avg_confidence": 0.5633,
+            "coverage": 1.0,
+            "label_distribution": {
+              "neutral": 50,
+              "positive": 52
+            },
+            "label_ratios": {
+              "neutral": 0.4902,
+              "positive": 0.5098
+            }
+          }
         }
-      ]
+      ],
+      "error": null
     },
-    "2024": {
-      "n_docs": 769,
-      "n_topics": 0,
+    {
+      "year": 2024,
+      "total_docs": 769,
+      "total_topics": 0,
       "noise_ratio": 1.0,
       "avg_coherence": 0.0,
+      "dominant_sentiment_dist": {},
       "topics": [],
       "error": "max_df corresponds to < documents than min_df"
     },
-    "2025": {
-      "n_docs": 837,
-      "n_topics": 5,
+    {
+      "year": 2025,
+      "total_docs": 837,
+      "total_topics": 5,
       "noise_ratio": 0.0012,
       "avg_coherence": 0.3429,
+      "dominant_sentiment_dist": {
+        "neutral": 5
+      },
       "topics": [
         {
           "topic_id": 0,
@@ -459,7 +675,22 @@
             0.429435,
             0.413125
           ],
-          "coherence": 0.3573
+          "coherence": 0.3573,
+          "sentiment": {
+            "dominant": "neutral",
+            "avg_confidence": 0.5188,
+            "coverage": 1.0,
+            "label_distribution": {
+              "positive": 121,
+              "neutral": 395,
+              "negative": 28
+            },
+            "label_ratios": {
+              "positive": 0.2224,
+              "neutral": 0.7261,
+              "negative": 0.0515
+            }
+          }
         },
         {
           "topic_id": 1,
@@ -489,7 +720,22 @@
             0.495029,
             0.433115
           ],
-          "coherence": 0.3746
+          "coherence": 0.3746,
+          "sentiment": {
+            "dominant": "neutral",
+            "avg_confidence": 0.5155,
+            "coverage": 1.0,
+            "label_distribution": {
+              "positive": 108,
+              "neutral": 387,
+              "negative": 26
+            },
+            "label_ratios": {
+              "positive": 0.2073,
+              "neutral": 0.7428,
+              "negative": 0.0499
+            }
+          }
         },
         {
           "topic_id": 2,
@@ -519,7 +765,22 @@
             0.332484,
             0.32182
           ],
-          "coherence": 0.3728
+          "coherence": 0.3728,
+          "sentiment": {
+            "dominant": "neutral",
+            "avg_confidence": 0.52,
+            "coverage": 1.0,
+            "label_distribution": {
+              "neutral": 406,
+              "positive": 127,
+              "negative": 26
+            },
+            "label_ratios": {
+              "neutral": 0.7263,
+              "positive": 0.2272,
+              "negative": 0.0465
+            }
+          }
         },
         {
           "topic_id": 3,
@@ -549,7 +810,22 @@
             0.263002,
             0.226982
           ],
-          "coherence": 0.243
+          "coherence": 0.243,
+          "sentiment": {
+            "dominant": "neutral",
+            "avg_confidence": 0.5171,
+            "coverage": 1.0,
+            "label_distribution": {
+              "positive": 109,
+              "neutral": 382,
+              "negative": 28
+            },
+            "label_ratios": {
+              "positive": 0.21,
+              "neutral": 0.736,
+              "negative": 0.0539
+            }
+          }
         },
         {
           "topic_id": 4,
@@ -579,15 +855,35 @@
             0.494817,
             0.463896
           ],
-          "coherence": 0.3667
+          "coherence": 0.3667,
+          "sentiment": {
+            "dominant": "neutral",
+            "avg_confidence": 0.5156,
+            "coverage": 1.0,
+            "label_distribution": {
+              "positive": 111,
+              "neutral": 393,
+              "negative": 26
+            },
+            "label_ratios": {
+              "positive": 0.2094,
+              "neutral": 0.7415,
+              "negative": 0.0491
+            }
+          }
         }
-      ]
+      ],
+      "error": null
     },
-    "2026": {
-      "n_docs": 877,
-      "n_topics": 11,
+    {
+      "year": 2026,
+      "total_docs": 877,
+      "total_topics": 11,
       "noise_ratio": 0.2702,
       "avg_coherence": 0.4301,
+      "dominant_sentiment_dist": {
+        "neutral": 11
+      },
       "topics": [
         {
           "topic_id": 0,
@@ -617,7 +913,22 @@
             0.659389,
             0.607249
           ],
-          "coherence": 0.3968
+          "coherence": 0.3968,
+          "sentiment": {
+            "dominant": "neutral",
+            "avg_confidence": 0.5231,
+            "coverage": 1.0,
+            "label_distribution": {
+              "neutral": 383,
+              "positive": 170,
+              "negative": 27
+            },
+            "label_ratios": {
+              "neutral": 0.6603,
+              "positive": 0.2931,
+              "negative": 0.0466
+            }
+          }
         },
         {
           "topic_id": 1,
@@ -647,7 +958,22 @@
             0.591738,
             0.585777
           ],
-          "coherence": 0.3354
+          "coherence": 0.3354,
+          "sentiment": {
+            "dominant": "neutral",
+            "avg_confidence": 0.5213,
+            "coverage": 1.0,
+            "label_distribution": {
+              "neutral": 341,
+              "negative": 25,
+              "positive": 149
+            },
+            "label_ratios": {
+              "neutral": 0.6621,
+              "negative": 0.0485,
+              "positive": 0.2893
+            }
+          }
         },
         {
           "topic_id": 2,
@@ -677,7 +1003,20 @@
             0.610714,
             0.59152
           ],
-          "coherence": 0.3182
+          "coherence": 0.3182,
+          "sentiment": {
+            "dominant": "neutral",
+            "avg_confidence": 0.5664,
+            "coverage": 1.0,
+            "label_distribution": {
+              "neutral": 28,
+              "positive": 11
+            },
+            "label_ratios": {
+              "neutral": 0.7179,
+              "positive": 0.2821
+            }
+          }
         },
         {
           "topic_id": 3,
@@ -707,7 +1046,22 @@
             0.5841,
             0.575196
           ],
-          "coherence": 0.5683
+          "coherence": 0.5683,
+          "sentiment": {
+            "dominant": "neutral",
+            "avg_confidence": 0.5238,
+            "coverage": 1.0,
+            "label_distribution": {
+              "neutral": 398,
+              "positive": 199,
+              "negative": 26
+            },
+            "label_ratios": {
+              "neutral": 0.6388,
+              "positive": 0.3194,
+              "negative": 0.0417
+            }
+          }
         },
         {
           "topic_id": 4,
@@ -737,7 +1091,22 @@
             0.499861,
             0.496704
           ],
-          "coherence": 0.3265
+          "coherence": 0.3265,
+          "sentiment": {
+            "dominant": "neutral",
+            "avg_confidence": 0.5215,
+            "coverage": 1.0,
+            "label_distribution": {
+              "neutral": 343,
+              "positive": 150,
+              "negative": 24
+            },
+            "label_ratios": {
+              "neutral": 0.6634,
+              "positive": 0.2901,
+              "negative": 0.0464
+            }
+          }
         },
         {
           "topic_id": 5,
@@ -767,7 +1136,22 @@
             0.445038,
             0.436001
           ],
-          "coherence": 0.3596
+          "coherence": 0.3596,
+          "sentiment": {
+            "dominant": "neutral",
+            "avg_confidence": 0.5222,
+            "coverage": 1.0,
+            "label_distribution": {
+              "neutral": 342,
+              "negative": 26,
+              "positive": 148
+            },
+            "label_ratios": {
+              "neutral": 0.6628,
+              "negative": 0.0504,
+              "positive": 0.2868
+            }
+          }
         },
         {
           "topic_id": 6,
@@ -797,7 +1181,22 @@
             0.564267,
             0.55964
           ],
-          "coherence": 0.4177
+          "coherence": 0.4177,
+          "sentiment": {
+            "dominant": "neutral",
+            "avg_confidence": 0.5245,
+            "coverage": 1.0,
+            "label_distribution": {
+              "neutral": 345,
+              "positive": 154,
+              "negative": 25
+            },
+            "label_ratios": {
+              "neutral": 0.6584,
+              "positive": 0.2939,
+              "negative": 0.0477
+            }
+          }
         },
         {
           "topic_id": 7,
@@ -827,7 +1226,22 @@
             0.426576,
             0.414204
           ],
-          "coherence": 0.5647
+          "coherence": 0.5647,
+          "sentiment": {
+            "dominant": "neutral",
+            "avg_confidence": 0.538,
+            "coverage": 1.0,
+            "label_distribution": {
+              "neutral": 147,
+              "positive": 86,
+              "negative": 4
+            },
+            "label_ratios": {
+              "neutral": 0.6203,
+              "positive": 0.3629,
+              "negative": 0.0169
+            }
+          }
         },
         {
           "topic_id": 8,
@@ -857,7 +1271,22 @@
             0.313857,
             0.303883
           ],
-          "coherence": 0.6498
+          "coherence": 0.6498,
+          "sentiment": {
+            "dominant": "neutral",
+            "avg_confidence": 0.5228,
+            "coverage": 1.0,
+            "label_distribution": {
+              "neutral": 347,
+              "positive": 153,
+              "negative": 25
+            },
+            "label_ratios": {
+              "neutral": 0.661,
+              "positive": 0.2914,
+              "negative": 0.0476
+            }
+          }
         },
         {
           "topic_id": 9,
@@ -887,7 +1316,22 @@
             0.502901,
             0.491337
           ],
-          "coherence": 0.3969
+          "coherence": 0.3969,
+          "sentiment": {
+            "dominant": "neutral",
+            "avg_confidence": 0.5225,
+            "coverage": 1.0,
+            "label_distribution": {
+              "neutral": 337,
+              "positive": 168,
+              "negative": 24
+            },
+            "label_ratios": {
+              "neutral": 0.6371,
+              "positive": 0.3176,
+              "negative": 0.0454
+            }
+          }
         },
         {
           "topic_id": 10,
@@ -917,9 +1361,25 @@
             0.37781,
             0.368406
           ],
-          "coherence": 0.3973
+          "coherence": 0.3973,
+          "sentiment": {
+            "dominant": "neutral",
+            "avg_confidence": 0.5224,
+            "coverage": 1.0,
+            "label_distribution": {
+              "neutral": 39,
+              "negative": 2,
+              "positive": 34
+            },
+            "label_ratios": {
+              "neutral": 0.52,
+              "negative": 0.0267,
+              "positive": 0.4533
+            }
+          }
         }
-      ]
+      ],
+      "error": null
     }
-  }
+  ]
 }
