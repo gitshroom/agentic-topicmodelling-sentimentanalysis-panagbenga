@@ -1,105 +1,30 @@
 # =========================
-# topic_modelling.py
-# Agent: discovers topics per cluster using BERTopic or LDA.
-# Called by orchestrator.py with optional parameter overrides.
+# topic_modelling.py (LLM Version - Local Ollama STRICT JSON)
 # =========================
 
 import argparse
-import ast
 import pandas as pd
+from openai import OpenAI
+import os
+import json
+import time
 from utils import get_logger, save_json, timestamp, log_banner
 import config
 
 logger = get_logger("topic_modelling")
 
+# Initialize LLM Client for Local Ollama
+client = OpenAI(
+    api_key=config.LLM_API_KEY,
+    base_url="http://localhost:11434/v1"
+)
 
-# ---------------------------------------------------------------------------
-# BERTopic
-# ---------------------------------------------------------------------------
-
-def run_bertopic(df: pd.DataFrame, min_topic_size: int, nr_topics) -> dict:
-    from bertopic import BERTopic
-    from sentence_transformers import SentenceTransformer
-
-    log_banner(logger, "BERTopic topic modelling")
+def run_llm_topic_modelling(df: pd.DataFrame, n_topics: int) -> dict:
+    log_banner(logger, "LLM Topic Modelling")
     results = {}
 
     for cluster_id in sorted(df["cluster"].unique()):
-        if cluster_id == -1:
-            continue
-
-        subset = df[df["cluster"] == cluster_id]
-        docs = subset["processed"].tolist()
-
-        if len(docs) < min_topic_size:
-            logger.warning(f"Cluster {cluster_id}: too few docs ({len(docs)}), skipping.")
-            continue
-
-        logger.info(f"Cluster {cluster_id}: {len(docs)} docs")
-
-        try:
-            model = BERTopic(
-                min_topic_size=min_topic_size,
-                nr_topics=nr_topics,
-                verbose=False,
-            )
-            topics, probs = model.fit_transform(docs)
-            topic_info = model.get_topic_info()
-
-            cluster_topics = []
-            for _, row in topic_info.iterrows():
-                tid = row["Topic"]
-                if tid == -1:
-                    continue
-                words = model.get_topic(tid)
-                cluster_topics.append({
-                    "topic_id": int(tid),
-                    "count": int(row["Count"]),
-                    "top_words": [w for w, _ in words[:config.TOP_N_WORDS]],
-                    "top_word_scores": [round(float(s), 4) for _, s in words[:config.TOP_N_WORDS]],
-                    "label": row.get("Name", f"topic_{tid}"),
-                })
-
-            # coherence proxy: avg of top-word scores in the top topic
-            coherence_proxy = 0.0
-            if cluster_topics:
-                coherence_proxy = round(
-                    sum(cluster_topics[0]["top_word_scores"]) / len(cluster_topics[0]["top_word_scores"]), 4
-                )
-
-            noise_count = sum(1 for t in topics if t == -1)
-            noise_ratio = round(noise_count / len(topics), 4) if topics else 1.0
-
-            results[str(cluster_id)] = {
-                "cluster_id": int(cluster_id),
-                "n_docs": len(docs),
-                "n_topics": len(cluster_topics),
-                "noise_ratio": noise_ratio,
-                "coherence_proxy": coherence_proxy,
-                "topics": cluster_topics,
-            }
-
-        except Exception as e:
-            logger.error(f"Cluster {cluster_id} BERTopic failed: {e}")
-            results[str(cluster_id)] = {"cluster_id": int(cluster_id), "error": str(e)}
-
-    return results
-
-
-# ---------------------------------------------------------------------------
-# LDA
-# ---------------------------------------------------------------------------
-
-def run_lda(df: pd.DataFrame, n_topics: int) -> dict:
-    from sklearn.feature_extraction.text import CountVectorizer
-    from sklearn.decomposition import LatentDirichletAllocation
-    import numpy as np
-
-    log_banner(logger, "LDA topic modelling")
-    results = {}
-
-    for cluster_id in sorted(df["cluster"].unique()):
-        if cluster_id == -1:
+        if cluster_id == -1: 
             continue
 
         subset = df[df["cluster"] == cluster_id]
@@ -109,82 +34,81 @@ def run_lda(df: pd.DataFrame, n_topics: int) -> dict:
             logger.warning(f"Cluster {cluster_id}: too few docs ({len(docs)}), skipping.")
             continue
 
-        logger.info(f"Cluster {cluster_id}: {len(docs)} docs — {n_topics} LDA topics")
+        logger.info(f"Cluster {cluster_id}: extracting topics for {len(docs)} docs via LLM")
 
         try:
-            vectorizer = CountVectorizer(max_df=0.9, min_df=2, max_features=500)
-            dtm = vectorizer.fit_transform(docs)
-            feature_names = vectorizer.get_feature_names_out()
+            sample_size = min(len(docs), 15) 
+            sampled_docs = "\n- ".join(docs[:sample_size])
 
-            lda = LatentDirichletAllocation(
-                n_components=min(n_topics, len(docs) - 1),
-                max_iter=config.LDA_MAX_ITER,
-                learning_method="online",
-                random_state=42,
+            prompt = f"""
+            I have a cluster of related text documents. Based on the following sample of documents, 
+            identify the top {n_topics} main topics. 
+            
+            Documents:
+            - {sampled_docs}
+
+            You must respond ONLY with a valid JSON object. The object must contain a single key called "topics", which contains an array of objects.
+            Each object in the array must have a "label" (a 2-3 word string) and a "top_words" array (5 keyword strings).
+            Example: {{"topics": [{{"label": "Customer Support", "top_words": ["refund", "help", "agent", "wait", "call"]}}]}}
+            """
+
+            response = client.chat.completions.create(
+                model=config.LLM_MODEL_NAME,
+                messages=[{"role": "user", "content": prompt}],
+                temperature=0.0,
+                response_format={"type": "json_object"} # <-- STRICT JSON MODE LOCK
             )
-            lda.fit(dtm)
 
+            llm_output = response.choices[0].message.content
+            
+            # --- Markdown Stripper ---
+            clean_text = llm_output.strip()
+            if clean_text.startswith("```json"):
+                clean_text = clean_text[7:]
+            if clean_text.endswith("```"):
+                clean_text = clean_text[:-3]
+            clean_text = clean_text.strip()
+            
+            # Parse the JSON
+            topic_data = json.loads(clean_text)
+            topics_list = topic_data.get("topics", [])
+
+            # Format to match your old structure
             cluster_topics = []
-            for tid, component in enumerate(lda.components_):
-                top_idx = component.argsort()[-config.TOP_N_WORDS:][::-1]
-                top_words = [feature_names[i] for i in top_idx]
-                top_scores = [round(float(component[i]), 4) for i in top_idx]
-                cluster_topics.append({
-                    "topic_id": tid,
-                    "top_words": top_words,
-                    "top_word_scores": top_scores,
-                })
-
-            doc_topics = lda.transform(dtm)
-            dominant = doc_topics.argmax(axis=1)
-            counts = {tid: int(np.sum(dominant == tid)) for tid in range(n_topics)}
-            for t in cluster_topics:
-                t["count"] = counts.get(t["topic_id"], 0)
+            for tid, t in enumerate(topics_list):
+                if isinstance(t, dict):
+                    cluster_topics.append({
+                        "topic_id": tid,
+                        "label": t.get("label", "Unknown"),
+                        "top_words": t.get("top_words", []),
+                        "count": len(docs) 
+                    })
 
             results[str(cluster_id)] = {
                 "cluster_id": int(cluster_id),
                 "n_docs": len(docs),
                 "n_topics": len(cluster_topics),
-                "noise_ratio": 0.0,       # LDA assigns all docs
-                "coherence_proxy": 0.0,   # LDA doesn't expose per-topic coherence easily
                 "topics": cluster_topics,
             }
 
         except Exception as e:
-            logger.error(f"Cluster {cluster_id} LDA failed: {e}")
+            logger.error(f"Cluster {cluster_id} LLM Topic failed: {e}")
             results[str(cluster_id)] = {"cluster_id": int(cluster_id), "error": str(e)}
+
+        time.sleep(0.1) 
 
     return results
 
-
-# ---------------------------------------------------------------------------
-# Entry point
-# ---------------------------------------------------------------------------
-
-def main(min_topic_size: int = None, nr_topics=None, n_lda_topics: int = None):
+def main(n_topics: int = 3):
     logger.info("Loading clustered dataset...")
     df = pd.read_csv(config.CLUSTERED_FILE)
     df = df.dropna(subset=["processed"])
-    logger.info(f"Loaded {len(df)} rows, {df['cluster'].nunique()} clusters")
-
-    model_type = config.TOPIC_MODEL_TYPE
-
-    if model_type == "bertopic":
-        mts = min_topic_size if min_topic_size is not None else config.BERTOPIC_MIN_TOPIC_SIZE
-        nrt = nr_topics if nr_topics is not None else config.BERTOPIC_NR_TOPICS
-        results = run_bertopic(df, min_topic_size=mts, nr_topics=nrt)
-    else:
-        ntop = n_lda_topics if n_lda_topics is not None else config.LDA_N_TOPICS
-        results = run_lda(df, n_topics=ntop)
+    
+    results = run_llm_topic_modelling(df, n_topics=n_topics)
 
     output = {
         "generated_at": timestamp(),
-        "model_type": model_type,
-        "parameters": {
-            "min_topic_size": min_topic_size,
-            "nr_topics": str(nr_topics),
-            "n_lda_topics": n_lda_topics,
-        },
+        "model_type": "LLM_Prompting",
         "clusters": results,
     }
 
@@ -192,16 +116,5 @@ def main(min_topic_size: int = None, nr_topics=None, n_lda_topics: int = None):
     logger.info(f"Topic results saved to {config.TOPIC_OUTPUT_FILE}")
     return output
 
-
 if __name__ == "__main__":
-    parser = argparse.ArgumentParser(description="Topic modelling agent")
-    parser.add_argument("--min_topic_size", type=int, default=None)
-    parser.add_argument("--nr_topics", default=None)
-    parser.add_argument("--n_lda_topics", type=int, default=None)
-    args = parser.parse_args()
-
-    nr = args.nr_topics
-    if nr is not None and nr.isdigit():
-        nr = int(nr)
-
-    main(min_topic_size=args.min_topic_size, nr_topics=nr, n_lda_topics=args.n_lda_topics)
+    main()

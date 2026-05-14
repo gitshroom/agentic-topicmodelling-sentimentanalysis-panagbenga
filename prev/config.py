@@ -1,7 +1,8 @@
 # =========================
-# config.py
+# config.py (LLM Version)
 # Central configuration for the agentic topic modelling + sentiment pipeline
 # =========================
+import os
 
 # --- File paths ---
 PREPROCESSED_FILE = "data/prep_dataset_v3.csv"
@@ -10,37 +11,32 @@ TOPIC_OUTPUT_FILE = "outputs/topic_results.json"
 SENTIMENT_OUTPUT_FILE = "outputs/sentiment_results.json"
 FINAL_OUTPUT_FILE = "outputs/results.json"
 
-# --- Topic Modelling ---
-TOPIC_MODEL_TYPE = "bertopic"          # "bertopic" or "lda"
-BERTOPIC_MIN_TOPIC_SIZE = 10
-BERTOPIC_NR_TOPICS = "auto"            # or int to force a count
-LDA_N_TOPICS = 8
-LDA_MAX_ITER = 50
-TOP_N_WORDS = 10
+# --- LLM Configuration ---
+LLM_API_KEY = "ollama"           # Just a placeholder, Ollama ignores this
+LLM_MODEL_NAME = "llama3.2"
 
-# --- Sentiment Analysis ---
-SENTIMENT_MODEL = "distilbert-base-uncased-finetuned-sst-2-english"
-SENTIMENT_BATCH_SIZE = 32
-SENTIMENT_USE_PROCESSED = True         # True = use 'processed' col; False = use 'text'
+# --- Topic Modelling (LLM Params) ---
+LLM_N_TOPICS = 3               # Default number of topics to extract per cluster
+TOP_N_WORDS = 5                # Number of keywords per topic
+
+# --- Sentiment Analysis (LLM Params) ---
+SENTIMENT_USE_PROCESSED = True # True = use 'processed' col; False = use 'text'
 
 # --- Orchestrator Quality Thresholds ---
 # Topic modelling
-MIN_TOPICS = 5                         # minimum acceptable topics discovered
-MAX_NOISE_RATIO = 0.40                 # max fraction of docs labelled as noise topic (-1)
-MIN_TOPIC_COHERENCE = 0.80             # min avg coherence score (BERTopic only)
+MIN_TOPICS = 5                 # minimum acceptable topics discovered across ALL clusters combined
+MAX_NOISE_RATIO = 0.40         # (Ignored for LLMs, kept for compatibility)
+MIN_TOPIC_COHERENCE = 0.80     # (Ignored for LLMs, kept for compatibility)
 
 # Sentiment
-MIN_SENTIMENT_COVERAGE = 0.85         # fraction of docs that must have a sentiment label
-MIN_SENTIMENT_CONFIDENCE = 0.60       # min avg confidence score across all docs
+MIN_SENTIMENT_COVERAGE = 0.85  # fraction of docs that must have a sentiment label
+MIN_SENTIMENT_CONFIDENCE = 0.60# (LLMs default to 1.0 confidence on success)
 
 # --- Feedback / Retry ---
 MAX_RETRIES = 3
 
-# Adjustments applied per retry for BERTopic
-BERTOPIC_MIN_TOPIC_SIZE_DELTA = -2    # reduce min_topic_size each retry
-
-# Adjustments per retry for LDA
-LDA_N_TOPICS_DELTA = 2                # add more topics each retry
+# Adjustments applied per retry for LLM Topic Modelling
+LLM_N_TOPICS_DELTA = 1         # Ask the LLM for more topics if the total count is too low
 
 # --- Logging ---
-LOG_LEVEL = "INFO"                     # DEBUG | INFO | WARNING | ERROR
+LOG_LEVEL = "INFO"             # DEBUG | INFO | WARNING | ERROR

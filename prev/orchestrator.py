@@ -1,5 +1,5 @@
 # =========================
-# orchestrator.py
+# orchestrator.py (LLM Version)
 # Master agent: runs topic_modelling.py and sentiment_analysis.py in parallel,
 # validates results against quality thresholds, and retries with adjusted
 # parameters if quality is insufficient.
@@ -38,6 +38,8 @@ def validate_topics(topic_data: dict) -> tuple[bool, list[str]]:
             errored += 1
             continue
         total_topics += cdata.get("n_topics", 0)
+        
+        # Safe fetches for backward compatibility
         all_noise_ratios.append(cdata.get("noise_ratio", 0))
         coherence = cdata.get("coherence_proxy", 0)
         if coherence > 0:
@@ -48,7 +50,8 @@ def validate_topics(topic_data: dict) -> tuple[bool, list[str]]:
             f"Too few topics discovered: {total_topics} < {config.MIN_TOPICS}"
         )
 
-    if all_noise_ratios:
+    # LLMs don't natively output noise or coherence in this setup, so these will safely pass
+    if all_noise_ratios and any(n > 0 for n in all_noise_ratios):
         avg_noise = sum(all_noise_ratios) / len(all_noise_ratios)
         if avg_noise > config.MAX_NOISE_RATIO:
             issues.append(
@@ -104,54 +107,19 @@ def validate_sentiment(sentiment_data: dict) -> tuple[bool, list[str]]:
 # ---------------------------------------------------------------------------
 
 def adjust_topic_params(attempt: int, current_params: dict) -> dict:
-    """Loosen topic modelling parameters each retry."""
+    """Ask the LLM for more topics each retry if we fail the MIN_TOPICS threshold."""
     params = dict(current_params)
-
-    if config.TOPIC_MODEL_TYPE == "bertopic":
-        mts = params.get("min_topic_size", config.BERTOPIC_MIN_TOPIC_SIZE)
-        mts = max(2, mts + config.BERTOPIC_MIN_TOPIC_SIZE_DELTA)
-        params["min_topic_size"] = mts
-        logger.info(f"[feedback] BERTopic min_topic_size → {mts}")
-    else:
-        ntop = params.get("n_lda_topics", config.LDA_N_TOPICS)
-        ntop = ntop + config.LDA_N_TOPICS_DELTA
-        params["n_lda_topics"] = ntop
-        logger.info(f"[feedback] LDA n_topics → {ntop}")
-
+    ntop = params.get("n_topics", config.LLM_N_TOPICS)
+    ntop = ntop + config.LLM_N_TOPICS_DELTA
+    params["n_topics"] = ntop
+    logger.info(f"[feedback] LLM n_topics → {ntop}")
     return params
 
 
 def adjust_sentiment_params(attempt: int, current_params: dict) -> dict:
-    """Currently sentiment has no dynamic params; placeholder for extension."""
+    """Sentiment has no dynamic params."""
     logger.info("[feedback] No sentiment param adjustments configured.")
     return dict(current_params)
-
-
-# ---------------------------------------------------------------------------
-# Parallel runner
-# ---------------------------------------------------------------------------
-
-def run_agents_parallel(topic_params: dict, sentiment_params: dict):
-    """Run topic modelling and sentiment analysis concurrently."""
-    logger.info("Launching topic modelling and sentiment analysis in parallel...")
-
-    with concurrent.futures.ThreadPoolExecutor(max_workers=2) as executor:
-        topic_future = executor.submit(
-            topic_modelling.main,
-            min_topic_size=topic_params.get("min_topic_size"),
-            nr_topics=topic_params.get("nr_topics"),
-            n_lda_topics=topic_params.get("n_lda_topics"),
-        )
-        sentiment_future = executor.submit(
-            sentiment_analysis.main,
-            model_name=sentiment_params.get("model_name"),
-            batch_size=sentiment_params.get("batch_size"),
-        )
-
-        topic_data = topic_future.result()
-        sentiment_data = sentiment_future.result()
-
-    return topic_data, sentiment_data
 
 
 # ---------------------------------------------------------------------------
@@ -159,19 +127,14 @@ def run_agents_parallel(topic_params: dict, sentiment_params: dict):
 # ---------------------------------------------------------------------------
 
 def main():
-    log_banner(logger, "Orchestrator — agentic pipeline")
+    log_banner(logger, "Orchestrator — agentic pipeline (LLM Version)")
     logger.info(f"Started at {timestamp()}")
 
-    # Initial parameters (from config)
+    # Initial parameters
     topic_params = {
-        "min_topic_size": config.BERTOPIC_MIN_TOPIC_SIZE,
-        "nr_topics": config.BERTOPIC_NR_TOPICS,
-        "n_lda_topics": config.LDA_N_TOPICS,
+        "n_topics": config.LLM_N_TOPICS,
     }
-    sentiment_params = {
-        "model_name": config.SENTIMENT_MODEL,
-        "batch_size": config.SENTIMENT_BATCH_SIZE,
-    }
+    sentiment_params = {} # LLM Sentiment doesn't need dynamic params
 
     topic_ok = False
     sentiment_ok = False
@@ -183,7 +146,6 @@ def main():
     for attempt in range(1, config.MAX_RETRIES + 1):
         log_banner(logger, f"Attempt {attempt} / {config.MAX_RETRIES}")
 
-        # Only re-run agents that previously failed (or first attempt)
         if not topic_ok or not sentiment_ok:
             run_topic = not topic_ok
             run_sentiment = not sentiment_ok
@@ -194,15 +156,11 @@ def main():
                 if run_topic:
                     futures["topic"] = executor.submit(
                         topic_modelling.main,
-                        min_topic_size=topic_params.get("min_topic_size"),
-                        nr_topics=topic_params.get("nr_topics"),
-                        n_lda_topics=topic_params.get("n_lda_topics"),
+                        n_topics=topic_params.get("n_topics"),
                     )
                 if run_sentiment:
                     futures["sentiment"] = executor.submit(
                         sentiment_analysis.main,
-                        model_name=sentiment_params.get("model_name"),
-                        batch_size=sentiment_params.get("batch_size"),
                     )
 
                 if "topic" in futures:
@@ -252,7 +210,6 @@ def main():
     )
 
     logger.info(f"Pipeline complete. Output: {config.FINAL_OUTPUT_FILE}")
-
 
 if __name__ == "__main__":
     main()
