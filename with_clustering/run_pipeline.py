@@ -3,14 +3,14 @@
 # Master runner for Pipeline 2 (with clustering).
 #
 # Steps:
-#   1. (Optional) data collection — skipped by default; uses local CSV
-#   2. Preprocessing               — year extraction + cleaning
-#   3. Embeddings + Clustering     — UMAP + HDBSCAN + per-year visuals
-#   4. Topic Modelling             — BERTopic per cluster (uses persisted labels)
-#   5. Sentiment Analysis          — XLM-RoBERTa per topic per cluster
-#   6. Results Formatter           — merges everything into results.json
-#   7. Explainer Agent             — plain-language descriptions (Ollama)
-#   8. Dashboard                   — Flask app at config.DASHBOARD_PORT
+#   1. (Optional) data collection - skipped by default; uses local CSV
+#   2. Preprocessing               - year extraction + cleaning (default or --preprocessing second)
+#   3. Embeddings + Clustering     - UMAP + HDBSCAN + per-year visuals
+#   4. Topic Modelling             - BERTopic per cluster (uses persisted labels)
+#   5. Sentiment Analysis          - XLM-RoBERTa per topic per cluster
+#   6. Results Formatter           - merges everything into results.json
+#   7. Explainer Agent             - plain-language descriptions (Ollama)
+#   8. Dashboard                   - Flask app at config.DASHBOARD_PORT
 #
 # Usage:
 #   python run_pipeline.py                    # full run
@@ -43,7 +43,7 @@ def log(msg, color=RESET):
 
 
 def banner(title):
-    bar = "─" * 54
+    bar = "-" * 54
     print(f"\n{CYAN}{bar}{RESET}")
     print(f"{CYAN}  {BOLD}{title}{RESET}")
     print(f"{CYAN}{bar}{RESET}")
@@ -56,12 +56,12 @@ def banner(title):
 def ensure_raw_dataset():
     """Copy the raw dataset from the fallback location if not present."""
     if os.path.exists(config.RAW_FILE):
-        log(f"Raw dataset found → {config.RAW_FILE}", DIM)
+        log(f"Raw dataset found -> {config.RAW_FILE}", DIM)
         return
     if os.path.exists(config.FALLBACK_RAW_FILE):
         os.makedirs(config.DATA_DIR, exist_ok=True)
         log(
-            f"Copying raw dataset from {config.FALLBACK_RAW_FILE} → {config.RAW_FILE}",
+            f"Copying raw dataset from {config.FALLBACK_RAW_FILE} -> {config.RAW_FILE}",
             CYAN,
         )
         shutil.copy2(config.FALLBACK_RAW_FILE, config.RAW_FILE)
@@ -76,26 +76,30 @@ def ensure_raw_dataset():
 # Step runners (in-process so failures propagate cleanly)
 # -----------------------------------------------------------------------
 
-def step_preprocessing():
-    banner("Step 2 — Preprocessing + Year Extraction")
-    import preprocessing
-    preprocessing.main()
+def step_preprocessing(variant: str):
+    banner("Step 2 - Preprocessing + Year Extraction")
+    if variant == "second":
+        import preprocessing_second
+        preprocessing_second.main()
+    else:
+        import preprocessing
+        preprocessing.main()
 
 
 def step_embeddings():
-    banner("Step 3 — Embeddings + UMAP + HDBSCAN Clustering")
+    banner("Step 3 - Embeddings + UMAP + HDBSCAN Clustering")
     import embeddings
     embeddings.main()
 
 
 def step_orchestrator():
-    banner("Step 4–7 — Orchestrator (Topic + Sentiment + Format + Explain)")
+    banner("Step 4-7 - Orchestrator (Topic + Sentiment + Format + Explain)")
     import orchestrator
     orchestrator.main()
 
 
 def step_dashboard():
-    banner(f"Step 8 — Dashboard (http://localhost:{config.DASHBOARD_PORT})")
+    banner(f"Step 8 - Dashboard (http://localhost:{config.DASHBOARD_PORT})")
     import dashboard_agent
     # Flask app blocks until Ctrl+C
     dashboard_agent.app.run(
@@ -111,6 +115,13 @@ def main():
     parser = argparse.ArgumentParser(
         description="Panagbenga Pipeline 2 (with clustering)."
     )
+    parser.add_argument(
+        "--preprocessing",
+        choices=("default", "second"),
+        default="default",
+        help="default = preprocessing.py (prep_dataset_v4.csv); "
+        "second = preprocessing_second.py (prep_dataset_second.csv, v2 rules).",
+    )
     parser.add_argument("--skip-preprocess", action="store_true")
     parser.add_argument("--skip-embeddings", action="store_true")
     parser.add_argument("--skip-orchestrator", action="store_true")
@@ -120,18 +131,25 @@ def main():
     args = parser.parse_args()
 
     print(f"""
-{BOLD}╔════════════════════════════════════════════════════════╗
-║   Panagbenga Pipeline 2 — With Clustering             ║
-║   year → cluster → topic → sentiment → explain        ║
-╚════════════════════════════════════════════════════════╝{RESET}
+{BOLD}+----------------------------------------------------------+
+|   Panagbenga Pipeline 2 - With Clustering                |
+|   year -> cluster -> topic -> sentiment -> explain       |
++----------------------------------------------------------+{RESET}
   Embedding model : {CYAN}{config.EMBEDDING_MODEL}{RESET}
   Sentiment model : {CYAN}{config.SENTIMENT_MODEL}{RESET}
-  Year range      : {CYAN}{config.YEAR_START}–{config.YEAR_END}{RESET}
+  Year range      : {CYAN}{config.YEAR_START}-{config.YEAR_END}{RESET}
   Output dir      : {CYAN}{config.OUT_DIR}{RESET}
 """)
 
     if args.no_explainer:
         os.environ["WITH_CLUSTERING_NO_EXPLAINER"] = "1"
+
+    config.set_preprocessing_variant(args.preprocessing)
+    log(
+        f"Preprocessing variant: {args.preprocessing} "
+        f"(input CSV for embeddings -> {config.PREPROCESSED_INPUT_FILE})",
+        CYAN,
+    )
 
     ensure_raw_dataset()
 
@@ -139,7 +157,7 @@ def main():
 
     try:
         if not args.skip_preprocess:
-            step_preprocessing()
+            step_preprocessing(args.preprocessing)
         else:
             log("Skipping preprocessing (--skip-preprocess).", CYAN)
 
@@ -159,13 +177,13 @@ def main():
 
     elapsed = time.time() - start
     print(f"""
-{GREEN}{BOLD}══════════════════════════════════════════════════
+{GREEN}{BOLD}==================================================
   Pipeline complete in {elapsed:.1f}s
-  Results       → {config.FINAL_OUTPUT_FILE}
-  Explained     → {config.EXPLAINED_OUTPUT_FILE}
-  Visuals dir   → {config.VIZ_DIR}
-  Cluster summary → {config.CLUSTER_SUMMARY_FILE}
-══════════════════════════════════════════════════{RESET}
+  Results       -> {config.FINAL_OUTPUT_FILE}
+  Explained     -> {config.EXPLAINED_OUTPUT_FILE}
+  Visuals dir   -> {config.VIZ_DIR}
+  Cluster summary -> {config.CLUSTER_SUMMARY_FILE}
+=================================================={RESET}
 """)
 
     if not args.no_dashboard:

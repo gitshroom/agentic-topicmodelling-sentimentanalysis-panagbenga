@@ -9,7 +9,7 @@
 #     "generated_at":     "...",
 #     "summary": { year_range, total_years, total_docs,
 #                  total_topics, total_clusters,
-#                  avg_coherence, avg_confidence },
+#                  avg_coherence, avg_confidence, preprocessing_variant },
 #     "models":  { topic_model_type, topic_parameters,
 #                  sentiment_model, sentiment_confidence_threshold },
 #     "visualizations": { ...paths relative to BASE_DIR... },
@@ -219,6 +219,15 @@ def main(
             full = os.path.join(config.VIZ_DIR, fname)
             visualizations[fname] = os.path.relpath(full, config.BASE_DIR)
 
+    prep_variant = cluster_summary.get(
+        "preprocessing_variant",
+        getattr(config, "PREPROCESSING_VARIANT", "default"),
+    )
+    prep_csv = cluster_summary.get(
+        "preprocessed_input_csv",
+        os.path.basename(config.PREPROCESSED_INPUT_FILE),
+    )
+
     output = {
         "pipeline_version": "4.1-with-clustering",
         "generated_at":     timestamp(),
@@ -230,6 +239,8 @@ def main(
             "total_clusters": total_clusters,
             "avg_coherence":  avg_coherence,
             "avg_confidence": avg_confidence,
+            "preprocessing_variant": prep_variant,
+            "preprocessed_input_csv": prep_csv,
         },
         "models": {
             "topic_model_type":              topic_data.get("model_type"),
@@ -244,7 +255,7 @@ def main(
     }
 
     save_json(output, config.FINAL_OUTPUT_FILE)
-    logger.info(f"Final results written → {config.FINAL_OUTPUT_FILE}")
+    logger.info(f"Final results written -> {config.FINAL_OUTPUT_FILE}")
     return output
 
 

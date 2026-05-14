@@ -18,6 +18,11 @@ VIZ_DIR   = os.path.join(OUT_DIR, "visualizations")
 
 RAW_FILE              = os.path.join(DATA_DIR, "panagbenga2013-2026_cleaned=9013.csv")
 PREPROCESSED_FILE     = os.path.join(DATA_DIR, "prep_dataset_v4.csv")
+# Output of preprocessing_second.py (stricter v2 rules + blocked-account filter)
+PREPROCESSED_FILE_SECOND = os.path.join(DATA_DIR, "prep_dataset_second.csv")
+# CSV read by embeddings.py — set via set_preprocessing_variant() from run_pipeline.py
+PREPROCESSED_INPUT_FILE = PREPROCESSED_FILE
+PREPROCESSING_VARIANT = "default"
 # CLUSTERED_FILE is a pickle (preserves embedding + pre_cluster_label columns)
 CLUSTERED_FILE        = os.path.join(DATA_DIR, "clustered_dataset.pkl")
 CLUSTER_SUMMARY_FILE  = os.path.join(OUT_DIR, "cluster_summary.json")
@@ -29,6 +34,21 @@ EXPLAINED_OUTPUT_FILE = os.path.join(OUT_DIR, "explained_results.json")
 # Fallback source for raw data when DATA_DIR is empty (Pipeline 1's data dir).
 FALLBACK_RAW_FILE     = os.path.join(BASE_DIR, "..", "main", "data",
                                      "panagbenga2013-2026_cleaned=9013.csv")
+
+
+def set_preprocessing_variant(variant: str) -> None:
+    """Which preprocessed CSV embeddings and clustering consume.
+
+    ``default`` → ``preprocessing.py`` output (``prep_dataset_v4.csv``).
+    ``second`` → ``preprocessing_second.py`` output (``prep_dataset_second.csv``).
+    """
+    global PREPROCESSED_INPUT_FILE, PREPROCESSING_VARIANT
+    PREPROCESSING_VARIANT = variant
+    if variant == "second":
+        PREPROCESSED_INPUT_FILE = PREPROCESSED_FILE_SECOND
+    else:
+        PREPROCESSED_INPUT_FILE = PREPROCESSED_FILE
+
 
 # --- Year range ---------------------------------------------------------
 YEAR_START = 2022

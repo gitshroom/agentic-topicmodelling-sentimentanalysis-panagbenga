@@ -21,7 +21,8 @@ coherent thematic groupings and sentiment readings.
 with_clustering/
   config.py              # all knobs, paths, models
   utils.py               # logging, JSON helpers
-  preprocessing.py       # year extraction + multilingual text cleaning
+  preprocessing.py       # year extraction + multilingual text cleaning (default)
+  preprocessing_second.py  # stricter v2 cleaning + blocked-account filter
   embeddings.py          # sentence embeddings + UMAP + HDBSCAN + visuals
   topic_modelling.py     # BERTopic per (year, cluster) + c_v coherence
   sentiment_analysis.py  # xlm-roberta per topic + confidence aggregations
@@ -32,7 +33,8 @@ with_clustering/
   run_pipeline.py        # one-command end-to-end runner
   data/                  # input + intermediate data
     panagbenga2013-2026_cleaned=9013.csv
-    prep_dataset_v4.csv
+    prep_dataset_v4.csv      # default preprocessing output
+    prep_dataset_second.csv  # output when using --preprocessing second
     clustered_dataset.pkl
   outputs/
     cluster_summary.json
@@ -57,11 +59,20 @@ cd with_clustering
 python run_pipeline.py
 ```
 
+**Stricter preprocessing (thesis v2 corpus):** use the second preprocessor
+and its dedicated CSV so the default `prep_dataset_v4.csv` is left intact:
+
+```powershell
+python run_pipeline.py --preprocessing second
+```
+
 Useful flags:
 
 | Flag                    | Effect                                         |
 |-------------------------|------------------------------------------------|
-| `--skip-preprocess`     | Reuse `data/prep_dataset_v4.csv`               |
+| `--preprocessing default` | `preprocessing.py` → `prep_dataset_v4.csv` (default) |
+| `--preprocessing second` | `preprocessing_second.py` → `prep_dataset_second.csv` |
+| `--skip-preprocess`     | Reuse the preprocessed CSV for the active variant (see above) |
 | `--skip-embeddings`     | Reuse `data/clustered_dataset.pkl`             |
 | `--skip-orchestrator`   | Only build embeddings/clusters                 |
 | `--no-explainer`        | Do not call Ollama                             |
@@ -96,6 +107,21 @@ re-collect by default; the runner just copies it into `data/`.
 - Writes `data/prep_dataset_v4.csv` with the `processed` column.
 - Logs the per-year document count.
 
+### 2b. Preprocessing v2 (`preprocessing_second.py`)
+
+Optional stricter pass, selected with `--preprocessing second`:
+
+- Same year window and column schema as the default preprocessor.
+- **Blocked-account filter:** drops rows whose text matches known
+  off-topic spam accounts (e.g. crystal-bracelet ads) before cleaning.
+- **Richer stopword lists** (Tagalog function words, social-media junk,
+  domain hashtags) and **ASCII-only token pass** after emoji removal so
+  stray non-Latin characters from compound hashtags do not survive.
+- **Unicode-normalization order** fixed so stylised Unicode letters
+  still map to lowercase tokens that match stopwords.
+- Writes `data/prep_dataset_second.csv`. Embeddings always read
+  `config.PREPROCESSED_INPUT_FILE`, which `run_pipeline.py` sets from this flag.
+
 ### 3. Embeddings + clustering (`embeddings.py`)
 - Encodes the `processed` column with
   `sentence-transformers/paraphrase-multilingual-mpnet-base-v2`
@@ -107,7 +133,8 @@ re-collect by default; the runner just copies it into `data/`.
 - A 2-D UMAP projection is computed and saved as
   `outputs/visualizations/cluster_viz_<year>.png`.
 - `outputs/cluster_summary.json` records per-year `n_clusters`,
-  `noise_ratio`, and `cluster_sizes`.
+  `noise_ratio`, and `cluster_sizes`, plus `preprocessing_variant` and
+  `preprocessed_input_csv` when embeddings ran after `set_preprocessing_variant()`.
 
 ### 4. Topic modelling (`topic_modelling.py`)
 - Loads the pickled dataframe and uses `pre_cluster_label` to iterate
@@ -183,7 +210,9 @@ Three tabs:
     "total_clusters": 27,
     "total_topics": 142,
     "avg_coherence": 0.49,
-    "avg_confidence": 0.71
+    "avg_confidence": 0.71,
+    "preprocessing_variant": "second",
+    "preprocessed_input_csv": "prep_dataset_second.csv"
   },
   "models": {
     "topic_model_type": "bertopic",

@@ -139,8 +139,8 @@ def render_cluster_viz(
 def main() -> pd.DataFrame:
     log_banner(logger, "Embeddings + per-year UMAP/HDBSCAN clustering")
 
-    logger.info(f"Loading preprocessed CSV → {config.PREPROCESSED_FILE}")
-    df = pd.read_csv(config.PREPROCESSED_FILE)
+    logger.info(f"Loading preprocessed CSV -> {config.PREPROCESSED_INPUT_FILE}")
+    df = pd.read_csv(config.PREPROCESSED_INPUT_FILE)
     df = df.dropna(subset=["processed"]).copy()
 
     if "year" not in df.columns:
@@ -169,7 +169,7 @@ def main() -> pd.DataFrame:
         year_embs  = embeddings[year_idx]
         n_docs     = year_embs.shape[0]
 
-        logger.info(f"\n── Year {year}: {n_docs} docs ──")
+        logger.info(f"\n-- Year {year}: {n_docs} docs --")
 
         if n_docs < config.PRE_CLUSTER_MIN_CLUSTER_SIZE * 2:
             logger.info(
@@ -236,7 +236,7 @@ def main() -> pd.DataFrame:
                 per_year_summary[str(year)]["visualization"] = os.path.relpath(
                     viz_path, config.BASE_DIR
                 )
-                logger.info(f"  Visualization saved → {viz_path}")
+                logger.info(f"  Visualization saved -> {viz_path}")
             except Exception as e:
                 logger.warning(f"  Visualization failed for {year}: {e}")
 
@@ -248,7 +248,7 @@ def main() -> pd.DataFrame:
     ensure_dir(config.DATA_DIR)
     df.to_pickle(config.CLUSTERED_FILE)
     logger.info(
-        f"\nSaved {len(df)} rows with embeddings + cluster labels → "
+        f"\nSaved {len(df)} rows with embeddings + cluster labels -> "
         f"{config.CLUSTERED_FILE}"
     )
 
@@ -256,6 +256,12 @@ def main() -> pd.DataFrame:
     summary = {
         "generated_at": timestamp(),
         "embedding_model": config.EMBEDDING_MODEL,
+        "preprocessing_variant": getattr(
+            config, "PREPROCESSING_VARIANT", "default"
+        ),
+        "preprocessed_input_csv": os.path.basename(
+            config.PREPROCESSED_INPUT_FILE
+        ),
         "params": {
             "umap_neighbors":              config.UMAP_NEIGHBORS,
             "umap_components":             config.UMAP_COMPONENTS,
@@ -270,7 +276,7 @@ def main() -> pd.DataFrame:
         "years": per_year_summary,
     }
     save_json(summary, config.CLUSTER_SUMMARY_FILE)
-    logger.info(f"Cluster summary saved → {config.CLUSTER_SUMMARY_FILE}")
+    logger.info(f"Cluster summary saved -> {config.CLUSTER_SUMMARY_FILE}")
 
     return df
 
