@@ -1,5 +1,5 @@
 # =========================
-# topic_modelling.py (LLM Version - Local Ollama STRICT JSON)
+# topic_modelling.py (LLM Version - String Cluster IDs)
 # =========================
 
 import argparse
@@ -13,7 +13,6 @@ import config
 
 logger = get_logger("topic_modelling")
 
-# Initialize LLM Client for Local Ollama
 client = OpenAI(
     api_key=config.LLM_API_KEY,
     base_url="http://localhost:11434/v1"
@@ -24,7 +23,8 @@ def run_llm_topic_modelling(df: pd.DataFrame, n_topics: int) -> dict:
     results = {}
 
     for cluster_id in sorted(df["cluster"].unique()):
-        if cluster_id == -1: 
+        # Skip noise clusters for any year (e.g., "2022_-1", "2023_-1")
+        if str(cluster_id).endswith("_-1"): 
             continue
 
         subset = df[df["cluster"] == cluster_id]
@@ -56,12 +56,11 @@ def run_llm_topic_modelling(df: pd.DataFrame, n_topics: int) -> dict:
                 model=config.LLM_MODEL_NAME,
                 messages=[{"role": "user", "content": prompt}],
                 temperature=0.0,
-                response_format={"type": "json_object"} # <-- STRICT JSON MODE LOCK
+                response_format={"type": "json_object"} 
             )
 
             llm_output = response.choices[0].message.content
             
-            # --- Markdown Stripper ---
             clean_text = llm_output.strip()
             if clean_text.startswith("```json"):
                 clean_text = clean_text[7:]
@@ -69,11 +68,9 @@ def run_llm_topic_modelling(df: pd.DataFrame, n_topics: int) -> dict:
                 clean_text = clean_text[:-3]
             clean_text = clean_text.strip()
             
-            # Parse the JSON
             topic_data = json.loads(clean_text)
             topics_list = topic_data.get("topics", [])
 
-            # Format to match your old structure
             cluster_topics = []
             for tid, t in enumerate(topics_list):
                 if isinstance(t, dict):
@@ -85,7 +82,7 @@ def run_llm_topic_modelling(df: pd.DataFrame, n_topics: int) -> dict:
                     })
 
             results[str(cluster_id)] = {
-                "cluster_id": int(cluster_id),
+                "cluster_id": str(cluster_id), # FIXED: Kept as string
                 "n_docs": len(docs),
                 "n_topics": len(cluster_topics),
                 "topics": cluster_topics,
@@ -93,7 +90,7 @@ def run_llm_topic_modelling(df: pd.DataFrame, n_topics: int) -> dict:
 
         except Exception as e:
             logger.error(f"Cluster {cluster_id} LLM Topic failed: {e}")
-            results[str(cluster_id)] = {"cluster_id": int(cluster_id), "error": str(e)}
+            results[str(cluster_id)] = {"cluster_id": str(cluster_id), "error": str(e)} # FIXED
 
         time.sleep(0.1) 
 

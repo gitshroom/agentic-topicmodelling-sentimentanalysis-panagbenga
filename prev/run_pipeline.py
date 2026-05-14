@@ -19,7 +19,7 @@ from datetime import datetime
 # CONFIG — edit these before running
 # -----------------------------------------------------------------------
 
-APIFY_TOKEN = os.getenv("APIFY_TOKEN")  # get from https://my.apify.com/account
+APIFY_TOKEN  = os.getenv("APIFY_TOKEN")  # get from https://my.apify.com/account
 QUERY        = "panagbenga"
 PLATFORMS    = "all"          # all | facebook tiktok twitter instagram
 MAX_ITEMS    = 700            # items per platform

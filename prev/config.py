@@ -5,38 +5,46 @@
 import os
 
 # --- File paths ---
+RAW_FILE = "data/panagbenga2013-2026_cleaned=9013.csv" # Add your raw file path if needed
 PREPROCESSED_FILE = "data/prep_dataset_v3.csv"
 CLUSTERED_FILE = "data/clustered_dataset.csv"
 TOPIC_OUTPUT_FILE = "outputs/topic_results.json"
 SENTIMENT_OUTPUT_FILE = "outputs/sentiment_results.json"
 FINAL_OUTPUT_FILE = "outputs/results.json"
 
+# --- Year Range ---
+YEAR_START = 2022
+YEAR_END = 2026
+
+# --- Embeddings & Clustering Config ---
+EMBEDDING_MODEL = "paraphrase-multilingual-MiniLM-L12-v2"
+UMAP_NEIGHBORS = 15
+UMAP_COMPONENTS = 5
+UMAP_MIN_DIST = 0.1      # Changed to 0.1 as per Iteration 3
+MIN_CLUSTER_SIZE = 10    # Changed to 10 as per Iteration 3
+MIN_SAMPLES = 5          # Changed to 5 as per Iteration 3
+
 # --- LLM Configuration ---
-LLM_API_KEY = "ollama"           # Just a placeholder, Ollama ignores this
+LLM_API_KEY = "ollama"           
 LLM_MODEL_NAME = "llama3.2"
 
 # --- Topic Modelling (LLM Params) ---
-LLM_N_TOPICS = 3               # Default number of topics to extract per cluster
-TOP_N_WORDS = 5                # Number of keywords per topic
+LLM_N_TOPICS = 3               
+TOP_N_WORDS = 5                
 
 # --- Sentiment Analysis (LLM Params) ---
-SENTIMENT_USE_PROCESSED = True # True = use 'processed' col; False = use 'text'
+SENTIMENT_USE_PROCESSED = True 
 
 # --- Orchestrator Quality Thresholds ---
-# Topic modelling
-MIN_TOPICS = 5                 # minimum acceptable topics discovered across ALL clusters combined
-MAX_NOISE_RATIO = 0.40         # (Ignored for LLMs, kept for compatibility)
-MIN_TOPIC_COHERENCE = 0.80     # (Ignored for LLMs, kept for compatibility)
-
-# Sentiment
-MIN_SENTIMENT_COVERAGE = 0.85  # fraction of docs that must have a sentiment label
-MIN_SENTIMENT_CONFIDENCE = 0.60# (LLMs default to 1.0 confidence on success)
+MIN_TOPICS = 5                 
+MAX_NOISE_RATIO = 0.40         
+MIN_TOPIC_COHERENCE = 0.80     
+MIN_SENTIMENT_COVERAGE = 0.85  
+MIN_SENTIMENT_CONFIDENCE = 0.60
 
 # --- Feedback / Retry ---
 MAX_RETRIES = 3
-
-# Adjustments applied per retry for LLM Topic Modelling
-LLM_N_TOPICS_DELTA = 1         # Ask the LLM for more topics if the total count is too low
+LLM_N_TOPICS_DELTA = 1         
 
 # --- Logging ---
-LOG_LEVEL = "INFO"             # DEBUG | INFO | WARNING | ERROR
+LOG_LEVEL = "INFO"

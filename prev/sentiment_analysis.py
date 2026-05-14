@@ -1,5 +1,5 @@
 # =========================
-# sentiment_analysis.py (LLM Version - Local Ollama)
+# sentiment_analysis.py (LLM Version - String Cluster IDs)
 # =========================
 
 import argparse
@@ -12,14 +12,12 @@ import config
 
 logger = get_logger("sentiment_analysis")
 
-# Initialize LLM Client for Local Ollama
 client = OpenAI(
     api_key=config.LLM_API_KEY,
-    base_url="http://localhost:11434/v1" # Local machine URL
+    base_url="http://localhost:11434/v1"
 )
 
 def score_texts_with_llm(texts: list) -> list:
-    """Uses an LLM to determine sentiment."""
     results = []
     for text in texts:
         try:
@@ -43,12 +41,11 @@ def score_texts_with_llm(texts: list) -> list:
             logger.error(f"LLM failed on text: {e}")
             results.append({"label": "ERROR", "score": 0.0})
             
-        time.sleep(0.1) # Fast sleep for local LLM
+        time.sleep(0.1) 
             
     return results
 
 def aggregate_sentiment(records: list) -> dict:
-    """Compute label distribution and mean confidence from a list of {label, score}."""
     label_counts = {}
     total_score = 0.0
     valid = 0
@@ -86,6 +83,10 @@ def main(model_name: str = None, batch_size: int = None):
     cluster_results = {}
 
     for cluster_id in sorted(df["cluster"].unique()):
+        # Skip noise clusters for sentiment to save time
+        if str(cluster_id).endswith("_-1"):
+            continue
+
         subset = df[df["cluster"] == cluster_id]
         texts = subset[text_col].tolist()
 
@@ -104,7 +105,7 @@ def main(model_name: str = None, batch_size: int = None):
         agg = aggregate_sentiment(scored)
 
         cluster_results[str(cluster_id)] = {
-            "cluster_id": int(cluster_id),
+            "cluster_id": str(cluster_id), # FIXED: Kept as string
             **agg,
             "per_doc": per_doc,
         }

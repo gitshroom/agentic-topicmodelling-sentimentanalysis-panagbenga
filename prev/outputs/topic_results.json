@@ -1,458 +1,53 @@
 {
-  "generated_at": "2026-05-14T00:08:16",
+  "generated_at": "2026-05-15T00:20:53",
   "model_type": "LLM_Prompting",
   "clusters": {
-    "0": {
-      "cluster_id": 0,
-      "n_docs": 59,
+    "2022_0": {
+      "cluster_id": "2022_0",
+      "n_docs": 18,
       "n_topics": 3,
       "topics": [
         {
           "topic_id": 0,
-          "label": "Panagbenga Flowers",
+          "label": "Bike Event",
           "top_words": [
-            "panagbenga",
-            "flowers",
-            "havaianas"
-          ],
-          "count": 59
-        },
-        {
-          "topic_id": 1,
-          "label": "Lecross",
-          "top_words": [
-            "lecross",
-            "tbt",
-            "panagbenga2016"
-          ],
-          "count": 59
-        },
-        {
-          "topic_id": 2,
-          "label": "Customer Support",
-          "top_words": [
-            "help",
-            "agent",
-            "wait",
-            "call",
-            "refund"
-          ],
-          "count": 59
-        }
-      ]
-    },
-    "1": {
-      "cluster_id": 1,
-      "n_docs": 90,
-      "n_topics": 3,
-      "topics": [
-        {
-          "topic_id": 0,
-          "label": "Spiritual Growth",
-          "top_words": [
-            "manifestation",
-            "energy",
-            "aura",
-            "meditation",
-            "balance"
-          ],
-          "count": 90
-        },
-        {
-          "topic_id": 1,
-          "label": "Wellness and Health",
-          "top_words": [
-            "healing",
-            "relaxation",
-            "mindfulness",
-            "self-care",
-            "wellness"
-          ],
-          "count": 90
-        },
-        {
-          "topic_id": 2,
-          "label": "Spiritual Protection",
-          "top_words": [
-            "protection",
-            "negative energy",
-            "feng shui",
-            "black tourmaline",
-            "shielding"
-          ],
-          "count": 90
-        }
-      ]
-    },
-    "2": {
-      "cluster_id": 2,
-      "n_docs": 43,
-      "n_topics": 3,
-      "topics": [
-        {
-          "topic_id": 0,
-          "label": "Panagbenga Flower",
-          "top_words": [
-            "panagbenga",
-            "flower",
-            "seasonal",
-            "beauty",
-            "gift"
-          ],
-          "count": 43
-        },
-        {
-          "topic_id": 1,
-          "label": "Customer Support",
-          "top_words": [
-            "refund",
-            "help",
-            "agent",
-            "wait",
-            "call"
-          ],
-          "count": 43
-        },
-        {
-          "topic_id": 2,
-          "label": "Unknown Topic",
-          "top_words": [
-            "unknown",
-            "topic",
-            "unrelated",
-            "words",
-            "here"
-          ],
-          "count": 43
-        }
-      ]
-    },
-    "3": {
-      "cluster_id": 3,
-      "n_docs": 52,
-      "n_topics": 3,
-      "topics": [
-        {
-          "topic_id": 0,
-          "label": "Panagbenga Flower",
-          "top_words": [
-            "panagbenga",
-            "flower",
-            "seasonal",
-            "festival"
-          ],
-          "count": 52
-        },
-        {
-          "topic_id": 1,
-          "label": "Customer Support",
-          "top_words": [
-            "refund",
-            "help",
-            "agent",
-            "wait",
-            "call"
-          ],
-          "count": 52
-        },
-        {
-          "topic_id": 2,
-          "label": "Event or Festival",
-          "top_words": [
+            "bikes",
             "event",
-            "festival",
-            "celebrate",
-            "party",
-            "fun"
+            "papiapproved",
+            "motoglamping",
+            "bikepacking"
           ],
-          "count": 52
-        }
-      ]
-    },
-    "4": {
-      "cluster_id": 4,
-      "n_docs": 41,
-      "n_topics": 3,
-      "topics": [
-        {
-          "topic_id": 0,
-          "label": "Panagbenga Flower",
-          "top_words": [
-            "panagbenga",
-            "flower",
-            "seasonal",
-            "popular",
-            "local"
-          ],
-          "count": 41
+          "count": 18
         },
         {
           "topic_id": 1,
-          "label": "Customer Support",
+          "label": "Women Riders",
           "top_words": [
-            "refund",
-            "help",
-            "agent",
-            "wait",
-            "call"
+            "women",
+            "riders",
+            "bikers",
+            "lethopevroom",
+            "baguiobikesinbloom"
           ],
-          "count": 41
+          "count": 18
         },
         {
           "topic_id": 2,
-          "label": "Unknown Topic",
+          "label": "Motorcycle Tourism",
           "top_words": [
-            "unknown",
-            "topic",
-            "not",
-            "found",
-            "yet"
-          ],
-          "count": 41
-        }
-      ]
-    },
-    "5": {
-      "cluster_id": 5,
-      "n_docs": 45,
-      "n_topics": 3,
-      "topics": [
-        {
-          "topic_id": 0,
-          "label": "Panagbenga Flower",
-          "top_words": [
-            "panagbenga",
-            "flower",
-            "tree",
-            "plant",
-            "garden"
-          ],
-          "count": 45
-        },
-        {
-          "topic_id": 1,
-          "label": "Customer Support",
-          "top_words": [
-            "refund",
-            "help",
-            "agent",
-            "wait",
-            "call"
-          ],
-          "count": 45
-        },
-        {
-          "topic_id": 2,
-          "label": "General Information",
-          "top_words": [
-            "info",
-            "contact",
-            "support",
-            "help",
-            "query"
-          ],
-          "count": 45
-        }
-      ]
-    },
-    "6": {
-      "cluster_id": 6,
-      "n_docs": 43,
-      "n_topics": 3,
-      "topics": [
-        {
-          "topic_id": 0,
-          "label": "Baguio City",
-          "top_words": [
-            "baguio",
-            "panagbenga",
-            "tourism"
-          ],
-          "count": 43
-        },
-        {
-          "topic_id": 1,
-          "label": "Panagbenga Festival",
-          "top_words": [
-            "festival",
-            "panagbenga",
-            "flowers"
-          ],
-          "count": 43
-        },
-        {
-          "topic_id": 2,
-          "label": "Travel and Tourism",
-          "top_words": [
-            "travel",
+            "motorcycle",
             "tourism",
-            "philippines"
+            "motocampridingschool",
+            "motoglamping",
+            "bikepackingphilippines"
           ],
-          "count": 43
+          "count": 18
         }
       ]
     },
-    "7": {
-      "cluster_id": 7,
-      "n_docs": 74,
-      "n_topics": 3,
-      "topics": [
-        {
-          "topic_id": 0,
-          "label": "Baguio City",
-          "top_words": [
-            "baguiocity",
-            "lionshead",
-            "grotto"
-          ],
-          "count": 74
-        },
-        {
-          "topic_id": 1,
-          "label": "Reel Insights",
-          "top_words": [
-            "reel",
-            "insights",
-            "baguiocity",
-            "highlights"
-          ],
-          "count": 74
-        },
-        {
-          "topic_id": 2,
-          "label": "Ladladslads",
-          "top_words": [
-            "ladladslads"
-          ],
-          "count": 74
-        }
-      ]
-    },
-    "8": {
-      "cluster_id": 8,
-      "n_docs": 15,
-      "n_topics": 3,
-      "topics": [
-        {
-          "topic_id": 0,
-          "label": "Baguio City",
-          "top_words": [
-            "baguio",
-            "abscbn",
-            "regionals"
-          ],
-          "count": 15
-        },
-        {
-          "topic_id": 1,
-          "label": "Samonte Brothers",
-          "top_words": [
-            "samonte",
-            "brothers",
-            "pinainit"
-          ],
-          "count": 15
-        },
-        {
-          "topic_id": 2,
-          "label": "Panagbenga Festival",
-          "top_words": [
-            "panagbenga",
-            "festival",
-            "kapamilya"
-          ],
-          "count": 15
-        }
-      ]
-    },
-    "9": {
-      "cluster_id": 9,
-      "n_docs": 68,
-      "n_topics": 3,
-      "topics": [
-        {
-          "topic_id": 0,
-          "label": "Panagbenga Festival",
-          "top_words": [
-            "panagbenga",
-            "festival",
-            "event",
-            "year",
-            "report"
-          ],
-          "count": 68
-        },
-        {
-          "topic_id": 1,
-          "label": "Radio Reporting",
-          "top_words": [
-            "radio",
-            "reporting",
-            "live",
-            "broadcast",
-            "news"
-          ],
-          "count": 68
-        },
-        {
-          "topic_id": 2,
-          "label": "Elementary Education",
-          "top_words": [
-            "elementaries",
-            "education",
-            "school",
-            "childhood",
-            "learning"
-          ],
-          "count": 68
-        }
-      ]
-    },
-    "10": {
-      "cluster_id": 10,
-      "n_docs": 19,
-      "n_topics": 3,
-      "topics": [
-        {
-          "topic_id": 0,
-          "label": "Makisaya Festival",
-          "top_words": [
-            "makisaya",
-            "festival",
-            "fpjsangprobinsyano",
-            "stars"
-          ],
-          "count": 19
-        },
-        {
-          "topic_id": 1,
-          "label": "Baguio City",
-          "top_words": [
-            "baguio",
-            "city",
-            "burnham",
-            "lake",
-            "drive"
-          ],
-          "count": 19
-        },
-        {
-          "topic_id": 2,
-          "label": "Event Coverage",
-          "top_words": [
-            "regrann",
-            "cocomartin",
-            "majasty",
-            "performing",
-            "vipaccess"
-          ],
-          "count": 19
-        }
-      ]
-    },
-    "11": {
-      "cluster_id": 11,
-      "n_docs": 73,
+    "2022_1": {
+      "cluster_id": "2022_1",
+      "n_docs": 20,
       "n_topics": 3,
       "topics": [
         {
@@ -461,765 +56,554 @@
           "top_words": [
             "fireworks",
             "display",
-            "panagbenga"
-          ],
-          "count": 73
-        },
-        {
-          "topic_id": 1,
-          "label": "Baguio City",
-          "top_words": [
-            "baguiocity",
-            "cathedral",
-            "fireworks"
-          ],
-          "count": 73
-        },
-        {
-          "topic_id": 2,
-          "label": "New Year Celebration",
-          "top_words": [
-            "newyear",
             "celebration",
-            "fireworks"
-          ],
-          "count": 73
-        }
-      ]
-    },
-    "12": {
-      "cluster_id": 12,
-      "n_docs": 74,
-      "n_topics": 3,
-      "topics": [
-        {
-          "topic_id": 0,
-          "label": "Fireworks Festival",
-          "top_words": [
-            "fireworks",
-            "festival",
-            "panagbenga"
-          ],
-          "count": 74
-        },
-        {
-          "topic_id": 1,
-          "label": "Baguio City",
-          "top_words": [
-            "baguio",
-            "city",
-            "pines"
-          ],
-          "count": 74
-        },
-        {
-          "topic_id": 2,
-          "label": "Closing Ceremony",
-          "top_words": [
-            "closing",
-            "ceremony",
-            "fireworks"
-          ],
-          "count": 74
-        }
-      ]
-    },
-    "13": {
-      "cluster_id": 13,
-      "n_docs": 31,
-      "n_topics": 3,
-      "topics": [
-        {
-          "topic_id": 0,
-          "label": "Baguio City",
-          "top_words": [
-            "baguio",
-            "city",
-            "selfie"
-          ],
-          "count": 31
-        },
-        {
-          "topic_id": 1,
-          "label": "Travel",
-          "top_words": [
-            "travel",
-            "tour",
-            "panagbenga"
-          ],
-          "count": 31
-        },
-        {
-          "topic_id": 2,
-          "label": "Photography",
-          "top_words": [
-            "photography",
-            "gopro",
-            "selfie"
-          ],
-          "count": 31
-        }
-      ]
-    },
-    "14": {
-      "cluster_id": 14,
-      "n_docs": 59,
-      "n_topics": 3,
-      "topics": [
-        {
-          "topic_id": 0,
-          "label": "Baguio City",
-          "top_words": [
-            "baguio",
-            "city",
-            "pines"
-          ],
-          "count": 59
-        },
-        {
-          "topic_id": 1,
-          "label": "Pine Trees",
-          "top_words": [
-            "trees",
-            "pine",
-            "forest"
-          ],
-          "count": 59
-        },
-        {
-          "topic_id": 2,
-          "label": "Flower Festival",
-          "top_words": [
-            "pinagbenga",
-            "flower",
+            "pyrotechnics",
             "festival"
           ],
-          "count": 59
-        }
-      ]
-    },
-    "15": {
-      "cluster_id": 15,
-      "n_docs": 14,
-      "n_topics": 3,
-      "topics": [
-        {
-          "topic_id": 0,
-          "label": "Baguio Cathedral",
-          "top_words": [
-            "baguio",
-            "cathedral",
-            "panagbenga"
-          ],
-          "count": 14
+          "count": 20
         },
         {
           "topic_id": 1,
-          "label": "Lady Atonement",
+          "label": "City Life",
           "top_words": [
-            "lady",
-            "atonement",
-            "cathedral"
-          ],
-          "count": 14
-        },
-        {
-          "topic_id": 2,
-          "label": "Travel/Philippines",
-          "top_words": [
-            "travel",
+            "city",
+            "life",
+            "luzon",
             "philippines",
-            "baguio",
-            "city"
+            "travel"
           ],
-          "count": 14
-        }
-      ]
-    },
-    "16": {
-      "cluster_id": 16,
-      "n_docs": 18,
-      "n_topics": 3,
-      "topics": [
+          "count": 20
+        },
         {
-          "topic_id": 0,
-          "label": "Bike Festival",
+          "topic_id": 2,
+          "label": "Ceremony and Events",
           "top_words": [
-            "bikes",
-            "motocamp",
-            "panagbenga",
+            "ceremony",
             "event",
-            "bike"
+            "closing",
+            "congratulations",
+            "proclamation"
           ],
-          "count": 18
-        },
-        {
-          "topic_id": 1,
-          "label": "Women Empowerment",
-          "top_words": [
-            "women",
-            "empowerment",
-            "mototourism",
-            "scooters",
-            "motorcycles"
-          ],
-          "count": 18
-        },
-        {
-          "topic_id": 2,
-          "label": "Community Support",
-          "top_words": [
-            "support",
-            "community",
-            "bikesinbloom",
-            "motoglamping",
-            "panagbenga"
-          ],
-          "count": 18
+          "count": 20
         }
       ]
     },
-    "17": {
-      "cluster_id": 17,
-      "n_docs": 35,
+    "2022_2": {
+      "cluster_id": "2022_2",
+      "n_docs": 329,
       "n_topics": 3,
       "topics": [
         {
           "topic_id": 0,
-          "label": "Baguio Night Market",
+          "label": "Baguio City",
           "top_words": [
-            "night market",
             "baguio",
-            "panagbenga"
+            "city",
+            "travel",
+            "nature",
+            "pines"
           ],
-          "count": 35
+          "count": 329
         },
         {
           "topic_id": 1,
-          "label": "Shopping",
+          "label": "Travel Philippines",
           "top_words": [
-            "shopping",
-            "retail",
-            "market"
+            "philippines",
+            "travel",
+            "explore",
+            "adventure",
+            "lost"
           ],
-          "count": 35
+          "count": 329
         },
         {
           "topic_id": 2,
-          "label": "Travel",
+          "label": "Life in Baguio",
           "top_words": [
-            "travel",
-            "visit",
-            "explore"
+            "baguio",
+            "life",
+            "session",
+            "bloom",
+            "nature"
           ],
-          "count": 35
+          "count": 329
         }
       ]
     },
-    "18": {
-      "cluster_id": 18,
+    "2023_0": {
+      "cluster_id": "2023_0",
       "n_docs": 16,
       "n_topics": 3,
       "topics": [
         {
           "topic_id": 0,
-          "label": "Baguio Festival",
+          "label": "Grand Opening Parade",
           "top_words": [
             "parade",
             "grand opening",
-            "baguio",
-            "flowerfestival"
+            "opening day"
           ],
           "count": 16
         },
         {
           "topic_id": 1,
-          "label": "Pet Event",
+          "label": "Glimpse Opening Parada",
           "top_words": [
-            "fur babies",
-            "petreels",
-            "cutedogs"
-          ],
-          "count": 16
-        },
-        {
-          "topic_id": 2,
-          "label": "City Celebration",
-          "top_words": [
+            "glimpse",
             "opening",
-            "parada",
-            "baguiocity"
-          ],
-          "count": 16
-        }
-      ]
-    },
-    "19": {
-      "cluster_id": 19,
-      "n_docs": 20,
-      "n_topics": 3,
-      "topics": [
-        {
-          "topic_id": 0,
-          "label": "Jollibee Panagbenga",
-          "top_words": [
-            "jollibee",
-            "panagbenga",
-            "baguio"
-          ],
-          "count": 20
-        },
-        {
-          "topic_id": 1,
-          "label": "Bidaangsaya Session",
-          "top_words": [
-            "bidaangsaya",
-            "session",
-            "jollibee"
-          ],
-          "count": 20
-        },
-        {
-          "topic_id": 2,
-          "label": "Bees and Flowers",
-          "top_words": [
-            "bees",
-            "flowers",
-            "panagbenga"
-          ],
-          "count": 20
-        }
-      ]
-    },
-    "20": {
-      "cluster_id": 20,
-      "n_docs": 20,
-      "n_topics": 3,
-      "topics": [
-        {
-          "topic_id": 0,
-          "label": "Baguio City",
-          "top_words": [
-            "baguio",
-            "city",
-            "panagbenga"
-          ],
-          "count": 20
-        },
-        {
-          "topic_id": 1,
-          "label": "Umbrella",
-          "top_words": [
-            "umbrella",
-            "arts",
-            "session"
-          ],
-          "count": 20
-        },
-        {
-          "topic_id": 2,
-          "label": "Reels",
-          "top_words": [
-            "reels",
-            "video",
-            "fbreels"
-          ],
-          "count": 20
-        }
-      ]
-    },
-    "21": {
-      "cluster_id": 21,
-      "n_docs": 52,
-      "n_topics": 3,
-      "topics": [
-        {
-          "topic_id": 0,
-          "label": "Viral Reels",
-          "top_words": [
-            "viral",
-            "reels",
-            "fbpage",
-            "jejemon",
-            "bigmak"
-          ],
-          "count": 52
-        },
-        {
-          "topic_id": 1,
-          "label": "Baguio City",
-          "top_words": [
-            "baguio",
-            "city",
-            "cordillera",
-            "philippines",
-            "panagbenga"
-          ],
-          "count": 52
-        },
-        {
-          "topic_id": 2,
-          "label": "Food Challenge",
-          "top_words": [
-            "shawarma",
-            "food",
-            "challenge",
-            "mokang",
-            "nagusyo"
-          ],
-          "count": 52
-        }
-      ]
-    },
-    "22": {
-      "cluster_id": 22,
-      "n_docs": 34,
-      "n_topics": 3,
-      "topics": [
-        {
-          "topic_id": 0,
-          "label": "Panagbenga Festival",
-          "top_words": [
-            "panagbenga",
-            "festival",
-            "virals",
-            "reels",
-            "fbpage"
-          ],
-          "count": 34
-        },
-        {
-          "topic_id": 1,
-          "label": "Viral Videos",
-          "top_words": [
-            "viral",
-            "videos",
-            "view",
-            "reels",
-            "fbpage"
-          ],
-          "count": 34
-        },
-        {
-          "topic_id": 2,
-          "label": "Social Media",
-          "top_words": [
-            "facebook",
-            "tiktok",
-            "youtube",
-            "reels",
-            "fyp"
-          ],
-          "count": 34
-        }
-      ]
-    },
-    "23": {
-      "cluster_id": 23,
-      "n_docs": 29,
-      "n_topics": 3,
-      "topics": [
-        {
-          "topic_id": 0,
-          "label": "Baguio City",
-          "top_words": [
-            "baguio",
-            "city",
-            "starseverywhere"
-          ],
-          "count": 29
-        },
-        {
-          "topic_id": 1,
-          "label": "Travel Blogging",
-          "top_words": [
-            "travel",
-            "blog",
-            "adventure"
-          ],
-          "count": 29
-        },
-        {
-          "topic_id": 2,
-          "label": "Reels and Videos",
-          "top_words": [
-            "reels",
-            "videos",
-            "trending",
-            "viral"
-          ],
-          "count": 29
-        }
-      ]
-    },
-    "24": {
-      "cluster_id": 24,
-      "n_docs": 110,
-      "n_topics": 3,
-      "topics": [
-        {
-          "topic_id": 0,
-          "label": "Baguio City",
-          "top_words": [
-            "baguio",
-            "panagbenga",
-            "session"
-          ],
-          "count": 110
-        },
-        {
-          "topic_id": 1,
-          "label": "Photography",
-          "top_words": [
-            "darkroom",
-            "photography",
-            "walkhappy"
-          ],
-          "count": 110
-        },
-        {
-          "topic_id": 2,
-          "label": "Travel",
-          "top_words": [
-            "travelph",
-            "baguio",
-            "session"
-          ],
-          "count": 110
-        }
-      ]
-    },
-    "25": {
-      "cluster_id": 25,
-      "n_docs": 190,
-      "n_topics": 3,
-      "topics": [
-        {
-          "topic_id": 0,
-          "label": "Strawberry Festival",
-          "top_words": [
-            "strawberry",
-            "panagbenga",
-            "baguio"
-          ],
-          "count": 190
-        },
-        {
-          "topic_id": 1,
-          "label": "Travel Baguio",
-          "top_words": [
-            "baguio",
-            "travel",
-            "adventure"
-          ],
-          "count": 190
-        },
-        {
-          "topic_id": 2,
-          "label": "Foodie Fun",
-          "top_words": [
-            "food",
-            "shortcake",
-            "cheesecake"
-          ],
-          "count": 190
-        }
-      ]
-    },
-    "26": {
-      "cluster_id": 26,
-      "n_docs": 16,
-      "n_topics": 3,
-      "topics": [
-        {
-          "topic_id": 0,
-          "label": "Baguio Food Festival",
-          "top_words": [
-            "pizza",
-            "baguio",
-            "fest",
-            "food",
-            "session"
-          ],
-          "count": 16
-        },
-        {
-          "topic_id": 1,
-          "label": "Pizza Promotion",
-          "top_words": [
-            "pizzahut",
-            "discount",
-            "offer",
-            "limited",
-            "time"
+            "parada"
           ],
           "count": 16
         },
         {
           "topic_id": 2,
-          "label": "Travel and Foodie",
+          "label": "Snapshots Grand Opening",
           "top_words": [
-            "wheninbaguio",
-            "travel",
-            "foodie",
-            "baguio",
-            "visit"
+            "snapshots",
+            "grand opening",
+            "parade"
           ],
           "count": 16
         }
       ]
     },
-    "27": {
-      "cluster_id": 27,
-      "n_docs": 16,
-      "n_topics": 3,
-      "topics": [
-        {
-          "topic_id": 0,
-          "label": "Closing Ceremony",
-          "top_words": [
-            "closing",
-            "ceremony",
-            "bang"
-          ],
-          "count": 16
-        },
-        {
-          "topic_id": 1,
-          "label": "Panagbenga Festival",
-          "top_words": [
-            "panagbenga",
-            "festival",
-            "happy"
-          ],
-          "count": 16
-        },
-        {
-          "topic_id": 2,
-          "label": "End of Event",
-          "top_words": [
-            "ending",
-            "event",
-            "time"
-          ],
-          "count": 16
-        }
-      ]
-    },
-    "28": {
-      "cluster_id": 28,
+    "2023_1": {
+      "cluster_id": "2023_1",
       "n_docs": 15,
       "n_topics": 3,
       "topics": [
         {
           "topic_id": 0,
-          "label": "Marching Band Festival",
+          "label": "Fireworks Display",
           "top_words": [
-            "panagbenga",
-            "festival",
-            "marching"
+            "fireworks",
+            "display",
+            "grand"
           ],
           "count": 15
         },
         {
           "topic_id": 1,
-          "label": "PMA Cadets Band",
+          "label": "Travel Event",
           "top_words": [
-            "pma",
-            "band",
-            "cadets"
+            "tourist",
+            "travel",
+            "event"
           ],
           "count": 15
         },
         {
           "topic_id": 2,
-          "label": "SLU Marching Band",
+          "label": "Nightlife",
           "top_words": [
-            "slu",
-            "band",
-            "marching"
+            "night",
+            "sky",
+            "music"
           ],
           "count": 15
         }
       ]
     },
-    "29": {
-      "cluster_id": 29,
-      "n_docs": 58,
+    "2023_2": {
+      "cluster_id": "2023_2",
+      "n_docs": 422,
       "n_topics": 3,
       "topics": [
         {
           "topic_id": 0,
-          "label": "Baguio City",
+          "label": "Travel Parade",
           "top_words": [
-            "baguio",
-            "burnham",
-            "park"
+            "parade",
+            "float",
+            "bloom",
+            "grand",
+            "flower"
           ],
-          "count": 58
+          "count": 422
         },
         {
           "topic_id": 1,
-          "label": "Burnham Park",
+          "label": "City Life",
           "top_words": [
-            "park",
-            "burnham",
-            "fountain"
+            "city",
+            "life",
+            "day",
+            "wearing",
+            "traditional"
           ],
-          "count": 58
+          "count": 422
         },
         {
           "topic_id": 2,
-          "label": "Mines View Park",
+          "label": "Relaxation",
           "top_words": [
-            "mines",
-            "view",
-            "park"
+            "vacation",
+            "relaxing",
+            "stress",
+            "free",
+            "memorable"
           ],
-          "count": 58
+          "count": 422
         }
       ]
     },
-    "30": {
-      "cluster_id": 30,
+    "2024_0": {
+      "cluster_id": "2024_0",
+      "n_docs": 25,
+      "n_topics": 3,
+      "topics": [
+        {
+          "topic_id": 0,
+          "label": "Fireworks Display",
+          "top_words": [
+            "fireworks",
+            "display",
+            "show"
+          ],
+          "count": 25
+        },
+        {
+          "topic_id": 1,
+          "label": "Festive Spirit",
+          "top_words": [
+            "festive",
+            "spirits",
+            "competition"
+          ],
+          "count": 25
+        },
+        {
+          "topic_id": 2,
+          "label": "Happy Family",
+          "top_words": [
+            "happy",
+            "family",
+            "worthit"
+          ],
+          "count": 25
+        }
+      ]
+    },
+    "2024_1": {
+      "cluster_id": "2024_1",
+      "n_docs": 41,
+      "n_topics": 3,
+      "topics": [
+        {
+          "topic_id": 0,
+          "label": "Foodie Adventures",
+          "top_words": [
+            "baguiofood",
+            "strawberry",
+            "pizza",
+            "bbq",
+            "streetfood"
+          ],
+          "count": 41
+        },
+        {
+          "topic_id": 1,
+          "label": "Travel Experiences",
+          "top_words": [
+            "visit",
+            "travel",
+            "baguio",
+            "mountain",
+            "treasure"
+          ],
+          "count": 41
+        },
+        {
+          "topic_id": 2,
+          "label": "Local Eats",
+          "top_words": [
+            "localbusiness",
+            "supportlocal",
+            "foodie",
+            "stalls",
+            "wagyu"
+          ],
+          "count": 41
+        }
+      ]
+    },
+    "2024_10": {
+      "cluster_id": "2024_10",
+      "n_docs": 17,
+      "n_topics": 3,
+      "topics": [
+        {
+          "topic_id": 0,
+          "label": "Floral Parade",
+          "top_words": [
+            "floats",
+            "flowers",
+            "parade"
+          ],
+          "count": 17
+        },
+        {
+          "topic_id": 1,
+          "label": "Record Breaking",
+          "top_words": [
+            "breaking",
+            "record",
+            "year",
+            "broke"
+          ],
+          "count": 17
+        },
+        {
+          "topic_id": 2,
+          "label": "City Celebration",
+          "top_words": [
+            "city",
+            "celebrate",
+            "culture",
+            "tradition"
+          ],
+          "count": 17
+        }
+      ]
+    },
+    "2024_11": {
+      "cluster_id": "2024_11",
+      "n_docs": 39,
+      "n_topics": 3,
+      "topics": [
+        {
+          "topic_id": 0,
+          "label": "Flower Festival",
+          "top_words": [
+            "flower",
+            "season",
+            "blooms",
+            "kankanaey",
+            "bloom"
+          ],
+          "count": 39
+        },
+        {
+          "topic_id": 1,
+          "label": "Travel Philippines",
+          "top_words": [
+            "philippines",
+            "travel",
+            "festivals",
+            "city",
+            "visit"
+          ],
+          "count": 39
+        },
+        {
+          "topic_id": 2,
+          "label": "Benguet Tourism",
+          "top_words": [
+            "bumisita",
+            "nakisaya",
+            "flower",
+            "tourist",
+            "kankanaey"
+          ],
+          "count": 39
+        }
+      ]
+    },
+    "2024_12": {
+      "cluster_id": "2024_12",
+      "n_docs": 31,
+      "n_topics": 3,
+      "topics": [
+        {
+          "topic_id": 0,
+          "label": "Flowers in Baguio",
+          "top_words": [
+            "baguio",
+            "flowers",
+            "city"
+          ],
+          "count": 31
+        },
+        {
+          "topic_id": 1,
+          "label": "Street Photography",
+          "top_words": [
+            "street",
+            "photography",
+            "philippines"
+          ],
+          "count": 31
+        },
+        {
+          "topic_id": 2,
+          "label": "Local Events",
+          "top_words": [
+            "ceejay",
+            "street",
+            "fairness"
+          ],
+          "count": 31
+        }
+      ]
+    },
+    "2024_13": {
+      "cluster_id": "2024_13",
       "n_docs": 21,
+      "n_topics": 3,
+      "topics": [
+        {
+          "topic_id": 0,
+          "label": "Parade Events",
+          "top_words": [
+            "parade",
+            "float",
+            "grand"
+          ],
+          "count": 21
+        },
+        {
+          "topic_id": 1,
+          "label": "Grand Parade",
+          "top_words": [
+            "grand",
+            "opening",
+            "parade"
+          ],
+          "count": 21
+        },
+        {
+          "topic_id": 2,
+          "label": "Parade Happenings",
+          "top_words": [
+            "happenings",
+            "day",
+            "pictures"
+          ],
+          "count": 21
+        }
+      ]
+    },
+    "2024_14": {
+      "cluster_id": "2024_14",
+      "n_docs": 29,
       "n_topics": 3,
       "topics": [
         {
           "topic_id": 0,
           "label": "Street Dance Parade",
           "top_words": [
-            "street",
             "dance",
-            "parade"
+            "parade",
+            "street",
+            "grand",
+            "baguio"
           ],
-          "count": 21
+          "count": 29
         },
         {
           "topic_id": 1,
-          "label": "Panagbenga Festival",
+          "label": "Cordillera Region",
           "top_words": [
-            "panagbenga",
-            "festival",
-            "baguio"
+            "cordillera",
+            "region",
+            "benguet",
+            "baguiobenguet",
+            "culture"
           ],
-          "count": 21
+          "count": 29
         },
         {
           "topic_id": 2,
-          "label": "Photography Event",
+          "label": "Celebration and Culture",
           "top_words": [
-            "photography",
-            "event",
-            "sigma"
+            "celebration",
+            "cultural",
+            "heritage",
+            "tradition",
+            "innovation"
           ],
-          "count": 21
+          "count": 29
         }
       ]
     },
-    "31": {
-      "cluster_id": 31,
-      "n_docs": 23,
+    "2024_2": {
+      "cluster_id": "2024_2",
+      "n_docs": 10,
+      "n_topics": 3,
+      "topics": [
+        {
+          "topic_id": 0,
+          "label": "Session Bloom",
+          "top_words": [
+            "session",
+            "bloom",
+            "expect"
+          ],
+          "count": 10
+        },
+        {
+          "topic_id": 1,
+          "label": "Nightout",
+          "top_words": [
+            "nightout",
+            "gallivanting",
+            "wakas"
+          ],
+          "count": 10
+        },
+        {
+          "topic_id": 2,
+          "label": "Degrees",
+          "top_words": [
+            "degrees",
+            "bloom",
+            "nakapag"
+          ],
+          "count": 10
+        }
+      ]
+    },
+    "2024_3": {
+      "cluster_id": "2024_3",
+      "n_docs": 14,
+      "n_topics": 3,
+      "topics": [
+        {
+          "topic_id": 0,
+          "label": "Session Road Bloom",
+          "top_words": [
+            "session",
+            "road",
+            "bloom"
+          ],
+          "count": 14
+        },
+        {
+          "topic_id": 1,
+          "label": "Malcom Square",
+          "top_words": [
+            "malcom",
+            "square",
+            "session"
+          ],
+          "count": 14
+        },
+        {
+          "topic_id": 2,
+          "label": "Camping Day",
+          "top_words": [
+            "camping",
+            "day",
+            "forest"
+          ],
+          "count": 14
+        }
+      ]
+    },
+    "2024_4": {
+      "cluster_id": "2024_4",
+      "n_docs": 28,
       "n_topics": 3,
       "topics": [
         {
@@ -1230,2072 +614,1175 @@
             "burnham",
             "park"
           ],
-          "count": 23
+          "count": 28
         },
         {
           "topic_id": 1,
-          "label": "Boating",
+          "label": "Safeguard Soap",
           "top_words": [
-            "boating",
-            "lake",
-            "river"
+            "safeguard",
+            "soap",
+            "skin",
+            "protection"
           ],
-          "count": 23
+          "count": 28
         },
         {
           "topic_id": 2,
-          "label": "Travel",
+          "label": "Outdoor Adventures",
           "top_words": [
-            "travel",
-            "season",
-            "starbucks"
+            "outdoor",
+            "adventures",
+            "road",
+            "camp"
           ],
-          "count": 23
+          "count": 28
         }
       ]
     },
-    "32": {
-      "cluster_id": 32,
-      "n_docs": 64,
+    "2024_5": {
+      "cluster_id": "2024_5",
+      "n_docs": 14,
       "n_topics": 3,
       "topics": [
         {
           "topic_id": 0,
-          "label": "Float Parade",
+          "label": "Baguio Festival",
           "top_words": [
-            "float",
-            "parade",
-            "baguio"
+            "cokestudiopanagbengafestival",
+            "bini",
+            "performance",
+            "fancam",
+            "music"
           ],
-          "count": 64
+          "count": 14
         },
         {
           "topic_id": 1,
-          "label": "Panagbenga Festival",
+          "label": "Music and Entertainment",
           "top_words": [
-            "panagbenga",
-            "festival",
-            "baguio"
+            "music",
+            "zumba",
+            "dance",
+            "Brazilian funk",
+            "hot track"
           ],
-          "count": 64
+          "count": 14
         },
         {
           "topic_id": 2,
-          "label": "Baguio City",
+          "label": "Philippine Culture",
           "top_words": [
-            "baguio",
-            "city",
-            "country"
+            "mabuhay",
+            "kultura",
+            "manlilikhang",
+            "filipino",
+            "Balicasag Island"
           ],
-          "count": 64
+          "count": 14
         }
       ]
     },
-    "33": {
-      "cluster_id": 33,
-      "n_docs": 22,
+    "2024_6": {
+      "cluster_id": "2024_6",
+      "n_docs": 26,
       "n_topics": 3,
       "topics": [
         {
           "topic_id": 0,
-          "label": "Baguio Coffee",
+          "label": "Reels",
           "top_words": [
-            "baguio",
-            "coffee",
-            "kapeumali",
-            "coffeetime",
-            "panagbenga"
+            "reels",
+            "viral",
+            "video",
+            "fbpage",
+            "fyp"
           ],
-          "count": 22
+          "count": 26
         },
         {
           "topic_id": 1,
-          "label": "Travel Baguio",
+          "label": "Friends",
           "top_words": [
-            "travel",
-            "baguio",
-            "adventure",
-            "panagbenga",
-            "thenakedphotographer"
+            "friends",
+            "everyone",
+            "highlights",
+            "followers",
+            "reels"
           ],
-          "count": 22
+          "count": 26
         },
         {
           "topic_id": 2,
-          "label": "Coffee Culture",
+          "label": "Viral",
           "top_words": [
-            "coffee",
-            "culture",
-            "coffeelover",
-            "coffeegram",
-            "cafebytheruins"
-          ],
-          "count": 22
-        }
-      ]
-    },
-    "34": {
-      "cluster_id": 34,
-      "n_docs": 37,
-      "n_topics": 3,
-      "topics": [
-        {
-          "topic_id": 0,
-          "label": "Panagbenga Festival",
-          "top_words": [
-            "panagbenga",
-            "festival",
-            "philippines",
-            "tbt",
-            "senator"
-          ],
-          "count": 37
-        },
-        {
-          "topic_id": 1,
-          "label": "Government News",
-          "top_words": [
-            "government",
-            "news",
-            "cayetano",
-            "senator",
-            "pia"
-          ],
-          "count": 37
-        },
-        {
-          "topic_id": 2,
-          "label": "Social Media Post",
-          "top_words": [
-            "tbt",
-            "panagbenga",
-            "festival",
-            "funny",
+            "viral",
+            "videos",
+            "view",
+            "reels",
             "post"
           ],
-          "count": 37
+          "count": 26
         }
       ]
     },
-    "35": {
-      "cluster_id": 35,
-      "n_docs": 34,
+    "2024_7": {
+      "cluster_id": "2024_7",
+      "n_docs": 18,
       "n_topics": 3,
       "topics": [
         {
           "topic_id": 0,
-          "label": "Flower Festival",
-          "top_words": [
-            "flower",
-            "festival",
-            "floatparade"
-          ],
-          "count": 34
-        },
-        {
-          "topic_id": 1,
-          "label": "Dinosaur",
-          "top_words": [
-            "dinosaur",
-            "jollitown",
-            "parade"
-          ],
-          "count": 34
-        },
-        {
-          "topic_id": 2,
-          "label": "Float Parade",
-          "top_words": [
-            "floatparade",
-            "parade",
-            "festival",
-            "flower",
-            "town"
-          ],
-          "count": 34
-        }
-      ]
-    },
-    "36": {
-      "cluster_id": 36,
-      "n_docs": 58,
-      "n_topics": 3,
-      "topics": [
-        {
-          "topic_id": 0,
-          "label": "Session Bloom",
-          "top_words": [
-            "bloom",
-            "session",
-            "instalike"
-          ],
-          "count": 58
-        },
-        {
-          "topic_id": 1,
-          "label": "Baguio Getaway",
-          "top_words": [
-            "baguio",
-            "getaway",
-            "visit",
-            "university"
-          ],
-          "count": 58
-        },
-        {
-          "topic_id": 2,
-          "label": "Baguio Events",
-          "top_words": [
-            "events",
-            "session",
-            "rd",
-            "baguio"
-          ],
-          "count": 58
-        }
-      ]
-    },
-    "37": {
-      "cluster_id": 37,
-      "n_docs": 58,
-      "n_topics": 3,
-      "topics": [
-        {
-          "topic_id": 0,
-          "label": "Baguio Session",
-          "top_words": [
-            "baguio",
-            "session",
-            "road"
-          ],
-          "count": 58
-        },
-        {
-          "topic_id": 1,
-          "label": "Session Bloom",
-          "top_words": [
-            "bloom",
-            "session",
-            "inbloom"
-          ],
-          "count": 58
-        },
-        {
-          "topic_id": 2,
-          "label": "Session Road",
-          "top_words": [
-            "road",
-            "session",
-            "inbloom"
-          ],
-          "count": 58
-        }
-      ]
-    },
-    "38": {
-      "cluster_id": 38,
-      "n_docs": 25,
-      "n_topics": 3,
-      "topics": [
-        {
-          "topic_id": 0,
-          "label": "Baguio Food",
-          "top_words": [
-            "baguio",
-            "food",
-            "trip"
-          ],
-          "count": 25
-        },
-        {
-          "topic_id": 1,
-          "label": "Yummy Drinks",
-          "top_words": [
-            "smoothie",
-            "yuuuum",
-            "beverage"
-          ],
-          "count": 25
-        },
-        {
-          "topic_id": 2,
-          "label": "Foodie Adventures",
-          "top_words": [
-            "session",
-            "road",
-            "bloom"
-          ],
-          "count": 25
-        }
-      ]
-    },
-    "39": {
-      "cluster_id": 39,
-      "n_docs": 17,
-      "n_topics": 3,
-      "topics": [
-        {
-          "topic_id": 0,
-          "label": "Coke Float",
-          "top_words": [
-            "coke float",
-            "panagbenga",
-            "cocacola"
-          ],
-          "count": 17
-        },
-        {
-          "topic_id": 1,
-          "label": "Baguio City",
-          "top_words": [
-            "baguio city",
-            "december avenue",
-            "kapamilya karavan"
-          ],
-          "count": 17
-        },
-        {
-          "topic_id": 2,
-          "label": "Copyright Infringement",
-          "top_words": [
-            "copyright infringement",
-            "disclaimer",
-            "fair use"
-          ],
-          "count": 17
-        }
-      ]
-    },
-    "40": {
-      "cluster_id": 40,
-      "n_docs": 51,
-      "n_topics": 3,
-      "topics": [
-        {
-          "topic_id": 0,
-          "label": "Music Festival",
-          "top_words": [
-            "elevate",
-            "music",
-            "fest",
-            "house",
-            "party"
-          ],
-          "count": 51
-        },
-        {
-          "topic_id": 1,
-          "label": "Banda Performance",
-          "top_words": [
-            "banda",
-            "perform",
-            "sing",
-            "bosesng",
-            "baguio"
-          ],
-          "count": 51
-        },
-        {
-          "topic_id": 2,
-          "label": "Street Musician",
-          "top_words": [
-            "street",
-            "musician",
-            "panagbenga",
-            "performance",
-            "musician"
-          ],
-          "count": 51
-        }
-      ]
-    },
-    "41": {
-      "cluster_id": 41,
-      "n_docs": 24,
-      "n_topics": 3,
-      "topics": [
-        {
-          "topic_id": 0,
-          "label": "Baguio Festival",
-          "top_words": [
-            "panagbenga",
-            "baguio",
-            "festival"
-          ],
-          "count": 24
-        },
-        {
-          "topic_id": 1,
-          "label": "Kapamilya Karavan",
-          "top_words": [
-            "kapamilya",
-            "karavan",
-            "fpj"
-          ],
-          "count": 24
-        },
-        {
-          "topic_id": 2,
-          "label": "Local Events",
-          "top_words": [
-            "makisaya",
-            "galema",
-            "nagpapicture"
-          ],
-          "count": 24
-        }
-      ]
-    },
-    "42": {
-      "cluster_id": 42,
-      "n_docs": 23,
-      "n_topics": 3,
-      "topics": [
-        {
-          "topic_id": 0,
-          "label": "Baguio City",
-          "top_words": [
-            "baguio",
-            "city",
-            "lateupload"
-          ],
-          "count": 23
-        },
-        {
-          "topic_id": 1,
-          "label": "Panagbenga Festival",
-          "top_words": [
-            "panagbenga",
-            "festival",
-            "baguio"
-          ],
-          "count": 23
-        },
-        {
-          "topic_id": 2,
-          "label": "Family Day",
-          "top_words": [
-            "family",
-            "day",
-            "baguio"
-          ],
-          "count": 23
-        }
-      ]
-    },
-    "43": {
-      "cluster_id": 43,
-      "n_docs": 27,
-      "n_topics": 3,
-      "topics": [
-        {
-          "topic_id": 0,
-          "label": "Colorful Life",
-          "top_words": [
-            "color",
-            "life",
-            "panagbenga",
-            "colors"
-          ],
-          "count": 27
-        },
-        {
-          "topic_id": 1,
-          "label": "Panagbenga Festival",
-          "top_words": [
-            "festive",
-            "ilocano",
-            "colors",
-            "philippines"
-          ],
-          "count": 27
-        },
-        {
-          "topic_id": 2,
-          "label": "Valley Colors",
-          "top_words": [
-            "valley",
-            "colors",
-            "tourists",
-            "contrast"
-          ],
-          "count": 27
-        }
-      ]
-    },
-    "44": {
-      "cluster_id": 44,
-      "n_docs": 33,
-      "n_topics": 3,
-      "topics": [
-        {
-          "topic_id": 0,
-          "label": "Coco Fest",
-          "top_words": [
-            "cocomartin",
-            "panagbenga",
-            "coconut"
-          ],
-          "count": 33
-        },
-        {
-          "topic_id": 1,
-          "label": "Baguio Festival",
-          "top_words": [
-            "baguio",
-            "sessionroad",
-            "cocomartin"
-          ],
-          "count": 33
-        },
-        {
-          "topic_id": 2,
-          "label": "Food Festival",
-          "top_words": [
-            "pinoyfood",
-            "empanada",
-            "coconut"
-          ],
-          "count": 33
-        }
-      ]
-    },
-    "45": {
-      "cluster_id": 45,
-      "n_docs": 40,
-      "n_topics": 3,
-      "topics": [
-        {
-          "topic_id": 0,
-          "label": "Baguio Food",
-          "top_words": [
-            "foodtrip",
-            "lunch",
-            "dinner"
-          ],
-          "count": 40
-        },
-        {
-          "topic_id": 1,
-          "label": "Baguio Fun",
-          "top_words": [
-            "fun",
-            "session",
-            "bloom"
-          ],
-          "count": 40
-        },
-        {
-          "topic_id": 2,
-          "label": "Lunch Date",
-          "top_words": [
-            "lunch",
-            "date",
-            "mamala"
-          ],
-          "count": 40
-        }
-      ]
-    },
-    "46": {
-      "cluster_id": 46,
-      "n_docs": 77,
-      "n_topics": 3,
-      "topics": [
-        {
-          "topic_id": 0,
-          "label": "Food Trip",
-          "top_words": [
-            "food",
-            "trip",
-            "baguio",
-            "session",
-            "roadinbloom"
-          ],
-          "count": 77
-        },
-        {
-          "topic_id": 1,
-          "label": "Burger and Food",
-          "top_words": [
-            "burger",
-            "sausage",
-            "bratwurst",
-            "steak",
-            "lomo"
-          ],
-          "count": 77
-        },
-        {
-          "topic_id": 2,
-          "label": "Baguio City",
-          "top_words": [
-            "baguio",
-            "city",
-            "panagbenga",
-            "session",
-            "roadinbloom"
-          ],
-          "count": 77
-        }
-      ]
-    },
-    "47": {
-      "cluster_id": 47,
-      "n_docs": 17,
-      "n_topics": 3,
-      "topics": [
-        {
-          "topic_id": 0,
-          "label": "Baguio Tourism",
-          "top_words": [
-            "baguio",
-            "tourism",
-            "paraganda"
-          ],
-          "count": 17
-        },
-        {
-          "topic_id": 1,
-          "label": "Bird Watching",
-          "top_words": [
-            "bird",
-            "watching",
-            "parrots",
-            "blue",
-            "fairy"
-          ],
-          "count": 17
-        },
-        {
-          "topic_id": 2,
-          "label": "Panagbenga Festival",
-          "top_words": [
-            "panagbenga",
-            "festival",
-            "flowers",
-            "early",
-            "bird"
-          ],
-          "count": 17
-        }
-      ]
-    },
-    "48": {
-      "cluster_id": 48,
-      "n_docs": 45,
-      "n_topics": 3,
-      "topics": [
-        {
-          "topic_id": 0,
-          "label": "Panagbenga Festival",
-          "top_words": [
-            "panagbenga",
-            "festival",
-            "exp",
-            "sisterbonding"
-          ],
-          "count": 45
-        },
-        {
-          "topic_id": 1,
-          "label": "Squaroid",
-          "top_words": [
-            "squaroid",
-            "robot",
-            "instaframe",
-            "squaredroid"
-          ],
-          "count": 45
-        },
-        {
-          "topic_id": 2,
-          "label": "Celebration",
-          "top_words": [
-            "celebrate",
-            "party",
-            "fun",
-            "joy"
-          ],
-          "count": 45
-        }
-      ]
-    },
-    "49": {
-      "cluster_id": 49,
-      "n_docs": 14,
-      "n_topics": 3,
-      "topics": [
-        {
-          "topic_id": 0,
-          "label": "Panagbenga Flower",
-          "top_words": [
-            "panagbenga",
-            "flower",
-            "seasonal",
-            "gift",
-            "arrangement"
-          ],
-          "count": 14
-        },
-        {
-          "topic_id": 1,
-          "label": "Customer Support",
-          "top_words": [
-            "refund",
-            "help",
-            "agent",
-            "wait",
-            "call"
-          ],
-          "count": 14
-        },
-        {
-          "topic_id": 2,
-          "label": "Order and Payment",
-          "top_words": [
-            "order",
-            "payment",
-            "shipping",
-            "delivery",
-            "invoice"
-          ],
-          "count": 14
-        }
-      ]
-    },
-    "50": {
-      "cluster_id": 50,
-      "n_docs": 24,
-      "n_topics": 3,
-      "topics": [
-        {
-          "topic_id": 0,
-          "label": "Baguio City",
-          "top_words": [
-            "baguio",
-            "city",
-            "panagbenga"
-          ],
-          "count": 24
-        },
-        {
-          "topic_id": 1,
-          "label": "Faith and Prayer",
-          "top_words": [
-            "god",
-            "prayer",
-            "faith",
-            "hope",
-            "spirit"
-          ],
-          "count": 24
-        },
-        {
-          "topic_id": 2,
-          "label": "Christianity",
-          "top_words": [
-            "christian",
-            "bible",
-            "study",
-            "sermon",
-            "evangelist"
-          ],
-          "count": 24
-        }
-      ]
-    },
-    "51": {
-      "cluster_id": 51,
-      "n_docs": 13,
-      "n_topics": 3,
-      "topics": [
-        {
-          "topic_id": 0,
-          "label": "Surfing Festival",
-          "top_words": [
-            "surf",
-            "festival",
-            "ukay",
-            "surfiesta"
-          ],
-          "count": 13
-        },
-        {
-          "topic_id": 1,
-          "label": "Beauty Pageant",
-          "top_words": [
-            "beauty",
-            "pageant",
-            "renaissance",
-            "wagering"
-          ],
-          "count": 13
-        },
-        {
-          "topic_id": 2,
-          "label": "Globe Booth",
-          "top_words": [
-            "globe",
-            "booth",
-            "prizes",
-            "win"
-          ],
-          "count": 13
-        }
-      ]
-    },
-    "52": {
-      "cluster_id": 52,
-      "n_docs": 351,
-      "n_topics": 3,
-      "topics": [
-        {
-          "topic_id": 0,
-          "label": "Baguio Festival",
-          "top_words": [
-            "panagbenga",
-            "festival",
-            "baguio",
-            "koreans",
-            "crowd"
-          ],
-          "count": 351
-        },
-        {
-          "topic_id": 1,
-          "label": "Travel Baguio",
-          "top_words": [
-            "baguio",
-            "city",
-            "tourism",
-            "travel",
-            "vacation"
-          ],
-          "count": 351
-        },
-        {
-          "topic_id": 2,
-          "label": "Festival Fun",
-          "top_words": [
-            "fun",
-            "festival",
-            "streetparade",
-            "kids",
-            "fiesta"
-          ],
-          "count": 351
-        }
-      ]
-    },
-    "53": {
-      "cluster_id": 53,
-      "n_docs": 23,
-      "n_topics": 3,
-      "topics": [
-        {
-          "topic_id": 0,
-          "label": "Baguio Festival",
-          "top_words": [
-            "festival",
-            "parade",
-            "panagbenga"
-          ],
-          "count": 23
-        },
-        {
-          "topic_id": 1,
-          "label": "Philippines",
-          "top_words": [
-            "philippines",
-            "baguio",
-            "city"
-          ],
-          "count": 23
-        },
-        {
-          "topic_id": 2,
-          "label": "Culture",
-          "top_words": [
-            "culture",
-            "filipinos",
-            "tradition"
-          ],
-          "count": 23
-        }
-      ]
-    },
-    "54": {
-      "cluster_id": 54,
-      "n_docs": 38,
-      "n_topics": 3,
-      "topics": [
-        {
-          "topic_id": 0,
-          "label": "Baguio Art Festival",
-          "top_words": [
-            "panagbenga",
-            "art",
-            "baguio",
-            "painting"
-          ],
-          "count": 38
-        },
-        {
-          "topic_id": 1,
-          "label": "Comic Book Club",
-          "top_words": [
-            "comic book",
-            "club",
-            "baguio",
-            "cosplay"
-          ],
-          "count": 38
-        },
-        {
-          "topic_id": 2,
-          "label": "Garden and Nature",
-          "top_words": [
-            "garden",
-            "nature",
-            "baguio",
-            "landscape"
-          ],
-          "count": 38
-        }
-      ]
-    },
-    "55": {
-      "cluster_id": 55,
-      "n_docs": 14,
-      "n_topics": 3,
-      "topics": [
-        {
-          "topic_id": 0,
-          "label": "Float Parade",
-          "top_words": [
-            "floatparade",
-            "parade",
-            "baguio"
-          ],
-          "count": 14
-        },
-        {
-          "topic_id": 1,
-          "label": "Baguiocity",
-          "top_words": [
-            "baguio",
-            "city",
-            "floatparade"
-          ],
-          "count": 14
-        },
-        {
-          "topic_id": 2,
-          "label": "Malbog",
-          "top_words": [
-            "malbog",
-            "jerry",
-            "devera"
-          ],
-          "count": 14
-        }
-      ]
-    },
-    "56": {
-      "cluster_id": 56,
-      "n_docs": 25,
-      "n_topics": 3,
-      "topics": [
-        {
-          "topic_id": 0,
-          "label": "Float Parade",
-          "top_words": [
-            "floatparade",
-            "panagbenga",
-            "celebrate"
-          ],
-          "count": 25
-        },
-        {
-          "topic_id": 1,
-          "label": "Panagbenga Festival",
-          "top_words": [
-            "panagbenga",
-            "festival",
-            "floatparade"
-          ],
-          "count": 25
-        },
-        {
-          "topic_id": 2,
-          "label": "Sponsored Event",
-          "top_words": [
-            "sponsored",
-            "unilever",
-            "philippines"
-          ],
-          "count": 25
-        }
-      ]
-    },
-    "57": {
-      "cluster_id": 57,
-      "n_docs": 27,
-      "n_topics": 3,
-      "topics": [
-        {
-          "topic_id": 0,
-          "label": "Baguio Trip",
-          "top_words": [
-            "baguio",
-            "panagbenga",
-            "ready"
-          ],
-          "count": 27
-        },
-        {
-          "topic_id": 1,
-          "label": "Waiting",
-          "top_words": [
-            "waiting",
-            "almost",
-            "there"
-          ],
-          "count": 27
-        },
-        {
-          "topic_id": 2,
-          "label": "Throwback",
-          "top_words": [
-            "throwback",
-            "friends",
-            "ever"
-          ],
-          "count": 27
-        }
-      ]
-    },
-    "58": {
-      "cluster_id": 58,
-      "n_docs": 31,
-      "n_topics": 3,
-      "topics": [
-        {
-          "topic_id": 0,
-          "label": "Hennessy Team",
-          "top_words": [
-            "hennessy",
-            "team",
-            "coco"
-          ],
-          "count": 31
-        },
-        {
-          "topic_id": 1,
-          "label": "Travel and Victory",
-          "top_words": [
-            "travel",
-            "victory",
-            "party",
-            "blessed"
-          ],
-          "count": 31
-        },
-        {
-          "topic_id": 2,
-          "label": "Dragon Lady Team",
-          "top_words": [
-            "dragon",
-            "lady",
-            "luminary"
-          ],
-          "count": 31
-        }
-      ]
-    },
-    "59": {
-      "cluster_id": 59,
-      "n_docs": 68,
-      "n_topics": 3,
-      "topics": [
-        {
-          "topic_id": 0,
-          "label": "Baguio Festival",
-          "top_words": [
-            "festival",
-            "street",
-            "parade",
-            "grand",
-            "float"
-          ],
-          "count": 68
-        },
-        {
-          "topic_id": 1,
-          "label": "Accommodation",
-          "top_words": [
-            "hotel",
-            "residence",
-            "room",
-            "booking",
-            "price"
-          ],
-          "count": 68
-        },
-        {
-          "topic_id": 2,
-          "label": "Travel",
-          "top_words": [
-            "travel",
-            "tour",
-            "visit",
-            "baguio",
-            "philippines"
-          ],
-          "count": 68
-        }
-      ]
-    },
-    "60": {
-      "cluster_id": 60,
-      "n_docs": 34,
-      "n_topics": 3,
-      "topics": [
-        {
-          "topic_id": 0,
-          "label": "Cold Weather",
-          "top_words": [
-            "cold",
-            "weather",
-            "fog"
-          ],
-          "count": 34
-        },
-        {
-          "topic_id": 1,
-          "label": "Baguio City",
-          "top_words": [
-            "baguio",
-            "city",
-            "panagbenga"
-          ],
-          "count": 34
-        },
-        {
-          "topic_id": 2,
-          "label": "Seasonal Activities",
-          "top_words": [
-            "season",
-            "fun",
-            "outdoor",
-            "parade"
-          ],
-          "count": 34
-        }
-      ]
-    },
-    "61": {
-      "cluster_id": 61,
-      "n_docs": 22,
-      "n_topics": 3,
-      "topics": [
-        {
-          "topic_id": 0,
-          "label": "Baguio City",
-          "top_words": [
-            "baguio",
-            "city",
-            "summer"
-          ],
-          "count": 22
-        },
-        {
-          "topic_id": 1,
-          "label": "Summer Capital",
-          "top_words": [
-            "capital",
-            "summer",
-            "panagbenga"
-          ],
-          "count": 22
-        },
-        {
-          "topic_id": 2,
-          "label": "Travel Baguio",
-          "top_words": [
-            "baguio",
-            "travel",
-            "summer"
-          ],
-          "count": 22
-        }
-      ]
-    },
-    "62": {
-      "cluster_id": 62,
-      "n_docs": 21,
-      "n_topics": 3,
-      "topics": [
-        {
-          "topic_id": 0,
-          "label": "Fashion Baguio",
-          "top_words": [
-            "baguio",
-            "fashion",
-            "ootd"
-          ],
-          "count": 21
-        },
-        {
-          "topic_id": 1,
-          "label": "Igorot Culture",
-          "top_words": [
-            "igorot",
-            "trademark",
-            "culture"
-          ],
-          "count": 21
-        },
-        {
-          "topic_id": 2,
-          "label": "Philippines Fashion",
-          "top_words": [
-            "philippines",
-            "festival",
-            "branding"
-          ],
-          "count": 21
-        }
-      ]
-    },
-    "63": {
-      "cluster_id": 63,
-      "n_docs": 25,
-      "n_topics": 3,
-      "topics": [
-        {
-          "topic_id": 0,
-          "label": "Baguio Festival",
-          "top_words": [
-            "panagbenga",
-            "float parade",
-            "baguio city",
-            "cocomartin"
-          ],
-          "count": 25
-        },
-        {
-          "topic_id": 1,
-          "label": "Pageant",
-          "top_words": [
-            "pageant",
-            "beauty",
-            "kita",
-            "idol"
-          ],
-          "count": 25
-        },
-        {
-          "topic_id": 2,
-          "label": "Travel",
-          "top_words": [
-            "travel",
-            "baguiocity",
-            "philippines",
-            "tourism"
-          ],
-          "count": 25
-        }
-      ]
-    },
-    "64": {
-      "cluster_id": 64,
-      "n_docs": 16,
-      "n_topics": 3,
-      "topics": [
-        {
-          "topic_id": 0,
-          "label": "Flower Festival",
-          "top_words": [
-            "flower",
-            "float",
-            "parade"
-          ],
-          "count": 16
-        },
-        {
-          "topic_id": 1,
-          "label": "Travel",
-          "top_words": [
-            "travel",
-            "vacation",
-            "fun"
-          ],
-          "count": 16
-        },
-        {
-          "topic_id": 2,
-          "label": "Hello Kitty",
-          "top_words": [
-            "hellokitty",
-            "love",
-            "motherhood"
-          ],
-          "count": 16
-        }
-      ]
-    },
-    "65": {
-      "cluster_id": 65,
-      "n_docs": 127,
-      "n_topics": 3,
-      "topics": [
-        {
-          "topic_id": 0,
-          "label": "Baguio Flower Festival",
-          "top_words": [
-            "parade",
-            "float",
-            "flower"
-          ],
-          "count": 127
-        },
-        {
-          "topic_id": 1,
-          "label": "Baguio City Events",
-          "top_words": [
-            "street",
-            "grand",
-            "parade"
-          ],
-          "count": 127
-        },
-        {
-          "topic_id": 2,
-          "label": "Travel in Baguio",
-          "top_words": [
-            "baguio",
-            "travel",
-            "tourism"
-          ],
-          "count": 127
-        }
-      ]
-    },
-    "66": {
-      "cluster_id": 66,
-      "n_docs": 21,
-      "n_topics": 3,
-      "topics": [
-        {
-          "topic_id": 0,
-          "label": "Beauty Pageant",
-          "top_words": [
-            "panagbenga",
-            "floatparade",
-            "ganda",
-            "beauty"
-          ],
-          "count": 21
-        },
-        {
-          "topic_id": 1,
-          "label": "Celebrity Spotted",
-          "top_words": [
-            "celebrity",
-            "spotted",
-            "baguio",
-            "night market"
-          ],
-          "count": 21
-        },
-        {
-          "topic_id": 2,
-          "label": "LGBTQ Beauty",
-          "top_words": [
-            "lgbtq",
-            "danielbee",
-            "renaissance",
-            "wonder"
-          ],
-          "count": 21
-        }
-      ]
-    },
-    "67": {
-      "cluster_id": 67,
-      "n_docs": 14,
-      "n_topics": 3,
-      "topics": [
-        {
-          "topic_id": 0,
-          "label": "Baguio Tourism",
-          "top_words": [
-            "baguio",
-            "travel",
-            "panagbenga",
-            "igersmanila"
-          ],
-          "count": 14
-        },
-        {
-          "topic_id": 1,
-          "label": "Instagram",
-          "top_words": [
-            "instagram",
-            "ig",
-            "insta",
-            "hub",
-            "daily"
-          ],
-          "count": 14
-        },
-        {
-          "topic_id": 2,
-          "label": "Fashion",
-          "top_words": [
-            "fashion",
-            "kidsmodelph",
-            "instafashion",
-            "kiddies",
-            "momofinstagram"
-          ],
-          "count": 14
-        }
-      ]
-    },
-    "68": {
-      "cluster_id": 68,
-      "n_docs": 122,
-      "n_topics": 3,
-      "topics": [
-        {
-          "topic_id": 0,
-          "label": "Baguio City",
-          "top_words": [
-            "baguio",
-            "city",
-            "panagbenga"
-          ],
-          "count": 122
-        },
-        {
-          "topic_id": 1,
-          "label": "Instagram",
-          "top_words": [
-            "igers",
-            "insta",
-            "photo",
-            "oftheday",
-            "pic"
-          ],
-          "count": 122
-        },
-        {
-          "topic_id": 2,
-          "label": "Travel",
-          "top_words": [
-            "travel",
-            "vacation",
-            "pines",
-            "longweekend",
-            "igors"
-          ],
-          "count": 122
-        }
-      ]
-    },
-    "69": {
-      "cluster_id": 69,
-      "n_docs": 14,
-      "n_topics": 3,
-      "topics": [
-        {
-          "topic_id": 0,
-          "label": "Baguio Tourism",
-          "top_words": [
-            "baguio",
-            "travel",
-            "tourism",
-            "wanderlust",
-            "panagbenga"
-          ],
-          "count": 14
-        },
-        {
-          "topic_id": 1,
-          "label": "Travel Photography",
+          "label": "Photography",
           "top_words": [
             "photography",
-            "travel",
-            "insta",
-            "gram",
-            "nature"
+            "camera",
+            "street",
+            "photo"
           ],
-          "count": 14
-        },
-        {
-          "topic_id": 2,
-          "label": "Local Business Support",
-          "top_words": [
-            "local",
-            "business",
-            "support",
-            "community",
-            "grow"
-          ],
-          "count": 14
-        }
-      ]
-    },
-    "70": {
-      "cluster_id": 70,
-      "n_docs": 134,
-      "n_topics": 3,
-      "topics": [
-        {
-          "topic_id": 0,
-          "label": "Baguio City",
-          "top_words": [
-            "baguio",
-            "city",
-            "travel"
-          ],
-          "count": 134
+          "count": 18
         },
         {
           "topic_id": 1,
-          "label": "Weather",
-          "top_words": [
-            "weather",
-            "instaweather",
-            "sky"
-          ],
-          "count": 134
-        },
-        {
-          "topic_id": 2,
           "label": "Travel",
           "top_words": [
             "travel",
-            "adventure",
-            "photography"
+            "benguet",
+            "lake",
+            "drive"
           ],
-          "count": 134
-        }
-      ]
-    },
-    "71": {
-      "cluster_id": 71,
-      "n_docs": 17,
-      "n_topics": 3,
-      "topics": [
-        {
-          "topic_id": 0,
-          "label": "Baguio Festival",
-          "top_words": [
-            "parade",
-            "festival",
-            "panagbenga"
-          ],
-          "count": 17
-        },
-        {
-          "topic_id": 1,
-          "label": "Grand Opening Parade",
-          "top_words": [
-            "grand opening",
-            "parade",
-            "baguio"
-          ],
-          "count": 17
+          "count": 18
         },
         {
           "topic_id": 2,
-          "label": "Opening Parade",
+          "label": "Art",
           "top_words": [
-            "opening parade",
-            "parade",
-            "baguio"
+            "artwork",
+            "painting",
+            "mural",
+            "photographer"
           ],
-          "count": 17
+          "count": 18
         }
       ]
     },
-    "72": {
-      "cluster_id": 72,
-      "n_docs": 34,
+    "2024_8": {
+      "cluster_id": "2024_8",
+      "n_docs": 147,
       "n_topics": 3,
       "topics": [
         {
           "topic_id": 0,
-          "label": "Baguio Flower Festival",
+          "label": "Love and Relationships",
           "top_words": [
-            "parade",
-            "street dance",
-            "baguiocity"
+            "love",
+            "instalove",
+            "nohate"
           ],
-          "count": 34
+          "count": 147
         },
         {
           "topic_id": 1,
-          "label": "Grand Street Dance Parade",
+          "label": "Fashion and Beauty",
           "top_words": [
-            "grand parade",
-            "street dance",
-            "baguio"
+            "penshoppe",
+            "polotop",
+            "blond",
+            "curlyhair"
           ],
-          "count": 34
+          "count": 147
+        },
+        {
+          "topic_id": 2,
+          "label": "Travel and Adventure",
+          "top_words": [
+            "parin",
+            "traveldiaries",
+            "gala",
+            "weekendvibes"
+          ],
+          "count": 147
+        }
+      ]
+    },
+    "2024_9": {
+      "cluster_id": "2024_9",
+      "n_docs": 75,
+      "n_topics": 3,
+      "topics": [
+        {
+          "topic_id": 0,
+          "label": "Family Vacation",
+          "top_words": [
+            "family",
+            "trip",
+            "weekend",
+            "travel",
+            "fun"
+          ],
+          "count": 75
+        },
+        {
+          "topic_id": 1,
+          "label": "City Life",
+          "top_words": [
+            "city",
+            "views",
+            "pines",
+            "unwind",
+            "life"
+          ],
+          "count": 75
+        },
+        {
+          "topic_id": 2,
+          "label": "Travel Adventure",
+          "top_words": [
+            "adventure",
+            "travel",
+            "explore",
+            "new",
+            "places"
+          ],
+          "count": 75
+        }
+      ]
+    },
+    "2025_0": {
+      "cluster_id": "2025_0",
+      "n_docs": 26,
+      "n_topics": 3,
+      "topics": [
+        {
+          "topic_id": 0,
+          "label": "Fireworks Display",
+          "top_words": [
+            "fireworks",
+            "display",
+            "grand",
+            "aerial",
+            "celebration"
+          ],
+          "count": 26
+        },
+        {
+          "topic_id": 1,
+          "label": "Closing Ceremony",
+          "top_words": [
+            "closing",
+            "ceremony",
+            "fireworks",
+            "display",
+            "event"
+          ],
+          "count": 26
+        },
+        {
+          "topic_id": 2,
+          "label": "Next Year Celebration",
+          "top_words": [
+            "next",
+            "year",
+            "celebrate",
+            "fireworks",
+            "display"
+          ],
+          "count": 26
+        }
+      ]
+    },
+    "2025_1": {
+      "cluster_id": "2025_1",
+      "n_docs": 29,
+      "n_topics": 3,
+      "topics": [
+        {
+          "topic_id": 0,
+          "label": "Camera Technology",
+          "top_words": [
+            "camera",
+            "specs",
+            "phone"
+          ],
+          "count": 29
+        },
+        {
+          "topic_id": 1,
+          "label": "Viral Challenges",
+          "top_words": [
+            "challenge",
+            "reels",
+            "viral"
+          ],
+          "count": 29
         },
         {
           "topic_id": 2,
           "label": "Cordillera Region",
           "top_words": [
             "cordillera",
-            "region",
-            "philippines"
+            "luzon",
+            "everydayphilippines"
           ],
-          "count": 34
+          "count": 29
         }
       ]
     },
-    "73": {
-      "cluster_id": 73,
-      "n_docs": 44,
+    "2025_10": {
+      "cluster_id": "2025_10",
+      "n_docs": 13,
       "n_topics": 3,
       "topics": [
         {
           "topic_id": 0,
-          "label": "Baguio Festival",
+          "label": "Grand Street Dance Parade",
           "top_words": [
             "parade",
-            "float",
-            "flower",
-            "festival",
+            "street",
+            "dance",
+            "grand",
+            "city"
+          ],
+          "count": 13
+        },
+        {
+          "topic_id": 1,
+          "label": "Cultural Festival",
+          "top_words": [
+            "culture",
+            "vibes",
+            "tradition",
+            "dancers",
+            "performance"
+          ],
+          "count": 13
+        },
+        {
+          "topic_id": 2,
+          "label": "Event Coverage",
+          "top_words": [
+            "coverage",
+            "report",
+            "parade",
+            "event",
+            "news"
+          ],
+          "count": 13
+        }
+      ]
+    },
+    "2025_11": {
+      "cluster_id": "2025_11",
+      "n_docs": 39,
+      "n_topics": 3,
+      "topics": [
+        {
+          "topic_id": 0,
+          "label": "Travel Baguios",
+          "top_words": [
+            "baguio",
+            "palawan",
+            "escapade"
+          ],
+          "count": 39
+        },
+        {
+          "topic_id": 1,
+          "label": "Positive Vibes",
+          "top_words": [
+            "happy",
+            "blessed",
+            "grateful"
+          ],
+          "count": 39
+        },
+        {
+          "topic_id": 2,
+          "label": "Friendship Fun",
+          "top_words": [
+            "friendship",
+            "cheerstolife",
+            "smiles"
+          ],
+          "count": 39
+        }
+      ]
+    },
+    "2025_12": {
+      "cluster_id": "2025_12",
+      "n_docs": 104,
+      "n_topics": 3,
+      "topics": [
+        {
+          "topic_id": 0,
+          "label": "Igorot Culture",
+          "top_words": [
+            "igorot",
+            "proud",
+            "islay"
+          ],
+          "count": 104
+        },
+        {
+          "topic_id": 1,
+          "label": "Food Festival",
+          "top_words": [
+            "shawarma",
+            "parade",
+            "surph"
+          ],
+          "count": 104
+        },
+        {
+          "topic_id": 2,
+          "label": "Traveling",
+          "top_words": [
+            "session",
+            "road",
+            "single"
+          ],
+          "count": 104
+        }
+      ]
+    },
+    "2025_13": {
+      "cluster_id": "2025_13",
+      "n_docs": 19,
+      "n_topics": 3,
+      "topics": [
+        {
+          "topic_id": 0,
+          "label": "Grand Parade",
+          "top_words": [
+            "opening",
+            "parade",
+            "grand",
+            "fun",
             "baguio"
           ],
-          "count": 44
+          "count": 19
         },
         {
           "topic_id": 1,
-          "label": "Travel Philippines",
+          "label": "Ifugao Igort",
+          "top_words": [
+            "ifugao",
+            "igot",
+            "highlights",
+            "parade",
+            "culture"
+          ],
+          "count": 19
+        },
+        {
+          "topic_id": 2,
+          "label": "Pangbenga Parade",
+          "top_words": [
+            "pangbenga",
+            "parade",
+            "fun",
+            "baguio",
+            "tourism"
+          ],
+          "count": 19
+        }
+      ]
+    },
+    "2025_14": {
+      "cluster_id": "2025_14",
+      "n_docs": 28,
+      "n_topics": 3,
+      "topics": [
+        {
+          "topic_id": 0,
+          "label": "City Blooming Parade",
+          "top_words": [
+            "parade",
+            "floats",
+            "flower",
+            "city",
+            "baguio"
+          ],
+          "count": 28
+        },
+        {
+          "topic_id": 1,
+          "label": "Narvacan Festival",
+          "top_words": [
+            "festival",
+            "narcacan",
+            "parade",
+            "grand",
+            "float"
+          ],
+          "count": 28
+        },
+        {
+          "topic_id": 2,
+          "label": "Tourism and Culture",
+          "top_words": [
+            "tourism",
+            "culture",
+            "travel",
+            "arts",
+            "photography"
+          ],
+          "count": 28
+        }
+      ]
+    },
+    "2025_15": {
+      "cluster_id": "2025_15",
+      "n_docs": 22,
+      "n_topics": 3,
+      "topics": [
+        {
+          "topic_id": 0,
+          "label": "Flowers of Baguio",
+          "top_words": [
+            "baguio",
+            "flowers",
+            "bloom"
+          ],
+          "count": 22
+        },
+        {
+          "topic_id": 1,
+          "label": "Fashion and Beauty",
+          "top_words": [
+            "makeup",
+            "hair",
+            "styling"
+          ],
+          "count": 22
+        },
+        {
+          "topic_id": 2,
+          "label": "Nature and Poetry",
+          "top_words": [
+            "nature",
+            "poetry",
+            "floral"
+          ],
+          "count": 22
+        }
+      ]
+    },
+    "2025_16": {
+      "cluster_id": "2025_16",
+      "n_docs": 18,
+      "n_topics": 3,
+      "topics": [
+        {
+          "topic_id": 0,
+          "label": "City Life",
+          "top_words": [
+            "city",
+            "street",
+            "dance",
+            "parade"
+          ],
+          "count": 18
+        },
+        {
+          "topic_id": 1,
+          "label": "Flower Festival",
+          "top_words": [
+            "flower",
+            "float",
+            "blossom",
+            "parade",
+            "celebrate"
+          ],
+          "count": 18
+        },
+        {
+          "topic_id": 2,
+          "label": "Cordillera Culture",
+          "top_words": [
+            "cordillera",
+            "culture",
+            "tradition",
+            "heritage",
+            "dance"
+          ],
+          "count": 18
+        }
+      ]
+    },
+    "2025_17": {
+      "cluster_id": "2025_17",
+      "n_docs": 10,
+      "n_topics": 3,
+      "topics": [
+        {
+          "topic_id": 0,
+          "label": "Kankanaey Festival",
+          "top_words": [
+            "blossoms",
+            "season",
+            "celebrate",
+            "kankaney",
+            "culture"
+          ],
+          "count": 10
+        },
+        {
+          "topic_id": 1,
+          "label": "Blooming Season",
+          "top_words": [
+            "blooming",
+            "february",
+            "parade",
+            "street",
+            "dance"
+          ],
+          "count": 10
+        },
+        {
+          "topic_id": 2,
+          "label": "Cordillera Celebration",
+          "top_words": [
+            "cordilleran",
+            "people",
+            "recovery",
+            "earthquake",
+            "resilience"
+          ],
+          "count": 10
+        }
+      ]
+    },
+    "2025_2": {
+      "cluster_id": "2025_2",
+      "n_docs": 16,
+      "n_topics": 3,
+      "topics": [
+        {
+          "topic_id": 0,
+          "label": "Coke Studio",
+          "top_words": [
+            "coke",
+            "studio",
+            "concert",
+            "decemberavenue",
+            "music"
+          ],
+          "count": 16
+        },
+        {
+          "topic_id": 1,
+          "label": "Baguio Events",
+          "top_words": [
+            "baguio",
+            "events",
+            "wedding",
+            "emcee",
+            "pangasinan"
+          ],
+          "count": 16
+        },
+        {
+          "topic_id": 2,
+          "label": "Food and Restaurant",
+          "top_words": [
+            "foodie",
+            "restaurant",
+            "samosa",
+            "panipuri",
+            "biryanilovers"
+          ],
+          "count": 16
+        }
+      ]
+    },
+    "2025_3": {
+      "cluster_id": "2025_3",
+      "n_docs": 32,
+      "n_topics": 3,
+      "topics": [
+        {
+          "topic_id": 0,
+          "label": "Food Review",
+          "top_words": [
+            "food",
+            "review",
+            "pizza",
+            "coffee",
+            "restaurant"
+          ],
+          "count": 32
+        },
+        {
+          "topic_id": 1,
+          "label": "Baguio Trip",
+          "top_words": [
+            "baguio",
+            "trip",
+            "foodie",
+            "travel",
+            "adventure"
+          ],
+          "count": 32
+        },
+        {
+          "topic_id": 2,
+          "label": "Pizza Love",
+          "top_words": [
+            "pizzalove",
+            "pizza",
+            "hut",
+            "tropical",
+            "bloompizza"
+          ],
+          "count": 32
+        }
+      ]
+    },
+    "2025_4": {
+      "cluster_id": "2025_4",
+      "n_docs": 55,
+      "n_topics": 3,
+      "topics": [
+        {
+          "topic_id": 0,
+          "label": "City Guide",
+          "top_words": [
+            "city",
+            "road",
+            "sights"
+          ],
+          "count": 55
+        },
+        {
+          "topic_id": 1,
+          "label": "Travel",
           "top_words": [
             "travel",
+            "visit",
+            "explore"
+          ],
+          "count": 55
+        },
+        {
+          "topic_id": 2,
+          "label": "Baguio",
+          "top_words": [
+            "baguio",
+            "city",
+            "scenery"
+          ],
+          "count": 55
+        }
+      ]
+    },
+    "2025_5": {
+      "cluster_id": "2025_5",
+      "n_docs": 17,
+      "n_topics": 3,
+      "topics": [
+        {
+          "topic_id": 0,
+          "label": "Igorot Dance Culture",
+          "top_words": [
+            "igorot",
+            "dance",
+            "culture"
+          ],
+          "count": 17
+        },
+        {
+          "topic_id": 1,
+          "label": "Street Dance Festival",
+          "top_words": [
+            "street",
+            "dance",
+            "festival"
+          ],
+          "count": 17
+        },
+        {
+          "topic_id": 2,
+          "label": "Philippine Cultural Events",
+          "top_words": [
             "philippines",
-            "wanderlust",
-            "pinoy",
-            "igorsph"
+            "culture",
+            "events"
           ],
-          "count": 44
-        },
-        {
-          "topic_id": 2,
-          "label": "Summer in Baguio",
-          "top_words": [
-            "summer",
-            "heat",
-            "cityofpines",
-            "capital",
-            "lakbaypinas"
-          ],
-          "count": 44
+          "count": 17
         }
       ]
     },
-    "74": {
-      "cluster_id": 74,
-      "n_docs": 27,
+    "2025_6": {
+      "cluster_id": "2025_6",
+      "n_docs": 16,
       "n_topics": 3,
       "topics": [
         {
           "topic_id": 0,
-          "label": "Landscape Design",
+          "label": "Music Festival",
           "top_words": [
-            "panagbenga",
-            "landscape",
-            "design"
+            "gmusicfest",
+            "globepanagbenga",
+            "concert",
+            "performance",
+            "beats"
           ],
-          "count": 27
+          "count": 16
         },
         {
           "topic_id": 1,
-          "label": "Landscaping",
+          "label": "Street Dance",
           "top_words": [
-            "landscaping",
-            "baguiocity",
-            "panagbenga"
-          ],
-          "count": 27
-        },
-        {
-          "topic_id": 2,
-          "label": "Baguio City",
-          "top_words": [
-            "baguio",
-            "city",
-            "panagbenga"
-          ],
-          "count": 27
-        }
-      ]
-    },
-    "75": {
-      "cluster_id": 75,
-      "n_docs": 52,
-      "n_topics": 3,
-      "topics": [
-        {
-          "topic_id": 0,
-          "label": "Baguio Festival",
-          "top_words": [
-            "panagbenga",
-            "baguio2023",
-            "kapamilyakaravan",
-            "maraming salamat",
-            "regrann"
-          ],
-          "count": 52
-        },
-        {
-          "topic_id": 1,
-          "label": "Travel Baguio",
-          "top_words": [
-            "baguio",
-            "itmorefuninbaguio",
-            "session road",
-            "tadhana travels",
-            "ootd vsco"
-          ],
-          "count": 52
-        },
-        {
-          "topic_id": 2,
-          "label": "Karavan Festival",
-          "top_words": [
-            "karavan",
-            "panagbenga2023",
-            "kapamilyakaravan",
-            "maraming salamat",
-            "regrann"
-          ],
-          "count": 52
-        }
-      ]
-    },
-    "76": {
-      "cluster_id": 76,
-      "n_docs": 14,
-      "n_topics": 3,
-      "topics": [
-        {
-          "topic_id": 0,
-          "label": "Baguio City",
-          "top_words": [
-            "baguio",
-            "city",
-            "feels"
-          ],
-          "count": 14
-        },
-        {
-          "topic_id": 1,
-          "label": "Sleep and Health",
-          "top_words": [
-            "sleep",
-            "exhausted",
-            "dehydrated"
-          ],
-          "count": 14
-        },
-        {
-          "topic_id": 2,
-          "label": "Repost and Greetings",
-          "top_words": [
-            "repost",
-            "good morning",
-            "ganda mo"
-          ],
-          "count": 14
-        }
-      ]
-    },
-    "77": {
-      "cluster_id": 77,
-      "n_docs": 40,
-      "n_topics": 3,
-      "topics": [
-        {
-          "topic_id": 0,
-          "label": "Panagbenga Festival",
-          "top_words": [
+            "panagbengakaravan",
+            "streetdance",
+            "festivalph",
             "parade",
-            "baguio",
-            "panagbenga"
+            "colorful"
           ],
-          "count": 40
-        },
-        {
-          "topic_id": 1,
-          "label": "Waiting for Parade",
-          "top_words": [
-            "waiting",
-            "parade",
-            "lameg"
-          ],
-          "count": 40
+          "count": 16
         },
         {
           "topic_id": 2,
-          "label": "Parade Events",
+          "label": "Reggae Set",
           "top_words": [
-            "float",
-            "grand",
-            "street"
+            "reggeasetgo",
+            "lintik",
+            "talagangyan",
+            "yoyoentertainment",
+            "sinalang"
           ],
-          "count": 40
+          "count": 16
         }
       ]
     },
-    "78": {
-      "cluster_id": 78,
-      "n_docs": 46,
+    "2025_7": {
+      "cluster_id": "2025_7",
+      "n_docs": 12,
       "n_topics": 3,
       "topics": [
         {
           "topic_id": 0,
-          "label": "Baguio City",
+          "label": "Session Road Bloom",
           "top_words": [
-            "baguio",
-            "city",
-            "panagbenga"
+            "session",
+            "road",
+            "bloom"
           ],
-          "count": 46
+          "count": 12
         },
         {
           "topic_id": 1,
-          "label": "Good Morning",
+          "label": "Shopping",
           "top_words": [
-            "good morning",
-            "morning",
-            "rise shine"
+            "shopee",
+            "sapatos",
+            "ubos",
+            "pera",
+            "nguya"
           ],
-          "count": 46
+          "count": 12
         },
         {
           "topic_id": 2,
-          "label": "Nature",
+          "label": "Event",
           "top_words": [
-            "sunrise",
-            "sunday",
-            "refreshing"
+            "opening",
+            "session",
+            "flower"
           ],
-          "count": 46
+          "count": 12
         }
       ]
     },
-    "79": {
-      "cluster_id": 79,
-      "n_docs": 39,
+    "2025_8": {
+      "cluster_id": "2025_8",
+      "n_docs": 10,
+      "n_topics": 3,
+      "topics": [
+        {
+          "topic_id": 0,
+          "label": "City Parks",
+          "top_words": [
+            "city",
+            "pines",
+            "park"
+          ],
+          "count": 10
+        },
+        {
+          "topic_id": 1,
+          "label": "Weather Forecast",
+          "top_words": [
+            "weather",
+            "clear",
+            "blue",
+            "cold",
+            "foggy"
+          ],
+          "count": 10
+        },
+        {
+          "topic_id": 2,
+          "label": "Shopping Festival",
+          "top_words": [
+            "festival",
+            "wooden",
+            "pieces",
+            "style",
+            "home"
+          ],
+          "count": 10
+        }
+      ]
+    },
+    "2025_9": {
+      "cluster_id": "2025_9",
+      "n_docs": 25,
       "n_topics": 3,
       "topics": [
         {
           "topic_id": 0,
           "label": "Street Dance",
           "top_words": [
-            "street dance",
+            "street",
             "dance",
-            "competition",
-            "model",
-            " Igorot"
+            "parade"
           ],
-          "count": 39
+          "count": 25
+        },
+        {
+          "topic_id": 1,
+          "label": "Travel",
+          "top_words": [
+            "travel",
+            "dancing",
+            "happenings"
+          ],
+          "count": 25
+        },
+        {
+          "topic_id": 2,
+          "label": "Sigma",
+          "top_words": [
+            "pov",
+            "sigma",
+            "creditstotherightfulowner"
+          ],
+          "count": 25
+        }
+      ]
+    },
+    "2026_0": {
+      "cluster_id": "2026_0",
+      "n_docs": 17,
+      "n_topics": 3,
+      "topics": [
+        {
+          "topic_id": 0,
+          "label": "Dance Recital",
+          "top_words": [
+            "recital",
+            "dance",
+            "axis",
+            "studio",
+            "solstice"
+          ],
+          "count": 17
+        },
+        {
+          "topic_id": 1,
+          "label": "Cole Productions",
+          "top_words": [
+            "coleproductions",
+            "craig",
+            "cole",
+            "productions",
+            "bts"
+          ],
+          "count": 17
+        },
+        {
+          "topic_id": 2,
+          "label": "Solstice Event",
+          "top_words": [
+            "solstice",
+            "event",
+            "photoshoot",
+            "axis",
+            "dance"
+          ],
+          "count": 17
+        }
+      ]
+    },
+    "2026_1": {
+      "cluster_id": "2026_1",
+      "n_docs": 14,
+      "n_topics": 3,
+      "topics": [
+        {
+          "topic_id": 0,
+          "label": "Coke Studio",
+          "top_words": [
+            "cokestudio",
+            "reggaesetgo",
+            "dionela",
+            "ingrid",
+            "melvin"
+          ],
+          "count": 14
+        },
+        {
+          "topic_id": 1,
+          "label": "Float Parade",
+          "top_words": [
+            "float parade",
+            "touristattraction",
+            "bioderm",
+            "floral",
+            "viralphotochallenge"
+          ],
+          "count": 14
+        },
+        {
+          "topic_id": 2,
+          "label": "Baguio Music Scene",
+          "top_words": [
+            "baguio",
+            "reggae",
+            "opm",
+            "concert",
+            "music"
+          ],
+          "count": 14
+        }
+      ]
+    },
+    "2026_10": {
+      "cluster_id": "2026_10",
+      "n_docs": 26,
+      "n_topics": 3,
+      "topics": [
+        {
+          "topic_id": 0,
+          "label": "Session Road Bloom",
+          "top_words": [
+            "session",
+            "road",
+            "bloom"
+          ],
+          "count": 26
         },
         {
           "topic_id": 1,
           "label": "Baguio",
           "top_words": [
             "baguio",
-            "street dance",
-            "igorot",
-            "dance",
-            "panagbenga"
+            "wheretoeatin",
+            "inihaw",
+            "sisig"
           ],
-          "count": 39
+          "count": 26
         },
         {
           "topic_id": 2,
-          "label": "Event",
+          "label": "Session Bloom",
           "top_words": [
-            "event",
-            "presentation",
-            "capture",
-            "competition",
-            "waiting"
+            "session",
+            "bloom",
+            "upper",
+            "padayon"
           ],
-          "count": 39
+          "count": 26
         }
       ]
     },
-    "80": {
-      "cluster_id": 80,
-      "n_docs": 48,
+    "2026_11": {
+      "cluster_id": "2026_11",
+      "n_docs": 35,
       "n_topics": 3,
       "topics": [
         {
           "topic_id": 0,
-          "label": "Baguio Flower Festival",
+          "label": "Food Trip",
           "top_words": [
-            "flower",
-            "festival",
-            "baguio"
+            "food trip",
+            "walking tacos",
+            "nachos",
+            "chocolate",
+            "lechon"
           ],
-          "count": 48
+          "count": 35
         },
         {
           "topic_id": 1,
-          "label": "Travel Philippines",
+          "label": "Travel",
           "top_words": [
-            "travel",
+            "baguio",
+            "session road",
+            "bloom",
             "philippines",
-            "wanderlust"
+            "travel"
           ],
-          "count": 48
+          "count": 35
         },
         {
           "topic_id": 2,
-          "label": "Nature Photography",
+          "label": "Shopping",
           "top_words": [
-            "nature",
-            "photography",
-            "orchid"
+            "gcash",
+            "mallows",
+            "street food",
+            "local shops",
+            "buying"
           ],
-          "count": 48
+          "count": 35
         }
       ]
     },
-    "81": {
-      "cluster_id": 81,
-      "n_docs": 31,
+    "2026_12": {
+      "cluster_id": "2026_12",
+      "n_docs": 24,
       "n_topics": 3,
       "topics": [
         {
           "topic_id": 0,
-          "label": "Baguio Festival",
+          "label": "City Tourism",
           "top_words": [
-            "baguio",
-            "festival",
-            "street dance",
-            "parade",
-            "panagbenga"
-          ],
-          "count": 31
-        },
-        {
-          "topic_id": 1,
-          "label": "Dance Competition",
-          "top_words": [
-            "dance",
-            "competition",
-            "festival",
-            "cultural",
-            "performance"
-          ],
-          "count": 31
-        },
-        {
-          "topic_id": 2,
-          "label": "Cultural Festival",
-          "top_words": [
-            "culture",
-            "festivals",
-            "dances",
-            "kalilangan",
-            "nhs"
-          ],
-          "count": 31
-        }
-      ]
-    },
-    "82": {
-      "cluster_id": 82,
-      "n_docs": 42,
-      "n_topics": 3,
-      "topics": [
-        {
-          "topic_id": 0,
-          "label": "Street Dance Parade",
-          "top_words": [
-            "parade",
-            "street dance",
-            "grand"
-          ],
-          "count": 42
-        },
-        {
-          "topic_id": 1,
-          "label": "Baguio City",
-          "top_words": [
-            "baguio",
             "city",
-            "panagbenga"
+            "tourism",
+            "visit"
           ],
-          "count": 42
-        },
-        {
-          "topic_id": 2,
-          "label": "Philippines",
-          "top_words": [
-            "philippines",
-            "country",
-            "festivals"
-          ],
-          "count": 42
-        }
-      ]
-    },
-    "83": {
-      "cluster_id": 83,
-      "n_docs": 25,
-      "n_topics": 3,
-      "topics": [
-        {
-          "topic_id": 0,
-          "label": "Baguio Memories",
-          "top_words": [
-            "baguio",
-            "memories",
-            "flashback",
-            "panagbenga"
-          ],
-          "count": 25
+          "count": 24
         },
         {
           "topic_id": 1,
-          "label": "Travel Experiences",
+          "label": "Food and Drink",
           "top_words": [
-            "travel",
-            "country",
-            "love",
-            "friendship"
+            "shawarma",
+            "restaurant",
+            "cathedral",
+            "cafe"
           ],
-          "count": 25
+          "count": 24
         },
         {
           "topic_id": 2,
-          "label": "Personal Reflections",
+          "label": "Igorot Culture",
           "top_words": [
-            "legacy",
-            "childhood",
-            "rebirth"
+            "igorot",
+            "garden",
+            "cathedral",
+            "tradition"
           ],
-          "count": 25
+          "count": 24
         }
       ]
     },
-    "84": {
-      "cluster_id": 84,
-      "n_docs": 39,
+    "2026_13": {
+      "cluster_id": "2026_13",
+      "n_docs": 68,
       "n_topics": 3,
       "topics": [
         {
@@ -3306,497 +1793,316 @@
             "parade",
             "grand"
           ],
-          "count": 39
+          "count": 68
         },
         {
           "topic_id": 1,
-          "label": "Baguio Festival",
+          "label": "Parades Session",
           "top_words": [
-            "baguio",
-            "festival",
-            "panagbenga"
-          ],
-          "count": 39
-        },
-        {
-          "topic_id": 2,
-          "label": "Rodeo Event",
-          "top_words": [
-            "rodeo",
-            "horses",
-            "riding"
-          ],
-          "count": 39
-        }
-      ]
-    },
-    "85": {
-      "cluster_id": 85,
-      "n_docs": 29,
-      "n_topics": 3,
-      "topics": [
-        {
-          "topic_id": 0,
-          "label": "Float Parade",
-          "top_words": [
-            "float",
             "parade",
-            "grand",
-            "panagbenga"
-          ],
-          "count": 29
-        },
-        {
-          "topic_id": 1,
-          "label": "Baguio Festival",
-          "top_words": [
-            "baguio",
-            "festival",
-            "travel",
-            "kemanisole",
-            "violadventures"
-          ],
-          "count": 29
-        },
-        {
-          "topic_id": 2,
-          "label": "Local Events",
-          "top_words": [
-            "local",
-            "event",
-            "maraming",
-            "salamat",
-            "marisracal"
-          ],
-          "count": 29
-        }
-      ]
-    },
-    "86": {
-      "cluster_id": 86,
-      "n_docs": 26,
-      "n_topics": 3,
-      "topics": [
-        {
-          "topic_id": 0,
-          "label": "Baguio Flower Festival",
-          "top_words": [
-            "baguio",
-            "flower",
-            "festival",
-            "parade",
-            "color"
-          ],
-          "count": 26
-        },
-        {
-          "topic_id": 1,
-          "label": "Culture Heritage",
-          "top_words": [
-            "culture",
-            "heritage",
-            "tradition",
-            "history",
-            "philippines"
-          ],
-          "count": 26
-        },
-        {
-          "topic_id": 2,
-          "label": "City Life",
-          "top_words": [
-            "city",
-            "life",
-            "street",
-            "dancing",
-            "music"
-          ],
-          "count": 26
-        }
-      ]
-    },
-    "87": {
-      "cluster_id": 87,
-      "n_docs": 31,
-      "n_topics": 3,
-      "topics": [
-        {
-          "topic_id": 0,
-          "label": "Baguio Festival",
-          "top_words": [
-            "flower",
-            "festival",
-            "baguio",
-            "season",
-            "parade"
-          ],
-          "count": 31
-        },
-        {
-          "topic_id": 1,
-          "label": "Cordillera Culture",
-          "top_words": [
-            "cordillera",
-            "culture",
-            "heritage",
-            "people",
-            "traditions"
-          ],
-          "count": 31
-        },
-        {
-          "topic_id": 2,
-          "label": "Philippines Tourism",
-          "top_words": [
-            "philippines",
-            "tourism",
-            "travel",
-            "adventure",
-            "nature"
-          ],
-          "count": 31
-        }
-      ]
-    },
-    "88": {
-      "cluster_id": 88,
-      "n_docs": 20,
-      "n_topics": 3,
-      "topics": [
-        {
-          "topic_id": 0,
-          "label": "Baguio City",
-          "top_words": [
-            "baguio",
-            "city",
-            "panagbenga"
-          ],
-          "count": 20
-        },
-        {
-          "topic_id": 1,
-          "label": "Travel",
-          "top_words": [
-            "travel",
-            "wanderlust",
-            "adventure"
-          ],
-          "count": 20
-        },
-        {
-          "topic_id": 2,
-          "label": "Philippines",
-          "top_words": [
-            "philippines",
-            "ig",
-            "manila"
-          ],
-          "count": 20
-        }
-      ]
-    },
-    "89": {
-      "cluster_id": 89,
-      "n_docs": 40,
-      "n_topics": 3,
-      "topics": [
-        {
-          "topic_id": 0,
-          "label": "Baguio Nightlife",
-          "top_words": [
-            "night",
-            "baguio",
-            "fountain"
-          ],
-          "count": 40
-        },
-        {
-          "topic_id": 1,
-          "label": "Sunset Baguio",
-          "top_words": [
-            "sunset",
-            "baguio",
-            "clouds"
-          ],
-          "count": 40
-        },
-        {
-          "topic_id": 2,
-          "label": "Nightlife Fun",
-          "top_words": [
-            "fun",
-            "night",
-            "gimik"
-          ],
-          "count": 40
-        }
-      ]
-    },
-    "90": {
-      "cluster_id": 90,
-      "n_docs": 15,
-      "n_topics": 3,
-      "topics": [
-        {
-          "topic_id": 0,
-          "label": "Flower Festival",
-          "top_words": [
-            "flower",
-            "festival",
-            "baguio",
-            "philippines"
-          ],
-          "count": 15
-        },
-        {
-          "topic_id": 1,
-          "label": "Baguio City",
-          "top_words": [
-            "city",
-            "baguio",
-            "travel",
-            "tourism"
-          ],
-          "count": 15
-        },
-        {
-          "topic_id": 2,
-          "label": "Panagbenga",
-          "top_words": [
-            "panagbenga",
-            "flower",
-            "festival",
-            "philippines"
-          ],
-          "count": 15
-        }
-      ]
-    },
-    "91": {
-      "cluster_id": 91,
-      "n_docs": 55,
-      "n_topics": 3,
-      "topics": [
-        {
-          "topic_id": 0,
-          "label": "Baguio Flower Festival",
-          "top_words": [
-            "baguio",
-            "flower",
-            "parade"
-          ],
-          "count": 55
-        },
-        {
-          "topic_id": 1,
-          "label": "Philippines Travel",
-          "top_words": [
-            "philippines",
-            "travel",
-            "visit"
-          ],
-          "count": 55
-        },
-        {
-          "topic_id": 2,
-          "label": "Festival Philippines",
-          "top_words": [
-            "festival",
-            "philippines",
-            "fun"
-          ],
-          "count": 55
-        }
-      ]
-    },
-    "92": {
-      "cluster_id": 92,
-      "n_docs": 111,
-      "n_topics": 3,
-      "topics": [
-        {
-          "topic_id": 0,
-          "label": "Baguio City",
-          "top_words": [
-            "baguio",
-            "city",
-            "panagbenga"
-          ],
-          "count": 111
-        },
-        {
-          "topic_id": 1,
-          "label": "Events",
-          "top_words": [
-            "escapade",
-            "birthday",
-            "festivals"
-          ],
-          "count": 111
-        },
-        {
-          "topic_id": 2,
-          "label": "Places",
-          "top_words": [
-            "campjohnhay",
-            "ambuklao",
-            "sm city"
-          ],
-          "count": 111
-        }
-      ]
-    },
-    "93": {
-      "cluster_id": 93,
-      "n_docs": 23,
-      "n_topics": 3,
-      "topics": [
-        {
-          "topic_id": 0,
-          "label": "Baguio City",
-          "top_words": [
-            "baguio",
-            "street",
-            "panagbenga"
-          ],
-          "count": 23
-        },
-        {
-          "topic_id": 1,
-          "label": "Traffic and Travel",
-          "top_words": [
-            "traffic",
-            "road",
-            "busystreet"
-          ],
-          "count": 23
-        },
-        {
-          "topic_id": 2,
-          "label": "City Life",
-          "top_words": [
-            "city",
             "session",
-            "lunch"
-          ],
-          "count": 23
-        }
-      ]
-    },
-    "94": {
-      "cluster_id": 94,
-      "n_docs": 26,
-      "n_topics": 3,
-      "topics": [
-        {
-          "topic_id": 0,
-          "label": "Session Road",
-          "top_words": [
-            "session",
-            "road",
-            "panagbenga"
-          ],
-          "count": 26
-        },
-        {
-          "topic_id": 1,
-          "label": "Baguio City",
-          "top_words": [
-            "baguio",
-            "city",
-            "panagbenga"
-          ],
-          "count": 26
-        },
-        {
-          "topic_id": 2,
-          "label": "Panagbenga Festival",
-          "top_words": [
-            "panagbenga",
-            "festival",
-            "session"
-          ],
-          "count": 26
-        }
-      ]
-    },
-    "95": {
-      "cluster_id": 95,
-      "n_docs": 19,
-      "n_topics": 3,
-      "topics": [
-        {
-          "topic_id": 0,
-          "label": "Baguio Tourism",
-          "top_words": [
-            "baguio",
-            "tourist",
-            "city"
-          ],
-          "count": 19
-        },
-        {
-          "topic_id": 1,
-          "label": "Travel",
-          "top_words": [
-            "travel",
-            "tourism",
-            "vacation"
-          ],
-          "count": 19
-        },
-        {
-          "topic_id": 2,
-          "label": "Social Media",
-          "top_words": [
-            "social",
-            "media",
-            "reels"
-          ],
-          "count": 19
-        }
-      ]
-    },
-    "96": {
-      "cluster_id": 96,
-      "n_docs": 31,
-      "n_topics": 3,
-      "topics": [
-        {
-          "topic_id": 0,
-          "label": "Flower Festival",
-          "top_words": [
-            "panagbenga",
-            "baguio",
             "bloom"
           ],
-          "count": 31
-        },
-        {
-          "topic_id": 1,
-          "label": "Music Festival",
-          "top_words": [
-            "bamboo",
-            "coach",
-            "hallelujah"
-          ],
-          "count": 31
+          "count": 68
         },
         {
           "topic_id": 2,
-          "label": "Celebrity Gossip",
+          "label": "Nanood Parade",
           "top_words": [
-            "kuya melvin",
-            "rochelle pangilinan",
-            "weng ibarra"
+            "nanood",
+            "parade",
+            "floats"
           ],
-          "count": 31
+          "count": 68
         }
       ]
     },
-    "97": {
-      "cluster_id": 97,
-      "n_docs": 55,
+    "2026_14": {
+      "cluster_id": "2026_14",
+      "n_docs": 106,
+      "n_topics": 3,
+      "topics": [
+        {
+          "topic_id": 0,
+          "label": "Sony Alpha",
+          "top_words": [
+            "sonyalpha",
+            "sonya",
+            "cii"
+          ],
+          "count": 106
+        },
+        {
+          "topic_id": 1,
+          "label": "Encantadia",
+          "top_words": [
+            "encantadia",
+            "magic",
+            "hello"
+          ],
+          "count": 106
+        },
+        {
+          "topic_id": 2,
+          "label": "Reels Challenge",
+          "top_words": [
+            "reelschallenge",
+            "cupofjoe",
+            "hale"
+          ],
+          "count": 106
+        }
+      ]
+    },
+    "2026_15": {
+      "cluster_id": "2026_15",
+      "n_docs": 21,
+      "n_topics": 3,
+      "topics": [
+        {
+          "topic_id": 0,
+          "label": "Concerts and Performances",
+          "top_words": [
+            "performance",
+            "concert",
+            "kilig",
+            "stage",
+            "crowd"
+          ],
+          "count": 21
+        },
+        {
+          "topic_id": 1,
+          "label": "Philippine Culture",
+          "top_words": [
+            "culture",
+            "artist",
+            "pogi",
+            "caravan",
+            "baguio"
+          ],
+          "count": 21
+        },
+        {
+          "topic_id": 2,
+          "label": "Entertainment and Events",
+          "top_words": [
+            "event",
+            "show",
+            "fans",
+            "performance",
+            "festival"
+          ],
+          "count": 21
+        }
+      ]
+    },
+    "2026_2": {
+      "cluster_id": "2026_2",
+      "n_docs": 61,
+      "n_topics": 3,
+      "topics": [
+        {
+          "topic_id": 0,
+          "label": "Flower Parade",
+          "top_words": [
+            "parade",
+            "flowers",
+            "float",
+            "grand",
+            "street"
+          ],
+          "count": 61
+        },
+        {
+          "topic_id": 1,
+          "label": "Baguio City",
+          "top_words": [
+            "baguio",
+            "city",
+            "parades",
+            "culture",
+            "festive"
+          ],
+          "count": 61
+        },
+        {
+          "topic_id": 2,
+          "label": "Celebration",
+          "top_words": [
+            "celebrate",
+            "bloom",
+            "season",
+            "colorful",
+            "vibrant"
+          ],
+          "count": 61
+        }
+      ]
+    },
+    "2026_3": {
+      "cluster_id": "2026_3",
+      "n_docs": 69,
+      "n_topics": 3,
+      "topics": [
+        {
+          "topic_id": 0,
+          "label": "Street Dance Parade",
+          "top_words": [
+            "dance",
+            "street",
+            "parade"
+          ],
+          "count": 69
+        },
+        {
+          "topic_id": 1,
+          "label": "Cordilleran Culture",
+          "top_words": [
+            "culture",
+            "cordilleran",
+            "tradition"
+          ],
+          "count": 69
+        },
+        {
+          "topic_id": 2,
+          "label": "Grand Street Dance",
+          "top_words": [
+            "grand",
+            "street",
+            "dance"
+          ],
+          "count": 69
+        }
+      ]
+    },
+    "2026_4": {
+      "cluster_id": "2026_4",
+      "n_docs": 13,
+      "n_topics": 3,
+      "topics": [
+        {
+          "topic_id": 0,
+          "label": "Surfing Festival",
+          "top_words": [
+            "surfiesta",
+            "surf",
+            "ukay",
+            "freshness",
+            "fest"
+          ],
+          "count": 13
+        },
+        {
+          "topic_id": 1,
+          "label": "Baguio City",
+          "top_words": [
+            "baguiocity",
+            "smbagio",
+            "float",
+            "year",
+            "alwaysbekind"
+          ],
+          "count": 13
+        },
+        {
+          "topic_id": 2,
+          "label": "Surfing Philippines",
+          "top_words": [
+            "philippines",
+            "surf",
+            "surfiesta",
+            "ukay",
+            "freshness"
+          ],
+          "count": 13
+        }
+      ]
+    },
+    "2026_5": {
+      "cluster_id": "2026_5",
+      "n_docs": 17,
+      "n_topics": 3,
+      "topics": [
+        {
+          "topic_id": 0,
+          "label": "Travel Vlog",
+          "top_words": [
+            "baguiotour",
+            "travel",
+            "vlog",
+            "tourist",
+            "reels"
+          ],
+          "count": 17
+        },
+        {
+          "topic_id": 1,
+          "label": "Reels Challenge",
+          "top_words": [
+            "challenge",
+            "reels",
+            "viral",
+            "tiktok",
+            "funny"
+          ],
+          "count": 17
+        },
+        {
+          "topic_id": 2,
+          "label": "Facebook Reels",
+          "top_words": [
+            "facebook",
+            "reels",
+            "viral",
+            "trending",
+            "now"
+          ],
+          "count": 17
+        }
+      ]
+    },
+    "2026_6": {
+      "cluster_id": "2026_6",
+      "n_docs": 11,
+      "n_topics": 3,
+      "topics": [
+        {
+          "topic_id": 0,
+          "label": "Travel Experience",
+          "top_words": [
+            "adventure",
+            "travel",
+            "fun"
+          ],
+          "count": 11
+        },
+        {
+          "topic_id": 1,
+          "label": "Family Bonding",
+          "top_words": [
+            "family",
+            "trip",
+            "love"
+          ],
+          "count": 11
+        },
+        {
+          "topic_id": 2,
+          "label": "Personal Growth",
+          "top_words": [
+            "balance",
+            "life",
+            "work"
+          ],
+          "count": 11
+        }
+      ]
+    },
+    "2026_7": {
+      "cluster_id": "2026_7",
+      "n_docs": 25,
       "n_topics": 3,
       "topics": [
         {
@@ -3804,508 +2110,53 @@
           "label": "Baguio Travel",
           "top_words": [
             "baguio",
+            "hotel",
+            "stay",
             "travel",
-            "panagbenga"
+            "azalea"
           ],
-          "count": 55
+          "count": 25
         },
         {
           "topic_id": 1,
-          "label": "Travel Essentials",
+          "label": "Accommodation",
           "top_words": [
-            "travel",
-            "essentials",
-            "vsco",
-            "vscocam"
+            "accommodation",
+            "booking",
+            "room",
+            "rental",
+            "transient"
           ],
-          "count": 55
+          "count": 25
         },
         {
           "topic_id": 2,
-          "label": "Road Trip",
+          "label": "City Life",
           "top_words": [
-            "road trip",
-            "baguio",
-            "woman",
-            "grandfolks"
-          ],
-          "count": 55
-        }
-      ]
-    },
-    "98": {
-      "cluster_id": 98,
-      "n_docs": 18,
-      "n_topics": 3,
-      "topics": [
-        {
-          "topic_id": 0,
-          "label": "Baguio Trip",
-          "top_words": [
-            "baguio",
-            "trip",
-            "travel"
-          ],
-          "count": 18
-        },
-        {
-          "topic_id": 1,
-          "label": "Panagbenga Festival",
-          "top_words": [
-            "panagbenga",
-            "festival",
-            "baguio"
-          ],
-          "count": 18
-        },
-        {
-          "topic_id": 2,
-          "label": "Travel Buddy",
-          "top_words": [
-            "travel",
-            "buddy",
-            "wheninbaguio"
-          ],
-          "count": 18
-        }
-      ]
-    },
-    "99": {
-      "cluster_id": 99,
-      "n_docs": 19,
-      "n_topics": 3,
-      "topics": [
-        {
-          "topic_id": 0,
-          "label": "Baguio Flower Festival",
-          "top_words": [
-            "panagbenga",
-            "baguio",
-            "flower"
-          ],
-          "count": 19
-        },
-        {
-          "topic_id": 1,
-          "label": "Photography",
-          "top_words": [
-            "photography",
-            "camera",
-            "phone",
-            "smartphone",
-            "mobile"
-          ],
-          "count": 19
-        },
-        {
-          "topic_id": 2,
-          "label": "Nature",
-          "top_words": [
-            "nature",
-            "garden",
-            "street",
-            "landscape",
-            "bloom"
-          ],
-          "count": 19
-        }
-      ]
-    },
-    "100": {
-      "cluster_id": 100,
-      "n_docs": 13,
-      "n_topics": 3,
-      "topics": [
-        {
-          "topic_id": 0,
-          "label": "Kapamilya Karavan",
-          "top_words": [
-            "kapamilyakaravan",
-            "wansapanataym",
-            "panagbenga2015"
-          ],
-          "count": 13
-        },
-        {
-          "topic_id": 1,
-          "label": "Repost Needed",
-          "top_words": [
-            "repost",
-            "needed",
-            "caption",
-            "majasalvador",
-            "majasty"
-          ],
-          "count": 13
-        },
-        {
-          "topic_id": 2,
-          "label": "Panagbenga 2016",
-          "top_words": [
-            "panagbenga2016",
-            "bulaklak",
-            "nakapaligid",
-            "sayo",
-            "mo"
-          ],
-          "count": 13
-        }
-      ]
-    },
-    "101": {
-      "cluster_id": 101,
-      "n_docs": 31,
-      "n_topics": 3,
-      "topics": [
-        {
-          "topic_id": 0,
-          "label": "Baguio Festival",
-          "top_words": [
-            "panagbenga",
-            "baguio",
-            "fest"
-          ],
-          "count": 31
-        },
-        {
-          "topic_id": 1,
-          "label": "Travel Baguio",
-          "top_words": [
-            "wheninbaguio",
-            "baguio",
             "city",
-            "travel"
-          ],
-          "count": 31
-        },
-        {
-          "topic_id": 2,
-          "label": "Shopping Baguio",
-          "top_words": [
-            "buy",
-            "braces",
-            "shop"
-          ],
-          "count": 31
-        }
-      ]
-    },
-    "102": {
-      "cluster_id": 102,
-      "n_docs": 63,
-      "n_topics": 3,
-      "topics": [
-        {
-          "topic_id": 0,
-          "label": "Panagbenga Festival",
-          "top_words": [
-            "panagbenga",
-            "festival",
-            "baguio"
-          ],
-          "count": 63
-        },
-        {
-          "topic_id": 1,
-          "label": "Valentine's Day",
-          "top_words": [
-            "heartsday",
-            "love",
-            "valentines"
-          ],
-          "count": 63
-        },
-        {
-          "topic_id": 2,
-          "label": "Habit Formation",
-          "top_words": [
-            "yearly habit",
-            "craze",
-            "maine"
-          ],
-          "count": 63
-        }
-      ]
-    },
-    "103": {
-      "cluster_id": 103,
-      "n_docs": 15,
-      "n_topics": 3,
-      "topics": [
-        {
-          "topic_id": 0,
-          "label": "Weekend Getaway",
-          "top_words": [
-            "weekend",
-            "getaway",
-            "baguio"
-          ],
-          "count": 15
-        },
-        {
-          "topic_id": 1,
-          "label": "Panagbenga Festival",
-          "top_words": [
-            "panagbenga",
-            "festival",
-            "weekend"
-          ],
-          "count": 15
-        },
-        {
-          "topic_id": 2,
-          "label": "Relaxation Time",
-          "top_words": [
-            "relaxing",
-            "time",
-            "weekend"
-          ],
-          "count": 15
-        }
-      ]
-    },
-    "104": {
-      "cluster_id": 104,
-      "n_docs": 18,
-      "n_topics": 3,
-      "topics": [
-        {
-          "topic_id": 0,
-          "label": "Sunflowers",
-          "top_words": [
-            "sunflower",
+            "life",
             "baguio",
-            "panagbenga"
+            "tourist",
+            "sightseeing"
           ],
-          "count": 18
-        },
-        {
-          "topic_id": 1,
-          "label": "Nature",
-          "top_words": [
-            "nature",
-            "mountains",
-            "sunshine"
-          ],
-          "count": 18
-        },
-        {
-          "topic_id": 2,
-          "label": "Baguio",
-          "top_words": [
-            "baguio",
-            "wheninbaguio",
-            "pabebe"
-          ],
-          "count": 18
+          "count": 25
         }
       ]
     },
-    "105": {
-      "cluster_id": 105,
-      "n_docs": 27,
+    "2026_8": {
+      "cluster_id": "2026_8",
+      "n_docs": 44,
       "n_topics": 3,
       "topics": [
         {
           "topic_id": 0,
-          "label": "Bloom Season",
+          "label": "Flowers and Beauty",
           "top_words": [
-            "blooms",
-            "season",
-            "forward"
-          ],
-          "count": 27
-        },
-        {
-          "topic_id": 1,
-          "label": "Panagbenga Festival",
-          "top_words": [
-            "panagbenga",
-            "festival",
-            "baguio"
-          ],
-          "count": 27
-        },
-        {
-          "topic_id": 2,
-          "label": "Flower Power",
-          "top_words": [
-            "flower",
-            "power",
-            "winterfeels"
-          ],
-          "count": 27
-        }
-      ]
-    },
-    "106": {
-      "cluster_id": 106,
-      "n_docs": 164,
-      "n_topics": 3,
-      "topics": [
-        {
-          "topic_id": 0,
-          "label": "Flowers of Baguio",
-          "top_words": [
-            "baguiocity",
             "flowers",
-            "panagbenga2013"
+            "beauty",
+            "blossoms"
           ],
-          "count": 164
-        },
-        {
-          "topic_id": 1,
-          "label": "Botanical Garden",
-          "top_words": [
-            "botanical",
-            "garden",
-            "nature"
-          ],
-          "count": 164
-        },
-        {
-          "topic_id": 2,
-          "label": "Travel and Tourism",
-          "top_words": [
-            "travelgram",
-            "instapic",
-            "landscape"
-          ],
-          "count": 164
-        }
-      ]
-    },
-    "107": {
-      "cluster_id": 107,
-      "n_docs": 32,
-      "n_topics": 3,
-      "topics": [
-        {
-          "topic_id": 0,
-          "label": "Baguio City Flower Festival",
-          "top_words": [
-            "baguio",
-            "flower",
-            "festival"
-          ],
-          "count": 32
-        },
-        {
-          "topic_id": 1,
-          "label": "City of Pines",
-          "top_words": [
-            "pines",
-            "city",
-            "baguio"
-          ],
-          "count": 32
-        },
-        {
-          "topic_id": 2,
-          "label": "Celebrating Life",
-          "top_words": [
-            "celebrating",
-            "lovelovelove",
-            "life"
-          ],
-          "count": 32
-        }
-      ]
-    },
-    "108": {
-      "cluster_id": 108,
-      "n_docs": 16,
-      "n_topics": 3,
-      "topics": [
-        {
-          "topic_id": 0,
-          "label": "Baguio Flower Festival",
-          "top_words": [
-            "panagbenga",
-            "baguio",
-            "festival"
-          ],
-          "count": 16
-        },
-        {
-          "topic_id": 1,
-          "label": "Season Blooming",
-          "top_words": [
-            "blooming",
-            "season",
-            "city"
-          ],
-          "count": 16
-        },
-        {
-          "topic_id": 2,
-          "label": "Happy Celebration",
-          "top_words": [
-            "happy",
-            "celebrate",
-            "festive"
-          ],
-          "count": 16
-        }
-      ]
-    },
-    "109": {
-      "cluster_id": 109,
-      "n_docs": 15,
-      "n_topics": 3,
-      "topics": [
-        {
-          "topic_id": 0,
-          "label": "Baguio Flower Festival",
-          "top_words": [
-            "baguio",
-            "flower",
-            "festival",
-            "panagbenga",
-            "blooming"
-          ],
-          "count": 15
-        },
-        {
-          "topic_id": 1,
-          "label": "Travel and Tourism",
-          "top_words": [
-            "travelph",
-            "wheninbaguio",
-            "musttravelph",
-            "wanderlustph",
-            "outdoorislife"
-          ],
-          "count": 15
-        },
-        {
-          "topic_id": 2,
-          "label": "City Events",
-          "top_words": [
-            "baguiocity",
-            "festival",
-            "schedule",
-            "traditional",
-            "events"
-          ],
-          "count": 15
-        }
-      ]
-    },
-    "110": {
-      "cluster_id": 110,
-      "n_docs": 107,
-      "n_topics": 3,
-      "topics": [
-        {
-          "topic_id": 0,
-          "label": "Baguio Flower Festival",
-          "top_words": [
-            "flower",
-            "festival",
-            "panagbenga"
-          ],
-          "count": 107
+          "count": 44
         },
         {
           "topic_id": 1,
@@ -4313,1096 +2164,62 @@
           "top_words": [
             "baguio",
             "city",
-            "vacation"
+            "pennshoppe"
           ],
-          "count": 107
+          "count": 44
         },
         {
           "topic_id": 2,
-          "label": "Philippines",
+          "label": "Nature and Art",
           "top_words": [
-            "philippines",
-            "country",
-            "asia"
+            "nature",
+            "art",
+            "kokedama"
           ],
-          "count": 107
+          "count": 44
         }
       ]
     },
-    "111": {
-      "cluster_id": 111,
-      "n_docs": 37,
-      "n_topics": 3,
-      "topics": [
-        {
-          "topic_id": 0,
-          "label": "Flower Festival",
-          "top_words": [
-            "flower festival",
-            "panagbenga",
-            "baguio"
-          ],
-          "count": 37
-        },
-        {
-          "topic_id": 1,
-          "label": "Summer Fun",
-          "top_words": [
-            "summer",
-            "capital",
-            "float parade"
-          ],
-          "count": 37
-        },
-        {
-          "topic_id": 2,
-          "label": "Celebration",
-          "top_words": [
-            "celebrate",
-            "minion",
-            "domination"
-          ],
-          "count": 37
-        }
-      ]
-    },
-    "112": {
-      "cluster_id": 112,
-      "n_docs": 21,
-      "n_topics": 3,
-      "topics": [
-        {
-          "topic_id": 0,
-          "label": "Flower Festival",
-          "top_words": [
-            "flower",
-            "festival",
-            "panagbenga"
-          ],
-          "count": 21
-        },
-        {
-          "topic_id": 1,
-          "label": "Cheeky Fun",
-          "top_words": [
-            "cheeks",
-            "smileys",
-            "funny"
-          ],
-          "count": 21
-        },
-        {
-          "topic_id": 2,
-          "label": "General Interest",
-          "top_words": [
-            "staircase",
-            "showtime",
-            "kids"
-          ],
-          "count": 21
-        }
-      ]
-    },
-    "113": {
-      "cluster_id": 113,
+    "2026_9": {
+      "cluster_id": "2026_9",
       "n_docs": 31,
       "n_topics": 3,
       "topics": [
         {
           "topic_id": 0,
-          "label": "Baguiocity",
+          "label": "Philippine Festivals",
           "top_words": [
-            "panagbenga",
-            "smcitybaguio",
+            "festival",
+            "philippines",
+            "baguio",
+            "culture",
             "celebration"
           ],
           "count": 31
         },
         {
           "topic_id": 1,
-          "label": "Lakwatsa",
-          "top_words": [
-            "thing",
-            "called",
-            "lakwatsa"
-          ],
-          "count": 31
-        },
-        {
-          "topic_id": 2,
           "label": "City Life",
           "top_words": [
-            "experiencing",
-            "yearsofcelebration",
-            "city"
+            "city",
+            "life",
+            "bloom",
+            "colors",
+            "vibrant"
           ],
           "count": 31
-        }
-      ]
-    },
-    "114": {
-      "cluster_id": 114,
-      "n_docs": 39,
-      "n_topics": 3,
-      "topics": [
-        {
-          "topic_id": 0,
-          "label": "Baguio City",
-          "top_words": [
-            "baguiocity",
-            "baguio",
-            "panagbenga"
-          ],
-          "count": 39
-        },
-        {
-          "topic_id": 1,
-          "label": "GMA Float",
-          "top_words": [
-            "gma float",
-            "baguiocity",
-            "baguio"
-          ],
-          "count": 39
         },
         {
           "topic_id": 2,
-          "label": "Panagbenga Festival",
-          "top_words": [
-            "panagbenga2014",
-            "panagbenga2017",
-            "panagbenga2018",
-            "panagbenga2022",
-            "panagbenga2023"
-          ],
-          "count": 39
-        }
-      ]
-    },
-    "115": {
-      "cluster_id": 115,
-      "n_docs": 59,
-      "n_topics": 3,
-      "topics": [
-        {
-          "topic_id": 0,
-          "label": "Baguio City",
-          "top_words": [
-            "baguio",
-            "panagbenga",
-            "city"
-          ],
-          "count": 59
-        },
-        {
-          "topic_id": 1,
-          "label": "Food and Drink",
-          "top_words": [
-            "shawarma",
-            "starbucks",
-            "food",
-            "drink"
-          ],
-          "count": 59
-        },
-        {
-          "topic_id": 2,
-          "label": "Travel and Tourism",
-          "top_words": [
-            "travel",
-            "tourism",
-            "baguio",
-            "visit"
-          ],
-          "count": 59
-        }
-      ]
-    },
-    "116": {
-      "cluster_id": 116,
-      "n_docs": 105,
-      "n_topics": 3,
-      "topics": [
-        {
-          "topic_id": 0,
-          "label": "Baguio Festival",
-          "top_words": [
-            "panagbenga",
-            "baguio",
-            "festival"
-          ],
-          "count": 105
-        },
-        {
-          "topic_id": 1,
-          "label": "Throwback Thursday",
-          "top_words": [
-            "throwback",
-            "thursday",
-            "pinoy"
-          ],
-          "count": 105
-        },
-        {
-          "topic_id": 2,
-          "label": "Black and White",
-          "top_words": [
-            "black",
-            "white",
-            "bw"
-          ],
-          "count": 105
-        }
-      ]
-    },
-    "117": {
-      "cluster_id": 117,
-      "n_docs": 13,
-      "n_topics": 3,
-      "topics": [
-        {
-          "topic_id": 0,
-          "label": "Baguio Trip",
-          "top_words": [
-            "baguio",
-            "panagbenga",
-            "friends"
-          ],
-          "count": 13
-        },
-        {
-          "topic_id": 1,
-          "label": "Friendship",
-          "top_words": [
-            "friendship",
-            "cheerstolife",
-            "collegefriends"
-          ],
-          "count": 13
-        },
-        {
-          "topic_id": 2,
-          "label": "Travel",
-          "top_words": [
-            "travel",
-            "instatravel",
-            "san"
-          ],
-          "count": 13
-        }
-      ]
-    },
-    "118": {
-      "cluster_id": 118,
-      "n_docs": 13,
-      "n_topics": 3,
-      "topics": [
-        {
-          "topic_id": 0,
-          "label": "Love Baguio",
-          "top_words": [
-            "love",
-            "baguio",
-            "panagbenga"
-          ],
-          "count": 13
-        },
-        {
-          "topic_id": 1,
-          "label": "Relationships",
-          "top_words": [
-            "hottie",
-            "darling",
-            "keep"
-          ],
-          "count": 13
-        },
-        {
-          "topic_id": 2,
-          "label": "Travel Memories",
-          "top_words": [
-            "travel",
-            "memories",
-            "moments"
-          ],
-          "count": 13
-        }
-      ]
-    },
-    "119": {
-      "cluster_id": 119,
-      "n_docs": 29,
-      "n_topics": 3,
-      "topics": [
-        {
-          "topic_id": 0,
-          "label": "Baguio City",
-          "top_words": [
-            "baguio",
-            "panagbenga",
-            "sabaguio"
-          ],
-          "count": 29
-        },
-        {
-          "topic_id": 1,
-          "label": "Reels Video",
-          "top_words": [
-            "reels",
-            "video",
-            "capcut",
-            "baguio",
-            "mjlds"
-          ],
-          "count": 29
-        },
-        {
-          "topic_id": 2,
-          "label": "Philippine Sports",
-          "top_words": [
-            "philippines",
-            "sports",
-            "basketball",
-            "pilipinas",
-            "teamnuevaecija"
-          ],
-          "count": 29
-        }
-      ]
-    },
-    "120": {
-      "cluster_id": 120,
-      "n_docs": 19,
-      "n_topics": 3,
-      "topics": [
-        {
-          "topic_id": 0,
-          "label": "Panagbenga Festival",
-          "top_words": [
-            "panagbenga",
-            "festival",
-            "float"
-          ],
-          "count": 19
-        },
-        {
-          "topic_id": 1,
-          "label": "New Product Launch",
-          "top_words": [
-            "newproduct",
-            "launching",
-            "nextmonth"
-          ],
-          "count": 19
-        },
-        {
-          "topic_id": 2,
-          "label": "Dancing Event",
-          "top_words": [
-            "dancing",
-            "event",
-            "street"
-          ],
-          "count": 19
-        }
-      ]
-    },
-    "121": {
-      "cluster_id": 121,
-      "n_docs": 40,
-      "n_topics": 3,
-      "topics": [
-        {
-          "topic_id": 0,
-          "label": "Baguio Festival",
-          "top_words": [
-            "panagbenga",
-            "baguio",
-            "festival"
-          ],
-          "count": 40
-        },
-        {
-          "topic_id": 1,
-          "label": "Travel Baguio",
-          "top_words": [
-            "baguio",
-            "travel",
-            "see",
-            "later",
-            "visit"
-          ],
-          "count": 40
-        },
-        {
-          "topic_id": 2,
-          "label": "Hunger Games",
-          "top_words": [
-            "baguio",
-            "hungergames",
-            "inspired",
-            "katniss",
-            "everdeen"
-          ],
-          "count": 40
-        }
-      ]
-    },
-    "122": {
-      "cluster_id": 122,
-      "n_docs": 17,
-      "n_topics": 3,
-      "topics": [
-        {
-          "topic_id": 0,
-          "label": "Baguio City",
-          "top_words": [
-            "baguio",
-            "panagbenga",
-            "city"
-          ],
-          "count": 17
-        },
-        {
-          "topic_id": 1,
-          "label": "Thank You",
-          "top_words": [
-            "thank",
-            "you",
-            "love"
-          ],
-          "count": 17
-        },
-        {
-          "topic_id": 2,
-          "label": "Friendship",
-          "top_words": [
-            "friends",
-            "cousin",
-            "family"
-          ],
-          "count": 17
-        }
-      ]
-    },
-    "123": {
-      "cluster_id": 123,
-      "n_docs": 18,
-      "n_topics": 3,
-      "topics": [
-        {
-          "topic_id": 0,
-          "label": "Baguio Panagbenga",
-          "top_words": [
-            "baguio",
-            "panagbenga",
-            "flowers"
-          ],
-          "count": 18
-        },
-        {
-          "topic_id": 1,
-          "label": "Taho Festival",
-          "top_words": [
-            "taho",
-            "festival",
-            "baguio"
-          ],
-          "count": 18
-        },
-        {
-          "topic_id": 2,
-          "label": "Kapamilya Karavan",
-          "top_words": [
-            "kapamilya",
-            "karavan",
-            "celebrated"
-          ],
-          "count": 18
-        }
-      ]
-    },
-    "124": {
-      "cluster_id": 124,
-      "n_docs": 39,
-      "n_topics": 3,
-      "topics": [
-        {
-          "topic_id": 0,
-          "label": "Baguio Festival",
-          "top_words": [
-            "panagbenga",
-            "baguio",
-            "fest"
-          ],
-          "count": 39
-        },
-        {
-          "topic_id": 1,
-          "label": "Travel Baguio",
-          "top_words": [
-            "manor",
-            "baguiocity",
-            "travel"
-          ],
-          "count": 39
-        },
-        {
-          "topic_id": 2,
-          "label": "Love Baguio",
-          "top_words": [
-            "love",
-            "baguio",
-            "girl"
-          ],
-          "count": 39
-        }
-      ]
-    },
-    "125": {
-      "cluster_id": 125,
-      "n_docs": 46,
-      "n_topics": 3,
-      "topics": [
-        {
-          "topic_id": 0,
-          "label": "Baguio City",
-          "top_words": [
-            "baguio",
-            "city",
-            "panagbenga"
-          ],
-          "count": 46
-        },
-        {
-          "topic_id": 1,
-          "label": "Happy Baguio",
-          "top_words": [
-            "happy",
-            "baguio",
-            "panagbenga"
-          ],
-          "count": 46
-        },
-        {
-          "topic_id": 2,
-          "label": "Travel Baguio",
-          "top_words": [
-            "travel",
-            "baguio",
-            "panagbenga"
-          ],
-          "count": 46
-        }
-      ]
-    },
-    "126": {
-      "cluster_id": 126,
-      "n_docs": 38,
-      "n_topics": 3,
-      "topics": [
-        {
-          "topic_id": 0,
-          "label": "Happy Panagbenga",
-          "top_words": [
-            "happy",
-            "panagbenga",
-            "love"
-          ],
-          "count": 38
-        },
-        {
-          "topic_id": 1,
-          "label": "Good Times",
-          "top_words": [
-            "goodtimes",
-            "happy",
-            "family"
-          ],
-          "count": 38
-        },
-        {
-          "topic_id": 2,
-          "label": "Blessed Life",
-          "top_words": [
-            "blessed",
-            "joyful",
-            "season"
-          ],
-          "count": 38
-        }
-      ]
-    },
-    "127": {
-      "cluster_id": 127,
-      "n_docs": 14,
-      "n_topics": 3,
-      "topics": [
-        {
-          "topic_id": 0,
-          "label": "Baguio City",
-          "top_words": [
-            "baguio",
-            "city",
-            "panagbenga",
-            "baguiocity"
-          ],
-          "count": 14
-        },
-        {
-          "topic_id": 1,
-          "label": "Travel",
-          "top_words": [
-            "trip",
-            "lakbayaw",
-            "kinaldagan",
-            "weekends",
-            "beachvibes"
-          ],
-          "count": 14
-        },
-        {
-          "topic_id": 2,
-          "label": "Local Events",
-          "top_words": [
-            "pag uwi",
-            "neto nanganganib",
-            "siksik kalang",
-            "harizonroad",
-            "elyu"
-          ],
-          "count": 14
-        }
-      ]
-    },
-    "128": {
-      "cluster_id": 128,
-      "n_docs": 40,
-      "n_topics": 3,
-      "topics": [
-        {
-          "topic_id": 0,
-          "label": "Panagbenga Festival",
-          "top_words": [
-            "panagbenga",
-            "festival",
-            "flowers"
-          ],
-          "count": 40
-        },
-        {
-          "topic_id": 1,
-          "label": "Travel and Adventure",
-          "top_words": [
-            "travel",
-            "adventure",
-            "explore",
-            "visit",
-            "fun"
-          ],
-          "count": 40
-        },
-        {
-          "topic_id": 2,
-          "label": "Flower Appreciation",
-          "top_words": [
-            "flowers",
-            "garden",
-            "nature",
-            "beauty",
-            "love"
-          ],
-          "count": 40
-        }
-      ]
-    },
-    "129": {
-      "cluster_id": 129,
-      "n_docs": 32,
-      "n_topics": 3,
-      "topics": [
-        {
-          "topic_id": 0,
-          "label": "Panagbenga Festival",
-          "top_words": [
-            "panagbenga",
-            "festival",
-            "flowers"
-          ],
-          "count": 32
-        },
-        {
-          "topic_id": 1,
-          "label": "Love and Appreciation",
-          "top_words": [
-            "love",
-            "appreciate",
-            "thank"
-          ],
-          "count": 32
-        },
-        {
-          "topic_id": 2,
-          "label": "Happiness and Fun",
-          "top_words": [
-            "happy",
-            "funny",
-            "smile"
-          ],
-          "count": 32
-        }
-      ]
-    },
-    "130": {
-      "cluster_id": 130,
-      "n_docs": 16,
-      "n_topics": 3,
-      "topics": [
-        {
-          "topic_id": 0,
-          "label": "Family Bonding",
-          "top_words": [
-            "family",
-            "bonding",
-            "love"
-          ],
-          "count": 16
-        },
-        {
-          "topic_id": 1,
-          "label": "Cousin Bonding",
-          "top_words": [
-            "cousins",
-            "bonding",
-            "time"
-          ],
-          "count": 16
-        },
-        {
-          "topic_id": 2,
-          "label": "Family Love",
-          "top_words": [
-            "family",
-            "love",
-            "panagbenga"
-          ],
-          "count": 16
-        }
-      ]
-    },
-    "131": {
-      "cluster_id": 131,
-      "n_docs": 18,
-      "n_topics": 3,
-      "topics": [
-        {
-          "topic_id": 0,
-          "label": "Parenting Life",
-          "top_words": [
-            "momlife",
-            "babylove",
-            "parenthood",
-            "moments",
-            "family"
-          ],
-          "count": 18
-        },
-        {
-          "topic_id": 1,
-          "label": "Baguio City",
-          "top_words": [
-            "baguiocity",
-            "cocojam",
-            "herrera",
-            "cocomartin",
-            "juliamontes"
-          ],
-          "count": 18
-        },
-        {
-          "topic_id": 2,
-          "label": "Motherhood",
-          "top_words": [
-            "motherlove",
-            "momlife",
-            "qualitytime",
-            "stayathome",
-            "moments"
-          ],
-          "count": 18
-        }
-      ]
-    },
-    "132": {
-      "cluster_id": 132,
-      "n_docs": 22,
-      "n_topics": 3,
-      "topics": [
-        {
-          "topic_id": 0,
-          "label": "Panagbenga Festival",
-          "top_words": [
-            "panagbenga",
-            "festivals",
-            "baguio"
-          ],
-          "count": 22
-        },
-        {
-          "topic_id": 1,
-          "label": "Kapamilya",
-          "top_words": [
-            "kapamilya",
-            "caravan",
-            "generalsdaughter"
-          ],
-          "count": 22
-        },
-        {
-          "topic_id": 2,
-          "label": "Philippine TV Shows",
-          "top_words": [
-            "tgd",
-            "philippines",
-            "tv shows"
-          ],
-          "count": 22
-        }
-      ]
-    },
-    "133": {
-      "cluster_id": 133,
-      "n_docs": 51,
-      "n_topics": 3,
-      "topics": [
-        {
-          "topic_id": 0,
-          "label": "Kapamilya News",
-          "top_words": [
-            "kapamilyakaravan",
-            "cocomartin",
-            "fpjsangprobinsyano",
-            "primetimeking",
-            "panagbenga2016"
-          ],
-          "count": 51
-        },
-        {
-          "topic_id": 1,
-          "label": "Baguio City",
-          "top_words": [
-            "baguio",
-            "conventioncenter",
-            "baguiocity",
-            "mixedmartialarts",
-            "happy"
-          ],
-          "count": 51
-        },
-        {
-          "topic_id": 2,
-          "label": "Philippine Culture",
-          "top_words": [
-            "pamilyanggala",
-            "litagwa",
-            "cultural",
-            "preservation",
-            "sacrifices"
-          ],
-          "count": 51
-        }
-      ]
-    },
-    "134": {
-      "cluster_id": 134,
-      "n_docs": 63,
-      "n_topics": 3,
-      "topics": [
-        {
-          "topic_id": 0,
-          "label": "Baguio City",
-          "top_words": [
-            "baguio",
-            "city",
-            "panagbenga",
-            "kamisapana",
-            "lakwat"
-          ],
-          "count": 63
-        },
-        {
-          "topic_id": 1,
-          "label": "Social Media",
-          "top_words": [
-            "repost",
-            "like",
-            "share",
-            "comment",
-            "kamsaya"
-          ],
-          "count": 63
-        },
-        {
-          "topic_id": 2,
-          "label": "Travel and Tourism",
-          "top_words": [
-            "travel",
-            "tourism",
-            "baguio",
-            "city",
-            "visit"
-          ],
-          "count": 63
-        }
-      ]
-    },
-    "135": {
-      "cluster_id": 135,
-      "n_docs": 56,
-      "n_topics": 3,
-      "topics": [
-        {
-          "topic_id": 0,
-          "label": "Baguio City",
-          "top_words": [
-            "baguio",
-            "city",
-            "sabaguio"
-          ],
-          "count": 56
-        },
-        {
-          "topic_id": 1,
-          "label": "Food",
-          "top_words": [
-            "longganisa",
-            "friedbao",
-            "restaurant"
-          ],
-          "count": 56
-        },
-        {
-          "topic_id": 2,
-          "label": "Travel",
-          "top_words": [
-            "encantadia",
-            "philippines",
-            "travel"
-          ],
-          "count": 56
-        }
-      ]
-    },
-    "136": {
-      "cluster_id": 136,
-      "n_docs": 55,
-      "n_topics": 3,
-      "topics": [
-        {
-          "topic_id": 0,
-          "label": "Love and Relationships",
-          "top_words": [
-            "love",
-            "heart",
-            "romance"
-          ],
-          "count": 55
-        },
-        {
-          "topic_id": 1,
-          "label": "Nature and Seasons",
-          "top_words": [
-            "season",
-            "flower",
-            "nature"
-          ],
-          "count": 55
-        },
-        {
-          "topic_id": 2,
-          "label": "Emotions and Feelings",
-          "top_words": [
-            "happy",
-            "sad",
-            "love",
-            "hate"
-          ],
-          "count": 55
-        }
-      ]
-    },
-    "137": {
-      "cluster_id": 137,
-      "n_docs": 19,
-      "n_topics": 3,
-      "topics": [
-        {
-          "topic_id": 0,
-          "label": "Baguio City",
-          "top_words": [
-            "baguio",
-            "umakyat",
-            "si"
-          ],
-          "count": 19
-        },
-        {
-          "topic_id": 1,
-          "label": "Sunday Funday",
-          "top_words": [
-            "kissy",
-            "sunday",
-            "pinasaya"
-          ],
-          "count": 19
-        },
-        {
-          "topic_id": 2,
-          "label": "Foodie Fun",
-          "top_words": [
-            "lamig",
-            "emeemelang",
-            "pangbengak"
-          ],
-          "count": 19
-        }
-      ]
-    },
-    "138": {
-      "cluster_id": 138,
-      "n_docs": 55,
-      "n_topics": 3,
-      "topics": [
-        {
-          "topic_id": 0,
-          "label": "Baguio Tourism",
-          "top_words": [
-            "baguio",
-            "bea enchong",
-            "stobosa"
-          ],
-          "count": 55
-        },
-        {
-          "topic_id": 1,
-          "label": "Movie/TV Show",
-          "top_words": [
-            "instacollage",
-            "laboracay",
-            "minions",
-            "fpjbatangquaipo"
-          ],
-          "count": 55
-        },
-        {
-          "topic_id": 2,
-          "label": "Celebrity News",
-          "top_words": [
-            "alden richards",
-            "carmela",
-            "sas"
-          ],
-          "count": 55
+          "label": "Community Support",
+          "top_words": [
+            "community",
+            "support",
+            "local",
+            "artists",
+            "creatives"
+          ],
+          "count": 31
         }
       ]
     }
