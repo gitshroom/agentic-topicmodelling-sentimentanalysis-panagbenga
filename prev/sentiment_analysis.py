@@ -1,33 +1,51 @@
 # =========================
-# sentiment_analysis.py
-# Agent: runs per-cluster sentiment analysis using a HuggingFace pipeline.
-# Called by orchestrator.py with optional parameter overrides.
+# sentiment_analysis.py (LLM Version - String Cluster IDs)
 # =========================
 
 import argparse
 import pandas as pd
+from openai import OpenAI
+import os
+import time
 from utils import get_logger, save_json, timestamp, log_banner
 import config
 
 logger = get_logger("sentiment_analysis")
 
+client = OpenAI(
+    api_key=config.LLM_API_KEY,
+    base_url="http://localhost:11434/v1"
+)
 
-def score_texts(texts: list, pipeline, batch_size: int) -> list:
-    """Run the HuggingFace pipeline in batches. Returns list of {label, score}."""
+def score_texts_with_llm(texts: list) -> list:
     results = []
-    for i in range(0, len(texts), batch_size):
-        batch = texts[i : i + batch_size]
+    for text in texts:
         try:
-            out = pipeline(batch, truncation=True, max_length=512)
-            results.extend(out)
+            response = client.chat.completions.create(
+                model=config.LLM_MODEL_NAME,
+                messages=[
+                    {"role": "system", "content": "You are a sentiment analysis engine. Reply ONLY with 'POSITIVE', 'NEGATIVE', or 'NEUTRAL'. Do not add any other text."},
+                    {"role": "user", "content": f"Analyze this text: {text}"}
+                ],
+                temperature=0.0
+            )
+            
+            label = response.choices[0].message.content.strip().upper()
+            
+            if label in ["POSITIVE", "NEGATIVE", "NEUTRAL"]:
+                results.append({"label": label, "score": 1.0})
+            else:
+                results.append({"label": "UNKNOWN", "score": 0.0})
+
         except Exception as e:
-            logger.error(f"Batch {i}–{i+batch_size} failed: {e}")
-            results.extend([{"label": "ERROR", "score": 0.0}] * len(batch))
+            logger.error(f"LLM failed on text: {e}")
+            results.append({"label": "ERROR", "score": 0.0})
+            
+        time.sleep(0.1) 
+            
     return results
 
-
 def aggregate_sentiment(records: list) -> dict:
-    """Compute label distribution and mean confidence from a list of {label, score}."""
     label_counts = {}
     total_score = 0.0
     valid = 0
@@ -54,66 +72,47 @@ def aggregate_sentiment(records: list) -> dict:
         "label_ratios": {k: round(v / n, 4) for k, v in label_counts.items()},
     }
 
-
 def main(model_name: str = None, batch_size: int = None):
-    from transformers import pipeline as hf_pipeline
-
-    log_banner(logger, "Sentiment analysis agent")
-
-    mdl = model_name or config.SENTIMENT_MODEL
-    bs = batch_size or config.SENTIMENT_BATCH_SIZE
+    log_banner(logger, "LLM Sentiment analysis agent")
     text_col = "processed" if config.SENTIMENT_USE_PROCESSED else "text"
-
-    logger.info(f"Model: {mdl}  |  Batch size: {bs}  |  Column: {text_col}")
 
     df = pd.read_csv(config.CLUSTERED_FILE)
     df = df.dropna(subset=[text_col])
     logger.info(f"Loaded {len(df)} rows")
 
-    logger.info("Loading sentiment pipeline...")
-    pipe = hf_pipeline(
-        "sentiment-analysis",
-        model=mdl,
-        tokenizer=mdl,
-        device=-1,   # CPU; set to 0 for first GPU
-    )
-
     cluster_results = {}
 
     for cluster_id in sorted(df["cluster"].unique()):
+        # Skip noise clusters for sentiment to save time
+        if str(cluster_id).endswith("_-1"):
+            continue
+
         subset = df[df["cluster"] == cluster_id]
         texts = subset[text_col].tolist()
 
-        logger.info(f"Cluster {cluster_id}: scoring {len(texts)} docs...")
+        logger.info(f"Cluster {cluster_id}: scoring {len(texts)} docs using LLM...")
 
-        scored = score_texts(texts, pipe, batch_size=bs)
+        scored = score_texts_with_llm(texts)
 
-        # Attach scores back to rows for per-doc output
         per_doc = []
         for (_, row), s in zip(subset.iterrows(), scored):
             per_doc.append({
                 "id": row.get("id", None),
                 "label": s["label"],
-                "score": round(float(s["score"]), 4),
+                "score": s["score"],
             })
 
         agg = aggregate_sentiment(scored)
 
         cluster_results[str(cluster_id)] = {
-            "cluster_id": int(cluster_id),
+            "cluster_id": str(cluster_id), # FIXED: Kept as string
             **agg,
             "per_doc": per_doc,
         }
 
-        logger.info(
-            f"  → dominant={agg['dominant_sentiment']}  "
-            f"coverage={agg['coverage']}  "
-            f"avg_conf={agg['avg_confidence']}"
-        )
-
     output = {
         "generated_at": timestamp(),
-        "model": mdl,
+        "model": "LLM_Prompting",
         "text_column": text_col,
         "clusters": cluster_results,
     }
@@ -122,10 +121,5 @@ def main(model_name: str = None, batch_size: int = None):
     logger.info(f"Sentiment results saved to {config.SENTIMENT_OUTPUT_FILE}")
     return output
 
-
 if __name__ == "__main__":
-    parser = argparse.ArgumentParser(description="Sentiment analysis agent")
-    parser.add_argument("--model", type=str, default=None)
-    parser.add_argument("--batch_size", type=int, default=None)
-    args = parser.parse_args()
-    main(model_name=args.model, batch_size=args.batch_size)
+    main()

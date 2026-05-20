@@ -1,206 +1,161 @@
 # =========================
-# 1. IMPORTS
+# embeddings.py (Year-Level Clustering)
 # =========================
+
 import pandas as pd
+import numpy as np
 from sentence_transformers import SentenceTransformer
 import umap
 import hdbscan
 from sklearn.preprocessing import normalize
 import matplotlib.pyplot as plt
-import numpy as np
+import os
 
-# =========================
-# 2. CONFIGURATION
-# =========================
-INPUT_FILE = "data/prep_dataset_v3.csv"
-OUTPUT_FILE = "data/clustered_dataset.csv"
+import config
 
-EMBEDDING_MODEL = "paraphrase-multilingual-MiniLM-L12-v2"
-
-# UMAP parameters
-UMAP_NEIGHBORS = 15
-UMAP_COMPONENTS = 5
-UMAP_MIN_DIST = 0.0
-
-# HDBSCAN parameters
-MIN_CLUSTER_SIZE = 13
-MIN_SAMPLES = 9
-
-
-# =========================
-# 3. LOAD DATA
-# =========================
 def load_data():
     print("[INFO] Loading dataset...")
-    df = pd.read_csv(INPUT_FILE)
-
-    df = df.dropna(subset=["processed"])
+    df = pd.read_csv(config.PREPROCESSED_FILE)
+    df = df.dropna(subset=["processed", "year"])
     print(f"[INFO] Dataset loaded: {df.shape}")
-
     return df
 
-# =========================
-# 4. EMBEDDINGS
-# =========================
-def generate_embeddings(texts):
-    print("[INFO] Loading embedding model...")
-    model = SentenceTransformer(EMBEDDING_MODEL)
+def generate_global_embeddings(texts):
+    print(f"[INFO] Loading embedding model: {config.EMBEDDING_MODEL}...")
+    model = SentenceTransformer(config.EMBEDDING_MODEL)
 
-    print("[INFO] Generating embeddings...")
+    print("[INFO] Generating 768-dimensional embeddings...")
     embeddings = model.encode(texts, show_progress_bar=True)
 
-    print("[INFO] Normalizing embeddings...")
+    print("[INFO] Normalizing embeddings (L2)...")
     embeddings = normalize(embeddings)
-
     return embeddings
 
-# =========================
-# 5. UMAP REDUCTION
-# =========================
-def reduce_dimensions(embeddings):
-    print("[INFO] Running UMAP...")
+def process_year_clusters(df):
+    """Loops through each year, applies UMAP + HDBSCAN, and formats cluster IDs."""
+    
+    # Temporarily store embeddings in the dataframe for slicing
+    texts = df["processed"].tolist()
+    global_embeddings = generate_global_embeddings(texts)
+    df["embedding_temp"] = list(global_embeddings)
+    
+    # Prepare column for explicit cluster IDs
+    df["cluster"] = "-1" 
+    
+    years = sorted(df["year"].unique())
+    print(f"\n[INFO] Starting explicit per-year clustering for: {years}")
+    
+    all_reduced_embeddings = [] # Save for 2D plot later
+    
+    for year in years:
+        year_mask = df["year"] == year
+        year_df = df[year_mask]
+        
+        if len(year_df) < config.MIN_CLUSTER_SIZE:
+            print(f"[WARNING] Year {year} has too few docs ({len(year_df)}). Skipping.")
+            continue
+            
+        print(f"\n--- Year {year}: {len(year_df)} documents ---")
+        year_embeddings = np.stack(year_df["embedding_temp"].values)
+        
+        # 1. UMAP Dimensionality Reduction
+        n_neighbors = min(config.UMAP_NEIGHBORS, len(year_df) - 1)
+        umap_model = umap.UMAP(
+            n_neighbors=n_neighbors,
+            n_components=config.UMAP_COMPONENTS,
+            min_dist=config.UMAP_MIN_DIST,
+            metric="cosine",
+            random_state=42
+        )
+        reduced = umap_model.fit_transform(year_embeddings)
+        all_reduced_embeddings.extend(reduced)
+        
+        # 2. HDBSCAN Density Clustering
+        clusterer = hdbscan.HDBSCAN(
+            min_cluster_size=config.MIN_CLUSTER_SIZE,
+            min_samples=config.MIN_SAMPLES,
+            metric="euclidean",
+            cluster_selection_method="eom"
+        )
+        labels = clusterer.fit_predict(reduced)
+        
+        # 3. Format Labels to Year_ClusterID (e.g., "2023_0", "2023_-1")
+        formatted_labels = [f"{int(year)}_{lbl}" if lbl != -1 else f"{int(year)}_-1" for lbl in labels]
+        df.loc[year_mask, "cluster"] = formatted_labels
+        
+        # Log Stats
+        n_clusters = len(set(labels)) - (1 if -1 in labels else 0)
+        noise_ratio = list(labels).count(-1) / len(labels)
+        print(f"[INFO] Year {year} -> Identified {n_clusters} clusters. Noise: {noise_ratio:.2%}")
 
-    umap_model = umap.UMAP(
-        n_neighbors=UMAP_NEIGHBORS,
-        n_components=UMAP_COMPONENTS,
-        min_dist=UMAP_MIN_DIST,
-        metric="cosine",
-        random_state=42
-    )
+    # Clean up the massive temporary embedding column
+    df = df.drop(columns=["embedding_temp"])
+    
+    return df, np.array(all_reduced_embeddings)
 
-    reduced = umap_model.fit_transform(embeddings)
-
-    print(f"[INFO] Reduced shape: {reduced.shape}")
-    return reduced
-
-# =========================
-# 6. CLUSTERING
-# =========================
-def cluster_data(reduced_embeddings):
-    print("[INFO] Running HDBSCAN clustering...")
-
-    clusterer = hdbscan.HDBSCAN(
-        min_cluster_size=MIN_CLUSTER_SIZE,
-        min_samples=MIN_SAMPLES,
-        metric="euclidean",
-        cluster_selection_method="eom"
-    )
-
-    labels = clusterer.fit_predict(reduced_embeddings)
-
-    print("[INFO] Clustering complete.")
-    return labels
-
-# =========================
-# 7. INSPECT CLUSTERS
-# =========================
 def inspect_clusters(df):
     print("\n[INFO] Cluster Distribution:")
-    print(df["cluster"].value_counts())
+    print(df["cluster"].value_counts().head(10)) # Just show top 10 to save space
 
-    print("\n[INFO] Sample Clusters:\n")
-
-    for cluster_id in sorted(df["cluster"].unique()):
-        if cluster_id == -1:
-            continue
-
-        print("=" * 40)
-        print(f"CLUSTER {cluster_id}")
-        print("=" * 40)
-
-        sample = df[df["cluster"] == cluster_id].head(5)
-
-        for _, row in sample.iterrows():
-            print("TEXT:", row["text"])
-            print("PROCESSED:", row["processed"])
-            print("-" * 20)
-
-# =========================
-# 8. SAVE OUTPUT
-# =========================
-def save_results(df):
-    df.to_csv(OUTPUT_FILE, index=False)
-    print(f"\n[INFO] Results saved to {OUTPUT_FILE}")
-
-# visualizations
-
-def visualize_clusters_2d(reduced_embeddings, labels):
-    print("[INFO] Generating 2D visualization...")
-
-    # Reduce to 2D for plotting
-    import umap
+def visualize_clusters_2d(df, reduced_embeddings):
+    print("\n[INFO] Generating 2D visualization (Global Map)...")
+    
+    # We need to further reduce the 5D UMAP down to 2D for plotting
     umap_2d = umap.UMAP(n_components=2, random_state=42)
     embedding_2d = umap_2d.fit_transform(reduced_embeddings)
 
-    plt.figure(figsize=(10, 7))
+    plt.figure(figsize=(12, 8))
+    labels = df["cluster"].values
 
     unique_labels = np.unique(labels)
 
     for label in unique_labels:
         mask = labels == label
-
-        if label == -1:
-            # noise
+        if str(label).endswith("_-1"): # It's a noise cluster
             plt.scatter(
-                embedding_2d[mask, 0],
-                embedding_2d[mask, 1],
-                s=10,
-                label="Noise (-1)"
+                embedding_2d[mask, 0], embedding_2d[mask, 1],
+                s=5, color='lightgrey', alpha=0.5, label="Noise" if label == unique_labels[0] else ""
             )
         else:
             plt.scatter(
-                embedding_2d[mask, 0],
-                embedding_2d[mask, 1],
-                s=10,
-                label=f"Cluster {label}"
+                embedding_2d[mask, 0], embedding_2d[mask, 1],
+                s=15, label=f"Cluster {label}"
             )
 
-    plt.title("UMAP 2D Cluster Visualization")
+    plt.title("Year-Segmented UMAP Cluster Visualization")
     plt.xlabel("UMAP-1")
     plt.ylabel("UMAP-2")
-    plt.legend(markerscale=2, fontsize=8)
+    
+    # Hide legend if there are too many clusters
+    if len(unique_labels) < 20:
+        plt.legend(markerscale=2, fontsize=8, bbox_to_anchor=(1.05, 1), loc='upper left')
+        
     plt.tight_layout()
-
+    
+    os.makedirs("outputs", exist_ok=True)
     plt.savefig("outputs/cluster_visualization.png")
-    plt.show()
+    print("[INFO] Saved plot to outputs/cluster_visualization.png")
 
-    print("[INFO] Saved as data/cluster_visualization.png")
+def save_results(df):
+    df.to_csv(config.CLUSTERED_FILE, index=False)
+    print(f"\n[INFO] Results saved to {config.CLUSTERED_FILE}")
 
-def main():
-    df = load_data()
-
-    embeddings = generate_embeddings(df["processed"].tolist())
-
-    reduced_embeddings = reduce_dimensions(embeddings)
-
-    labels = cluster_data(reduced_embeddings)
-    df["cluster"] = labels
-
-    inspect_clusters(df)
-
-    # 🔥 ADD THESE
-    visualize_clusters_2d(reduced_embeddings, labels)
-    plot_cluster_distribution(labels)
-
-    save_results(df)
 # =========================
-# 9. MAIN PIPELINE
+# MAIN PIPELINE
 # =========================
 def main():
     df = load_data()
-
-    embeddings = generate_embeddings(df["processed"].tolist())
-
-    reduced_embeddings = reduce_dimensions(embeddings)
-
-    df["cluster"] = cluster_data(reduced_embeddings)
-
+    
+    # Run the new Year-Level clustering logic
+    df, reduced_embeddings = process_year_clusters(df)
+    
     inspect_clusters(df)
-
+    
+    # Visualise and save
+    if len(reduced_embeddings) > 0:
+        visualize_clusters_2d(df, reduced_embeddings)
+        
     save_results(df)
 
-# =========================
-# 10. RUN SCRIPT
-# =========================
 if __name__ == "__main__":
     main()
