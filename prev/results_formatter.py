@@ -1,7 +1,6 @@
 # =========================
 # results_formatter.py
 # Agent: merges topic and sentiment results into a clean final JSON.
-# Called by orchestrator.py once quality checks pass (or retries exhaust).
 # =========================
 
 from utils import get_logger, save_json, load_json, timestamp, log_banner
@@ -18,12 +17,13 @@ def merge_cluster_results(topic_data: dict, sentiment_data: dict) -> list:
     all_ids = set(topic_clusters.keys()) | set(sentiment_clusters.keys())
     merged = []
 
-    for cid in sorted(all_ids, key=lambda x: int(x)):
+    # FIX: Sort alphabetically as strings instead of parsing as integers
+    for cid in sorted(all_ids):
         tdata = topic_clusters.get(cid, {})
         sdata = sentiment_clusters.get(cid, {})
 
         entry = {
-            "cluster_id": int(cid),
+            "cluster_id": str(cid), # FIX: Keep as string
             "n_docs": tdata.get("n_docs") or sdata.get("n_docs"),
             "topics": {
                 "n_topics": tdata.get("n_topics", 0),
@@ -54,7 +54,6 @@ def main(
 ):
     log_banner(logger, "Results formatter")
 
-    # Allow standalone usage by loading from files
     if topic_data is None:
         logger.info(f"Loading topic results from {config.TOPIC_OUTPUT_FILE}")
         topic_data = load_json(config.TOPIC_OUTPUT_FILE)
@@ -70,10 +69,12 @@ def main(
 
     clusters = merge_cluster_results(topic_data, sentiment_data)
 
-    # Summary stats
-    total_docs = sum(c["n_docs"] or 0 for c in clusters if c["cluster_id"] != -1)
-    total_topics = sum(c["topics"]["n_topics"] for c in clusters if c["cluster_id"] != -1)
-    sentiments = [c["sentiment"]["dominant"] for c in clusters if c["sentiment"]["dominant"]]
+    valid_clusters = [c for c in clusters if not str(c["cluster_id"]).endswith("_-1")]
+    
+    total_docs = sum(c["n_docs"] or 0 for c in valid_clusters)
+    total_topics = sum(c["topics"]["n_topics"] for c in valid_clusters)
+    
+    sentiments = [c["sentiment"]["dominant"] for c in valid_clusters if c["sentiment"]["dominant"]]
     sentiment_summary = {}
     for s in sentiments:
         sentiment_summary[s] = sentiment_summary.get(s, 0) + 1
@@ -87,7 +88,7 @@ def main(
             "sentiment_issues": sentiment_issues,
         },
         "summary": {
-            "total_clusters": len([c for c in clusters if c["cluster_id"] != -1]),
+            "total_clusters": len(valid_clusters),
             "total_docs_clustered": total_docs,
             "total_topics_discovered": total_topics,
             "dominant_sentiment_by_cluster": sentiment_summary,

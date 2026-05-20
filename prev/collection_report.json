@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-05-15T00:09:48",
+  "generated_at": "2026-05-15T21:28:55",
   "query": "panagbenga",
   "platforms": {
     "facebook": {
@@ -8,7 +8,7 @@
     },
     "tiktok": {
       "actor": "clockworks/tiktok-scraper",
-      "items_collected": 545
+      "items_collected": 624
     },
     "twitter": {
       "actor": "apidojo/tweet-scraper",
@@ -19,6 +19,6 @@
       "items_collected": 0
     }
   },
-  "total_rows": 534,
+  "total_rows": 605,
   "output_file": "data/panagbenga-dataset.csv"
 }

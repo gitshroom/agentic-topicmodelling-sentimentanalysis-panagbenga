@@ -253,7 +253,9 @@ function render(d) {
 
   // Clusters
   const cg = document.getElementById('cluster-grid');
-  const clusters = [...d.clusters].sort((a,b) => a.cluster_id - b.cluster_id);
+  
+  // FIX: Sort safely as strings instead of subtracting them
+  const clusters = [...d.clusters].sort((a,b) => String(a.cluster_id).localeCompare(String(b.cluster_id)));
   cg.innerHTML = clusters.map((c, idx) => renderCluster(c, idx)).join('');
 
   // Model info
@@ -268,9 +270,11 @@ function render(d) {
 }
 
 function renderCluster(c, idx) {
-  const isNoise = c.cluster_id === -1;
-  const sent = c.sentiment;
-  const topics = c.topics;
+  // FIX: Identify string-based noise clusters
+  const isNoise = String(c.cluster_id).endsWith('_-1') || c.cluster_id === -1 || c.cluster_id === '-1';
+  
+  const sent = c.sentiment || {};
+  const topics = c.topics || {};
   const domPos = sent.dominant === 'POSITIVE';
   const posRatio = (sent.label_ratios?.POSITIVE || 0) * 100;
   const negRatio = (sent.label_ratios?.NEGATIVE || 0) * 100;
@@ -282,17 +286,25 @@ function renderCluster(c, idx) {
 
   const topicHTML = topics.error
     ? `<div class="error-block">${topics.error}</div>`
-    : topics.top_topics.length === 0
+    : (topics.top_topics || []).length === 0
       ? `<div style="font-size:0.7rem;color:var(--muted)">No topics extracted</div>`
       : topics.top_topics.map((t, ti) => {
-          const maxScore = Math.max(...t.top_word_scores);
-          const words = t.top_words.map((w, wi) => {
-            const heat = t.top_word_scores[wi] / maxScore;
+          
+          // FIX: Handle both BERTopic (has scores) and Agentic LLM (no scores)
+          const hasScores = t.top_word_scores && t.top_word_scores.length > 0;
+          const maxScore = hasScores ? Math.max(...t.top_word_scores) : 1;
+          
+          const words = (t.top_words || []).map((w, wi) => {
+            const heat = hasScores ? (t.top_word_scores[wi] / maxScore) : 0.8;
             return `<span class="word-chip ${heat > 0.6 ? 'hot' : ''}">${w}</span>`;
           }).join('');
+          
+          // FIX: Use LLM-generated label if it exists, otherwise fallback to topic ID
+          const displayLabel = t.label ? t.label : `topic ${t.topic_id}`;
+          
           return `
             <div class="topic-entry">
-              <div class="topic-label">topic ${t.topic_id} · ${t.count} docs</div>
+              <div class="topic-label">${displayLabel} · ${t.count || 0} docs</div>
               <div class="topic-words">${words}</div>
             </div>`;
         }).join('');
@@ -305,8 +317,8 @@ function renderCluster(c, idx) {
           ${isNoise ? '<span class="noise-tag">unassigned</span>' : ''}
         </div>
         <div style="display:flex;align-items:center;gap:0.6rem">
-          <span class="sent-dominant ${domPos ? 'pos' : 'neg'}">${sent.dominant}</span>
-          <span class="doc-count">${c.n_docs} docs</span>
+          <span class="sent-dominant ${domPos ? 'pos' : 'neg'}">${sent.dominant || 'N/A'}</span>
+          <span class="doc-count">${c.n_docs || 0} docs</span>
         </div>
       </div>
       <div class="card-body">
@@ -328,7 +340,7 @@ function renderCluster(c, idx) {
         <div class="meta-row">
           <div class="mini-stat">noise ratio <span>${noiseRatioVal}</span></div>
           <div class="mini-stat">coherence <span class="${coherenceWarn ? 'warn' : 'ok'}">${coherenceVal}</span></div>
-          <div class="mini-stat">n_topics <span>${topics.n_topics}</span></div>
+          <div class="mini-stat">n_topics <span>${topics.n_topics || 0}</span></div>
         </div>` : ''}
         <div class="topics-section">${topicHTML}</div>
       </div>

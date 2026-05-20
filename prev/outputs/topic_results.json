@@ -1,7 +1,38 @@
 {
-  "generated_at": "2026-05-15T13:14:20",
+  "generated_at": "2026-05-21T00:09:02",
   "model_type": "BERTopic_Extractive",
   "clusters": {
+    "2022_0": {
+      "cluster_id": "2022_0",
+      "n_docs": 18,
+      "n_topics": 2,
+      "topics": [
+        {
+          "topic_id": 0,
+          "label": "Ride Bikepackingphilippines / Ride Bikepacking / Bikepackingphilippines Bike",
+          "top_words": [
+            "ride bikepackingphilippines",
+            "ride bikepacking",
+            "bikepackingphilippines bike",
+            "bikepackingphilippines",
+            "thankyoulord bikepacking"
+          ],
+          "count": 3
+        },
+        {
+          "topic_id": 1,
+          "label": "Topbikesph Tropangtopbikes / Topbikesgoestobaguio Topbikesph / Topbikesph",
+          "top_words": [
+            "topbikesph tropangtopbikes",
+            "topbikesgoestobaguio topbikesph",
+            "topbikesph",
+            "bikerslife motorcycles",
+            "tropangtopbikes"
+          ],
+          "count": 15
+        }
+      ]
+    },
     "2022_1": {
       "cluster_id": "2022_1",
       "n_docs": 20,
@@ -145,6 +176,43 @@
             "destination city"
           ],
           "count": 12
+        }
+      ]
+    },
+    "2023_0": {
+      "cluster_id": "2023_0",
+      "n_docs": 16,
+      "n_topics": 0,
+      "topics": []
+    },
+    "2023_1": {
+      "cluster_id": "2023_1",
+      "n_docs": 15,
+      "n_topics": 2,
+      "topics": [
+        {
+          "topic_id": 0,
+          "label": "Fireworks Display / Grand Fireworks / Fireworks Grand",
+          "top_words": [
+            "fireworks display",
+            "grand fireworks",
+            "fireworks grand",
+            "fireworks",
+            "aerial fireworks"
+          ],
+          "count": 7
+        },
+        {
+          "topic_id": 1,
+          "label": "Closing Fireworks / Fireworks Flowerfest / Fireworks Close",
+          "top_words": [
+            "closing fireworks",
+            "fireworks flowerfest",
+            "fireworks close",
+            "fireworks display",
+            "fireworks longexposure"
+          ],
+          "count": 8
         }
       ]
     },
@@ -361,6 +429,37 @@
         }
       ]
     },
+    "2024_10": {
+      "cluster_id": "2024_10",
+      "n_docs": 17,
+      "n_topics": 2,
+      "topics": [
+        {
+          "topic_id": 0,
+          "label": "Float Parade / Parade City / City Flower",
+          "top_words": [
+            "float parade",
+            "parade city",
+            "city flower",
+            "floral floats",
+            "celebration grandest"
+          ],
+          "count": 3
+        },
+        {
+          "topic_id": 1,
+          "label": "Parade Flowerpower / Flower Parade / Float Parade",
+          "top_words": [
+            "parade flowerpower",
+            "flower parade",
+            "float parade",
+            "parade reelsfyp",
+            "floral float"
+          ],
+          "count": 14
+        }
+      ]
+    },
     "2024_11": {
       "cluster_id": "2024_11",
       "n_docs": 39,
@@ -545,6 +644,18 @@
         }
       ]
     },
+    "2024_2": {
+      "cluster_id": "2024_2",
+      "n_docs": 10,
+      "n_topics": 0,
+      "topics": []
+    },
+    "2024_3": {
+      "cluster_id": "2024_3",
+      "n_docs": 14,
+      "n_topics": 0,
+      "topics": []
+    },
     "2024_4": {
       "cluster_id": "2024_4",
       "n_docs": 28,
@@ -576,6 +687,37 @@
         }
       ]
     },
+    "2024_5": {
+      "cluster_id": "2024_5",
+      "n_docs": 14,
+      "n_topics": 2,
+      "topics": [
+        {
+          "topic_id": 0,
+          "label": "Happenings Reggae / Reggae Set / Balicasagislanddiveresort Opmmusic",
+          "top_words": [
+            "happenings reggae",
+            "reggae set",
+            "balicasagislanddiveresort opmmusic",
+            "reggae",
+            "music belongs"
+          ],
+          "count": 3
+        },
+        {
+          "topic_id": 1,
+          "label": "Listening Bini_Pantropiko / Performance Fancam / Oxtsfu Listening",
+          "top_words": [
+            "listening bini_pantropiko",
+            "performance fancam",
+            "oxtsfu listening",
+            "cokestudiopanagbengafestival series",
+            "fancam bit"
+          ],
+          "count": 9
+        }
+      ]
+    },
     "2024_6": {
       "cluster_id": "2024_6",
       "n_docs": 26,
@@ -604,6 +746,37 @@
             "trendingreelsvideo trendingaudio"
           ],
           "count": 17
+        }
+      ]
+    },
+    "2024_7": {
+      "cluster_id": "2024_7",
+      "n_docs": 18,
+      "n_topics": 2,
+      "topics": [
+        {
+          "topic_id": 0,
+          "label": "Face Painting / Mural Painting / Cornejo Makeup",
+          "top_words": [
+            "face painting",
+            "mural painting",
+            "cornejo makeup",
+            "arc mural",
+            "artwork designed"
+          ],
+          "count": 7
+        },
+        {
+          "topic_id": 1,
+          "label": "Canonphotographer March / Streetphotographer Photographyislife / Photograph Streetphotographer",
+          "top_words": [
+            "canonphotographer march",
+            "streetphotographer photographyislife",
+            "photograph streetphotographer",
+            "city sedurikokunphotography",
+            "streetphotographer"
+          ],
+          "count": 9
         }
       ]
     },
@@ -779,6 +952,37 @@
         }
       ]
     },
+    "2025_10": {
+      "cluster_id": "2025_10",
+      "n_docs": 13,
+      "n_topics": 2,
+      "topics": [
+        {
+          "topic_id": 0,
+          "label": "Dance Parade / Parade Fun / Street Dance",
+          "top_words": [
+            "dance parade",
+            "parade fun",
+            "street dance",
+            "parade team",
+            "parade"
+          ],
+          "count": 5
+        },
+        {
+          "topic_id": 1,
+          "label": "Grandstreetdanceparade / Dance Parade / City Streetdancecompetition",
+          "top_words": [
+            "grandstreetdanceparade",
+            "dance parade",
+            "city streetdancecompetition",
+            "street dance",
+            "grandstreetdanceparade photos"
+          ],
+          "count": 8
+        }
+      ]
+    },
     "2025_11": {
       "cluster_id": "2025_11",
       "n_docs": 39,
@@ -838,6 +1042,49 @@
             "sanchez"
           ],
           "count": 40
+        }
+      ]
+    },
+    "2025_13": {
+      "cluster_id": "2025_13",
+      "n_docs": 19,
+      "n_topics": 3,
+      "topics": [
+        {
+          "topic_id": 0,
+          "label": "Opening Parade / Parade Start / Parade Day",
+          "top_words": [
+            "opening parade",
+            "parade start",
+            "parade day",
+            "parade weekend",
+            "parade cool"
+          ],
+          "count": 7
+        },
+        {
+          "topic_id": 1,
+          "label": "Igorotface Parade / Parade Igorot / Parade Itsmorefuninbaguio",
+          "top_words": [
+            "igorotface parade",
+            "parade igorot",
+            "parade itsmorefuninbaguio",
+            "pangbenga parade",
+            "parade higlights"
+          ],
+          "count": 5
+        },
+        {
+          "topic_id": 2,
+          "label": "Sinulogfestival Parade / Parade Lovipoe / Parade Gumala",
+          "top_words": [
+            "sinulogfestival parade",
+            "parade lovipoe",
+            "parade gumala",
+            "parade nood",
+            "nood parade"
+          ],
+          "count": 5
         }
       ]
     },
@@ -915,6 +1162,99 @@
         }
       ]
     },
+    "2025_16": {
+      "cluster_id": "2025_16",
+      "n_docs": 18,
+      "n_topics": 2,
+      "topics": [
+        {
+          "topic_id": 0,
+          "label": "Blooms City / Bloomwithbeauty / Blooming Spectacle",
+          "top_words": [
+            "blooms city",
+            "bloomwithbeauty",
+            "blooming spectacle",
+            "bloomwithbeauty known",
+            "bloom culture"
+          ],
+          "count": 5
+        },
+        {
+          "topic_id": 1,
+          "label": "Baguiobenguet Streetdanceparade / Celebration Blossoms / Celebration Flowers",
+          "top_words": [
+            "baguiobenguet streetdanceparade",
+            "celebration blossoms",
+            "celebration flowers",
+            "vibrant celebration",
+            "bloom artists"
+          ],
+          "count": 5
+        }
+      ]
+    },
+    "2025_17": {
+      "cluster_id": "2025_17",
+      "n_docs": 10,
+      "n_topics": 2,
+      "topics": [
+        {
+          "topic_id": 0,
+          "label": "Blooming Season / Bloom March / Blooms Blossoms",
+          "top_words": [
+            "blooming season",
+            "bloom march",
+            "blooms blossoms",
+            "theme blossoms",
+            "blooming"
+          ],
+          "count": 4
+        },
+        {
+          "topic_id": 1,
+          "label": "Season Blooming / Kankanaey Origin / Blooming",
+          "top_words": [
+            "season blooming",
+            "kankanaey origin",
+            "blooming",
+            "term kankanaey",
+            "kankanaey language"
+          ],
+          "count": 5
+        }
+      ]
+    },
+    "2025_2": {
+      "cluster_id": "2025_2",
+      "n_docs": 16,
+      "n_topics": 2,
+      "topics": [
+        {
+          "topic_id": 0,
+          "label": "Decemberavenue Cokestudiolive / Decemberavenue Cokestudio / Coke Studio",
+          "top_words": [
+            "decemberavenue cokestudiolive",
+            "decemberavenue cokestudio",
+            "coke studio",
+            "cokestudio mjlds",
+            "cokestudioconcert cokestudio"
+          ],
+          "count": 9
+        },
+        {
+          "topic_id": 1,
+          "label": "Cokestudioconcert Disclaimer / Music Copyright / Disclaimer Copyright",
+          "top_words": [
+            "cokestudioconcert disclaimer",
+            "music copyright",
+            "disclaimer copyright",
+            "copyright infringement",
+            "cokestudiopanagbengafestival cokestudioconcert"
+          ],
+          "count": 7
+        }
+      ]
+    },
     "2025_3": {
       "cluster_id": "2025_3",
       "n_docs": 32,
@@ -989,6 +1329,130 @@
         }
       ]
     },
+    "2025_5": {
+      "cluster_id": "2025_5",
+      "n_docs": 17,
+      "n_topics": 2,
+      "topics": [
+        {
+          "topic_id": 0,
+          "label": "Event Balletbaguio / Balletbaguio / Nsdaps Ballet",
+          "top_words": [
+            "event balletbaguio",
+            "balletbaguio",
+            "nsdaps ballet",
+            "dance queen",
+            "ballet captivating"
+          ],
+          "count": 3
+        },
+        {
+          "topic_id": 1,
+          "label": "Danceofthephilippines Celebratingculture / Culturedance Pinoy / Culturedance",
+          "top_words": [
+            "danceofthephilippines celebratingculture",
+            "culturedance pinoy",
+            "culturedance",
+            "dancechallenge culture",
+            "culture culturedance"
+          ],
+          "count": 11
+        }
+      ]
+    },
+    "2025_6": {
+      "cluster_id": "2025_6",
+      "n_docs": 16,
+      "n_topics": 2,
+      "topics": [
+        {
+          "topic_id": 0,
+          "label": "Music Fest / Colorful Festivals / Concert Eunoia",
+          "top_words": [
+            "music fest",
+            "colorful festivals",
+            "concert eunoia",
+            "culturaldance igrotdance",
+            "gmusicfest"
+          ],
+          "count": 12
+        },
+        {
+          "topic_id": 1,
+          "label": "Djdaxx Daxxmusic / Hataw Concert / Daxxmusic",
+          "top_words": [
+            "djdaxx daxxmusic",
+            "hataw concert",
+            "daxxmusic",
+            "daxxmusic progressivehouse",
+            "band city"
+          ],
+          "count": 3
+        }
+      ]
+    },
+    "2025_7": {
+      "cluster_id": "2025_7",
+      "n_docs": 12,
+      "n_topics": 2,
+      "topics": [
+        {
+          "topic_id": 0,
+          "label": "Road Bloom / Blooming Session / Blooming",
+          "top_words": [
+            "road bloom",
+            "blooming session",
+            "blooming",
+            "bloom infront",
+            "bloom"
+          ],
+          "count": 5
+        },
+        {
+          "topic_id": 1,
+          "label": "Road Bloom / Bloom Session / Session Road",
+          "top_words": [
+            "road bloom",
+            "bloom session",
+            "session road",
+            "bloom visit",
+            "bloom"
+          ],
+          "count": 7
+        }
+      ]
+    },
+    "2025_8": {
+      "cluster_id": "2025_8",
+      "n_docs": 10,
+      "n_topics": 2,
+      "topics": [
+        {
+          "topic_id": 0,
+          "label": "City Pines / Pines City / Pines Kennonroad",
+          "top_words": [
+            "city pines",
+            "pines city",
+            "pines kennonroad",
+            "pines fallen",
+            "pines"
+          ],
+          "count": 3
+        },
+        {
+          "topic_id": 1,
+          "label": "Skies Happypanagbengafestival / Capricious Skies / Skies Morning",
+          "top_words": [
+            "skies happypanagbengafestival",
+            "capricious skies",
+            "skies morning",
+            "skies",
+            "cold season"
+          ],
+          "count": 3
+        }
+      ]
+    },
     "2025_9": {
       "cluster_id": "2025_9",
       "n_docs": 25,
@@ -1029,6 +1493,80 @@
             "dancing parade"
           ],
           "count": 16
+        }
+      ]
+    },
+    "2026_0": {
+      "cluster_id": "2026_0",
+      "n_docs": 17,
+      "n_topics": 2,
+      "topics": [
+        {
+          "topic_id": 0,
+          "label": "Solstice Bloom / Bloom Motion / Flower Foundation",
+          "top_words": [
+            "solstice bloom",
+            "bloom motion",
+            "flower foundation",
+            "photos coleproductions",
+            "bloom"
+          ],
+          "count": 3
+        },
+        {
+          "topic_id": 1,
+          "label": "Recital Solstice / Brightest March / Solstice Bloom",
+          "top_words": [
+            "recital solstice",
+            "brightest march",
+            "solstice bloom",
+            "bloom motion",
+            "performances celebration"
+          ],
+          "count": 14
+        }
+      ]
+    },
+    "2026_1": {
+      "cluster_id": "2026_1",
+      "n_docs": 14,
+      "n_topics": 3,
+      "topics": [
+        {
+          "topic_id": 0,
+          "label": "Acoustic Soundtrack / Edralins Reggae / Reggae Set",
+          "top_words": [
+            "acoustic soundtrack",
+            "edralins reggae",
+            "reggae set",
+            "exciting jam",
+            "concert besties"
+          ],
+          "count": 3
+        },
+        {
+          "topic_id": 1,
+          "label": "Touristdestination Nocopyrightmusic / Parade Nocopyrightmusic / Nocopyrightinfringementintendedmusic Nocopyrightinfringementintended",
+          "top_words": [
+            "touristdestination nocopyrightmusic",
+            "parade nocopyrightmusic",
+            "nocopyrightinfringementintendedmusic nocopyrightinfringementintended",
+            "nocopyrightmusic nocopyrightinfringementintendedmusic",
+            "nocopyrightinfringementintendedmusic love"
+          ],
+          "count": 6
+        },
+        {
+          "topic_id": 2,
+          "label": "Cokestudio Reggaesetgo / Reggaesetgo Cokestudio / Reggaesetgo Melvinjonesgrandstand",
+          "top_words": [
+            "cokestudio reggaesetgo",
+            "reggaesetgo cokestudio",
+            "reggaesetgo melvinjonesgrandstand",
+            "reggaesetgo",
+            "dionela cokestudio"
+          ],
+          "count": 5
         }
       ]
     },
@@ -1291,6 +1829,74 @@
           "count": 27
         }
       ]
+    },
+    "2026_4": {
+      "cluster_id": "2026_4",
+      "n_docs": 13,
+      "n_topics": 2,
+      "topics": [
+        {
+          "topic_id": 0,
+          "label": "Exciting Prizes / Prizes / Courtesy Bingo",
+          "top_words": [
+            "exciting prizes",
+            "prizes",
+            "courtesy bingo",
+            "bibongbubwit idol",
+            "fiesta taon"
+          ],
+          "count": 6
+        },
+        {
+          "topic_id": 1,
+          "label": "Surfph Surfiestaxpanagbenga / Surfiestaxpanagbenga / Surfiestaxpanagbenga Ukayukay",
+          "top_words": [
+            "surfph surfiestaxpanagbenga",
+            "surfiestaxpanagbenga",
+            "surfiestaxpanagbenga ukayukay",
+            "fresh surfiestasapanagbenga",
+            "surfphilippines"
+          ],
+          "count": 7
+        }
+      ]
+    },
+    "2026_5": {
+      "cluster_id": "2026_5",
+      "n_docs": 17,
+      "n_topics": 2,
+      "topics": [
+        {
+          "topic_id": 0,
+          "label": "Facebookreelsviral Trendingnowreels / Trendingnowreels Trendingreelsvideo / Trendingreelsvideo Trendingreel",
+          "top_words": [
+            "facebookreelsviral trendingnowreels",
+            "trendingnowreels trendingreelsvideo",
+            "trendingreelsvideo trendingreel",
+            "trendingnow hilightseveryonefollowers",
+            "hilightseveryonefollowers facebookreelsviral"
+          ],
+          "count": 6
+        },
+        {
+          "topic_id": 1,
+          "label": "Facebookreelsviral Funnyreelsvideo / Funnyreelsvideo Myfollowersandviewers / Myfollowersandviewers Facebookreelsviral",
+          "top_words": [
+            "facebookreelsviral funnyreelsvideo",
+            "funnyreelsvideo myfollowersandviewers",
+            "myfollowersandviewers facebookreelsviral",
+            "facebookreelsviral myfollowersandviewers",
+            "funnyreels myfollowersandviewers"
+          ],
+          "count": 9
+        }
+      ]
+    },
+    "2026_6": {
+      "cluster_id": "2026_6",
+      "n_docs": 11,
+      "n_topics": 0,
+      "topics": []
     },
     "2026_7": {
       "cluster_id": "2026_7",

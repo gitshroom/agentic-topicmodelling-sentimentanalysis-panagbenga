@@ -1,6 +1,6 @@
 {
   "pipeline_version": "1.0",
-  "generated_at": "2026-05-15T13:25:41",
+  "generated_at": "2026-05-21T00:09:21",
   "quality_passed": true,
   "validation": {
     "topic_issues": [],
@@ -9,7 +9,7 @@
   "summary": {
     "total_clusters": 55,
     "total_docs_clustered": 2428,
-    "total_topics_discovered": 98,
+    "total_topics_discovered": 136,
     "dominant_sentiment_by_cluster": {
       "POSITIVE": 22,
       "NEGATIVE": 20,
@@ -23,13 +23,38 @@
   },
   "clusters": [
     {
-      "cluster_id": 20220,
+      "cluster_id": "2022_0",
       "n_docs": 18,
       "topics": {
-        "n_topics": 0,
+        "n_topics": 2,
         "noise_ratio": null,
         "coherence_proxy": null,
-        "top_topics": [],
+        "top_topics": [
+          {
+            "topic_id": 0,
+            "label": "Ride Bikepackingphilippines / Ride Bikepacking / Bikepackingphilippines Bike",
+            "top_words": [
+              "ride bikepackingphilippines",
+              "ride bikepacking",
+              "bikepackingphilippines bike",
+              "bikepackingphilippines",
+              "thankyoulord bikepacking"
+            ],
+            "count": 3
+          },
+          {
+            "topic_id": 1,
+            "label": "Topbikesph Tropangtopbikes / Topbikesgoestobaguio Topbikesph / Topbikesph",
+            "top_words": [
+              "topbikesph tropangtopbikes",
+              "topbikesgoestobaguio topbikesph",
+              "topbikesph",
+              "bikerslife motorcycles",
+              "tropangtopbikes"
+            ],
+            "count": 15
+          }
+        ],
         "error": null
       },
       "sentiment": {
@@ -37,19 +62,19 @@
         "avg_confidence": 1.0,
         "coverage": 1.0,
         "label_distribution": {
-          "POSITIVE": 8,
-          "NEGATIVE": 4,
-          "NEUTRAL": 6
+          "POSITIVE": 9,
+          "NEGATIVE": 2,
+          "NEUTRAL": 7
         },
         "label_ratios": {
-          "POSITIVE": 0.4444,
-          "NEGATIVE": 0.2222,
-          "NEUTRAL": 0.3333
+          "POSITIVE": 0.5,
+          "NEGATIVE": 0.1111,
+          "NEUTRAL": 0.3889
         }
       }
     },
     {
-      "cluster_id": 20221,
+      "cluster_id": "2022_1",
       "n_docs": 20,
       "topics": {
         "n_topics": 2,
@@ -100,7 +125,7 @@
       }
     },
     {
-      "cluster_id": 20222,
+      "cluster_id": "2022_2",
       "n_docs": 329,
       "topics": {
         "n_topics": 9,
@@ -223,19 +248,19 @@
         "avg_confidence": 1.0,
         "coverage": 1.0,
         "label_distribution": {
-          "POSITIVE": 132,
-          "NEUTRAL": 98,
-          "NEGATIVE": 99
+          "POSITIVE": 135,
+          "NEUTRAL": 96,
+          "NEGATIVE": 98
         },
         "label_ratios": {
-          "POSITIVE": 0.4012,
-          "NEUTRAL": 0.2979,
-          "NEGATIVE": 0.3009
+          "POSITIVE": 0.4103,
+          "NEUTRAL": 0.2918,
+          "NEGATIVE": 0.2979
         }
       }
     },
     {
-      "cluster_id": 20230,
+      "cluster_id": "2023_0",
       "n_docs": 16,
       "topics": {
         "n_topics": 0,
@@ -259,33 +284,58 @@
       }
     },
     {
-      "cluster_id": 20231,
+      "cluster_id": "2023_1",
       "n_docs": 15,
       "topics": {
-        "n_topics": 0,
+        "n_topics": 2,
         "noise_ratio": null,
         "coherence_proxy": null,
-        "top_topics": [],
+        "top_topics": [
+          {
+            "topic_id": 0,
+            "label": "Fireworks Display / Grand Fireworks / Fireworks Grand",
+            "top_words": [
+              "fireworks display",
+              "grand fireworks",
+              "fireworks grand",
+              "fireworks",
+              "aerial fireworks"
+            ],
+            "count": 7
+          },
+          {
+            "topic_id": 1,
+            "label": "Closing Fireworks / Fireworks Flowerfest / Fireworks Close",
+            "top_words": [
+              "closing fireworks",
+              "fireworks flowerfest",
+              "fireworks close",
+              "fireworks display",
+              "fireworks longexposure"
+            ],
+            "count": 8
+          }
+        ],
         "error": null
       },
       "sentiment": {
-        "dominant": "NEGATIVE",
+        "dominant": "NEUTRAL",
         "avg_confidence": 1.0,
         "coverage": 1.0,
         "label_distribution": {
           "NEGATIVE": 6,
-          "POSITIVE": 5,
-          "NEUTRAL": 4
+          "POSITIVE": 2,
+          "NEUTRAL": 7
         },
         "label_ratios": {
           "NEGATIVE": 0.4,
-          "POSITIVE": 0.3333,
-          "NEUTRAL": 0.2667
+          "POSITIVE": 0.1333,
+          "NEUTRAL": 0.4667
         }
       }
     },
     {
-      "cluster_id": 20232,
+      "cluster_id": "2023_2",
       "n_docs": 422,
       "topics": {
         "n_topics": 9,
@@ -408,19 +458,19 @@
         "avg_confidence": 1.0,
         "coverage": 1.0,
         "label_distribution": {
-          "NEGATIVE": 127,
-          "NEUTRAL": 123,
-          "POSITIVE": 172
+          "NEGATIVE": 135,
+          "NEUTRAL": 114,
+          "POSITIVE": 173
         },
         "label_ratios": {
-          "NEGATIVE": 0.3009,
-          "NEUTRAL": 0.2915,
-          "POSITIVE": 0.4076
+          "NEGATIVE": 0.3199,
+          "NEUTRAL": 0.2701,
+          "POSITIVE": 0.41
         }
       }
     },
     {
-      "cluster_id": 20240,
+      "cluster_id": "2024_0",
       "n_docs": 25,
       "topics": {
         "n_topics": 4,
@@ -483,19 +533,19 @@
         "avg_confidence": 1.0,
         "coverage": 1.0,
         "label_distribution": {
-          "NEUTRAL": 6,
+          "NEUTRAL": 5,
           "POSITIVE": 11,
-          "NEGATIVE": 8
+          "NEGATIVE": 9
         },
         "label_ratios": {
-          "NEUTRAL": 0.24,
+          "NEUTRAL": 0.2,
           "POSITIVE": 0.44,
-          "NEGATIVE": 0.32
+          "NEGATIVE": 0.36
         }
       }
     },
     {
-      "cluster_id": 20241,
+      "cluster_id": "2024_1",
       "n_docs": 41,
       "topics": {
         "n_topics": 3,
@@ -558,1177 +608,38 @@
       }
     },
     {
-      "cluster_id": 20242,
-      "n_docs": 10,
-      "topics": {
-        "n_topics": 0,
-        "noise_ratio": null,
-        "coherence_proxy": null,
-        "top_topics": [],
-        "error": null
-      },
-      "sentiment": {
-        "dominant": "NEUTRAL",
-        "avg_confidence": 1.0,
-        "coverage": 1.0,
-        "label_distribution": {
-          "NEGATIVE": 3,
-          "NEUTRAL": 7
-        },
-        "label_ratios": {
-          "NEGATIVE": 0.3,
-          "NEUTRAL": 0.7
-        }
-      }
-    },
-    {
-      "cluster_id": 20243,
-      "n_docs": 14,
-      "topics": {
-        "n_topics": 0,
-        "noise_ratio": null,
-        "coherence_proxy": null,
-        "top_topics": [],
-        "error": null
-      },
-      "sentiment": {
-        "dominant": "NEUTRAL",
-        "avg_confidence": 1.0,
-        "coverage": 1.0,
-        "label_distribution": {
-          "NEUTRAL": 8,
-          "POSITIVE": 1,
-          "NEGATIVE": 5
-        },
-        "label_ratios": {
-          "NEUTRAL": 0.5714,
-          "POSITIVE": 0.0714,
-          "NEGATIVE": 0.3571
-        }
-      }
-    },
-    {
-      "cluster_id": 20244,
-      "n_docs": 28,
-      "topics": {
-        "n_topics": 2,
-        "noise_ratio": null,
-        "coherence_proxy": null,
-        "top_topics": [
-          {
-            "topic_id": 0,
-            "label": "Safeguardshowersaya Softskinprotection / Softskinprotection Safeguardwhitecamellia / Safeguardwhitecamellia",
-            "top_words": [
-              "safeguardshowersaya softskinprotection",
-              "softskinprotection safeguardwhitecamellia",
-              "safeguardwhitecamellia",
-              "booth safeguard",
-              "safeguardph safeguardsoap"
-            ],
-            "count": 5
-          },
-          {
-            "topic_id": 1,
-            "label": "Burnhampark Minesviewparkbaguio / Burnhamparkbaguiocity / Panagbengafeelsatsm Burnhampark",
-            "top_words": [
-              "burnhampark minesviewparkbaguio",
-              "burnhamparkbaguiocity",
-              "panagbengafeelsatsm burnhampark",
-              "burnhamlake burnhamparkbaguiocity",
-              "burnhamparkbaguiocity west"
-            ],
-            "count": 23
-          }
-        ],
-        "error": null
-      },
-      "sentiment": {
-        "dominant": "NEGATIVE",
-        "avg_confidence": 1.0,
-        "coverage": 1.0,
-        "label_distribution": {
-          "NEUTRAL": 8,
-          "NEGATIVE": 13,
-          "POSITIVE": 7
-        },
-        "label_ratios": {
-          "NEUTRAL": 0.2857,
-          "NEGATIVE": 0.4643,
-          "POSITIVE": 0.25
-        }
-      }
-    },
-    {
-      "cluster_id": 20245,
-      "n_docs": 14,
-      "topics": {
-        "n_topics": 0,
-        "noise_ratio": null,
-        "coherence_proxy": null,
-        "top_topics": [],
-        "error": null
-      },
-      "sentiment": {
-        "dominant": "NEGATIVE",
-        "avg_confidence": 1.0,
-        "coverage": 1.0,
-        "label_distribution": {
-          "POSITIVE": 3,
-          "NEGATIVE": 9,
-          "NEUTRAL": 2
-        },
-        "label_ratios": {
-          "POSITIVE": 0.2143,
-          "NEGATIVE": 0.6429,
-          "NEUTRAL": 0.1429
-        }
-      }
-    },
-    {
-      "cluster_id": 20246,
-      "n_docs": 26,
-      "topics": {
-        "n_topics": 2,
-        "noise_ratio": null,
-        "coherence_proxy": null,
-        "top_topics": [
-          {
-            "topic_id": 0,
-            "label": "Videoviral Viralsongsreel / Virals Videos / Viralreels Fbvideoreels",
-            "top_words": [
-              "videoviral viralsongsreel",
-              "virals videos",
-              "viralreels fbvideoreels",
-              "fbreelsviral videoviral",
-              "viralsongsreel virals"
-            ],
-            "count": 9
-          },
-          {
-            "topic_id": 1,
-            "label": "Followerseveryone Trendingreelsvideo / Followersfbreels Trendingreelsvideo / Trendingreelsvideo Trendingvideo",
-            "top_words": [
-              "followerseveryone trendingreelsvideo",
-              "followersfbreels trendingreelsvideo",
-              "trendingreelsvideo trendingvideo",
-              "trendingvideo everybody",
-              "trendingreelsvideo trendingaudio"
-            ],
-            "count": 17
-          }
-        ],
-        "error": null
-      },
-      "sentiment": {
-        "dominant": "NEGATIVE",
-        "avg_confidence": 1.0,
-        "coverage": 1.0,
-        "label_distribution": {
-          "NEGATIVE": 14,
-          "POSITIVE": 4,
-          "NEUTRAL": 8
-        },
-        "label_ratios": {
-          "NEGATIVE": 0.5385,
-          "POSITIVE": 0.1538,
-          "NEUTRAL": 0.3077
-        }
-      }
-    },
-    {
-      "cluster_id": 20247,
-      "n_docs": 18,
-      "topics": {
-        "n_topics": 0,
-        "noise_ratio": null,
-        "coherence_proxy": null,
-        "top_topics": [],
-        "error": null
-      },
-      "sentiment": {
-        "dominant": "NEUTRAL",
-        "avg_confidence": 1.0,
-        "coverage": 1.0,
-        "label_distribution": {
-          "NEUTRAL": 14,
-          "POSITIVE": 3,
-          "NEGATIVE": 1
-        },
-        "label_ratios": {
-          "NEUTRAL": 0.7778,
-          "POSITIVE": 0.1667,
-          "NEGATIVE": 0.0556
-        }
-      }
-    },
-    {
-      "cluster_id": 20248,
-      "n_docs": 147,
-      "topics": {
-        "n_topics": 4,
-        "noise_ratio": null,
-        "coherence_proxy": null,
-        "top_topics": [
-          {
-            "topic_id": 0,
-            "label": "Likesharefollowcomment Teamjocelyn / Teamjocelyn Cherisheverymoment / Ilovebaguiocity Likesharefollowcomment",
-            "top_words": [
-              "likesharefollowcomment teamjocelyn",
-              "teamjocelyn cherisheverymoment",
-              "ilovebaguiocity likesharefollowcomment",
-              "teamjocelyn",
-              "triptobaguio likesharefollowcomment"
-            ],
-            "count": 88
-          },
-          {
-            "topic_id": 1,
-            "label": "Luxebeautyandwellnesskaravan / Magkita Melvin / Sinong Sasama",
-            "top_words": [
-              "luxebeautyandwellnesskaravan",
-              "magkita melvin",
-              "sinong sasama",
-              "march luxebeautyandwellnesskaravan",
-              "cantbuymelove bellemariano"
-            ],
-            "count": 14
-          },
-          {
-            "topic_id": 2,
-            "label": "Beautyqueens Igorota / Beautyqueens / Baguioqueens Beautyqueens",
-            "top_words": [
-              "beautyqueens igorota",
-              "beautyqueens",
-              "baguioqueens beautyqueens",
-              "special glammed",
-              "worn beautiful"
-            ],
-            "count": 12
-          },
-          {
-            "topic_id": 3,
-            "label": "Batangregasco Babygiant / Baguiopanagbenga Misterkopibean / Bigmak Babygiant",
-            "top_words": [
-              "batangregasco babygiant",
-              "baguiopanagbenga misterkopibean",
-              "bigmak babygiant",
-              "batangregasco bigmak",
-              "baguiopanagbenga"
-            ],
-            "count": 20
-          }
-        ],
-        "error": null
-      },
-      "sentiment": {
-        "dominant": "NEGATIVE",
-        "avg_confidence": 1.0,
-        "coverage": 1.0,
-        "label_distribution": {
-          "POSITIVE": 36,
-          "NEGATIVE": 81,
-          "NEUTRAL": 30
-        },
-        "label_ratios": {
-          "POSITIVE": 0.2449,
-          "NEGATIVE": 0.551,
-          "NEUTRAL": 0.2041
-        }
-      }
-    },
-    {
-      "cluster_id": 20249,
-      "n_docs": 75,
-      "topics": {
-        "n_topics": 2,
-        "noise_ratio": null,
-        "coherence_proxy": null,
-        "top_topics": [
-          {
-            "topic_id": 0,
-            "label": "Travel Instalike / Traveldiaries / Boutiquehotels Vacationph",
-            "top_words": [
-              "travel instalike",
-              "traveldiaries",
-              "boutiquehotels vacationph",
-              "barkada eekoshotels",
-              "traveldiaries familyfriends"
-            ],
-            "count": 26
-          },
-          {
-            "topic_id": 1,
-            "label": "Love Touristspot / Vibes City / Touristspot",
-            "top_words": [
-              "love touristspot",
-              "vibes city",
-              "touristspot",
-              "evening addonreels",
-              "green love"
-            ],
-            "count": 33
-          }
-        ],
-        "error": null
-      },
-      "sentiment": {
-        "dominant": "NEGATIVE",
-        "avg_confidence": 1.0,
-        "coverage": 1.0,
-        "label_distribution": {
-          "POSITIVE": 24,
-          "NEUTRAL": 20,
-          "NEGATIVE": 31
-        },
-        "label_ratios": {
-          "POSITIVE": 0.32,
-          "NEUTRAL": 0.2667,
-          "NEGATIVE": 0.4133
-        }
-      }
-    },
-    {
-      "cluster_id": 20250,
-      "n_docs": 26,
-      "topics": {
-        "n_topics": 2,
-        "noise_ratio": null,
-        "coherence_proxy": null,
-        "top_topics": [
-          {
-            "topic_id": 0,
-            "label": "Grand Float / Float Grand / Donald Float",
-            "top_words": [
-              "grand float",
-              "float grand",
-              "donald float",
-              "pauwi float",
-              "float"
-            ],
-            "count": 5
-          },
-          {
-            "topic_id": 1,
-            "label": "Fireworks Display / Fireworks / Ceremony Fireworks",
-            "top_words": [
-              "fireworks display",
-              "fireworks",
-              "ceremony fireworks",
-              "fireworksdisplay",
-              "day fireworks"
-            ],
-            "count": 21
-          }
-        ],
-        "error": null
-      },
-      "sentiment": {
-        "dominant": "NEUTRAL",
-        "avg_confidence": 1.0,
-        "coverage": 1.0,
-        "label_distribution": {
-          "NEUTRAL": 10,
-          "POSITIVE": 7,
-          "NEGATIVE": 9
-        },
-        "label_ratios": {
-          "NEUTRAL": 0.3846,
-          "POSITIVE": 0.2692,
-          "NEGATIVE": 0.3462
-        }
-      }
-    },
-    {
-      "cluster_id": 20251,
-      "n_docs": 29,
-      "topics": {
-        "n_topics": 4,
-        "noise_ratio": null,
-        "coherence_proxy": null,
-        "top_topics": [
-          {
-            "topic_id": 0,
-            "label": "Lumixs Shotonlumix / Contaxt Lumixs / Shotonlumix Garden",
-            "top_words": [
-              "lumixs shotonlumix",
-              "contaxt lumixs",
-              "shotonlumix garden",
-              "shotonlumix",
-              "shotonlumix shot"
-            ],
-            "count": 9
-          },
-          {
-            "topic_id": 1,
-            "label": "Viralreels Viralreel / Viralchallenge Viralreels / Viralreels Virals",
-            "top_words": [
-              "viralreels viralreel",
-              "viralchallenge viralreels",
-              "viralreels virals",
-              "viralreelschallenge viralchallenge",
-              "virals viralpost"
-            ],
-            "count": 9
-          },
-          {
-            "topic_id": 2,
-            "label": "Iphone Promax / Kuha Iphone / Photos Iphone",
-            "top_words": [
-              "iphone promax",
-              "kuha iphone",
-              "photos iphone",
-              "iphone",
-              "iphone pro"
-            ],
-            "count": 4
-          },
-          {
-            "topic_id": 3,
-            "label": "Reelschallengereelschallenge Reelschallenge / Fypchallenge Reelschallengereelschallenge / Reelschallenge Fypchallenge",
-            "top_words": [
-              "reelschallengereelschallenge reelschallenge",
-              "fypchallenge reelschallengereelschallenge",
-              "reelschallenge fypchallenge",
-              "reelschallengereelschallenge",
-              "reelschallenge reelstrending"
-            ],
-            "count": 6
-          }
-        ],
-        "error": null
-      },
-      "sentiment": {
-        "dominant": "NEGATIVE",
-        "avg_confidence": 1.0,
-        "coverage": 1.0,
-        "label_distribution": {
-          "NEGATIVE": 15,
-          "NEUTRAL": 11,
-          "POSITIVE": 3
-        },
-        "label_ratios": {
-          "NEGATIVE": 0.5172,
-          "NEUTRAL": 0.3793,
-          "POSITIVE": 0.1034
-        }
-      }
-    },
-    {
-      "cluster_id": 20252,
-      "n_docs": 16,
-      "topics": {
-        "n_topics": 0,
-        "noise_ratio": null,
-        "coherence_proxy": null,
-        "top_topics": [],
-        "error": null
-      },
-      "sentiment": {
-        "dominant": "NEGATIVE",
-        "avg_confidence": 1.0,
-        "coverage": 1.0,
-        "label_distribution": {
-          "NEGATIVE": 10,
-          "POSITIVE": 3,
-          "NEUTRAL": 3
-        },
-        "label_ratios": {
-          "NEGATIVE": 0.625,
-          "POSITIVE": 0.1875,
-          "NEUTRAL": 0.1875
-        }
-      }
-    },
-    {
-      "cluster_id": 20253,
-      "n_docs": 32,
-      "topics": {
-        "n_topics": 3,
-        "noise_ratio": null,
-        "coherence_proxy": null,
-        "top_topics": [
-          {
-            "topic_id": 0,
-            "label": "Pizzatime Panagbengapizzaparty / Tropicalbloompizza Pizzahut / Baguiovlogger Pizza",
-            "top_words": [
-              "pizzatime panagbengapizzaparty",
-              "tropicalbloompizza pizzahut",
-              "baguiovlogger pizza",
-              "pizzalovers",
-              "amarelacucina pizzalovers"
-            ],
-            "count": 7
-          },
-          {
-            "topic_id": 1,
-            "label": "Cafestella / Cafe / Baguiofoodie Breakfast",
-            "top_words": [
-              "cafestella",
-              "cafe",
-              "baguiofoodie breakfast",
-              "baguiobreakfast",
-              "cafe stella"
-            ],
-            "count": 10
-          },
-          {
-            "topic_id": 2,
-            "label": "Foodtripsabaguio / Foodiebaguio / Foodtripsabaguio Siniorajuan",
-            "top_words": [
-              "foodtripsabaguio",
-              "foodiebaguio",
-              "foodtripsabaguio siniorajuan",
-              "foodiebaguio friednotbakedcheeseandfriendspanagbengafestival",
-              "foodieph"
-            ],
-            "count": 7
-          }
-        ],
-        "error": null
-      },
-      "sentiment": {
-        "dominant": "NEGATIVE",
-        "avg_confidence": 1.0,
-        "coverage": 1.0,
-        "label_distribution": {
-          "NEGATIVE": 15,
-          "POSITIVE": 12,
-          "NEUTRAL": 5
-        },
-        "label_ratios": {
-          "NEGATIVE": 0.4688,
-          "POSITIVE": 0.375,
-          "NEUTRAL": 0.1562
-        }
-      }
-    },
-    {
-      "cluster_id": 20254,
-      "n_docs": 55,
-      "topics": {
-        "n_topics": 2,
-        "noise_ratio": null,
-        "coherence_proxy": null,
-        "top_topics": [
-          {
-            "topic_id": 0,
-            "label": "Cityevents / City Guide / Explore City",
-            "top_words": [
-              "cityevents",
-              "city guide",
-              "explore city",
-              "cttocredittotherightfulowner city",
-              "city explore"
-            ],
-            "count": 24
-          },
-          {
-            "topic_id": 1,
-            "label": "Tours Rideanddrivekl / Rideanddrivekl / Ride Drive",
-            "top_words": [
-              "tours rideanddrivekl",
-              "rideanddrivekl",
-              "ride drive",
-              "klrideanddrive baguiotourpackage",
-              "travelwithus baguioadventures"
-            ],
-            "count": 27
-          }
-        ],
-        "error": null
-      },
-      "sentiment": {
-        "dominant": "POSITIVE",
-        "avg_confidence": 1.0,
-        "coverage": 1.0,
-        "label_distribution": {
-          "NEGATIVE": 15,
-          "NEUTRAL": 15,
-          "POSITIVE": 25
-        },
-        "label_ratios": {
-          "NEGATIVE": 0.2727,
-          "NEUTRAL": 0.2727,
-          "POSITIVE": 0.4545
-        }
-      }
-    },
-    {
-      "cluster_id": 20255,
+      "cluster_id": "2024_10",
       "n_docs": 17,
       "topics": {
-        "n_topics": 0,
-        "noise_ratio": null,
-        "coherence_proxy": null,
-        "top_topics": [],
-        "error": null
-      },
-      "sentiment": {
-        "dominant": "NEUTRAL",
-        "avg_confidence": 1.0,
-        "coverage": 1.0,
-        "label_distribution": {
-          "NEGATIVE": 5,
-          "NEUTRAL": 8,
-          "POSITIVE": 4
-        },
-        "label_ratios": {
-          "NEGATIVE": 0.2941,
-          "NEUTRAL": 0.4706,
-          "POSITIVE": 0.2353
-        }
-      }
-    },
-    {
-      "cluster_id": 20256,
-      "n_docs": 16,
-      "topics": {
-        "n_topics": 0,
-        "noise_ratio": null,
-        "coherence_proxy": null,
-        "top_topics": [],
-        "error": null
-      },
-      "sentiment": {
-        "dominant": "POSITIVE",
-        "avg_confidence": 1.0,
-        "coverage": 1.0,
-        "label_distribution": {
-          "POSITIVE": 11,
-          "NEGATIVE": 5
-        },
-        "label_ratios": {
-          "POSITIVE": 0.6875,
-          "NEGATIVE": 0.3125
-        }
-      }
-    },
-    {
-      "cluster_id": 20257,
-      "n_docs": 12,
-      "topics": {
-        "n_topics": 0,
-        "noise_ratio": null,
-        "coherence_proxy": null,
-        "top_topics": [],
-        "error": null
-      },
-      "sentiment": {
-        "dominant": "NEUTRAL",
-        "avg_confidence": 1.0,
-        "coverage": 1.0,
-        "label_distribution": {
-          "NEUTRAL": 9,
-          "NEGATIVE": 3
-        },
-        "label_ratios": {
-          "NEUTRAL": 0.75,
-          "NEGATIVE": 0.25
-        }
-      }
-    },
-    {
-      "cluster_id": 20258,
-      "n_docs": 10,
-      "topics": {
-        "n_topics": 0,
-        "noise_ratio": null,
-        "coherence_proxy": null,
-        "top_topics": [],
-        "error": null
-      },
-      "sentiment": {
-        "dominant": "NEGATIVE",
-        "avg_confidence": 1.0,
-        "coverage": 1.0,
-        "label_distribution": {
-          "NEGATIVE": 5,
-          "NEUTRAL": 1,
-          "POSITIVE": 4
-        },
-        "label_ratios": {
-          "NEGATIVE": 0.5,
-          "NEUTRAL": 0.1,
-          "POSITIVE": 0.4
-        }
-      }
-    },
-    {
-      "cluster_id": 20259,
-      "n_docs": 25,
-      "topics": {
-        "n_topics": 3,
-        "noise_ratio": null,
-        "coherence_proxy": null,
-        "top_topics": [
-          {
-            "topic_id": 0,
-            "label": "Behindthescene Streetdancecompetition / Street Dancing / Street Dance",
-            "top_words": [
-              "behindthescene streetdancecompetition",
-              "street dancing",
-              "street dance",
-              "streetdancecompetition",
-              "dance creditstotherightfulowner"
-            ],
-            "count": 3
-          },
-          {
-            "topic_id": 1,
-            "label": "Street Dance / Street Dancing / Dance Kalinga",
-            "top_words": [
-              "street dance",
-              "street dancing",
-              "dance kalinga",
-              "dancing travel",
-              "dance"
-            ],
-            "count": 4
-          },
-          {
-            "topic_id": 2,
-            "label": "Dance Parade / Parade Dance / Street Dancing",
-            "top_words": [
-              "dance parade",
-              "parade dance",
-              "street dancing",
-              "street dance",
-              "dancing parade"
-            ],
-            "count": 16
-          }
-        ],
-        "error": null
-      },
-      "sentiment": {
-        "dominant": "POSITIVE",
-        "avg_confidence": 1.0,
-        "coverage": 1.0,
-        "label_distribution": {
-          "NEUTRAL": 9,
-          "POSITIVE": 14,
-          "NEGATIVE": 2
-        },
-        "label_ratios": {
-          "NEUTRAL": 0.36,
-          "POSITIVE": 0.56,
-          "NEGATIVE": 0.08
-        }
-      }
-    },
-    {
-      "cluster_id": 20260,
-      "n_docs": 17,
-      "topics": {
-        "n_topics": 0,
-        "noise_ratio": null,
-        "coherence_proxy": null,
-        "top_topics": [],
-        "error": null
-      },
-      "sentiment": {
-        "dominant": "POSITIVE",
-        "avg_confidence": 1.0,
-        "coverage": 1.0,
-        "label_distribution": {
-          "POSITIVE": 15,
-          "NEGATIVE": 2
-        },
-        "label_ratios": {
-          "POSITIVE": 0.8824,
-          "NEGATIVE": 0.1176
-        }
-      }
-    },
-    {
-      "cluster_id": 20261,
-      "n_docs": 14,
-      "topics": {
-        "n_topics": 0,
-        "noise_ratio": null,
-        "coherence_proxy": null,
-        "top_topics": [],
-        "error": null
-      },
-      "sentiment": {
-        "dominant": "NEGATIVE",
-        "avg_confidence": 1.0,
-        "coverage": 1.0,
-        "label_distribution": {
-          "POSITIVE": 3,
-          "NEUTRAL": 5,
-          "NEGATIVE": 6
-        },
-        "label_ratios": {
-          "POSITIVE": 0.2143,
-          "NEUTRAL": 0.3571,
-          "NEGATIVE": 0.4286
-        }
-      }
-    },
-    {
-      "cluster_id": 20262,
-      "n_docs": 61,
-      "topics": {
         "n_topics": 2,
         "noise_ratio": null,
         "coherence_proxy": null,
         "top_topics": [
           {
             "topic_id": 0,
-            "label": "Float Parade / Floral Float / Grandstreetdanceparade Panagbengagrandparades",
+            "label": "Float Parade / Parade City / City Flower",
             "top_words": [
               "float parade",
-              "floral float",
-              "grandstreetdanceparade panagbengagrandparades",
-              "grandstreetdanceparade",
-              "grand floral"
-            ],
-            "count": 10
-          },
-          {
-            "topic_id": 1,
-            "label": "Floralfloatparade Michaelsager / Floralfloatparade / Flowers Streetdancingparade",
-            "top_words": [
-              "floralfloatparade michaelsager",
-              "floralfloatparade",
-              "flowers streetdancingparade",
-              "floralfloatparade part",
-              "float parade"
-            ],
-            "count": 21
-          }
-        ],
-        "error": null
-      },
-      "sentiment": {
-        "dominant": "POSITIVE",
-        "avg_confidence": 1.0,
-        "coverage": 1.0,
-        "label_distribution": {
-          "POSITIVE": 35,
-          "NEGATIVE": 6,
-          "NEUTRAL": 20
-        },
-        "label_ratios": {
-          "POSITIVE": 0.5738,
-          "NEGATIVE": 0.0984,
-          "NEUTRAL": 0.3279
-        }
-      }
-    },
-    {
-      "cluster_id": 20263,
-      "n_docs": 69,
-      "topics": {
-        "n_topics": 2,
-        "noise_ratio": null,
-        "coherence_proxy": null,
-        "top_topics": [
-          {
-            "topic_id": 0,
-            "label": "Dance Parade / Streetdanceparade / Street Dance",
-            "top_words": [
-              "dance parade",
-              "streetdanceparade",
-              "street dance",
-              "baguiostreetdanceparade",
-              "street dancing"
-            ],
-            "count": 39
-          },
-          {
-            "topic_id": 1,
-            "label": "Lighting Palag / Stage Lighting / Dance Luwishngbayan",
-            "top_words": [
-              "lighting palag",
-              "stage lighting",
-              "dance luwishngbayan",
-              "cultural dance",
-              "dance performance"
-            ],
-            "count": 27
-          }
-        ],
-        "error": null
-      },
-      "sentiment": {
-        "dominant": "NEUTRAL",
-        "avg_confidence": 1.0,
-        "coverage": 1.0,
-        "label_distribution": {
-          "POSITIVE": 26,
-          "NEUTRAL": 34,
-          "NEGATIVE": 9
-        },
-        "label_ratios": {
-          "POSITIVE": 0.3768,
-          "NEUTRAL": 0.4928,
-          "NEGATIVE": 0.1304
-        }
-      }
-    },
-    {
-      "cluster_id": 20264,
-      "n_docs": 13,
-      "topics": {
-        "n_topics": 0,
-        "noise_ratio": null,
-        "coherence_proxy": null,
-        "top_topics": [],
-        "error": null
-      },
-      "sentiment": {
-        "dominant": "NEGATIVE",
-        "avg_confidence": 1.0,
-        "coverage": 1.0,
-        "label_distribution": {
-          "NEGATIVE": 7,
-          "POSITIVE": 6
-        },
-        "label_ratios": {
-          "NEGATIVE": 0.5385,
-          "POSITIVE": 0.4615
-        }
-      }
-    },
-    {
-      "cluster_id": 20265,
-      "n_docs": 17,
-      "topics": {
-        "n_topics": 0,
-        "noise_ratio": null,
-        "coherence_proxy": null,
-        "top_topics": [],
-        "error": null
-      },
-      "sentiment": {
-        "dominant": "NEGATIVE",
-        "avg_confidence": 1.0,
-        "coverage": 1.0,
-        "label_distribution": {
-          "POSITIVE": 5,
-          "NEGATIVE": 10,
-          "NEUTRAL": 2
-        },
-        "label_ratios": {
-          "POSITIVE": 0.2941,
-          "NEGATIVE": 0.5882,
-          "NEUTRAL": 0.1176
-        }
-      }
-    },
-    {
-      "cluster_id": 20266,
-      "n_docs": 11,
-      "topics": {
-        "n_topics": 0,
-        "noise_ratio": null,
-        "coherence_proxy": null,
-        "top_topics": [],
-        "error": null
-      },
-      "sentiment": {
-        "dominant": "POSITIVE",
-        "avg_confidence": 1.0,
-        "coverage": 1.0,
-        "label_distribution": {
-          "POSITIVE": 4,
-          "NEGATIVE": 4,
-          "NEUTRAL": 3
-        },
-        "label_ratios": {
-          "POSITIVE": 0.3636,
-          "NEGATIVE": 0.3636,
-          "NEUTRAL": 0.2727
-        }
-      }
-    },
-    {
-      "cluster_id": 20267,
-      "n_docs": 25,
-      "topics": {
-        "n_topics": 3,
-        "noise_ratio": null,
-        "coherence_proxy": null,
-        "top_topics": [
-          {
-            "topic_id": 0,
-            "label": "Baguiohotel Tel / Hotels / Baguiohotel",
-            "top_words": [
-              "baguiohotel tel",
-              "hotels",
-              "baguiohotel",
-              "azalea hotels",
-              "hotel"
-            ],
-            "count": 12
-          },
-          {
-            "topic_id": 1,
-            "label": "Getaway Full / Planning Getaway / Baguiotravel Airbnbbaguio",
-            "top_words": [
-              "getaway full",
-              "planning getaway",
-              "baguiotravel airbnbbaguio",
-              "getaway",
-              "free stay"
+              "parade city",
+              "city flower",
+              "floral floats",
+              "celebration grandest"
             ],
             "count": 3
           },
           {
-            "topic_id": 2,
-            "label": "Travellerlife Baguiotravellerstravelandtours / Travellerschoice Explorethenorth / Travellerschoice",
-            "top_words": [
-              "travellerlife baguiotravellerstravelandtours",
-              "travellerschoice explorethenorth",
-              "travellerschoice",
-              "travellerlife",
-              "travelwithme traveltime"
-            ],
-            "count": 8
-          }
-        ],
-        "error": null
-      },
-      "sentiment": {
-        "dominant": "POSITIVE",
-        "avg_confidence": 1.0,
-        "coverage": 1.0,
-        "label_distribution": {
-          "NEGATIVE": 5,
-          "POSITIVE": 19,
-          "NEUTRAL": 1
-        },
-        "label_ratios": {
-          "NEGATIVE": 0.2,
-          "POSITIVE": 0.76,
-          "NEUTRAL": 0.04
-        }
-      }
-    },
-    {
-      "cluster_id": 20268,
-      "n_docs": 44,
-      "topics": {
-        "n_topics": 2,
-        "noise_ratio": null,
-        "coherence_proxy": null,
-        "top_topics": [
-          {
-            "topic_id": 0,
-            "label": "Exhibition Flowerfestivalbaguio / Artistry Plant / Baguioartist Blooming",
-            "top_words": [
-              "exhibition flowerfestivalbaguio",
-              "artistry plant",
-              "baguioartist blooming",
-              "nature art",
-              "blooming weaves"
-            ],
-            "count": 6
-          },
-          {
             "topic_id": 1,
-            "label": "Blooms Celebrate / Flower City / Flowers Culture",
+            "label": "Parade Flowerpower / Flower Parade / Float Parade",
             "top_words": [
-              "blooms celebrate",
-              "flower city",
-              "flowers culture",
-              "bloomlive",
-              "booths flowers"
+              "parade flowerpower",
+              "flower parade",
+              "float parade",
+              "parade reelsfyp",
+              "floral float"
             ],
-            "count": 35
+            "count": 14
           }
         ],
-        "error": null
-      },
-      "sentiment": {
-        "dominant": "POSITIVE",
-        "avg_confidence": 1.0,
-        "coverage": 1.0,
-        "label_distribution": {
-          "NEGATIVE": 8,
-          "NEUTRAL": 15,
-          "POSITIVE": 21
-        },
-        "label_ratios": {
-          "NEGATIVE": 0.1818,
-          "NEUTRAL": 0.3409,
-          "POSITIVE": 0.4773
-        }
-      }
-    },
-    {
-      "cluster_id": 20269,
-      "n_docs": 31,
-      "topics": {
-        "n_topics": 3,
-        "noise_ratio": null,
-        "coherence_proxy": null,
-        "top_topics": [
-          {
-            "topic_id": 0,
-            "label": "Colors Celebrations / Blooming Glowing / Colors Culture",
-            "top_words": [
-              "colors celebrations",
-              "blooming glowing",
-              "colors culture",
-              "culture celebration",
-              "culture petals"
-            ],
-            "count": 7
-          },
-          {
-            "topic_id": 1,
-            "label": "Community Vibrant / Celebration Blooms / Vibrant Spirit",
-            "top_words": [
-              "community vibrant",
-              "celebration blooms",
-              "vibrant spirit",
-              "bloom grandstreetdanceparade",
-              "communityandgrowth day"
-            ],
-            "count": 8
-          },
-          {
-            "topic_id": 2,
-            "label": "Theme Blooming / Season Blooming / Blooming City",
-            "top_words": [
-              "theme blooming",
-              "season blooming",
-              "blooming city",
-              "blooming",
-              "road bloom"
-            ],
-            "count": 10
-          }
-        ],
-        "error": null
-      },
-      "sentiment": {
-        "dominant": "POSITIVE",
-        "avg_confidence": 1.0,
-        "coverage": 1.0,
-        "label_distribution": {
-          "POSITIVE": 27,
-          "NEUTRAL": 3,
-          "NEGATIVE": 1
-        },
-        "label_ratios": {
-          "POSITIVE": 0.871,
-          "NEUTRAL": 0.0968,
-          "NEGATIVE": 0.0323
-        }
-      }
-    },
-    {
-      "cluster_id": 202410,
-      "n_docs": 17,
-      "topics": {
-        "n_topics": 0,
-        "noise_ratio": null,
-        "coherence_proxy": null,
-        "top_topics": [],
         "error": null
       },
       "sentiment": {
@@ -1737,18 +648,18 @@
         "coverage": 1.0,
         "label_distribution": {
           "POSITIVE": 9,
-          "NEGATIVE": 3,
-          "NEUTRAL": 5
+          "NEGATIVE": 2,
+          "NEUTRAL": 6
         },
         "label_ratios": {
           "POSITIVE": 0.5294,
-          "NEGATIVE": 0.1765,
-          "NEUTRAL": 0.2941
+          "NEGATIVE": 0.1176,
+          "NEUTRAL": 0.3529
         }
       }
     },
     {
-      "cluster_id": 202411,
+      "cluster_id": "2024_11",
       "n_docs": 39,
       "topics": {
         "n_topics": 3,
@@ -1811,7 +722,7 @@
       }
     },
     {
-      "cluster_id": 202412,
+      "cluster_id": "2024_12",
       "n_docs": 31,
       "topics": {
         "n_topics": 4,
@@ -1875,18 +786,18 @@
         "coverage": 1.0,
         "label_distribution": {
           "NEGATIVE": 8,
-          "NEUTRAL": 13,
-          "POSITIVE": 10
+          "NEUTRAL": 12,
+          "POSITIVE": 11
         },
         "label_ratios": {
           "NEGATIVE": 0.2581,
-          "NEUTRAL": 0.4194,
-          "POSITIVE": 0.3226
+          "NEUTRAL": 0.3871,
+          "POSITIVE": 0.3548
         }
       }
     },
     {
-      "cluster_id": 202413,
+      "cluster_id": "2024_13",
       "n_docs": 21,
       "topics": {
         "n_topics": 3,
@@ -1937,19 +848,19 @@
         "avg_confidence": 1.0,
         "coverage": 1.0,
         "label_distribution": {
-          "NEUTRAL": 11,
-          "NEGATIVE": 4,
-          "POSITIVE": 6
+          "NEGATIVE": 5,
+          "POSITIVE": 6,
+          "NEUTRAL": 10
         },
         "label_ratios": {
-          "NEUTRAL": 0.5238,
-          "NEGATIVE": 0.1905,
-          "POSITIVE": 0.2857
+          "NEGATIVE": 0.2381,
+          "POSITIVE": 0.2857,
+          "NEUTRAL": 0.4762
         }
       }
     },
     {
-      "cluster_id": 202414,
+      "cluster_id": "2024_14",
       "n_docs": 29,
       "topics": {
         "n_topics": 3,
@@ -2001,24 +912,555 @@
         "coverage": 1.0,
         "label_distribution": {
           "POSITIVE": 7,
-          "NEUTRAL": 13,
-          "NEGATIVE": 9
+          "NEUTRAL": 14,
+          "NEGATIVE": 8
         },
         "label_ratios": {
           "POSITIVE": 0.2414,
-          "NEUTRAL": 0.4483,
-          "NEGATIVE": 0.3103
+          "NEUTRAL": 0.4828,
+          "NEGATIVE": 0.2759
         }
       }
     },
     {
-      "cluster_id": 202510,
-      "n_docs": 13,
+      "cluster_id": "2024_2",
+      "n_docs": 10,
       "topics": {
         "n_topics": 0,
         "noise_ratio": null,
         "coherence_proxy": null,
         "top_topics": [],
+        "error": null
+      },
+      "sentiment": {
+        "dominant": "NEUTRAL",
+        "avg_confidence": 1.0,
+        "coverage": 1.0,
+        "label_distribution": {
+          "NEGATIVE": 3,
+          "NEUTRAL": 7
+        },
+        "label_ratios": {
+          "NEGATIVE": 0.3,
+          "NEUTRAL": 0.7
+        }
+      }
+    },
+    {
+      "cluster_id": "2024_3",
+      "n_docs": 14,
+      "topics": {
+        "n_topics": 0,
+        "noise_ratio": null,
+        "coherence_proxy": null,
+        "top_topics": [],
+        "error": null
+      },
+      "sentiment": {
+        "dominant": "NEUTRAL",
+        "avg_confidence": 1.0,
+        "coverage": 1.0,
+        "label_distribution": {
+          "NEUTRAL": 7,
+          "POSITIVE": 2,
+          "NEGATIVE": 5
+        },
+        "label_ratios": {
+          "NEUTRAL": 0.5,
+          "POSITIVE": 0.1429,
+          "NEGATIVE": 0.3571
+        }
+      }
+    },
+    {
+      "cluster_id": "2024_4",
+      "n_docs": 28,
+      "topics": {
+        "n_topics": 2,
+        "noise_ratio": null,
+        "coherence_proxy": null,
+        "top_topics": [
+          {
+            "topic_id": 0,
+            "label": "Safeguardshowersaya Softskinprotection / Softskinprotection Safeguardwhitecamellia / Safeguardwhitecamellia",
+            "top_words": [
+              "safeguardshowersaya softskinprotection",
+              "softskinprotection safeguardwhitecamellia",
+              "safeguardwhitecamellia",
+              "booth safeguard",
+              "safeguardph safeguardsoap"
+            ],
+            "count": 5
+          },
+          {
+            "topic_id": 1,
+            "label": "Burnhampark Minesviewparkbaguio / Burnhamparkbaguiocity / Panagbengafeelsatsm Burnhampark",
+            "top_words": [
+              "burnhampark minesviewparkbaguio",
+              "burnhamparkbaguiocity",
+              "panagbengafeelsatsm burnhampark",
+              "burnhamlake burnhamparkbaguiocity",
+              "burnhamparkbaguiocity west"
+            ],
+            "count": 23
+          }
+        ],
+        "error": null
+      },
+      "sentiment": {
+        "dominant": "NEGATIVE",
+        "avg_confidence": 1.0,
+        "coverage": 1.0,
+        "label_distribution": {
+          "NEUTRAL": 8,
+          "NEGATIVE": 13,
+          "POSITIVE": 7
+        },
+        "label_ratios": {
+          "NEUTRAL": 0.2857,
+          "NEGATIVE": 0.4643,
+          "POSITIVE": 0.25
+        }
+      }
+    },
+    {
+      "cluster_id": "2024_5",
+      "n_docs": 14,
+      "topics": {
+        "n_topics": 2,
+        "noise_ratio": null,
+        "coherence_proxy": null,
+        "top_topics": [
+          {
+            "topic_id": 0,
+            "label": "Happenings Reggae / Reggae Set / Balicasagislanddiveresort Opmmusic",
+            "top_words": [
+              "happenings reggae",
+              "reggae set",
+              "balicasagislanddiveresort opmmusic",
+              "reggae",
+              "music belongs"
+            ],
+            "count": 3
+          },
+          {
+            "topic_id": 1,
+            "label": "Listening Bini_Pantropiko / Performance Fancam / Oxtsfu Listening",
+            "top_words": [
+              "listening bini_pantropiko",
+              "performance fancam",
+              "oxtsfu listening",
+              "cokestudiopanagbengafestival series",
+              "fancam bit"
+            ],
+            "count": 9
+          }
+        ],
+        "error": null
+      },
+      "sentiment": {
+        "dominant": "NEGATIVE",
+        "avg_confidence": 1.0,
+        "coverage": 1.0,
+        "label_distribution": {
+          "POSITIVE": 3,
+          "NEGATIVE": 9,
+          "NEUTRAL": 2
+        },
+        "label_ratios": {
+          "POSITIVE": 0.2143,
+          "NEGATIVE": 0.6429,
+          "NEUTRAL": 0.1429
+        }
+      }
+    },
+    {
+      "cluster_id": "2024_6",
+      "n_docs": 26,
+      "topics": {
+        "n_topics": 2,
+        "noise_ratio": null,
+        "coherence_proxy": null,
+        "top_topics": [
+          {
+            "topic_id": 0,
+            "label": "Videoviral Viralsongsreel / Virals Videos / Viralreels Fbvideoreels",
+            "top_words": [
+              "videoviral viralsongsreel",
+              "virals videos",
+              "viralreels fbvideoreels",
+              "fbreelsviral videoviral",
+              "viralsongsreel virals"
+            ],
+            "count": 9
+          },
+          {
+            "topic_id": 1,
+            "label": "Followerseveryone Trendingreelsvideo / Followersfbreels Trendingreelsvideo / Trendingreelsvideo Trendingvideo",
+            "top_words": [
+              "followerseveryone trendingreelsvideo",
+              "followersfbreels trendingreelsvideo",
+              "trendingreelsvideo trendingvideo",
+              "trendingvideo everybody",
+              "trendingreelsvideo trendingaudio"
+            ],
+            "count": 17
+          }
+        ],
+        "error": null
+      },
+      "sentiment": {
+        "dominant": "NEGATIVE",
+        "avg_confidence": 1.0,
+        "coverage": 1.0,
+        "label_distribution": {
+          "NEGATIVE": 15,
+          "NEUTRAL": 8,
+          "POSITIVE": 3
+        },
+        "label_ratios": {
+          "NEGATIVE": 0.5769,
+          "NEUTRAL": 0.3077,
+          "POSITIVE": 0.1154
+        }
+      }
+    },
+    {
+      "cluster_id": "2024_7",
+      "n_docs": 18,
+      "topics": {
+        "n_topics": 2,
+        "noise_ratio": null,
+        "coherence_proxy": null,
+        "top_topics": [
+          {
+            "topic_id": 0,
+            "label": "Face Painting / Mural Painting / Cornejo Makeup",
+            "top_words": [
+              "face painting",
+              "mural painting",
+              "cornejo makeup",
+              "arc mural",
+              "artwork designed"
+            ],
+            "count": 7
+          },
+          {
+            "topic_id": 1,
+            "label": "Canonphotographer March / Streetphotographer Photographyislife / Photograph Streetphotographer",
+            "top_words": [
+              "canonphotographer march",
+              "streetphotographer photographyislife",
+              "photograph streetphotographer",
+              "city sedurikokunphotography",
+              "streetphotographer"
+            ],
+            "count": 9
+          }
+        ],
+        "error": null
+      },
+      "sentiment": {
+        "dominant": "NEUTRAL",
+        "avg_confidence": 1.0,
+        "coverage": 1.0,
+        "label_distribution": {
+          "NEUTRAL": 13,
+          "NEGATIVE": 2,
+          "POSITIVE": 3
+        },
+        "label_ratios": {
+          "NEUTRAL": 0.7222,
+          "NEGATIVE": 0.1111,
+          "POSITIVE": 0.1667
+        }
+      }
+    },
+    {
+      "cluster_id": "2024_8",
+      "n_docs": 147,
+      "topics": {
+        "n_topics": 4,
+        "noise_ratio": null,
+        "coherence_proxy": null,
+        "top_topics": [
+          {
+            "topic_id": 0,
+            "label": "Likesharefollowcomment Teamjocelyn / Teamjocelyn Cherisheverymoment / Ilovebaguiocity Likesharefollowcomment",
+            "top_words": [
+              "likesharefollowcomment teamjocelyn",
+              "teamjocelyn cherisheverymoment",
+              "ilovebaguiocity likesharefollowcomment",
+              "teamjocelyn",
+              "triptobaguio likesharefollowcomment"
+            ],
+            "count": 88
+          },
+          {
+            "topic_id": 1,
+            "label": "Luxebeautyandwellnesskaravan / Magkita Melvin / Sinong Sasama",
+            "top_words": [
+              "luxebeautyandwellnesskaravan",
+              "magkita melvin",
+              "sinong sasama",
+              "march luxebeautyandwellnesskaravan",
+              "cantbuymelove bellemariano"
+            ],
+            "count": 14
+          },
+          {
+            "topic_id": 2,
+            "label": "Beautyqueens Igorota / Beautyqueens / Baguioqueens Beautyqueens",
+            "top_words": [
+              "beautyqueens igorota",
+              "beautyqueens",
+              "baguioqueens beautyqueens",
+              "special glammed",
+              "worn beautiful"
+            ],
+            "count": 12
+          },
+          {
+            "topic_id": 3,
+            "label": "Batangregasco Babygiant / Baguiopanagbenga Misterkopibean / Bigmak Babygiant",
+            "top_words": [
+              "batangregasco babygiant",
+              "baguiopanagbenga misterkopibean",
+              "bigmak babygiant",
+              "batangregasco bigmak",
+              "baguiopanagbenga"
+            ],
+            "count": 20
+          }
+        ],
+        "error": null
+      },
+      "sentiment": {
+        "dominant": "NEGATIVE",
+        "avg_confidence": 1.0,
+        "coverage": 1.0,
+        "label_distribution": {
+          "POSITIVE": 36,
+          "NEGATIVE": 83,
+          "NEUTRAL": 28
+        },
+        "label_ratios": {
+          "POSITIVE": 0.2449,
+          "NEGATIVE": 0.5646,
+          "NEUTRAL": 0.1905
+        }
+      }
+    },
+    {
+      "cluster_id": "2024_9",
+      "n_docs": 75,
+      "topics": {
+        "n_topics": 2,
+        "noise_ratio": null,
+        "coherence_proxy": null,
+        "top_topics": [
+          {
+            "topic_id": 0,
+            "label": "Travel Instalike / Traveldiaries / Boutiquehotels Vacationph",
+            "top_words": [
+              "travel instalike",
+              "traveldiaries",
+              "boutiquehotels vacationph",
+              "barkada eekoshotels",
+              "traveldiaries familyfriends"
+            ],
+            "count": 26
+          },
+          {
+            "topic_id": 1,
+            "label": "Love Touristspot / Vibes City / Touristspot",
+            "top_words": [
+              "love touristspot",
+              "vibes city",
+              "touristspot",
+              "evening addonreels",
+              "green love"
+            ],
+            "count": 33
+          }
+        ],
+        "error": null
+      },
+      "sentiment": {
+        "dominant": "NEGATIVE",
+        "avg_confidence": 1.0,
+        "coverage": 1.0,
+        "label_distribution": {
+          "POSITIVE": 25,
+          "NEGATIVE": 30,
+          "NEUTRAL": 20
+        },
+        "label_ratios": {
+          "POSITIVE": 0.3333,
+          "NEGATIVE": 0.4,
+          "NEUTRAL": 0.2667
+        }
+      }
+    },
+    {
+      "cluster_id": "2025_0",
+      "n_docs": 26,
+      "topics": {
+        "n_topics": 2,
+        "noise_ratio": null,
+        "coherence_proxy": null,
+        "top_topics": [
+          {
+            "topic_id": 0,
+            "label": "Grand Float / Float Grand / Donald Float",
+            "top_words": [
+              "grand float",
+              "float grand",
+              "donald float",
+              "pauwi float",
+              "float"
+            ],
+            "count": 5
+          },
+          {
+            "topic_id": 1,
+            "label": "Fireworks Display / Fireworks / Ceremony Fireworks",
+            "top_words": [
+              "fireworks display",
+              "fireworks",
+              "ceremony fireworks",
+              "fireworksdisplay",
+              "day fireworks"
+            ],
+            "count": 21
+          }
+        ],
+        "error": null
+      },
+      "sentiment": {
+        "dominant": "NEGATIVE",
+        "avg_confidence": 1.0,
+        "coverage": 1.0,
+        "label_distribution": {
+          "NEUTRAL": 9,
+          "POSITIVE": 7,
+          "NEGATIVE": 10
+        },
+        "label_ratios": {
+          "NEUTRAL": 0.3462,
+          "POSITIVE": 0.2692,
+          "NEGATIVE": 0.3846
+        }
+      }
+    },
+    {
+      "cluster_id": "2025_1",
+      "n_docs": 29,
+      "topics": {
+        "n_topics": 4,
+        "noise_ratio": null,
+        "coherence_proxy": null,
+        "top_topics": [
+          {
+            "topic_id": 0,
+            "label": "Lumixs Shotonlumix / Contaxt Lumixs / Shotonlumix Garden",
+            "top_words": [
+              "lumixs shotonlumix",
+              "contaxt lumixs",
+              "shotonlumix garden",
+              "shotonlumix",
+              "shotonlumix shot"
+            ],
+            "count": 9
+          },
+          {
+            "topic_id": 1,
+            "label": "Viralreels Viralreel / Viralchallenge Viralreels / Viralreels Virals",
+            "top_words": [
+              "viralreels viralreel",
+              "viralchallenge viralreels",
+              "viralreels virals",
+              "viralreelschallenge viralchallenge",
+              "virals viralpost"
+            ],
+            "count": 9
+          },
+          {
+            "topic_id": 2,
+            "label": "Iphone Promax / Kuha Iphone / Photos Iphone",
+            "top_words": [
+              "iphone promax",
+              "kuha iphone",
+              "photos iphone",
+              "iphone",
+              "iphone pro"
+            ],
+            "count": 4
+          },
+          {
+            "topic_id": 3,
+            "label": "Reelschallengereelschallenge Reelschallenge / Fypchallenge Reelschallengereelschallenge / Reelschallenge Fypchallenge",
+            "top_words": [
+              "reelschallengereelschallenge reelschallenge",
+              "fypchallenge reelschallengereelschallenge",
+              "reelschallenge fypchallenge",
+              "reelschallengereelschallenge",
+              "reelschallenge reelstrending"
+            ],
+            "count": 6
+          }
+        ],
+        "error": null
+      },
+      "sentiment": {
+        "dominant": "NEGATIVE",
+        "avg_confidence": 1.0,
+        "coverage": 1.0,
+        "label_distribution": {
+          "NEGATIVE": 16,
+          "NEUTRAL": 10,
+          "POSITIVE": 3
+        },
+        "label_ratios": {
+          "NEGATIVE": 0.5517,
+          "NEUTRAL": 0.3448,
+          "POSITIVE": 0.1034
+        }
+      }
+    },
+    {
+      "cluster_id": "2025_10",
+      "n_docs": 13,
+      "topics": {
+        "n_topics": 2,
+        "noise_ratio": null,
+        "coherence_proxy": null,
+        "top_topics": [
+          {
+            "topic_id": 0,
+            "label": "Dance Parade / Parade Fun / Street Dance",
+            "top_words": [
+              "dance parade",
+              "parade fun",
+              "street dance",
+              "parade team",
+              "parade"
+            ],
+            "count": 5
+          },
+          {
+            "topic_id": 1,
+            "label": "Grandstreetdanceparade / Dance Parade / City Streetdancecompetition",
+            "top_words": [
+              "grandstreetdanceparade",
+              "dance parade",
+              "city streetdancecompetition",
+              "street dance",
+              "grandstreetdanceparade photos"
+            ],
+            "count": 8
+          }
+        ],
         "error": null
       },
       "sentiment": {
@@ -2038,7 +1480,7 @@
       }
     },
     {
-      "cluster_id": 202511,
+      "cluster_id": "2025_11",
       "n_docs": 39,
       "topics": {
         "n_topics": 2,
@@ -2089,7 +1531,7 @@
       }
     },
     {
-      "cluster_id": 202512,
+      "cluster_id": "2025_12",
       "n_docs": 104,
       "topics": {
         "n_topics": 2,
@@ -2128,45 +1570,82 @@
         "avg_confidence": 1.0,
         "coverage": 1.0,
         "label_distribution": {
-          "NEGATIVE": 69,
+          "NEGATIVE": 66,
           "NEUTRAL": 22,
-          "POSITIVE": 13
+          "POSITIVE": 16
         },
         "label_ratios": {
-          "NEGATIVE": 0.6635,
+          "NEGATIVE": 0.6346,
           "NEUTRAL": 0.2115,
-          "POSITIVE": 0.125
+          "POSITIVE": 0.1538
         }
       }
     },
     {
-      "cluster_id": 202513,
+      "cluster_id": "2025_13",
       "n_docs": 19,
       "topics": {
-        "n_topics": 0,
+        "n_topics": 3,
         "noise_ratio": null,
         "coherence_proxy": null,
-        "top_topics": [],
+        "top_topics": [
+          {
+            "topic_id": 0,
+            "label": "Opening Parade / Parade Start / Parade Day",
+            "top_words": [
+              "opening parade",
+              "parade start",
+              "parade day",
+              "parade weekend",
+              "parade cool"
+            ],
+            "count": 7
+          },
+          {
+            "topic_id": 1,
+            "label": "Igorotface Parade / Parade Igorot / Parade Itsmorefuninbaguio",
+            "top_words": [
+              "igorotface parade",
+              "parade igorot",
+              "parade itsmorefuninbaguio",
+              "pangbenga parade",
+              "parade higlights"
+            ],
+            "count": 5
+          },
+          {
+            "topic_id": 2,
+            "label": "Sinulogfestival Parade / Parade Lovipoe / Parade Gumala",
+            "top_words": [
+              "sinulogfestival parade",
+              "parade lovipoe",
+              "parade gumala",
+              "parade nood",
+              "nood parade"
+            ],
+            "count": 5
+          }
+        ],
         "error": null
       },
       "sentiment": {
-        "dominant": "NEGATIVE",
+        "dominant": "POSITIVE",
         "avg_confidence": 1.0,
         "coverage": 1.0,
         "label_distribution": {
-          "NEGATIVE": 8,
-          "POSITIVE": 7,
+          "NEGATIVE": 7,
+          "POSITIVE": 8,
           "NEUTRAL": 4
         },
         "label_ratios": {
-          "NEGATIVE": 0.4211,
-          "POSITIVE": 0.3684,
+          "NEGATIVE": 0.3684,
+          "POSITIVE": 0.4211,
           "NEUTRAL": 0.2105
         }
       }
     },
     {
-      "cluster_id": 202514,
+      "cluster_id": "2025_14",
       "n_docs": 28,
       "topics": {
         "n_topics": 3,
@@ -2217,19 +1696,19 @@
         "avg_confidence": 1.0,
         "coverage": 1.0,
         "label_distribution": {
-          "POSITIVE": 17,
-          "NEUTRAL": 8,
+          "POSITIVE": 16,
+          "NEUTRAL": 9,
           "NEGATIVE": 3
         },
         "label_ratios": {
-          "POSITIVE": 0.6071,
-          "NEUTRAL": 0.2857,
+          "POSITIVE": 0.5714,
+          "NEUTRAL": 0.3214,
           "NEGATIVE": 0.1071
         }
       }
     },
     {
-      "cluster_id": 202515,
+      "cluster_id": "2025_15",
       "n_docs": 22,
       "topics": {
         "n_topics": 2,
@@ -2280,13 +1759,38 @@
       }
     },
     {
-      "cluster_id": 202516,
+      "cluster_id": "2025_16",
       "n_docs": 18,
       "topics": {
-        "n_topics": 0,
+        "n_topics": 2,
         "noise_ratio": null,
         "coherence_proxy": null,
-        "top_topics": [],
+        "top_topics": [
+          {
+            "topic_id": 0,
+            "label": "Blooms City / Bloomwithbeauty / Blooming Spectacle",
+            "top_words": [
+              "blooms city",
+              "bloomwithbeauty",
+              "blooming spectacle",
+              "bloomwithbeauty known",
+              "bloom culture"
+            ],
+            "count": 5
+          },
+          {
+            "topic_id": 1,
+            "label": "Baguiobenguet Streetdanceparade / Celebration Blossoms / Celebration Flowers",
+            "top_words": [
+              "baguiobenguet streetdanceparade",
+              "celebration blossoms",
+              "celebration flowers",
+              "vibrant celebration",
+              "bloom artists"
+            ],
+            "count": 5
+          }
+        ],
         "error": null
       },
       "sentiment": {
@@ -2304,13 +1808,38 @@
       }
     },
     {
-      "cluster_id": 202517,
+      "cluster_id": "2025_17",
       "n_docs": 10,
       "topics": {
-        "n_topics": 0,
+        "n_topics": 2,
         "noise_ratio": null,
         "coherence_proxy": null,
-        "top_topics": [],
+        "top_topics": [
+          {
+            "topic_id": 0,
+            "label": "Blooming Season / Bloom March / Blooms Blossoms",
+            "top_words": [
+              "blooming season",
+              "bloom march",
+              "blooms blossoms",
+              "theme blossoms",
+              "blooming"
+            ],
+            "count": 4
+          },
+          {
+            "topic_id": 1,
+            "label": "Season Blooming / Kankanaey Origin / Blooming",
+            "top_words": [
+              "season blooming",
+              "kankanaey origin",
+              "blooming",
+              "term kankanaey",
+              "kankanaey language"
+            ],
+            "count": 5
+          }
+        ],
         "error": null
       },
       "sentiment": {
@@ -2318,19 +1847,559 @@
         "avg_confidence": 1.0,
         "coverage": 1.0,
         "label_distribution": {
-          "NEUTRAL": 1,
           "POSITIVE": 8,
-          "NEGATIVE": 1
+          "NEGATIVE": 1,
+          "NEUTRAL": 1
         },
         "label_ratios": {
-          "NEUTRAL": 0.1,
           "POSITIVE": 0.8,
-          "NEGATIVE": 0.1
+          "NEGATIVE": 0.1,
+          "NEUTRAL": 0.1
         }
       }
     },
     {
-      "cluster_id": 202610,
+      "cluster_id": "2025_2",
+      "n_docs": 16,
+      "topics": {
+        "n_topics": 2,
+        "noise_ratio": null,
+        "coherence_proxy": null,
+        "top_topics": [
+          {
+            "topic_id": 0,
+            "label": "Decemberavenue Cokestudiolive / Decemberavenue Cokestudio / Coke Studio",
+            "top_words": [
+              "decemberavenue cokestudiolive",
+              "decemberavenue cokestudio",
+              "coke studio",
+              "cokestudio mjlds",
+              "cokestudioconcert cokestudio"
+            ],
+            "count": 9
+          },
+          {
+            "topic_id": 1,
+            "label": "Cokestudioconcert Disclaimer / Music Copyright / Disclaimer Copyright",
+            "top_words": [
+              "cokestudioconcert disclaimer",
+              "music copyright",
+              "disclaimer copyright",
+              "copyright infringement",
+              "cokestudiopanagbengafestival cokestudioconcert"
+            ],
+            "count": 7
+          }
+        ],
+        "error": null
+      },
+      "sentiment": {
+        "dominant": "NEGATIVE",
+        "avg_confidence": 1.0,
+        "coverage": 1.0,
+        "label_distribution": {
+          "NEGATIVE": 10,
+          "POSITIVE": 3,
+          "NEUTRAL": 3
+        },
+        "label_ratios": {
+          "NEGATIVE": 0.625,
+          "POSITIVE": 0.1875,
+          "NEUTRAL": 0.1875
+        }
+      }
+    },
+    {
+      "cluster_id": "2025_3",
+      "n_docs": 32,
+      "topics": {
+        "n_topics": 3,
+        "noise_ratio": null,
+        "coherence_proxy": null,
+        "top_topics": [
+          {
+            "topic_id": 0,
+            "label": "Pizzatime Panagbengapizzaparty / Tropicalbloompizza Pizzahut / Baguiovlogger Pizza",
+            "top_words": [
+              "pizzatime panagbengapizzaparty",
+              "tropicalbloompizza pizzahut",
+              "baguiovlogger pizza",
+              "pizzalovers",
+              "amarelacucina pizzalovers"
+            ],
+            "count": 7
+          },
+          {
+            "topic_id": 1,
+            "label": "Cafestella / Cafe / Baguiofoodie Breakfast",
+            "top_words": [
+              "cafestella",
+              "cafe",
+              "baguiofoodie breakfast",
+              "baguiobreakfast",
+              "cafe stella"
+            ],
+            "count": 10
+          },
+          {
+            "topic_id": 2,
+            "label": "Foodtripsabaguio / Foodiebaguio / Foodtripsabaguio Siniorajuan",
+            "top_words": [
+              "foodtripsabaguio",
+              "foodiebaguio",
+              "foodtripsabaguio siniorajuan",
+              "foodiebaguio friednotbakedcheeseandfriendspanagbengafestival",
+              "foodieph"
+            ],
+            "count": 7
+          }
+        ],
+        "error": null
+      },
+      "sentiment": {
+        "dominant": "NEGATIVE",
+        "avg_confidence": 1.0,
+        "coverage": 1.0,
+        "label_distribution": {
+          "NEGATIVE": 14,
+          "POSITIVE": 13,
+          "NEUTRAL": 5
+        },
+        "label_ratios": {
+          "NEGATIVE": 0.4375,
+          "POSITIVE": 0.4062,
+          "NEUTRAL": 0.1562
+        }
+      }
+    },
+    {
+      "cluster_id": "2025_4",
+      "n_docs": 55,
+      "topics": {
+        "n_topics": 2,
+        "noise_ratio": null,
+        "coherence_proxy": null,
+        "top_topics": [
+          {
+            "topic_id": 0,
+            "label": "Cityevents / City Guide / Explore City",
+            "top_words": [
+              "cityevents",
+              "city guide",
+              "explore city",
+              "cttocredittotherightfulowner city",
+              "city explore"
+            ],
+            "count": 24
+          },
+          {
+            "topic_id": 1,
+            "label": "Tours Rideanddrivekl / Rideanddrivekl / Ride Drive",
+            "top_words": [
+              "tours rideanddrivekl",
+              "rideanddrivekl",
+              "ride drive",
+              "klrideanddrive baguiotourpackage",
+              "travelwithus baguioadventures"
+            ],
+            "count": 27
+          }
+        ],
+        "error": null
+      },
+      "sentiment": {
+        "dominant": "POSITIVE",
+        "avg_confidence": 1.0,
+        "coverage": 1.0,
+        "label_distribution": {
+          "NEGATIVE": 15,
+          "NEUTRAL": 14,
+          "POSITIVE": 26
+        },
+        "label_ratios": {
+          "NEGATIVE": 0.2727,
+          "NEUTRAL": 0.2545,
+          "POSITIVE": 0.4727
+        }
+      }
+    },
+    {
+      "cluster_id": "2025_5",
+      "n_docs": 17,
+      "topics": {
+        "n_topics": 2,
+        "noise_ratio": null,
+        "coherence_proxy": null,
+        "top_topics": [
+          {
+            "topic_id": 0,
+            "label": "Event Balletbaguio / Balletbaguio / Nsdaps Ballet",
+            "top_words": [
+              "event balletbaguio",
+              "balletbaguio",
+              "nsdaps ballet",
+              "dance queen",
+              "ballet captivating"
+            ],
+            "count": 3
+          },
+          {
+            "topic_id": 1,
+            "label": "Danceofthephilippines Celebratingculture / Culturedance Pinoy / Culturedance",
+            "top_words": [
+              "danceofthephilippines celebratingculture",
+              "culturedance pinoy",
+              "culturedance",
+              "dancechallenge culture",
+              "culture culturedance"
+            ],
+            "count": 11
+          }
+        ],
+        "error": null
+      },
+      "sentiment": {
+        "dominant": "NEUTRAL",
+        "avg_confidence": 1.0,
+        "coverage": 1.0,
+        "label_distribution": {
+          "NEGATIVE": 5,
+          "NEUTRAL": 8,
+          "POSITIVE": 4
+        },
+        "label_ratios": {
+          "NEGATIVE": 0.2941,
+          "NEUTRAL": 0.4706,
+          "POSITIVE": 0.2353
+        }
+      }
+    },
+    {
+      "cluster_id": "2025_6",
+      "n_docs": 16,
+      "topics": {
+        "n_topics": 2,
+        "noise_ratio": null,
+        "coherence_proxy": null,
+        "top_topics": [
+          {
+            "topic_id": 0,
+            "label": "Music Fest / Colorful Festivals / Concert Eunoia",
+            "top_words": [
+              "music fest",
+              "colorful festivals",
+              "concert eunoia",
+              "culturaldance igrotdance",
+              "gmusicfest"
+            ],
+            "count": 12
+          },
+          {
+            "topic_id": 1,
+            "label": "Djdaxx Daxxmusic / Hataw Concert / Daxxmusic",
+            "top_words": [
+              "djdaxx daxxmusic",
+              "hataw concert",
+              "daxxmusic",
+              "daxxmusic progressivehouse",
+              "band city"
+            ],
+            "count": 3
+          }
+        ],
+        "error": null
+      },
+      "sentiment": {
+        "dominant": "POSITIVE",
+        "avg_confidence": 1.0,
+        "coverage": 1.0,
+        "label_distribution": {
+          "POSITIVE": 11,
+          "NEGATIVE": 5
+        },
+        "label_ratios": {
+          "POSITIVE": 0.6875,
+          "NEGATIVE": 0.3125
+        }
+      }
+    },
+    {
+      "cluster_id": "2025_7",
+      "n_docs": 12,
+      "topics": {
+        "n_topics": 2,
+        "noise_ratio": null,
+        "coherence_proxy": null,
+        "top_topics": [
+          {
+            "topic_id": 0,
+            "label": "Road Bloom / Blooming Session / Blooming",
+            "top_words": [
+              "road bloom",
+              "blooming session",
+              "blooming",
+              "bloom infront",
+              "bloom"
+            ],
+            "count": 5
+          },
+          {
+            "topic_id": 1,
+            "label": "Road Bloom / Bloom Session / Session Road",
+            "top_words": [
+              "road bloom",
+              "bloom session",
+              "session road",
+              "bloom visit",
+              "bloom"
+            ],
+            "count": 7
+          }
+        ],
+        "error": null
+      },
+      "sentiment": {
+        "dominant": "NEUTRAL",
+        "avg_confidence": 1.0,
+        "coverage": 1.0,
+        "label_distribution": {
+          "NEUTRAL": 10,
+          "NEGATIVE": 2
+        },
+        "label_ratios": {
+          "NEUTRAL": 0.8333,
+          "NEGATIVE": 0.1667
+        }
+      }
+    },
+    {
+      "cluster_id": "2025_8",
+      "n_docs": 10,
+      "topics": {
+        "n_topics": 2,
+        "noise_ratio": null,
+        "coherence_proxy": null,
+        "top_topics": [
+          {
+            "topic_id": 0,
+            "label": "City Pines / Pines City / Pines Kennonroad",
+            "top_words": [
+              "city pines",
+              "pines city",
+              "pines kennonroad",
+              "pines fallen",
+              "pines"
+            ],
+            "count": 3
+          },
+          {
+            "topic_id": 1,
+            "label": "Skies Happypanagbengafestival / Capricious Skies / Skies Morning",
+            "top_words": [
+              "skies happypanagbengafestival",
+              "capricious skies",
+              "skies morning",
+              "skies",
+              "cold season"
+            ],
+            "count": 3
+          }
+        ],
+        "error": null
+      },
+      "sentiment": {
+        "dominant": "NEGATIVE",
+        "avg_confidence": 1.0,
+        "coverage": 1.0,
+        "label_distribution": {
+          "NEGATIVE": 5,
+          "NEUTRAL": 1,
+          "POSITIVE": 4
+        },
+        "label_ratios": {
+          "NEGATIVE": 0.5,
+          "NEUTRAL": 0.1,
+          "POSITIVE": 0.4
+        }
+      }
+    },
+    {
+      "cluster_id": "2025_9",
+      "n_docs": 25,
+      "topics": {
+        "n_topics": 3,
+        "noise_ratio": null,
+        "coherence_proxy": null,
+        "top_topics": [
+          {
+            "topic_id": 0,
+            "label": "Behindthescene Streetdancecompetition / Street Dancing / Street Dance",
+            "top_words": [
+              "behindthescene streetdancecompetition",
+              "street dancing",
+              "street dance",
+              "streetdancecompetition",
+              "dance creditstotherightfulowner"
+            ],
+            "count": 3
+          },
+          {
+            "topic_id": 1,
+            "label": "Street Dance / Street Dancing / Dance Kalinga",
+            "top_words": [
+              "street dance",
+              "street dancing",
+              "dance kalinga",
+              "dancing travel",
+              "dance"
+            ],
+            "count": 4
+          },
+          {
+            "topic_id": 2,
+            "label": "Dance Parade / Parade Dance / Street Dancing",
+            "top_words": [
+              "dance parade",
+              "parade dance",
+              "street dancing",
+              "street dance",
+              "dancing parade"
+            ],
+            "count": 16
+          }
+        ],
+        "error": null
+      },
+      "sentiment": {
+        "dominant": "POSITIVE",
+        "avg_confidence": 1.0,
+        "coverage": 1.0,
+        "label_distribution": {
+          "NEUTRAL": 9,
+          "POSITIVE": 14,
+          "NEGATIVE": 2
+        },
+        "label_ratios": {
+          "NEUTRAL": 0.36,
+          "POSITIVE": 0.56,
+          "NEGATIVE": 0.08
+        }
+      }
+    },
+    {
+      "cluster_id": "2026_0",
+      "n_docs": 17,
+      "topics": {
+        "n_topics": 2,
+        "noise_ratio": null,
+        "coherence_proxy": null,
+        "top_topics": [
+          {
+            "topic_id": 0,
+            "label": "Solstice Bloom / Bloom Motion / Flower Foundation",
+            "top_words": [
+              "solstice bloom",
+              "bloom motion",
+              "flower foundation",
+              "photos coleproductions",
+              "bloom"
+            ],
+            "count": 3
+          },
+          {
+            "topic_id": 1,
+            "label": "Recital Solstice / Brightest March / Solstice Bloom",
+            "top_words": [
+              "recital solstice",
+              "brightest march",
+              "solstice bloom",
+              "bloom motion",
+              "performances celebration"
+            ],
+            "count": 14
+          }
+        ],
+        "error": null
+      },
+      "sentiment": {
+        "dominant": "POSITIVE",
+        "avg_confidence": 1.0,
+        "coverage": 1.0,
+        "label_distribution": {
+          "POSITIVE": 15,
+          "NEGATIVE": 2
+        },
+        "label_ratios": {
+          "POSITIVE": 0.8824,
+          "NEGATIVE": 0.1176
+        }
+      }
+    },
+    {
+      "cluster_id": "2026_1",
+      "n_docs": 14,
+      "topics": {
+        "n_topics": 3,
+        "noise_ratio": null,
+        "coherence_proxy": null,
+        "top_topics": [
+          {
+            "topic_id": 0,
+            "label": "Acoustic Soundtrack / Edralins Reggae / Reggae Set",
+            "top_words": [
+              "acoustic soundtrack",
+              "edralins reggae",
+              "reggae set",
+              "exciting jam",
+              "concert besties"
+            ],
+            "count": 3
+          },
+          {
+            "topic_id": 1,
+            "label": "Touristdestination Nocopyrightmusic / Parade Nocopyrightmusic / Nocopyrightinfringementintendedmusic Nocopyrightinfringementintended",
+            "top_words": [
+              "touristdestination nocopyrightmusic",
+              "parade nocopyrightmusic",
+              "nocopyrightinfringementintendedmusic nocopyrightinfringementintended",
+              "nocopyrightmusic nocopyrightinfringementintendedmusic",
+              "nocopyrightinfringementintendedmusic love"
+            ],
+            "count": 6
+          },
+          {
+            "topic_id": 2,
+            "label": "Cokestudio Reggaesetgo / Reggaesetgo Cokestudio / Reggaesetgo Melvinjonesgrandstand",
+            "top_words": [
+              "cokestudio reggaesetgo",
+              "reggaesetgo cokestudio",
+              "reggaesetgo melvinjonesgrandstand",
+              "reggaesetgo",
+              "dionela cokestudio"
+            ],
+            "count": 5
+          }
+        ],
+        "error": null
+      },
+      "sentiment": {
+        "dominant": "NEGATIVE",
+        "avg_confidence": 1.0,
+        "coverage": 1.0,
+        "label_distribution": {
+          "POSITIVE": 3,
+          "NEUTRAL": 5,
+          "NEGATIVE": 6
+        },
+        "label_ratios": {
+          "POSITIVE": 0.2143,
+          "NEUTRAL": 0.3571,
+          "NEGATIVE": 0.4286
+        }
+      }
+    },
+    {
+      "cluster_id": "2026_10",
       "n_docs": 26,
       "topics": {
         "n_topics": 2,
@@ -2381,7 +2450,7 @@
       }
     },
     {
-      "cluster_id": 202611,
+      "cluster_id": "2026_11",
       "n_docs": 35,
       "topics": {
         "n_topics": 2,
@@ -2432,7 +2501,7 @@
       }
     },
     {
-      "cluster_id": 202612,
+      "cluster_id": "2026_12",
       "n_docs": 24,
       "topics": {
         "n_topics": 2,
@@ -2483,7 +2552,7 @@
       }
     },
     {
-      "cluster_id": 202613,
+      "cluster_id": "2026_13",
       "n_docs": 68,
       "topics": {
         "n_topics": 2,
@@ -2522,19 +2591,19 @@
         "avg_confidence": 1.0,
         "coverage": 1.0,
         "label_distribution": {
-          "NEGATIVE": 26,
-          "NEUTRAL": 22,
-          "POSITIVE": 20
+          "NEUTRAL": 19,
+          "POSITIVE": 19,
+          "NEGATIVE": 30
         },
         "label_ratios": {
-          "NEGATIVE": 0.3824,
-          "NEUTRAL": 0.3235,
-          "POSITIVE": 0.2941
+          "NEUTRAL": 0.2794,
+          "POSITIVE": 0.2794,
+          "NEGATIVE": 0.4412
         }
       }
     },
     {
-      "cluster_id": 202614,
+      "cluster_id": "2026_14",
       "n_docs": 106,
       "topics": {
         "n_topics": 2,
@@ -2587,7 +2656,7 @@
       }
     },
     {
-      "cluster_id": 202615,
+      "cluster_id": "2026_15",
       "n_docs": 21,
       "topics": {
         "n_topics": 3,
@@ -2638,14 +2707,419 @@
         "avg_confidence": 1.0,
         "coverage": 1.0,
         "label_distribution": {
-          "NEGATIVE": 9,
-          "POSITIVE": 9,
+          "NEGATIVE": 10,
+          "POSITIVE": 8,
           "NEUTRAL": 3
         },
         "label_ratios": {
-          "NEGATIVE": 0.4286,
-          "POSITIVE": 0.4286,
+          "NEGATIVE": 0.4762,
+          "POSITIVE": 0.381,
           "NEUTRAL": 0.1429
+        }
+      }
+    },
+    {
+      "cluster_id": "2026_2",
+      "n_docs": 61,
+      "topics": {
+        "n_topics": 2,
+        "noise_ratio": null,
+        "coherence_proxy": null,
+        "top_topics": [
+          {
+            "topic_id": 0,
+            "label": "Float Parade / Floral Float / Grandstreetdanceparade Panagbengagrandparades",
+            "top_words": [
+              "float parade",
+              "floral float",
+              "grandstreetdanceparade panagbengagrandparades",
+              "grandstreetdanceparade",
+              "grand floral"
+            ],
+            "count": 10
+          },
+          {
+            "topic_id": 1,
+            "label": "Floralfloatparade Michaelsager / Floralfloatparade / Flowers Streetdancingparade",
+            "top_words": [
+              "floralfloatparade michaelsager",
+              "floralfloatparade",
+              "flowers streetdancingparade",
+              "floralfloatparade part",
+              "float parade"
+            ],
+            "count": 21
+          }
+        ],
+        "error": null
+      },
+      "sentiment": {
+        "dominant": "POSITIVE",
+        "avg_confidence": 1.0,
+        "coverage": 1.0,
+        "label_distribution": {
+          "POSITIVE": 35,
+          "NEGATIVE": 6,
+          "NEUTRAL": 20
+        },
+        "label_ratios": {
+          "POSITIVE": 0.5738,
+          "NEGATIVE": 0.0984,
+          "NEUTRAL": 0.3279
+        }
+      }
+    },
+    {
+      "cluster_id": "2026_3",
+      "n_docs": 69,
+      "topics": {
+        "n_topics": 2,
+        "noise_ratio": null,
+        "coherence_proxy": null,
+        "top_topics": [
+          {
+            "topic_id": 0,
+            "label": "Dance Parade / Streetdanceparade / Street Dance",
+            "top_words": [
+              "dance parade",
+              "streetdanceparade",
+              "street dance",
+              "baguiostreetdanceparade",
+              "street dancing"
+            ],
+            "count": 39
+          },
+          {
+            "topic_id": 1,
+            "label": "Lighting Palag / Stage Lighting / Dance Luwishngbayan",
+            "top_words": [
+              "lighting palag",
+              "stage lighting",
+              "dance luwishngbayan",
+              "cultural dance",
+              "dance performance"
+            ],
+            "count": 27
+          }
+        ],
+        "error": null
+      },
+      "sentiment": {
+        "dominant": "NEUTRAL",
+        "avg_confidence": 1.0,
+        "coverage": 1.0,
+        "label_distribution": {
+          "POSITIVE": 27,
+          "NEUTRAL": 29,
+          "NEGATIVE": 13
+        },
+        "label_ratios": {
+          "POSITIVE": 0.3913,
+          "NEUTRAL": 0.4203,
+          "NEGATIVE": 0.1884
+        }
+      }
+    },
+    {
+      "cluster_id": "2026_4",
+      "n_docs": 13,
+      "topics": {
+        "n_topics": 2,
+        "noise_ratio": null,
+        "coherence_proxy": null,
+        "top_topics": [
+          {
+            "topic_id": 0,
+            "label": "Exciting Prizes / Prizes / Courtesy Bingo",
+            "top_words": [
+              "exciting prizes",
+              "prizes",
+              "courtesy bingo",
+              "bibongbubwit idol",
+              "fiesta taon"
+            ],
+            "count": 6
+          },
+          {
+            "topic_id": 1,
+            "label": "Surfph Surfiestaxpanagbenga / Surfiestaxpanagbenga / Surfiestaxpanagbenga Ukayukay",
+            "top_words": [
+              "surfph surfiestaxpanagbenga",
+              "surfiestaxpanagbenga",
+              "surfiestaxpanagbenga ukayukay",
+              "fresh surfiestasapanagbenga",
+              "surfphilippines"
+            ],
+            "count": 7
+          }
+        ],
+        "error": null
+      },
+      "sentiment": {
+        "dominant": "NEGATIVE",
+        "avg_confidence": 1.0,
+        "coverage": 1.0,
+        "label_distribution": {
+          "NEGATIVE": 7,
+          "POSITIVE": 6
+        },
+        "label_ratios": {
+          "NEGATIVE": 0.5385,
+          "POSITIVE": 0.4615
+        }
+      }
+    },
+    {
+      "cluster_id": "2026_5",
+      "n_docs": 17,
+      "topics": {
+        "n_topics": 2,
+        "noise_ratio": null,
+        "coherence_proxy": null,
+        "top_topics": [
+          {
+            "topic_id": 0,
+            "label": "Facebookreelsviral Trendingnowreels / Trendingnowreels Trendingreelsvideo / Trendingreelsvideo Trendingreel",
+            "top_words": [
+              "facebookreelsviral trendingnowreels",
+              "trendingnowreels trendingreelsvideo",
+              "trendingreelsvideo trendingreel",
+              "trendingnow hilightseveryonefollowers",
+              "hilightseveryonefollowers facebookreelsviral"
+            ],
+            "count": 6
+          },
+          {
+            "topic_id": 1,
+            "label": "Facebookreelsviral Funnyreelsvideo / Funnyreelsvideo Myfollowersandviewers / Myfollowersandviewers Facebookreelsviral",
+            "top_words": [
+              "facebookreelsviral funnyreelsvideo",
+              "funnyreelsvideo myfollowersandviewers",
+              "myfollowersandviewers facebookreelsviral",
+              "facebookreelsviral myfollowersandviewers",
+              "funnyreels myfollowersandviewers"
+            ],
+            "count": 9
+          }
+        ],
+        "error": null
+      },
+      "sentiment": {
+        "dominant": "NEGATIVE",
+        "avg_confidence": 1.0,
+        "coverage": 1.0,
+        "label_distribution": {
+          "POSITIVE": 5,
+          "NEGATIVE": 10,
+          "NEUTRAL": 2
+        },
+        "label_ratios": {
+          "POSITIVE": 0.2941,
+          "NEGATIVE": 0.5882,
+          "NEUTRAL": 0.1176
+        }
+      }
+    },
+    {
+      "cluster_id": "2026_6",
+      "n_docs": 11,
+      "topics": {
+        "n_topics": 0,
+        "noise_ratio": null,
+        "coherence_proxy": null,
+        "top_topics": [],
+        "error": null
+      },
+      "sentiment": {
+        "dominant": "NEGATIVE",
+        "avg_confidence": 1.0,
+        "coverage": 1.0,
+        "label_distribution": {
+          "POSITIVE": 4,
+          "NEGATIVE": 5,
+          "NEUTRAL": 2
+        },
+        "label_ratios": {
+          "POSITIVE": 0.3636,
+          "NEGATIVE": 0.4545,
+          "NEUTRAL": 0.1818
+        }
+      }
+    },
+    {
+      "cluster_id": "2026_7",
+      "n_docs": 25,
+      "topics": {
+        "n_topics": 3,
+        "noise_ratio": null,
+        "coherence_proxy": null,
+        "top_topics": [
+          {
+            "topic_id": 0,
+            "label": "Baguiohotel Tel / Hotels / Baguiohotel",
+            "top_words": [
+              "baguiohotel tel",
+              "hotels",
+              "baguiohotel",
+              "azalea hotels",
+              "hotel"
+            ],
+            "count": 12
+          },
+          {
+            "topic_id": 1,
+            "label": "Getaway Full / Planning Getaway / Baguiotravel Airbnbbaguio",
+            "top_words": [
+              "getaway full",
+              "planning getaway",
+              "baguiotravel airbnbbaguio",
+              "getaway",
+              "free stay"
+            ],
+            "count": 3
+          },
+          {
+            "topic_id": 2,
+            "label": "Travellerlife Baguiotravellerstravelandtours / Travellerschoice Explorethenorth / Travellerschoice",
+            "top_words": [
+              "travellerlife baguiotravellerstravelandtours",
+              "travellerschoice explorethenorth",
+              "travellerschoice",
+              "travellerlife",
+              "travelwithme traveltime"
+            ],
+            "count": 8
+          }
+        ],
+        "error": null
+      },
+      "sentiment": {
+        "dominant": "POSITIVE",
+        "avg_confidence": 1.0,
+        "coverage": 1.0,
+        "label_distribution": {
+          "NEGATIVE": 5,
+          "POSITIVE": 19,
+          "NEUTRAL": 1
+        },
+        "label_ratios": {
+          "NEGATIVE": 0.2,
+          "POSITIVE": 0.76,
+          "NEUTRAL": 0.04
+        }
+      }
+    },
+    {
+      "cluster_id": "2026_8",
+      "n_docs": 44,
+      "topics": {
+        "n_topics": 2,
+        "noise_ratio": null,
+        "coherence_proxy": null,
+        "top_topics": [
+          {
+            "topic_id": 0,
+            "label": "Exhibition Flowerfestivalbaguio / Artistry Plant / Baguioartist Blooming",
+            "top_words": [
+              "exhibition flowerfestivalbaguio",
+              "artistry plant",
+              "baguioartist blooming",
+              "nature art",
+              "blooming weaves"
+            ],
+            "count": 6
+          },
+          {
+            "topic_id": 1,
+            "label": "Blooms Celebrate / Flower City / Flowers Culture",
+            "top_words": [
+              "blooms celebrate",
+              "flower city",
+              "flowers culture",
+              "bloomlive",
+              "booths flowers"
+            ],
+            "count": 35
+          }
+        ],
+        "error": null
+      },
+      "sentiment": {
+        "dominant": "POSITIVE",
+        "avg_confidence": 1.0,
+        "coverage": 1.0,
+        "label_distribution": {
+          "NEGATIVE": 8,
+          "NEUTRAL": 15,
+          "POSITIVE": 21
+        },
+        "label_ratios": {
+          "NEGATIVE": 0.1818,
+          "NEUTRAL": 0.3409,
+          "POSITIVE": 0.4773
+        }
+      }
+    },
+    {
+      "cluster_id": "2026_9",
+      "n_docs": 31,
+      "topics": {
+        "n_topics": 3,
+        "noise_ratio": null,
+        "coherence_proxy": null,
+        "top_topics": [
+          {
+            "topic_id": 0,
+            "label": "Colors Celebrations / Blooming Glowing / Colors Culture",
+            "top_words": [
+              "colors celebrations",
+              "blooming glowing",
+              "colors culture",
+              "culture celebration",
+              "culture petals"
+            ],
+            "count": 7
+          },
+          {
+            "topic_id": 1,
+            "label": "Community Vibrant / Celebration Blooms / Vibrant Spirit",
+            "top_words": [
+              "community vibrant",
+              "celebration blooms",
+              "vibrant spirit",
+              "bloom grandstreetdanceparade",
+              "communityandgrowth day"
+            ],
+            "count": 8
+          },
+          {
+            "topic_id": 2,
+            "label": "Theme Blooming / Season Blooming / Blooming City",
+            "top_words": [
+              "theme blooming",
+              "season blooming",
+              "blooming city",
+              "blooming",
+              "road bloom"
+            ],
+            "count": 10
+          }
+        ],
+        "error": null
+      },
+      "sentiment": {
+        "dominant": "POSITIVE",
+        "avg_confidence": 1.0,
+        "coverage": 1.0,
+        "label_distribution": {
+          "POSITIVE": 27,
+          "NEUTRAL": 3,
+          "NEGATIVE": 1
+        },
+        "label_ratios": {
+          "POSITIVE": 0.871,
+          "NEUTRAL": 0.0968,
+          "NEGATIVE": 0.0323
         }
       }
     }

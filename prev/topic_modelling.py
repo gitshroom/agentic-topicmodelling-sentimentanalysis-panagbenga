@@ -38,8 +38,7 @@ def main(**kwargs):
         subset = df[df["cluster"] == cluster_id]
         docs = subset["processed"].tolist()
 
-        # Iteration 5 Rule: Skip clusters with less than 20 documents
-        if len(docs) < 20: 
+        if len(docs) < 10: 
             logger.warning(f"Cluster {cluster_id}: Only {len(docs)} docs. Skipping BERTopic.")
             continue
 
