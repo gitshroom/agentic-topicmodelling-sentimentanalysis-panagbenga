@@ -1,140 +1,97 @@
-# 🌸 Panagbenga AI Analysis Pipeline
+# Panagbenga AI Analysis Pipeline
 
-An end-to-end **agentic AI pipeline** for analyzing social media data related to the Panagbenga Festival.  
-It performs **data collection, preprocessing, embeddings, clustering, topic modeling, sentiment analysis, and visualization**.
+An end-to-end agentic AI pipeline for analyzing social media data related to the Panagbenga Festival.  
+The project performs data collection, preprocessing, embeddings, clustering, topic modeling, sentiment analysis, and dashboard visualization.
 
----
+## Repository
 
-## 🚀 Features
+GitHub: [https://github.com/gitshroom/agentic-topicmodelling-sentimentanalysis-panagbenga](https://github.com/gitshroom/agentic-topicmodelling-sentimentanalysis-panagbenga)
 
-- 📥 Automated data collection via Apify  
-- 🧹 Text preprocessing (emoji, stopwords, normalization)  
-- 🧠 Embeddings using transformer models  
-- 🔍 Clustering with UMAP + HDBSCAN  
-- 🏷️ Topic modeling via BERTopic  
-- 😊 Sentiment analysis  
-- 🤖 Local LLM topic explanation using Ollama with Qwen2.5:3B  
-- 📊 Interactive dashboard (Flask-based)  
-- 🔁 Orchestrated multi-step pipeline  
+## Features
 
----
+- Automated data collection through Apify
+- Text preprocessing (normalization, stopword filtering, cleaning)
+- Embeddings with transformer models
+- Clustering with UMAP + HDBSCAN
+- Topic modeling with BERTopic
+- Sentiment analysis with XLM-RoBERTa
+- Local LLM explanations through Ollama
+- Flask dashboard for interactive exploration
 
-## 📦 Installation
+## Installation
 
-Install all required Python dependencies:
+Install the required Python packages:
 
 ```bash
 pip install pandas nltk emoji beautifulsoup4 stopwordsiso sentence-transformers umap-learn hdbscan scikit-learn matplotlib numpy "bertopic[representation]" transformers torch apify-client flask sentencepiece blobfile requests
 ```
 
----
+## Environment Variables
 
-## 🧠 Install Ollama + Qwen2.5:3B
+Set environment variables before running data collection and LLM explanation features.
 
-This project uses a local LLM for generating topic explanations and summaries.
+### Windows (PowerShell)
 
-### 1. Install Ollama
+```powershell
+setx APIFY_TOKEN "your_apify_token"
+setx OLLAMA_HOST "http://localhost:11434"
+```
 
-Visit:
+Restart the terminal after `setx` so values are available in new sessions.
 
-https://ollama.com
+### macOS/Linux
 
-Download and install Ollama for your operating system.
+```bash
+export APIFY_TOKEN="your_apify_token"
+export OLLAMA_HOST="http://localhost:11434"
+```
 
----
+## Local LLM Setup (Optional but Recommended)
 
-### 2. Pull the Qwen2.5:3B model
-
-After installing Ollama, run:
+Install Ollama from [https://ollama.com](https://ollama.com), then run:
 
 ```bash
 ollama pull qwen2.5:3b
-```
-
----
-
-### 3. Start Ollama
-
-```bash
 ollama serve
 ```
 
-By default, Ollama runs on:
+## How to Run
 
-```text
-http://localhost:11434
-```
-
----
-
-### 4. Test the model
+### Pipeline 1 (`main/`)
 
 ```bash
-ollama run qwen2.5:3b
-```
-
-If successful, the model should respond interactively in the terminal.
-
----
-
-## 🔐 Environment Setup (IMPORTANT)
-
-⚠️ Do **NOT** hardcode your API key inside the code.
-
-Instead, set your Apify token as an environment variable:
-
-### On Windows (PowerShell)
-
-```bash
-setx APIFY_TOKEN "your_actual_token_here"
-```
-
-### On macOS/Linux
-
-```bash
-export APIFY_TOKEN="your_actual_token_here"
-```
-
----
-
-## ▶️ Usage
-
-### Run the full pipeline
-
-```bash
+cd main
 python run_pipeline.py
 ```
 
----
-
-### Skip data collection (use existing dataset)
+Run with existing dataset only (skip collection):
 
 ```bash
 python run_pipeline.py --skip-collection
 ```
 
----
+### Pipeline 2 (`with_clustering/`)
 
-## ⚙️ Configuration
+```bash
+cd with_clustering
+python run_pipeline.py
+```
 
-You can modify parameters inside `run_pipeline.py`:
+Run with stricter preprocessing:
 
-- `QUERY` → search keyword (default: `"panagbenga"`)
-- `PLATFORMS` → `all | facebook | tiktok | twitter | instagram`
-- `MAX_ITEMS` → number of posts per platform
-- `OLLAMA_MODEL` → local LLM model (default: `qwen2.5:3b`)
+```bash
+python run_pipeline.py --preprocessing second
+```
 
----
+See `with_clustering/README.md` for detailed methodology and output schema.
 
-## 📊 Output
+## Output
 
-- 📄 Dataset → `data/panagbenga-dataset.csv`  
-- 📊 Results → `results.json`  
-- 🌐 Dashboard → `http://localhost:5000`
+- Dataset: `data/panagbenga-dataset.csv` (Pipeline 1) or preprocessed variants in `with_clustering/data/`
+- JSON results: `outputs/results.json`, `outputs/topic_results.json`, `outputs/sentiment_results.json`
+- Dashboard: `http://localhost:5000` (Pipeline 1) and `http://localhost:5050` (Pipeline 2)
 
----
-
-## 🧠 Pipeline Overview
+## Pipeline Overview
 
 This repository implements **two parallel pipelines** sharing the same
 input data:
@@ -166,20 +123,20 @@ methodology, output schema, and how to run Pipeline 2.
 
 ---
 
-## ⚠️ Notes
+## Notes
 
-- Ensure your Apify token is valid before running data collection  
-- Make sure Ollama is running before executing the pipeline  
-- Large datasets may take time during embedding and clustering  
-- Use `--skip-collection` to speed up repeated experiments  
-- The first run of Qwen2.5:3B may take longer while the model loads into memory  
+- Ensure your Apify token is valid before running data collection
+- Make sure Ollama is running before executing explanation steps
+- Large datasets may require substantial time for embedding and clustering
+- Use skip flags to speed up repeated experiments
+- The first Qwen2.5:3B run can take longer while model weights load
 
 ---
 
-## 📌 Future Improvements
+## Future Improvements
 
-- Real-time streaming data  
-- Multi-language sentiment support  
-- Fine-tuned local LLM for Baguio/Panagbenga context  
-- Cloud deployment for dashboard  
-- Automated hyperparameter optimization for topic modeling  
+- Real-time streaming data support
+- Expanded multilingual sentiment coverage
+- Fine-tuned local LLM for Baguio/Panagbenga context
+- Cloud deployment for the dashboard
+- Automated hyperparameter optimization for topic modeling
